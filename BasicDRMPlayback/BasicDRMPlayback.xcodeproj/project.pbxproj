@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A0D0619BD02E6CFA01B2C9D /* Pods_BasicDRMPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D9AC0ED4321DB051708F9F /* Pods_BasicDRMPlayback.framework */; };
+		AC773E831F061017005C3B0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC773E821F061017005C3B0E /* AppDelegate.swift */; };
+		AC773E851F061017005C3B0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC773E841F061017005C3B0E /* ViewController.swift */; };
+		AC773E881F061017005C3B0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC773E861F061017005C3B0E /* Main.storyboard */; };
+		AC773E8A1F061017005C3B0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC773E891F061017005C3B0E /* Assets.xcassets */; };
+		AC773E8D1F061017005C3B0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC773E8B1F061017005C3B0E /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		39D9AC0ED4321DB051708F9F /* Pods_BasicDRMPlayback.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicDRMPlayback.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C73832CD38787F694B6A6B6 /* Pods-BasicDRMPlayback.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicDRMPlayback.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicDRMPlayback/Pods-BasicDRMPlayback.debug.xcconfig"; sourceTree = "<group>"; };
+		73B88C1ECBA3920B8220B4A5 /* Pods-BasicDRMPlayback.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicDRMPlayback.release.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicDRMPlayback/Pods-BasicDRMPlayback.release.xcconfig"; sourceTree = "<group>"; };
+		AC773E7F1F061017005C3B0E /* BasicDRMPlayback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicDRMPlayback.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC773E821F061017005C3B0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC773E841F061017005C3B0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC773E871F061017005C3B0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC773E891F061017005C3B0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC773E8C1F061017005C3B0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC773E8E1F061017005C3B0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC773E7C1F061017005C3B0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A0D0619BD02E6CFA01B2C9D /* Pods_BasicDRMPlayback.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41DD341652A917CE2C854E31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C73832CD38787F694B6A6B6 /* Pods-BasicDRMPlayback.debug.xcconfig */,
+				73B88C1ECBA3920B8220B4A5 /* Pods-BasicDRMPlayback.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AC773E761F061017005C3B0E = {
+			isa = PBXGroup;
+			children = (
+				AC773E811F061017005C3B0E /* BasicDRMPlayback */,
+				AC773E801F061017005C3B0E /* Products */,
+				41DD341652A917CE2C854E31 /* Pods */,
+				AE58DB904178C61B23A7C6D1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AC773E801F061017005C3B0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC773E7F1F061017005C3B0E /* BasicDRMPlayback.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC773E811F061017005C3B0E /* BasicDRMPlayback */ = {
+			isa = PBXGroup;
+			children = (
+				AC773E821F061017005C3B0E /* AppDelegate.swift */,
+				AC773E841F061017005C3B0E /* ViewController.swift */,
+				AC773E861F061017005C3B0E /* Main.storyboard */,
+				AC773E891F061017005C3B0E /* Assets.xcassets */,
+				AC773E8B1F061017005C3B0E /* LaunchScreen.storyboard */,
+				AC773E8E1F061017005C3B0E /* Info.plist */,
+			);
+			path = BasicDRMPlayback;
+			sourceTree = "<group>";
+		};
+		AE58DB904178C61B23A7C6D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39D9AC0ED4321DB051708F9F /* Pods_BasicDRMPlayback.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC773E7E1F061017005C3B0E /* BasicDRMPlayback */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC773EA71F061017005C3B0E /* Build configuration list for PBXNativeTarget "BasicDRMPlayback" */;
+			buildPhases = (
+				69F017CA089E2FA10FFFB59B /* [CP] Check Pods Manifest.lock */,
+				AC773E7B1F061017005C3B0E /* Sources */,
+				AC773E7C1F061017005C3B0E /* Frameworks */,
+				AC773E7D1F061017005C3B0E /* Resources */,
+				D12CDB5677B5E764DC72D40A /* [CP] Embed Pods Frameworks */,
+				D736678206CA94714A0B706B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BasicDRMPlayback;
+			productName = BasicDRMPlayback;
+			productReference = AC773E7F1F061017005C3B0E /* BasicDRMPlayback.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC773E771F061017005C3B0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Bitmovin;
+				TargetAttributes = {
+					AC773E7E1F061017005C3B0E = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AC773E7A1F061017005C3B0E /* Build configuration list for PBXProject "BasicDRMPlayback" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC773E761F061017005C3B0E;
+			productRefGroup = AC773E801F061017005C3B0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC773E7E1F061017005C3B0E /* BasicDRMPlayback */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC773E7D1F061017005C3B0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC773E8D1F061017005C3B0E /* LaunchScreen.storyboard in Resources */,
+				AC773E8A1F061017005C3B0E /* Assets.xcassets in Resources */,
+				AC773E881F061017005C3B0E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		69F017CA089E2FA10FFFB59B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D12CDB5677B5E764DC72D40A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-BasicDRMPlayback/Pods-BasicDRMPlayback-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D736678206CA94714A0B706B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-BasicDRMPlayback/Pods-BasicDRMPlayback-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC773E7B1F061017005C3B0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC773E851F061017005C3B0E /* ViewController.swift in Sources */,
+				AC773E831F061017005C3B0E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AC773E861F061017005C3B0E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC773E871F061017005C3B0E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC773E8B1F061017005C3B0E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC773E8C1F061017005C3B0E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC773EA51F061017005C3B0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC773EA61F061017005C3B0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC773EA81F061017005C3B0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C73832CD38787F694B6A6B6 /* Pods-BasicDRMPlayback.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = BasicDRMPlayback/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitmovin.player.samples.drm.basic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AC773EA91F061017005C3B0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73B88C1ECBA3920B8220B4A5 /* Pods-BasicDRMPlayback.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = BasicDRMPlayback/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitmovin.player.samples.drm.basic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC773E7A1F061017005C3B0E /* Build configuration list for PBXProject "BasicDRMPlayback" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC773EA51F061017005C3B0E /* Debug */,
+				AC773EA61F061017005C3B0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC773EA71F061017005C3B0E /* Build configuration list for PBXNativeTarget "BasicDRMPlayback" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC773EA81F061017005C3B0E /* Debug */,
+				AC773EA91F061017005C3B0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC773E771F061017005C3B0E /* Project object */;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:BasicCasting/BasicCasting.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BasicPlayback/BasicPlayback.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BasicDRMPlayback/BasicDRMPlayback.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
