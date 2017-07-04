@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         guard let fairplayStreamUrl = URL(string: ""),
               let certificateUrl = URL(string: ""),
               let licenseUrl = URL(string: "") else {
+            print("Please specify the needed resources marked with TODO in ViewController.swift file.")
             return
         }
         
