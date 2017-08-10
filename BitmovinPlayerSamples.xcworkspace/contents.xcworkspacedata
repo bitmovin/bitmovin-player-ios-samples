@@ -8,6 +8,9 @@
       location = "group:BasicCasting/BasicCasting.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:CustomHtmlUi/CustomHtmlUi.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:BasicPlayback/BasicPlayback.xcodeproj">
    </FileRef>
    <FileRef

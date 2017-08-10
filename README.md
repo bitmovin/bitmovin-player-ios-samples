@@ -5,6 +5,7 @@ This repository contains sample apps which are using the Bitmovin Player iOS SDK
 +   **BasicDRMPlayback:** Shows how the Bitmovin Player can be setup and configured for playback of FairPlay Streaming protected content.
 +   **BasicCasting** Shows how the ChromeCast support of the Bitmovin Player can be setup and configured.
 +   **BasicMetadataHandling** Shows how the Bitmovin Player can be setup and configured for playback of content which contains metadata.
++   **CustomHtmlUi** Shows how the Bitmovin Player can be setup and configured to use a custom HTML UI.
 
 ## Using The Sample Apps
 Please execute `pod install` to properly initialize the workspace. In each sample app you also have to add your Bitmovin Player license key to `Info.plist` file as `BitmovinPlayerLicenseKey`.
@@ -15,6 +16,7 @@ In addition to that you have to log in to `https://app.bitmovin.com/`, where you
     com.bitmovin.player.samples.drm.basic
     com.bitmovin.player.samples.casting.basic
     com.bitmovin.player.samples.metadata.basic
+    com.bitmovin.player.samples.custom.ui.html
 
 ## Using The Bitmovin Player iOS SDK
 When you want to develop an own iOS application using the Bitmovin Player iOS SDK read through the following steps.
