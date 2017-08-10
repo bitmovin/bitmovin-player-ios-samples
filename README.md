@@ -10,7 +10,7 @@ This repository contains sample apps which are using the Bitmovin Player iOS SDK
 ## Using The Sample Apps
 Please execute `pod install` to properly initialize the workspace. In each sample app you also have to add your Bitmovin Player license key to `Info.plist` file as `BitmovinPlayerLicenseKey`.
 
-In addition to that you have to log in to `https://app.bitmovin.com/`, where you have to add the following bundle identifier of the sample application as an allowed domain:
+In addition to that you have to log in to [https://dashboard.bitmovin.com](https://dashboard.bitmovin.com), where you have to add the following bundle identifier of the sample application as an allowed domain under `Player -> Licenses`:
 
     com.bitmovin.player.samples.playback.basic
     com.bitmovin.player.samples.drm.basic
@@ -35,9 +35,9 @@ Add `pod 'BitmovinPlayer', git: 'https://github.com/bitmovin/bitmovin-player-ios
 
 +   Add your Bitmovin player license key to the `Info.plist` file as `BitmovinPlayerLicenseKey`.
 
-    Your player license key can be found when logging in into `https://app.bitmovin.com/` and navigating to `Player -> Overview`.
+    Your player license key can be found when logging in into [https://dashboard.bitmovin.com](https://dashboard.bitmovin.com) and navigating to `Player -> Licenses`.
 
-+   Add the Bundle identifier of the iOS application which is using the SDK as an allowed domain to the Bitmovin licensing backend. This can be done under `Player -> Overview` when logging in into `https://app.bitmovin.com/` with your account.
++   Add the Bundle identifier of the iOS application which is using the SDK as an allowed domain to the Bitmovin licensing backend. This can be also done under `Player -> Licenses` when logging in into [https://dashboard.bitmovin.com](https://dashboard.bitmovin.com) with your account.
 
     When you do not do this, you'll get a license error when starting the application which contains the player.
 
