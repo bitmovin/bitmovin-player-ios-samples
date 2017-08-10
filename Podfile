@@ -20,3 +20,9 @@ target 'BasicCasting' do
 	pod 'BitmovinPlayer', git: 'https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod.git', tag: '1.1.0'
 	pod 'google-cast-sdk'
 end
+
+target 'CustomHtmlUi' do
+	project 'CustomHtmlUi/CustomHtmlUi.xcodeproj'
+	use_frameworks!
+	pod 'BitmovinPlayer', git: 'https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod.git', tag: '1.1.0'
+end
