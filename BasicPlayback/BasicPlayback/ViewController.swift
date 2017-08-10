@@ -11,6 +11,12 @@ import BitmovinPlayer
 
 final class ViewController: UIViewController {
     
+    var player: BitmovinPlayer?
+    
+    deinit {
+        player?.destroy()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,9 +35,6 @@ final class ViewController: UIViewController {
 
             // Create player based on player configuration
             let player = BitmovinPlayer(configuration: config)
-            
-            // Add ViewController as event listener
-            player.add(self)
 
             // Create player view and pass the player instance to it
             let playerView = BMPBitmovinPlayerView(player: player, frame: .zero)
@@ -42,9 +45,22 @@ final class ViewController: UIViewController {
             view.addSubview(playerView)
             view.bringSubview(toFront: playerView)
 
+            self.player = player
         } catch {
             print("Configuration error: \(error)")
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        // Add ViewController as event listener
+        player?.add(self)
+        super.viewWillAppear(animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        // Remove ViewController as event listener
+        player?.remove(self)
+        super.viewWillDisappear(animated)
     }
 }
 
