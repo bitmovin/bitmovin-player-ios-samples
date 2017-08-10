@@ -20,3 +20,9 @@ target 'BasicCasting' do
 	pod 'BitmovinPlayer', git: 'https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod.git', tag: '1.1.0'
 	pod 'google-cast-sdk'
 end
+
+target 'BasicMetadataHandling' do
+  project 'BasicMetadataHandling/BasicMetadataHandling.xcodeproj'
+  use_frameworks!
+  pod 'BitmovinPlayer', git: 'https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod.git', tag: '1.1.0'
+end
