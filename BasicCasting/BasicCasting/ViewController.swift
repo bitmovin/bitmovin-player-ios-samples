@@ -74,13 +74,13 @@ final class ViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         // Add ViewController as event listener
-        player?.add(self)
+        player?.add(listener: self)
         super.viewWillAppear(animated)
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         // Remove ViewController as event listener
-        player?.remove(self)
+        player?.remove(listener: self)
         super.viewWillDisappear(animated)
     }
 }
