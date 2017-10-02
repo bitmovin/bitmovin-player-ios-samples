@@ -39,3 +39,9 @@ target 'BasicAds' do
     pod 'BitmovinPlayer', git: 'https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod.git', tag: '2.0.0'
     pod 'GoogleAds-IMA-iOS-SDK', '3.6.0'
 end
+
+target 'AirPlay' do
+    project 'AirPlay/AirPlay.xcodeproj'
+    use_frameworks!
+    pod 'BitmovinPlayer', git: 'https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod.git', tag: '2.0.0'
+end

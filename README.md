@@ -7,6 +7,7 @@ This repository contains sample apps which are using the Bitmovin Player iOS SDK
 +   **BasicMetadataHandling** Shows how the Bitmovin Player can be setup and configured for playback of content which contains metadata.
 +   **CustomHtmlUi** Shows how the Bitmovin Player can be setup and configured to use a custom HTML UI.
 +   **BasicAds** Shows how the Bitmovin Player can be setup and configured for playback of ads.
++   **AirPlay** Shows how AirPlay support can be enabled for the Bitmovin Player.
 
 ## Using The Sample Apps
 Please execute `pod install` to properly initialize the workspace. In each sample app you also have to add your Bitmovin Player license key to `Info.plist` file as `BitmovinPlayerLicenseKey`.
@@ -19,6 +20,7 @@ In addition to that you have to log in to [https://dashboard.bitmovin.com](https
     com.bitmovin.player.samples.metadata.basic
     com.bitmovin.player.samples.custom.ui.html
     com.bitmovin.player.samples.ads.basic
+    com.bitmovin.player.samples.airplay
 
 ## Using The Bitmovin Player iOS SDK
 When you want to develop an own iOS application using the Bitmovin Player iOS SDK read through the following steps.
