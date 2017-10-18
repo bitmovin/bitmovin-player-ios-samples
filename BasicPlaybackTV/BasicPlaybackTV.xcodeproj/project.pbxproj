@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC3C1C691F978B300096D607 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C1C681F978B300096D607 /* AppDelegate.swift */; };
+		AC3C1C6B1F978B300096D607 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C1C6A1F978B300096D607 /* ViewController.swift */; };
+		AC3C1C6E1F978B300096D607 /* BasicPlaybackTV.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC3C1C6C1F978B300096D607 /* BasicPlaybackTV.xcdatamodeld */; };
+		AC3C1C711F978B300096D607 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3C1C6F1F978B300096D607 /* Main.storyboard */; };
+		AC3C1C731F978B300096D607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3C1C721F978B300096D607 /* Assets.xcassets */; };
+		F106F14E7546EF414FBB518C /* Pods_BasicPlaybackTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152B63546272559BDE3E4C15 /* Pods_BasicPlaybackTV.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		152B63546272559BDE3E4C15 /* Pods_BasicPlaybackTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicPlaybackTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABDAAC0F9CCE0C6FCD69C2FA /* Pods-BasicPlaybackTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicPlaybackTV.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicPlaybackTV/Pods-BasicPlaybackTV.debug.xcconfig"; sourceTree = "<group>"; };
+		AC3C1C651F978B300096D607 /* BasicPlaybackTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicPlaybackTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC3C1C681F978B300096D607 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC3C1C6A1F978B300096D607 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC3C1C6D1F978B300096D607 /* BasicPlaybackTV.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BasicPlaybackTV.xcdatamodel; sourceTree = "<group>"; };
+		AC3C1C701F978B300096D607 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC3C1C721F978B300096D607 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC3C1C741F978B300096D607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA558D23C4E6EF6B765AAE84 /* Pods-BasicPlaybackTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicPlaybackTV.release.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicPlaybackTV/Pods-BasicPlaybackTV.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC3C1C621F978B300096D607 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F106F14E7546EF414FBB518C /* Pods_BasicPlaybackTV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		201DE1957A84FBB851CBFA8E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ABDAAC0F9CCE0C6FCD69C2FA /* Pods-BasicPlaybackTV.debug.xcconfig */,
+				DA558D23C4E6EF6B765AAE84 /* Pods-BasicPlaybackTV.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A5C258E0F3246EDC1CF125AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				152B63546272559BDE3E4C15 /* Pods_BasicPlaybackTV.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC3C1C5C1F978B300096D607 = {
+			isa = PBXGroup;
+			children = (
+				AC3C1C671F978B300096D607 /* BasicPlaybackTV */,
+				AC3C1C661F978B300096D607 /* Products */,
+				201DE1957A84FBB851CBFA8E /* Pods */,
+				A5C258E0F3246EDC1CF125AA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AC3C1C661F978B300096D607 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC3C1C651F978B300096D607 /* BasicPlaybackTV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC3C1C671F978B300096D607 /* BasicPlaybackTV */ = {
+			isa = PBXGroup;
+			children = (
+				AC3C1C681F978B300096D607 /* AppDelegate.swift */,
+				AC3C1C6A1F978B300096D607 /* ViewController.swift */,
+				AC3C1C6F1F978B300096D607 /* Main.storyboard */,
+				AC3C1C721F978B300096D607 /* Assets.xcassets */,
+				AC3C1C741F978B300096D607 /* Info.plist */,
+				AC3C1C6C1F978B300096D607 /* BasicPlaybackTV.xcdatamodeld */,
+			);
+			path = BasicPlaybackTV;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC3C1C641F978B300096D607 /* BasicPlaybackTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC3C1C771F978B300096D607 /* Build configuration list for PBXNativeTarget "BasicPlaybackTV" */;
+			buildPhases = (
+				1A0369F8062C9B68D03E0025 /* [CP] Check Pods Manifest.lock */,
+				AC3C1C611F978B300096D607 /* Sources */,
+				AC3C1C621F978B300096D607 /* Frameworks */,
+				AC3C1C631F978B300096D607 /* Resources */,
+				A032395B59DEF4F498365164 /* [CP] Embed Pods Frameworks */,
+				9899A49531E49F2E23EDCEBA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BasicPlaybackTV;
+			productName = BasicPlaybackTV;
+			productReference = AC3C1C651F978B300096D607 /* BasicPlaybackTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC3C1C5D1F978B300096D607 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Bitmovin;
+				TargetAttributes = {
+					AC3C1C641F978B300096D607 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AC3C1C601F978B300096D607 /* Build configuration list for PBXProject "BasicPlaybackTV" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC3C1C5C1F978B300096D607;
+			productRefGroup = AC3C1C661F978B300096D607 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC3C1C641F978B300096D607 /* BasicPlaybackTV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC3C1C631F978B300096D607 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC3C1C731F978B300096D607 /* Assets.xcassets in Resources */,
+				AC3C1C711F978B300096D607 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A0369F8062C9B68D03E0025 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BasicPlaybackTV-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9899A49531E49F2E23EDCEBA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-BasicPlaybackTV/Pods-BasicPlaybackTV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A032395B59DEF4F498365164 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../Pods/Target Support Files/Pods-BasicPlaybackTV/Pods-BasicPlaybackTV-frameworks.sh",
+				"${PODS_ROOT}/BitmovinPlayer/tvOS/BitmovinPlayer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitmovinPlayer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-BasicPlaybackTV/Pods-BasicPlaybackTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC3C1C611F978B300096D607 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC3C1C6E1F978B300096D607 /* BasicPlaybackTV.xcdatamodeld in Sources */,
+				AC3C1C6B1F978B300096D607 /* ViewController.swift in Sources */,
+				AC3C1C691F978B300096D607 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AC3C1C6F1F978B300096D607 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC3C1C701F978B300096D607 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC3C1C751F978B300096D607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		AC3C1C761F978B300096D607 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC3C1C781F978B300096D607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABDAAC0F9CCE0C6FCD69C2FA /* Pods-BasicPlaybackTV.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = BasicPlaybackTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitmovin.player.samples.tv.playback.basic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		AC3C1C791F978B300096D607 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA558D23C4E6EF6B765AAE84 /* Pods-BasicPlaybackTV.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = BasicPlaybackTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitmovin.player.samples.tv.playback.basic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC3C1C601F978B300096D607 /* Build configuration list for PBXProject "BasicPlaybackTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC3C1C751F978B300096D607 /* Debug */,
+				AC3C1C761F978B300096D607 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC3C1C771F978B300096D607 /* Build configuration list for PBXNativeTarget "BasicPlaybackTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC3C1C781F978B300096D607 /* Debug */,
+				AC3C1C791F978B300096D607 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AC3C1C6C1F978B300096D607 /* BasicPlaybackTV.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AC3C1C6D1F978B300096D607 /* BasicPlaybackTV.xcdatamodel */,
+			);
+			currentVersion = AC3C1C6D1F978B300096D607 /* BasicPlaybackTV.xcdatamodel */;
+			path = BasicPlaybackTV.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AC3C1C5D1F978B300096D607 /* Project object */;
+}

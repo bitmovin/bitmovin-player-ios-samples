@@ -2,6 +2,7 @@
 This repository contains sample apps which are using the Bitmovin Player iOS SDK. The following sample apps are included at the moment:
 
 +   **BasicPlayback:** Shows how the Bitmovin Player can be setup for basic playback of HLS or progressive streams.
++   **BasicPlaybackTV:** Shows how the Bitmovin Player can be setup for basic playback of HLS or progressive streams in a tvOS application.
 +   **BasicDRMPlayback:** Shows how the Bitmovin Player can be setup and configured for playback of FairPlay Streaming protected content.
 +   **BasicCasting** Shows how the ChromeCast support of the Bitmovin Player can be setup and configured.
 +   **BasicMetadataHandling** Shows how the Bitmovin Player can be setup and configured for playback of content which contains metadata.
@@ -15,6 +16,7 @@ Please execute `pod install` to properly initialize the workspace. In each sampl
 In addition to that you have to log in to [https://dashboard.bitmovin.com](https://dashboard.bitmovin.com), where you have to add the following bundle identifier of the sample application as an allowed domain under `Player -> Licenses`:
 
     com.bitmovin.player.samples.playback.basic
+    com.bitmovin.player.samples.tv.playback.basic
     com.bitmovin.player.samples.drm.basic
     com.bitmovin.player.samples.casting.basic
     com.bitmovin.player.samples.metadata.basic

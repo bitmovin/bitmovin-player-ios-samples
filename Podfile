@@ -45,3 +45,10 @@ target 'AirPlay' do
     use_frameworks!
     pod 'BitmovinPlayer', git: 'https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod.git', tag: '2.2.0'
 end
+
+target 'BasicPlaybackTV' do
+    project 'BasicPlaybackTV/BasicPlaybackTV.xcodeproj'
+    use_frameworks!
+    platform :tvos
+    pod 'BitmovinPlayer', git: 'https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod.git', tag: '2.2.0'
+end

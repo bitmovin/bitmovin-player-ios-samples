@@ -169,7 +169,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/../Pods/Target Support Files/Pods-BasicMetadataHandling/Pods-BasicMetadataHandling-frameworks.sh",
-				"${PODS_ROOT}/BitmovinPlayer/BitmovinPlayer.framework",
+				"${PODS_ROOT}/BitmovinPlayer/iOS/BitmovinPlayer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (

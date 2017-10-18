@@ -166,7 +166,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/../Pods/Target Support Files/Pods-BasicCasting/Pods-BasicCasting-frameworks.sh",
-				"${PODS_ROOT}/BitmovinPlayer/BitmovinPlayer.framework",
+				"${PODS_ROOT}/BitmovinPlayer/iOS/BitmovinPlayer.framework",
 				"${PODS_ROOT}/google-cast-sdk/GoogleCastSDK-Public-3.5.0-Release/GoogleCast.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
