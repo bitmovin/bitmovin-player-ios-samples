@@ -52,3 +52,9 @@ target 'BasicPlaybackTV' do
     platform :tvos
     pod 'BitmovinPlayer', git: 'https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod.git', tag: '2.4.0'
 end
+
+target 'SystemUI' do
+    project 'SystemUI/SystemUI'
+    use_frameworks!
+    pod 'BitmovinPlayer', git: 'https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod.git', tag: '2.4.0'
+end

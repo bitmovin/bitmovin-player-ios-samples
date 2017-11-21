@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SystemUI/SystemUI.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:BasicPlaybackTV/BasicPlaybackTV.xcodeproj">
    </FileRef>
    <FileRef
