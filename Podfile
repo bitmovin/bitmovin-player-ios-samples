@@ -58,3 +58,9 @@ target 'SystemUI' do
     use_frameworks!
     pod 'BitmovinPlayer', git: 'https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod.git', tag: '2.4.0'
 end
+
+target 'BasicPlaylist' do
+    project 'BasicPlaylist/BasicPlaylist'
+    use_frameworks!
+    pod 'BitmovinPlayer', git: 'https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod.git', tag: '2.4.0'
+end
