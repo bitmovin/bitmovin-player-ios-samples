@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5DC78C5F20239C9E007BD016 /* SamplesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC78C5320239C9D007BD016 /* SamplesTableViewController.swift */; };
+		5DC78C6020239C9E007BD016 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC78C5520239C9D007BD016 /* ItemCell.swift */; };
+		5DC78C6120239C9E007BD016 /* SampleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC78C5620239C9D007BD016 /* SampleDetailViewController.swift */; };
+		5DC78C6320239C9E007BD016 /* PlaybackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC78C5920239C9D007BD016 /* PlaybackViewController.swift */; };
+		5DC78C6420239C9E007BD016 /* SamplesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC78C5A20239C9E007BD016 /* SamplesViewModel.swift */; };
+		5DC78C6520239C9E007BD016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC78C5B20239C9E007BD016 /* AppDelegate.swift */; };
+		5DC78C6620239C9E007BD016 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC78C5C20239C9E007BD016 /* Reachability.m */; };
+		5DC78C6720239C9E007BD016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DC78C5D20239C9E007BD016 /* Assets.xcassets */; };
+		5DC78C7720239F00007BD016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC78C7320239F00007BD016 /* LaunchScreen.storyboard */; };
+		5DC78C7820239F00007BD016 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC78C7520239F00007BD016 /* Main.storyboard */; };
+		BE2644913670DF4C05C1CA54 /* Pods_BasicOfflinePlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD65DFDF8A18BDD8FFE3BBD1 /* Pods_BasicOfflinePlayback.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5D483B4220239B4C00E1428C /* BasicOfflinePlayback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicOfflinePlayback.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DC78C5120239C9C007BD016 /* BasicOfflinePlayback-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BasicOfflinePlayback-Bridging-Header.h"; sourceTree = "<group>"; };
+		5DC78C5320239C9D007BD016 /* SamplesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SamplesTableViewController.swift; sourceTree = "<group>"; };
+		5DC78C5420239C9D007BD016 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		5DC78C5520239C9D007BD016 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		5DC78C5620239C9D007BD016 /* SampleDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleDetailViewController.swift; sourceTree = "<group>"; };
+		5DC78C5720239C9D007BD016 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DC78C5920239C9D007BD016 /* PlaybackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaybackViewController.swift; sourceTree = "<group>"; };
+		5DC78C5A20239C9E007BD016 /* SamplesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SamplesViewModel.swift; sourceTree = "<group>"; };
+		5DC78C5B20239C9E007BD016 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5DC78C5C20239C9E007BD016 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		5DC78C5D20239C9E007BD016 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DC78C7420239F00007BD016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5DC78C7620239F00007BD016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5DC78C7920239F6D007BD016 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9A0EFB91E8D95F4F17EA2C9A /* Pods-BasicOfflinePlayback.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicOfflinePlayback.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicOfflinePlayback/Pods-BasicOfflinePlayback.debug.xcconfig"; sourceTree = "<group>"; };
+		AD65DFDF8A18BDD8FFE3BBD1 /* Pods_BasicOfflinePlayback.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicOfflinePlayback.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B611B0D00A735E76935D7376 /* Pods-BasicOfflinePlayback.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicOfflinePlayback.release.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicOfflinePlayback/Pods-BasicOfflinePlayback.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D483B3F20239B4C00E1428C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE2644913670DF4C05C1CA54 /* Pods_BasicOfflinePlayback.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06ABA391DE340ACABE478DAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A0EFB91E8D95F4F17EA2C9A /* Pods-BasicOfflinePlayback.debug.xcconfig */,
+				B611B0D00A735E76935D7376 /* Pods-BasicOfflinePlayback.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5D483B3920239B4B00E1428C = {
+			isa = PBXGroup;
+			children = (
+				5D483B4420239B4C00E1428C /* BasicOfflinePlayback */,
+				5D483B4320239B4C00E1428C /* Products */,
+				06ABA391DE340ACABE478DAE /* Pods */,
+				B6627A37ED97165F82BC78AA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5D483B4320239B4C00E1428C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D483B4220239B4C00E1428C /* BasicOfflinePlayback.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D483B4420239B4C00E1428C /* BasicOfflinePlayback */ = {
+			isa = PBXGroup;
+			children = (
+				5DC78C6E20239D21007BD016 /* Models */,
+				5DC78C6D20239D12007BD016 /* Views */,
+				5DC78C6920239CC6007BD016 /* Controllers */,
+				5DC78C6F20239D3B007BD016 /* Utils */,
+				5DC78C5B20239C9E007BD016 /* AppDelegate.swift */,
+				5DC78C5D20239C9E007BD016 /* Assets.xcassets */,
+				5DC78C7320239F00007BD016 /* LaunchScreen.storyboard */,
+				5DC78C7520239F00007BD016 /* Main.storyboard */,
+				5DC78C5720239C9D007BD016 /* Info.plist */,
+				5DC78C5120239C9C007BD016 /* BasicOfflinePlayback-Bridging-Header.h */,
+			);
+			path = BasicOfflinePlayback;
+			sourceTree = "<group>";
+		};
+		5DC78C6920239CC6007BD016 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5DC78C5920239C9D007BD016 /* PlaybackViewController.swift */,
+				5DC78C5620239C9D007BD016 /* SampleDetailViewController.swift */,
+				5DC78C5320239C9D007BD016 /* SamplesTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		5DC78C6D20239D12007BD016 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5DC78C5520239C9D007BD016 /* ItemCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		5DC78C6E20239D21007BD016 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5DC78C5A20239C9E007BD016 /* SamplesViewModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		5DC78C6F20239D3B007BD016 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5DC78C5420239C9D007BD016 /* Reachability.h */,
+				5DC78C5C20239C9E007BD016 /* Reachability.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		B6627A37ED97165F82BC78AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DC78C7920239F6D007BD016 /* SystemConfiguration.framework */,
+				AD65DFDF8A18BDD8FFE3BBD1 /* Pods_BasicOfflinePlayback.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D483B4120239B4C00E1428C /* BasicOfflinePlayback */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D483B5420239B4C00E1428C /* Build configuration list for PBXNativeTarget "BasicOfflinePlayback" */;
+			buildPhases = (
+				5F2E7C1B877B4B3060D60256 /* [CP] Check Pods Manifest.lock */,
+				5D483B3E20239B4C00E1428C /* Sources */,
+				5D483B3F20239B4C00E1428C /* Frameworks */,
+				5D483B4020239B4C00E1428C /* Resources */,
+				FFDF4227FB23D5AB33027C9B /* [CP] Embed Pods Frameworks */,
+				7F89AA23035EE2214CE893DF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BasicOfflinePlayback;
+			productName = BasicOfflinePlayback;
+			productReference = 5D483B4220239B4C00E1428C /* BasicOfflinePlayback.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D483B3A20239B4C00E1428C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Bitmovin;
+				TargetAttributes = {
+					5D483B4120239B4C00E1428C = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5D483B3D20239B4C00E1428C /* Build configuration list for PBXProject "BasicOfflinePlayback" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5D483B3920239B4B00E1428C;
+			productRefGroup = 5D483B4320239B4C00E1428C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D483B4120239B4C00E1428C /* BasicOfflinePlayback */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D483B4020239B4C00E1428C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DC78C7720239F00007BD016 /* LaunchScreen.storyboard in Resources */,
+				5DC78C6720239C9E007BD016 /* Assets.xcassets in Resources */,
+				5DC78C7820239F00007BD016 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F2E7C1B877B4B3060D60256 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BasicOfflinePlayback-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F89AA23035EE2214CE893DF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-BasicOfflinePlayback/Pods-BasicOfflinePlayback-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFDF4227FB23D5AB33027C9B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../Pods/Target Support Files/Pods-BasicOfflinePlayback/Pods-BasicOfflinePlayback-frameworks.sh",
+				"${PODS_ROOT}/BitmovinPlayer/iOS/BitmovinPlayer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitmovinPlayer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-BasicOfflinePlayback/Pods-BasicOfflinePlayback-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D483B3E20239B4C00E1428C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DC78C6520239C9E007BD016 /* AppDelegate.swift in Sources */,
+				5DC78C6020239C9E007BD016 /* ItemCell.swift in Sources */,
+				5DC78C6320239C9E007BD016 /* PlaybackViewController.swift in Sources */,
+				5DC78C6620239C9E007BD016 /* Reachability.m in Sources */,
+				5DC78C6120239C9E007BD016 /* SampleDetailViewController.swift in Sources */,
+				5DC78C6420239C9E007BD016 /* SamplesViewModel.swift in Sources */,
+				5DC78C5F20239C9E007BD016 /* SamplesTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5DC78C7320239F00007BD016 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DC78C7420239F00007BD016 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5DC78C7520239F00007BD016 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DC78C7620239F00007BD016 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D483B5220239B4C00E1428C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5D483B5320239B4C00E1428C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D483B5520239B4C00E1428C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A0EFB91E8D95F4F17EA2C9A /* Pods-BasicOfflinePlayback.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = BasicOfflinePlayback/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitmovin.player.samples.offline.basic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BasicOfflinePlayback/BasicOfflinePlayback-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5D483B5620239B4C00E1428C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B611B0D00A735E76935D7376 /* Pods-BasicOfflinePlayback.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = BasicOfflinePlayback/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitmovin.player.samples.offline.basic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BasicOfflinePlayback/BasicOfflinePlayback-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D483B3D20239B4C00E1428C /* Build configuration list for PBXProject "BasicOfflinePlayback" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D483B5220239B4C00E1428C /* Debug */,
+				5D483B5320239B4C00E1428C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D483B5420239B4C00E1428C /* Build configuration list for PBXNativeTarget "BasicOfflinePlayback" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D483B5520239B4C00E1428C /* Debug */,
+				5D483B5620239B4C00E1428C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D483B3A20239B4C00E1428C /* Project object */;
+}
