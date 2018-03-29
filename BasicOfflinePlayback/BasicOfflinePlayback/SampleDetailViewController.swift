@@ -18,6 +18,8 @@ final class SampleDetailViewController: UIViewController {
     @IBOutlet weak var itemPercentageLabel: UILabel!
     @IBOutlet weak var downloadButton: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
+    @IBOutlet weak var pauseButton: UIButton!
+    @IBOutlet weak var resumeButton: UIButton!
     @IBOutlet weak var deleteButton: UIButton!
     @IBOutlet weak var playButton: UIButton!
 
@@ -48,6 +50,8 @@ final class SampleDetailViewController: UIViewController {
 
         offlineManager.add(listener: self, for: sourceItem)
         downloadButton.addTarget(self, action: #selector(SampleDetailViewController.downloadAction), for: .touchUpInside)
+        pauseButton.addTarget(self, action: #selector(SampleDetailViewController.pauseAction), for: .touchUpInside)
+        resumeButton.addTarget(self, action: #selector(SampleDetailViewController.resumeAction), for: .touchUpInside)
         cancelButton.addTarget(self, action: #selector(SampleDetailViewController.cancelAction), for: .touchUpInside)
         deleteButton.addTarget(self, action: #selector(SampleDetailViewController.deleteAction), for: .touchUpInside)
     }
@@ -70,6 +74,22 @@ final class SampleDetailViewController: UIViewController {
         }
         offlineManager.download(sourceItem: sourceItem)
         setViewState(.downloading)
+    }
+
+    @objc func pauseAction(sender: UIButton) {
+        guard offlineManager.offlineState(for: sourceItem) == .downloading else {
+            return
+        }
+        print("[SampleDetailViewController] Pausing downloads")
+        offlineManager.suspendDownload(for: sourceItem)
+    }
+
+    @objc func resumeAction(sender: UIButton) {
+        guard offlineManager.offlineState(for: sourceItem) == .suspended else {
+            return
+        }
+        print("[SampleDetailViewController] Resuming downloads")
+        offlineManager.resumeDownload(for: sourceItem)
     }
 
     @objc func cancelAction(sender: UIButton) {
@@ -109,6 +129,8 @@ final class SampleDetailViewController: UIViewController {
         switch viewState {
         case .downloaded:
             downloadButton.isHidden = true
+            pauseButton.isHidden = true
+            resumeButton.isHidden = true
             cancelButton.isHidden = true
             deleteButton.isHidden = false
             itemStatusLabel.text = "Downloaded"
@@ -116,6 +138,8 @@ final class SampleDetailViewController: UIViewController {
 
         case .downloading:
             downloadButton.isHidden = true
+            pauseButton.isHidden = false
+            resumeButton.isHidden = true
             cancelButton.isHidden = false
             deleteButton.isHidden = true
             itemStatusLabel.text = "Downloading:"
@@ -123,9 +147,29 @@ final class SampleDetailViewController: UIViewController {
 
         case .notDownloaded:
             downloadButton.isHidden = false
+            pauseButton.isHidden = true
+            resumeButton.isHidden = true
             cancelButton.isHidden = true
             deleteButton.isHidden = true
             itemStatusLabel.text = "Not downloaded"
+            itemPercentageLabel.text = ""
+
+        case .suspended:
+            downloadButton.isHidden = true
+            pauseButton.isHidden = true
+            resumeButton.isHidden = false
+            cancelButton.isHidden = true
+            deleteButton.isHidden = true
+            itemStatusLabel.text = "Suspended"
+            itemPercentageLabel.text = ""
+
+        case .canceling:
+            downloadButton.isHidden = true
+            pauseButton.isHidden = true
+            resumeButton.isHidden = true
+            cancelButton.isHidden = true
+            deleteButton.isHidden = true
+            itemStatusLabel.text = "Canceling"
             itemPercentageLabel.text = ""
         }
     }
@@ -153,5 +197,20 @@ extension SampleDetailViewController: OfflineManagerListener {
         print("[SampleDetailViewController] Progress")
         // update ui with current progress
         setViewState(.downloading, withProgress: progress)
+    }
+
+    func offlineManagerDidSuspendDownload(_ offlineManager: OfflineManager) {
+        print("[SampleDetailViewController] Suspended")
+        setViewState(.suspended)
+    }
+
+    func offlineManager(_ offlineManager: OfflineManager, didResumeDownloadWithProgress progress: Double) {
+        print("[SampleDetailViewController] Resumed")
+        setViewState(.downloading, withProgress: progress)
+    }
+
+    func offlineManagerDidCancelDownload(_ offlineManager: OfflineManager) {
+        print("[SampleDetailViewController] Cancelled")
+        setViewState(.notDownloaded)
     }
 }

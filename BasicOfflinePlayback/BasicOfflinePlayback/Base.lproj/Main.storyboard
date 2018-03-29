@@ -144,7 +144,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="q8P-DM-tQH">
-                                <rect key="frame" x="30" y="173.5" width="222" height="30"/>
+                                <rect key="frame" x="30" y="173.5" width="339" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="et3-yC-2tk">
                                         <rect key="frame" x="0.0" y="0.0" width="69" height="30"/>
@@ -154,12 +154,20 @@
                                         <rect key="frame" x="79" y="0.0" width="48" height="30"/>
                                         <state key="normal" title="Cancel"/>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7G-7s-G8I">
+                                        <rect key="frame" x="137" y="0.0" width="42" height="30"/>
+                                        <state key="normal" title="Pause"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9th-HC-r4O">
+                                        <rect key="frame" x="189" y="0.0" width="55" height="30"/>
+                                        <state key="normal" title="Resume"/>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TH5-Fe-w9K">
-                                        <rect key="frame" x="137" y="0.0" width="45" height="30"/>
+                                        <rect key="frame" x="254" y="0.0" width="45" height="30"/>
                                         <state key="normal" title="Delete"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqC-A0-SlM">
-                                        <rect key="frame" x="192" y="0.0" width="30" height="30"/>
+                                        <rect key="frame" x="309" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="Play"/>
                                         <connections>
                                             <segue destination="tAf-Li-cxV" kind="show" id="4rD-bg-Iez"/>
@@ -190,7 +198,9 @@
                         <outlet property="itemNameLabel" destination="Uqh-qp-ggE" id="ojS-Bn-ksF"/>
                         <outlet property="itemPercentageLabel" destination="fyf-TS-hgF" id="IwM-vc-lFY"/>
                         <outlet property="itemStatusLabel" destination="5c5-sb-ETm" id="0bd-qF-BX3"/>
+                        <outlet property="pauseButton" destination="a7G-7s-G8I" id="Ati-ng-OZh"/>
                         <outlet property="playButton" destination="gqC-A0-SlM" id="hvM-ff-xqX"/>
+                        <outlet property="resumeButton" destination="9th-HC-r4O" id="QMO-KQ-Cog"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xip-E7-STx" userLabel="First Responder" sceneMemberID="firstResponder"/>

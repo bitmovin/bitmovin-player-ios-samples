@@ -43,7 +43,7 @@ final class PlaybackViewController: UIViewController {
 
         // Check the offline state of the sourceItem to determine which action to take here
         switch offlineManager.offlineState(for: sourceItem) {
-        case .downloaded, .downloading:
+        case .downloaded, .downloading, .suspended:
             // When device is offline, we need to check if the asset can be played offline
             if reach.currentReachabilityStatus() == NetworkStatus.NotReachable {
                 /**
@@ -69,7 +69,7 @@ final class PlaybackViewController: UIViewController {
                 }
             }
 
-        case .notDownloaded:
+        case .notDownloaded, .canceling:
             // When the sourceItem is not available offline, we have to check if we have network connectivity before
             // continuing
             guard reach.currentReachabilityStatus() != NetworkStatus.NotReachable else {
