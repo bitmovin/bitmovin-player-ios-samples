@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:BackgroundPlayback/BackgroundPlayback.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:BasicPlaylist/BasicPlaylist.xcodeproj">
    </FileRef>
    <FileRef

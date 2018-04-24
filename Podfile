@@ -70,3 +70,9 @@ target 'BasicOfflinePlayback' do
     use_frameworks!
     pod 'BitmovinPlayer', git: 'https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod.git', tag: '2.8.0'
 end
+
+target 'BackgroundPlayback' do
+    project 'BackgroundPlayback/BackgroundPlayback.xcodeproj'
+    use_frameworks!
+    pod 'BitmovinPlayer', git: 'https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod.git', tag: '2.8.0'
+end

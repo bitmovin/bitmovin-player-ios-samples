@@ -12,6 +12,7 @@ This repository contains sample apps which are using the Bitmovin Player iOS SDK
 +   **SystemUI** Shows how the system UI can be used instead of Bitmovin's default UI.
 +   **BasicPlaylist** Shows how to implement queueing / playlists.
 +   **BasicOfflinePlayback** Shows how the Bitmovin Player can be used to download protected and unprotected content for offline playback.
++   **BackgroundPlayback** Shows how background playback can be implemented for the Bitmovin Player.
 
 ## Using The Sample Apps
 Please execute `pod install` to properly initialize the workspace. In each sample app you also have to add your Bitmovin Player license key to `Info.plist` file as `BitmovinPlayerLicenseKey`.
@@ -29,6 +30,7 @@ In addition to that you have to log in to [https://dashboard.bitmovin.com](https
     com.bitmovin.player.samples.systemui
     com.bitmovin.player.samples.playlist.basic
     com.bitmovin.player.samples.offline.basic
+    com.bitmovin.player.samples.playback.background
 
 ## Using The Bitmovin Player iOS SDK
 When you want to develop an own iOS application using the Bitmovin Player iOS SDK read through the following steps.
