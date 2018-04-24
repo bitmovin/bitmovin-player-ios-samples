@@ -21,6 +21,13 @@ target 'BasicCasting' do
     pod 'google-cast-sdk', '4.1.0'
 end
 
+target 'AdvancedCasting' do
+    project 'AdvancedCasting/AdvancedCasting.xcodeproj'
+    use_frameworks!
+    pod 'BitmovinPlayer', git: 'https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod.git', tag: '2.8.0'
+    pod 'google-cast-sdk', '4.1.0'
+end
+
 target 'BasicMetadataHandling' do
     project 'BasicMetadataHandling/BasicMetadataHandling.xcodeproj'
     use_frameworks!
