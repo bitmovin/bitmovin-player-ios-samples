@@ -100,7 +100,6 @@
 				AC773E7C1F061017005C3B0E /* Frameworks */,
 				AC773E7D1F061017005C3B0E /* Resources */,
 				D12CDB5677B5E764DC72D40A /* [CP] Embed Pods Frameworks */,
-				D736678206CA94714A0B706B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,21 +192,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-BasicDRMPlayback/Pods-BasicDRMPlayback-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D736678206CA94714A0B706B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-BasicDRMPlayback/Pods-BasicDRMPlayback-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

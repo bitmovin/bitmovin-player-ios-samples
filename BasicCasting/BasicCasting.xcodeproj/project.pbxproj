@@ -100,7 +100,6 @@
 				AC773EB61F0622DC005C3B0E /* Frameworks */,
 				AC773EB71F0622DC005C3B0E /* Resources */,
 				694913E4614CBA79CCA20B3C /* [CP] Embed Pods Frameworks */,
-				C62EF1233743F7FEBC532791 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,7 +166,7 @@
 			inputPaths = (
 				"${SRCROOT}/../Pods/Target Support Files/Pods-BasicCasting/Pods-BasicCasting-frameworks.sh",
 				"${PODS_ROOT}/BitmovinPlayer/iOS/BitmovinPlayer.framework",
-				"${PODS_ROOT}/google-cast-sdk/GoogleCastSDK-Public-3.5.0-Release/GoogleCast.framework",
+				"${PODS_ROOT}/google-cast-sdk/GoogleCastSDK-ios-4.1.0/GoogleCast.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -177,21 +176,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-BasicCasting/Pods-BasicCasting-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C62EF1233743F7FEBC532791 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-BasicCasting/Pods-BasicCasting-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E96B75268799F000B6FFF2AF /* [CP] Check Pods Manifest.lock */ = {

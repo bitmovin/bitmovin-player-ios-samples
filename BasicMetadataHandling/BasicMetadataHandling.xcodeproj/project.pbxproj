@@ -103,7 +103,6 @@
 				AC094ABC1F3CD4C100EF6F94 /* Frameworks */,
 				AC094ABD1F3CD4C100EF6F94 /* Resources */,
 				31B56EBBB55089EEECEAFBB4 /* [CP] Embed Pods Frameworks */,
-				387D0911D37E9A4D22387B94 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -178,21 +177,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-BasicMetadataHandling/Pods-BasicMetadataHandling-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		387D0911D37E9A4D22387B94 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-BasicMetadataHandling/Pods-BasicMetadataHandling-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4D79EE60D2BD8155A5D99892 /* [CP] Check Pods Manifest.lock */ = {

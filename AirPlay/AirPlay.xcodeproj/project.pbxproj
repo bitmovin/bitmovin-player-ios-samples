@@ -103,7 +103,6 @@
 				AC70F8991F829C78003F7AB2 /* Frameworks */,
 				AC70F89A1F829C78003F7AB2 /* Resources */,
 				B3B25BADE913F19E235E977F /* [CP] Embed Pods Frameworks */,
-				FC4869B720C3D6E6234D5FD7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,21 +195,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-AirPlay/Pods-AirPlay-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FC4869B720C3D6E6234D5FD7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-AirPlay/Pods-AirPlay-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

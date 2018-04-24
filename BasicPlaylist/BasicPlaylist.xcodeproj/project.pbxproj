@@ -100,7 +100,6 @@
 				ACCE9F161FC5D8B900EA5FB1 /* Frameworks */,
 				ACCE9F171FC5D8B900EA5FB1 /* Resources */,
 				B4E7987A6F554360BA39B7C0 /* [CP] Embed Pods Frameworks */,
-				F1B4F40A018E2F2AED68CB5D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,21 +192,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-BasicPlaylist/Pods-BasicPlaylist-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F1B4F40A018E2F2AED68CB5D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-BasicPlaylist/Pods-BasicPlaylist-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
