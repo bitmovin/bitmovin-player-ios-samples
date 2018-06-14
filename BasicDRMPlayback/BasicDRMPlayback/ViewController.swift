@@ -69,7 +69,10 @@ class ViewController: UIViewController {
             
             // Create player view and pass the player instance to it
             let playerView = BMPBitmovinPlayerView(player: player, frame: .zero)
-            
+
+            // Listen to player events
+            player.add(listener: self)
+
             playerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
             playerView.frame = view.bounds
             
@@ -80,18 +83,6 @@ class ViewController: UIViewController {
         } catch {
             print("Configuration error: \(error)")
         }
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        // Add ViewController as event listener
-        player?.add(listener: self)
-        super.viewWillAppear(animated)
-    }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        // Remove ViewController as event listener
-        player?.remove(listener: self)
-        super.viewWillDisappear(animated)
     }
 }
 

@@ -43,8 +43,8 @@ final class ViewController: UIViewController {
         
         // Create player view and pass the player instance to it
         let playerView = BMPBitmovinPlayerView(player: player, frame: .zero)
-        
-        // Add ViewController as player event listener
+
+        // Listen to player events
         player.add(listener: self)
         
         playerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]

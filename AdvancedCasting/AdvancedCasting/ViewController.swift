@@ -74,10 +74,12 @@ final class ViewController: UIViewController {
         
         // Create player based on player configuration
         let player = BitmovinPlayer(configuration: config)
-        player.add(listener: self)
         
         // Create player view and pass the player instance to it
         let playerView = BMPBitmovinPlayerView(player: player, frame: .zero)
+
+        // Listen to player events
+        player.add(listener: self)
         
         playerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         playerView.frame = view.bounds

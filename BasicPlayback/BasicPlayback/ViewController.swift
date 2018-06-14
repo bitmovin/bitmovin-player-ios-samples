@@ -10,18 +10,18 @@ import UIKit
 import BitmovinPlayer
 
 final class ViewController: UIViewController {
-    
+
     var player: BitmovinPlayer?
-    
+
     deinit {
         player?.destroy()
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         self.view.backgroundColor = .black
-        
+
         // Define needed resources
         guard let streamUrl = URL(string: "https://bitmovin-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8"),
               let posterUrl = URL(string: "https://bitmovin-a.akamaihd.net/content/MI201109210084_1/poster.jpg") else {
@@ -43,6 +43,9 @@ final class ViewController: UIViewController {
             // Create player view and pass the player instance to it
             let playerView = BMPBitmovinPlayerView(player: player, frame: .zero)
 
+            // Listen to player events
+            player.add(listener: self)
+
             playerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
             playerView.frame = view.bounds
 
@@ -53,18 +56,6 @@ final class ViewController: UIViewController {
         } catch {
             print("Configuration error: \(error)")
         }
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        // Add ViewController as event listener
-        player?.add(listener: self)
-        super.viewWillAppear(animated)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        // Remove ViewController as event listener
-        player?.remove(listener: self)
-        super.viewWillDisappear(animated)
     }
 }
 
