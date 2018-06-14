@@ -23,7 +23,8 @@ final class ViewController: UIViewController {
         self.view.backgroundColor = .black
         
         // Define needed resources
-        guard let streamUrl = URL(string: "https://bitmovin-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8") else {
+        guard let streamUrl = URL(string: "https://bitmovin-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8"),
+              let posterUrl = URL(string: "https://bitmovin-a.akamaihd.net/content/MI201109210084_1/poster.jpg") else {
             return
         }
 
@@ -32,6 +33,9 @@ final class ViewController: UIViewController {
 
         do {
             try config.setSourceItem(url: streamUrl)
+
+            // Set a poster image
+            config.sourceItem?.posterSource = posterUrl
 
             // Create player based on player configuration
             let player = BitmovinPlayer(configuration: config)
