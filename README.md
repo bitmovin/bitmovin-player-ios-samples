@@ -42,7 +42,7 @@ To add the SDK as a dependency to your project, you have two options: Using Coco
 
 
 #### Using CocoaPods
-Add `pod 'BitmovinPlayer', git: 'https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod.git', tag: '2.11.0'` to your Podfile. After that, install the pod using `pod install`. See the `Podfile` of this repository for a full example.
+Add `pod 'BitmovinPlayer', git: 'https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod.git', tag: '2.11.1'` to your Podfile. After that, install the pod using `pod install`. See the `Podfile` of this repository for a full example.
 
 #### Adding the SDK Directly
 +   When using XCode, go to the `General` settings page and add the SDK bundle (`BitmovinPlayer.framework`) under `Linked Frameworks and Libraries`. The SDK bundle can be downloaded from the [release page of the GitHub repository](https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod/releases).
