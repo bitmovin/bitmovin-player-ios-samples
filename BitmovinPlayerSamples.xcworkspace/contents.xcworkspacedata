@@ -32,6 +32,9 @@
       location = "group:BasicPlayback/BasicPlayback.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:BasicPlaybackObjectiveC/BasicPlaybackObjectiveC.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:BasicDRMPlayback/BasicDRMPlayback.xcodeproj">
    </FileRef>
    <FileRef

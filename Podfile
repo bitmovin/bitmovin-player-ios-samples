@@ -8,6 +8,12 @@ target 'BasicPlayback' do
     pod 'BitmovinPlayer', git: 'https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod.git', tag: '2.11.1'
 end
 
+target 'BasicPlaybackObjectiveC' do
+    project 'BasicPlaybackObjectiveC/BasicPlaybackObjectiveC.xcodeproj'
+    use_frameworks!
+    pod 'BitmovinPlayer', git: 'https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod.git', tag: '2.11.1'
+end
+
 target 'BasicDRMPlayback' do
     project 'BasicDRMPlayback/BasicDRMPlayback.xcodeproj'
     use_frameworks!
