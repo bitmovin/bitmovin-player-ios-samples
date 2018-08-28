@@ -33,6 +33,7 @@ In addition to that you have to log in to [https://dashboard.bitmovin.com](https
     com.bitmovin.player.samples.offline.basic
     com.bitmovin.player.samples.playback.background
     com.bitmovin.player.samples.casting.advanced
+	com.bitmovin.player.samples.fullscreen.basic
 
 ## Using The Bitmovin Player iOS SDK
 When you want to develop an own iOS application using the Bitmovin Player iOS SDK read through the following steps.
