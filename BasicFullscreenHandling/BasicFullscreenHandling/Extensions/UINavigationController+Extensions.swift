@@ -1,11 +1,10 @@
 //
-//  UINavigationController+Extensions.swift
-//  BasicFullscreenHandling
+// Bitmovin Player iOS SDK
+// Copyright (C) 2018, Bitmovin GmbH, All Rights Reserved
 //
-//  Created by Lorenz Schmoliner on 21.08.18.
-//  Copyright © 2018 Bitmovin. All rights reserved.
+// This source code and its use and distribution, is subject to the terms
+// and conditions of the applicable license agreement.
 //
-
 import UIKit
 
 extension UINavigationController {
