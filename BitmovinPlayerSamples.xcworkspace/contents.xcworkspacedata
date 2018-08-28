@@ -46,4 +46,7 @@
    <FileRef
       location = "group:AdvancedCasting/AdvancedCasting.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:BasicFullscreenHandling/BasicFullscreenHandling.xcodeproj">
+   </FileRef>
 </Workspace>

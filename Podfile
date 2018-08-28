@@ -89,3 +89,9 @@ target 'BackgroundPlayback' do
     use_frameworks!
     pod 'BitmovinPlayer', git: 'https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod.git', tag: '2.11.1'
 end
+
+target 'BasicFullscreenHandling' do
+    project 'BasicFullscreenHandling/BasicFullscreenHandling.xcodeproj'
+    use_frameworks!
+    pod 'BitmovinPlayer', git: 'https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod.git', tag: '2.11.1'
+end
