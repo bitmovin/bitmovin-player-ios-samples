@@ -14,7 +14,7 @@ This repository contains sample apps which are using the Bitmovin Player iOS SDK
 +   **BasicOfflinePlayback** Shows how the Bitmovin Player can be used to download protected and unprotected content for offline playback.
 +   **BackgroundPlayback** Shows how background playback can be implemented for the Bitmovin Player.
 +   **AdvancedCasting** Shows how to implement advanced casting use cases.
-+   **BasicFullscreenHandling** Shows how to use the BitmovinFullscreenHandler-interface to implement basic fullscreen handling.
++   **BasicFullscreenHandling** Shows how to use the `BitmovinFullscreenHandler`-protocol to implement basic fullscreen handling.
 
 ## Using The Sample Apps
 Please execute `pod install` to properly initialize the workspace. In each sample app you also have to add your Bitmovin Player license key to `Info.plist` file as `BitmovinPlayerLicenseKey`.
