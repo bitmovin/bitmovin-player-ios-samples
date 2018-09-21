@@ -35,8 +35,8 @@ final class ViewController: UIViewController {
         }
         
         // Add playlist items based on the stream URL's defined above
-        playlist.append(PlaylistItem(url: stream1, title: "Art of Motion"))
-        playlist.append(PlaylistItem(url: stream2, title: "Sintel"))
+        playlist.append(PlaylistItem(url: stream1, title: "Art of Motion", type: .HLS))
+        playlist.append(PlaylistItem(url: stream2, title: "Sintel", type: .HLS))
         
         // Create player based with a default configuration
         let player = BitmovinPlayer()
@@ -69,17 +69,29 @@ final class ViewController: UIViewController {
             // fetch the next item to play from the playlist
             let itemToPlay = playlist[nextPlaylistItem]
             nextPlaylistItem += 1
-            
-            // Create a source item based on the playlist item and load it
-            let sourceItem = SourceItem(url: itemToPlay.url)
-            sourceItem.itemTitle = itemToPlay.title
-            
-            // Create a source configuration and add the sourceItem
-            let sourceConfig = SourceConfiguration()
-            sourceConfig.addSourceItem(item: sourceItem)
-            
-            // load the new source configuration
-            player?.load(sourceConfiguration: sourceConfig)
+
+            // Create sourceItem from type
+            var sourceItem: SourceItem?
+
+            if (itemToPlay.type == .HLS) {
+                sourceItem = SourceItem(hlsSource: HLSSource(url: itemToPlay.url))
+            } else if (itemToPlay.type == .progressive) {
+                sourceItem = SourceItem(progressiveSource: ProgressiveSource(url: itemToPlay.url))
+            } else {
+                print("Source type not supported")
+            }
+
+            if let source = sourceItem {
+                // Set title
+                source.itemTitle = itemToPlay.title
+
+                // Create a source configuration and add the sourceItem
+                let sourceConfig = SourceConfiguration()
+                sourceConfig.addSourceItem(item: source)
+
+                // load the new source configuration
+                player?.load(sourceConfiguration: sourceConfig)
+            }
         }
     }
 }
@@ -123,9 +135,11 @@ extension ViewController: PlayerListener {
 struct PlaylistItem {
     let url: URL
     let title: String
+    let type: BMPMediaSourceType
     
-    init(url: URL, title: String) {
+    init(url: URL, title: String, type: BMPMediaSourceType) {
         self.url = url
         self.title = title
+        self.type = type
     }
 }

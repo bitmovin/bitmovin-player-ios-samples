@@ -27,7 +27,9 @@ extension SamplesTableViewController {
         }
 
         private func createArtOfMotionSourceItem() -> SourceItem {
-            let sourceItem = SourceItem(url: URL(string: "https://bitmovin-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8")!)
+            let sourceUrl = URL(string: "https://bitmovin-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8")!
+            let hlsSource = HLSSource(url: sourceUrl)
+            let sourceItem = SourceItem(hlsSource: hlsSource)
             sourceItem.itemTitle = "Art of Motion"
             sourceItem.itemDescription = "Single audio track"
 
@@ -35,7 +37,9 @@ extension SamplesTableViewController {
         }
 
         private func createSintelSourceItem() -> SourceItem {
-            let sourceItem = SourceItem(url: URL(string: "http://bitmovin-a.akamaihd.net/content/sintel/hls/playlist.m3u8")!)
+            let sourceUrl = URL(string: "http://bitmovin-a.akamaihd.net/content/sintel/hls/playlist.m3u8")!
+            let hlsSource = HLSSource(url: sourceUrl)
+            let sourceItem = SourceItem(hlsSource: hlsSource)
             sourceItem.itemTitle = "Sintel"
             sourceItem.itemDescription = "Multiple subtitle languages, Multiple audio tracks"
 
@@ -43,14 +47,18 @@ extension SamplesTableViewController {
         }
 
         private func createAppleTestSequenceSimpleSourceItem() -> SourceItem {
-            let sourceItem = SourceItem(url: URL(string: "https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8")!)
+            let sourceUrl = URL(string: "https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8")!
+            let hlsSource = HLSSource(url: sourceUrl)
+            let sourceItem = SourceItem(hlsSource: hlsSource)
             sourceItem.itemTitle = "Bipbop Simple"
             sourceItem.itemDescription = "Single audio track"
             return sourceItem
         }
 
         private func createAppleTestSequenceAdvancedSourceItem() -> SourceItem {
-            let sourceItem = SourceItem(url: URL(string: "https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/master.m3u8")!)
+            let sourceUrl = URL(string: "https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/master.m3u8")!
+            let hlsSource = HLSSource(url: sourceUrl)
+            let sourceItem = SourceItem(hlsSource: hlsSource )
             sourceItem.itemTitle = "Bipbop Advanced"
             sourceItem.itemDescription = "Single audio track, multiple subtitles"
             return sourceItem

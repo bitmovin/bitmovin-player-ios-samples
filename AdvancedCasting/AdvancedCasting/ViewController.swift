@@ -36,9 +36,12 @@ final class ViewController: UIViewController {
         
         // Create player configuration
         let config = PlayerConfiguration()
-        
+
+        // Create HLSSource as an HLS stream is provided
+        let hlsSource = HLSSource(url: streamUrl)
+
         // Create a SourceItem
-        let sourceItem = SourceItem(url: streamUrl)
+        let sourceItem = SourceItem(hlsSource: hlsSource)
         
         // Set title and poster image
         sourceItem.itemTitle = "Demo Stream"
@@ -61,7 +64,10 @@ final class ViewController: UIViewController {
                     return nil
                 }
 
-                let castSource = SourceItem(url: streamUrl)
+                // Create DASHSource as a DASH stream is used for casting
+                let dashSource = DASHSource(url: streamUrl)
+
+                let castSource = SourceItem(dashSource: dashSource)
                 castSource.itemTitle = sourceItem?.itemTitle
                 castSource.itemDescription = sourceItem?.itemDescription
 

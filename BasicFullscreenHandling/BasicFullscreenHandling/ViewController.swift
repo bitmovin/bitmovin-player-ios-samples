@@ -58,8 +58,11 @@ final class ViewController: UIViewController {
         // Create player configuration
         let config = PlayerConfiguration()
 
+        // Create HLS source
+        let hlsSource = HLSSource(url: streamUrl)
+
         // Create source item
-        let sourceItem = SourceItem(url: streamUrl)
+        let sourceItem = SourceItem(hlsSource: hlsSource)
 
         // Set a poster image
         sourceItem.posterSource = posterUrl
