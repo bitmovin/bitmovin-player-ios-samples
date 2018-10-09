@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E57E8E9216C891300550E9A /* BasicCasting.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BasicCasting.entitlements; sourceTree = "<group>"; };
 		AC773EB91F0622DC005C3B0E /* BasicCasting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicCasting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC773EBC1F0622DC005C3B0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC773EBE1F0622DC005C3B0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +71,7 @@
 		AC773EBB1F0622DC005C3B0E /* BasicCasting */ = {
 			isa = PBXGroup;
 			children = (
+				6E57E8E9216C891300550E9A /* BasicCasting.entitlements */,
 				AC773EBC1F0622DC005C3B0E /* AppDelegate.swift */,
 				AC773EBE1F0622DC005C3B0E /* ViewController.swift */,
 				AC773EC01F0622DC005C3B0E /* Main.storyboard */,
@@ -124,6 +126,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.AccessWiFi = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -347,6 +354,7 @@
 			baseConfigurationReference = D02F29924D2B391899D2A679 /* Pods-BasicCasting.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BasicCasting/BasicCasting.entitlements;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BasicCasting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -362,6 +370,7 @@
 			baseConfigurationReference = B6D037B86044560C5DA1F75E /* Pods-BasicCasting.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BasicCasting/BasicCasting.entitlements;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BasicCasting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

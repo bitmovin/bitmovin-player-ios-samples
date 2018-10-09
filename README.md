@@ -44,7 +44,7 @@ To add the SDK as a dependency to your project, you have two options: Using Coco
 
 
 #### Using CocoaPods
-Add `pod 'BitmovinPlayer', git: 'https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod.git', tag: '2.12.0'` to your Podfile. After that, install the pod using `pod install`. See the `Podfile` of this repository for a full example.
+Add `pod 'BitmovinPlayer', git: 'https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod.git', tag: '2.13.0'` to your Podfile. After that, install the pod using `pod install`. See the `Podfile` of this repository for a full example.
 
 #### Adding the SDK Directly
 +   When using XCode, go to the `General` settings page and add the SDK bundle (`BitmovinPlayer.framework`) under `Linked Frameworks and Libraries`. The SDK bundle can be downloaded from the [release page of the GitHub repository](https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod/releases).
@@ -58,6 +58,8 @@ Add `pod 'BitmovinPlayer', git: 'https://github.com/bitmovin/bitmovin-player-ios
 +   Add the Bundle identifier of the iOS application which is using the SDK as an allowed domain to the Bitmovin licensing backend. This can be also done under `Player -> Licenses` when logging in into [https://dashboard.bitmovin.com](https://dashboard.bitmovin.com) with your account.
 
     When you do not do this, you'll get a license error when starting the application which contains the player.
+
++   If developing using Xcode 10 and targeting iOS 12 or higher, for some sample applications it’s necessary to create and use an App ID which has the app service `Access WiFi Information` enabled. This currently affects the `BasicCasting` and `AdvancedCasting` applications. 
 
 ## Documentation And Release Notes
 -   You can find the latest API documentation [here](https://bitmovin.com/ios-sdk-documentation/)
