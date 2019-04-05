@@ -56,8 +56,8 @@ final class SampleDetailViewController: UIViewController {
         deleteButton.addTarget(self, action: #selector(SampleDetailViewController.deleteAction), for: .touchUpInside)
     }
 
-    override func didMove(toParentViewController parent: UIViewController?) {
-        super.didMove(toParentViewController: parent)
+    override func didMove(toParent parent: UIViewController?) {
+        super.didMove(toParent: parent)
         if parent == nil {
             // Back button was pressed. Clean up code goes here.
             offlineManager.remove(listener: self, for: sourceItem)
@@ -67,8 +67,8 @@ final class SampleDetailViewController: UIViewController {
     @objc func downloadAction(sender: UIButton) {
         guard reach.currentReachabilityStatus() != NetworkStatus.NotReachable else {
             let message = "Cannot download asset because device seems to be offline"
-            let alert = UIAlertController(title: "Info", message: message, preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            let alert = UIAlertController(title: "Info", message: message, preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
             present(alert, animated: true)
             return
         }
@@ -116,8 +116,8 @@ final class SampleDetailViewController: UIViewController {
     }
 
     func finishWithError(title: String, message: String) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
-        let defaultAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(_: UIAlertAction) -> Void in
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        let defaultAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {(_: UIAlertAction) -> Void in
             self.navigationController?.popViewController(animated: true)
             return
         })

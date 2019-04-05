@@ -91,15 +91,15 @@ final class PlaybackViewController: UIViewController {
         playerView.frame = playerViewContainer.bounds
 
         playerViewContainer.addSubview(playerView)
-        playerViewContainer.bringSubview(toFront: playerView)
+        playerViewContainer.bringSubviewToFront(playerView)
 
         self.playerView = playerView
         self.player = player
     }
 
     func finishWithError(title: String, message: String) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
-        let defaultAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(action: UIAlertAction) -> Void in
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        let defaultAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {(action: UIAlertAction) -> Void in
             self.navigationController?.popViewController(animated: true)
             return
         })
@@ -121,7 +121,7 @@ final class PlaybackViewController: UIViewController {
     }
 
     override var prefersStatusBarHidden: Bool {
-        return UIDeviceOrientationIsLandscape(UIDevice.current.orientation)
+        return UIDevice.current.orientation.isLandscape
     }
 
     override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {

@@ -55,7 +55,7 @@ final class ViewController: UIViewController {
             playerView.frame = view.bounds
 
             view.addSubview(playerView)
-            view.bringSubview(toFront: playerView)
+            view.bringSubviewToFront(playerView)
 
             self.player = player
 
@@ -86,10 +86,10 @@ final class ViewController: UIViewController {
         let audioSession = AVAudioSession.sharedInstance()
 
         // When AVAudioSessionCategoryPlayback is already active, we have nothing to do here
-        guard audioSession.category != AVAudioSessionCategoryPlayback else { return }
+        guard audioSession.category.rawValue != AVAudioSession.Category.playback.rawValue else { return }
 
         do {
-            try audioSession.setCategory(AVAudioSessionCategoryPlayback)
+            try audioSession.setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode.moviePlayback)
         } catch {
             print("Setting category to AVAudioSessionCategoryPlayback failed.")
         }

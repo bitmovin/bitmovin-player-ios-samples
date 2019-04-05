@@ -51,7 +51,7 @@ final class ViewController: UIViewController {
         playerView.frame = view.bounds
         
         view.addSubview(playerView)
-        view.bringSubview(toFront: playerView)
+        view.bringSubviewToFront(playerView)
         
         // store the reference to the player
         self.player = player

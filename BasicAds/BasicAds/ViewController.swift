@@ -61,7 +61,7 @@ final class ViewController: UIViewController {
             playerView.frame = view.bounds
             
             view.addSubview(playerView)
-            view.bringSubview(toFront: playerView)
+            view.bringSubviewToFront(playerView)
             
             self.player = player
         } catch {
