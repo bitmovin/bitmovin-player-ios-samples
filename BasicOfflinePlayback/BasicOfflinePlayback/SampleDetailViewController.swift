@@ -213,4 +213,8 @@ extension SampleDetailViewController: OfflineManagerListener {
         print("[SampleDetailViewController] Cancelled")
         setViewState(.notDownloaded)
     }
+
+    func offlineManagerDidRenewOfflineLicense(_ offlineManager: OfflineManager) {
+        print("[SampleDetailViewController] License renewed")
+    }
 }
