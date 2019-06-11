@@ -217,4 +217,8 @@ extension SampleDetailViewController: OfflineManagerListener {
     func offlineManagerDidRenewOfflineLicense(_ offlineManager: OfflineManager) {
         print("[SampleDetailViewController] License renewed")
     }
+    
+    func offlineManagerOfflineLicenseDidExpire(_ offlineManager: OfflineManager) {
+        print("[SampleDetailViewController] License expired")
+    }
 }
