@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QTG-zh-PJJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QTG-zh-PJJ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -149,22 +148,37 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="et3-yC-2tk">
                                         <rect key="frame" x="0.0" y="0.0" width="69" height="30"/>
                                         <state key="normal" title="Download"/>
+                                        <connections>
+                                            <action selector="didTapDownloadButton" destination="NXn-zF-p3O" eventType="touchUpInside" id="l8L-6D-Ua7"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcm-BD-f4h">
                                         <rect key="frame" x="79" y="0.0" width="48" height="30"/>
                                         <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="didTapCancelButton" destination="NXn-zF-p3O" eventType="touchUpInside" id="wNS-8i-fbp"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7G-7s-G8I">
                                         <rect key="frame" x="137" y="0.0" width="42" height="30"/>
                                         <state key="normal" title="Pause"/>
+                                        <connections>
+                                            <action selector="didTapPauseButton" destination="NXn-zF-p3O" eventType="touchUpInside" id="3mV-In-vdQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9th-HC-r4O">
                                         <rect key="frame" x="189" y="0.0" width="55" height="30"/>
                                         <state key="normal" title="Resume"/>
+                                        <connections>
+                                            <action selector="didTapResumeButton" destination="NXn-zF-p3O" eventType="touchUpInside" id="96z-xT-O5a"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TH5-Fe-w9K">
                                         <rect key="frame" x="254" y="0.0" width="45" height="30"/>
                                         <state key="normal" title="Delete"/>
+                                        <connections>
+                                            <action selector="didTapDeleteButton" destination="NXn-zF-p3O" eventType="touchUpInside" id="vPd-36-0lR"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqC-A0-SlM">
                                         <rect key="frame" x="309" y="0.0" width="30" height="30"/>

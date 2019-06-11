@@ -13,19 +13,20 @@ import BitmovinPlayer
 
 final class SampleDetailViewController: UIViewController {
 
-    @IBOutlet weak var itemNameLabel: UILabel!
-    @IBOutlet weak var itemStatusLabel: UILabel!
-    @IBOutlet weak var itemPercentageLabel: UILabel!
-    @IBOutlet weak var downloadButton: UIButton!
-    @IBOutlet weak var cancelButton: UIButton!
-    @IBOutlet weak var pauseButton: UIButton!
-    @IBOutlet weak var resumeButton: UIButton!
-    @IBOutlet weak var deleteButton: UIButton!
-    @IBOutlet weak var playButton: UIButton!
+    @IBOutlet private weak var itemNameLabel: UILabel!
+    @IBOutlet private weak var itemStatusLabel: UILabel!
+    @IBOutlet private weak var itemPercentageLabel: UILabel!
+    @IBOutlet private weak var downloadButton: UIButton!
+    @IBOutlet private weak var cancelButton: UIButton!
+    @IBOutlet private weak var pauseButton: UIButton!
+    @IBOutlet private weak var resumeButton: UIButton!
+    @IBOutlet private weak var deleteButton: UIButton!
+    @IBOutlet private weak var playButton: UIButton!
 
     var sourceItem: SourceItem!
-    var reach: Reachability!
-    var offlineManager = OfflineManager.sharedInstance()
+    
+    private var reach: Reachability!
+    private var offlineManager = OfflineManager.sharedInstance()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,11 +50,6 @@ final class SampleDetailViewController: UIViewController {
         setViewState(offlineManager.offlineState(for: sourceItem))
 
         offlineManager.add(listener: self, for: sourceItem)
-        downloadButton.addTarget(self, action: #selector(SampleDetailViewController.downloadAction), for: .touchUpInside)
-        pauseButton.addTarget(self, action: #selector(SampleDetailViewController.pauseAction), for: .touchUpInside)
-        resumeButton.addTarget(self, action: #selector(SampleDetailViewController.resumeAction), for: .touchUpInside)
-        cancelButton.addTarget(self, action: #selector(SampleDetailViewController.cancelAction), for: .touchUpInside)
-        deleteButton.addTarget(self, action: #selector(SampleDetailViewController.deleteAction), for: .touchUpInside)
     }
 
     override func didMove(toParent parent: UIViewController?) {
@@ -64,7 +60,7 @@ final class SampleDetailViewController: UIViewController {
         }
     }
 
-    @objc func downloadAction(sender: UIButton) {
+    @IBAction private func didTapDownloadButton() {
         guard reach.currentReachabilityStatus() != NetworkStatus.NotReachable else {
             let message = "Cannot download asset because device seems to be offline"
             let alert = UIAlertController(title: "Info", message: message, preferredStyle: UIAlertController.Style.alert)
@@ -76,7 +72,7 @@ final class SampleDetailViewController: UIViewController {
         setViewState(.downloading)
     }
 
-    @objc func pauseAction(sender: UIButton) {
+    @IBAction private func didTapPauseButton() {
         guard offlineManager.offlineState(for: sourceItem) == .downloading else {
             return
         }
@@ -84,7 +80,7 @@ final class SampleDetailViewController: UIViewController {
         offlineManager.suspendDownload(for: sourceItem)
     }
 
-    @objc func resumeAction(sender: UIButton) {
+    @IBAction private func didTapResumeButton() {
         guard offlineManager.offlineState(for: sourceItem) == .suspended else {
             return
         }
@@ -92,7 +88,7 @@ final class SampleDetailViewController: UIViewController {
         offlineManager.resumeDownload(for: sourceItem)
     }
 
-    @objc func cancelAction(sender: UIButton) {
+    @IBAction private func didTapCancelButton() {
         guard offlineManager.offlineState(for: sourceItem) == .downloading else {
             return
         }
@@ -100,7 +96,7 @@ final class SampleDetailViewController: UIViewController {
         offlineManager.cancelDownload(for: sourceItem)
     }
 
-    @objc func deleteAction(sender: UIButton) {
+    @IBAction private func didTapDeleteButton() {
         offlineManager.deleteOfflineData(for: sourceItem)
         setViewState(.notDownloaded)
     }
@@ -115,7 +111,7 @@ final class SampleDetailViewController: UIViewController {
         controller.sourceItem = sourceItem
     }
 
-    func finishWithError(title: String, message: String) {
+    private func finishWithError(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
         let defaultAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {(_: UIAlertAction) -> Void in
             self.navigationController?.popViewController(animated: true)
@@ -125,7 +121,7 @@ final class SampleDetailViewController: UIViewController {
         present(alert, animated: true)
     }
 
-    func setViewState(_ viewState: BMPOfflineState, withProgress progress: Double) {
+    private func setViewState(_ viewState: BMPOfflineState, withProgress progress: Double) {
         switch viewState {
         case .downloaded:
             downloadButton.isHidden = true
@@ -174,7 +170,7 @@ final class SampleDetailViewController: UIViewController {
         }
     }
 
-    func setViewState(_ viewState: BMPOfflineState) {
+    private func setViewState(_ viewState: BMPOfflineState) {
         setViewState(viewState, withProgress: 0.0)
     }
 }
