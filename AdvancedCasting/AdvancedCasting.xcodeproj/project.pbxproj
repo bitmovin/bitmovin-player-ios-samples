@@ -171,7 +171,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-AdvancedCasting/Pods-AdvancedCasting-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-AdvancedCasting/Pods-AdvancedCasting-frameworks.sh",
 				"${PODS_ROOT}/BitmovinPlayer/iOS/BitmovinPlayer.framework",
 				"${PODS_ROOT}/google-cast-sdk/GoogleCastSDK-ios-4.1.0/GoogleCast.framework",
 			);
@@ -182,7 +182,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-AdvancedCasting/Pods-AdvancedCasting-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdvancedCasting/Pods-AdvancedCasting-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FA431B1C48F2065D8F6515FA /* [CP] Check Pods Manifest.lock */ = {

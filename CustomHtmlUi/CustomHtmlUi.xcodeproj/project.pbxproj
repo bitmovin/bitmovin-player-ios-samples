@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1F117D2B05D9F5784F1CFFC2 /* Pods_CustomHtmlUi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3060312D9EECBB5604476D /* Pods_CustomHtmlUi.framework */; };
+		375AB3B822CA37B200045AB5 /* bitmovinplayer-ui.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 375AB3B722CA37B200045AB5 /* bitmovinplayer-ui.min.js */; };
+		375AB3BA22CA37B800045AB5 /* bitmovinplayer-ui.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 375AB3B922CA37B800045AB5 /* bitmovinplayer-ui.min.css */; };
 		AC094AE41F3CD83D00EF6F94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC094AE31F3CD83D00EF6F94 /* AppDelegate.swift */; };
 		AC094AE61F3CD83D00EF6F94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC094AE51F3CD83D00EF6F94 /* ViewController.swift */; };
 		AC094AE91F3CD83D00EF6F94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC094AE71F3CD83D00EF6F94 /* Main.storyboard */; };
@@ -17,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		375AB3B422CA375800045AB5 /* customclosebutton.ts */ = {isa = PBXFileReference; lastKnownFileType = text; path = customclosebutton.ts; sourceTree = "<group>"; };
+		375AB3B722CA37B200045AB5 /* bitmovinplayer-ui.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "bitmovinplayer-ui.min.js"; sourceTree = "<group>"; };
+		375AB3B922CA37B800045AB5 /* bitmovinplayer-ui.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "bitmovinplayer-ui.min.css"; sourceTree = "<group>"; };
 		4335053FCF563334815F88DA /* Pods-CustomHtmlUi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomHtmlUi.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-CustomHtmlUi/Pods-CustomHtmlUi.debug.xcconfig"; sourceTree = "<group>"; };
 		8C3060312D9EECBB5604476D /* Pods_CustomHtmlUi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomHtmlUi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		971DF31B4589A0AA7A677280 /* Pods-CustomHtmlUi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomHtmlUi.release.xcconfig"; path = "../Pods/Target Support Files/Pods-CustomHtmlUi/Pods-CustomHtmlUi.release.xcconfig"; sourceTree = "<group>"; };
@@ -51,9 +56,20 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		375AB3B322CA30BC00045AB5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				375AB3B722CA37B200045AB5 /* bitmovinplayer-ui.min.js */,
+				375AB3B922CA37B800045AB5 /* bitmovinplayer-ui.min.css */,
+				375AB3B422CA375800045AB5 /* customclosebutton.ts */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		AC094AD71F3CD83D00EF6F94 = {
 			isa = PBXGroup;
 			children = (
+				375AB3B322CA30BC00045AB5 /* Supporting Files */,
 				AC094AE21F3CD83D00EF6F94 /* CustomHtmlUi */,
 				AC094AE11F3CD83D00EF6F94 /* Products */,
 				2E9152F56ECCCF7256A55488 /* Pods */,
@@ -154,6 +170,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC094AF11F3CD83D00EF6F94 /* LaunchScreen.storyboard in Resources */,
+				375AB3BA22CA37B800045AB5 /* bitmovinplayer-ui.min.css in Resources */,
+				375AB3B822CA37B200045AB5 /* bitmovinplayer-ui.min.js in Resources */,
 				AC094AEE1F3CD83D00EF6F94 /* Assets.xcassets in Resources */,
 				AC094AE91F3CD83D00EF6F94 /* Main.storyboard in Resources */,
 			);
@@ -168,7 +186,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-CustomHtmlUi/Pods-CustomHtmlUi-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-CustomHtmlUi/Pods-CustomHtmlUi-frameworks.sh",
 				"${PODS_ROOT}/BitmovinPlayer/iOS/BitmovinPlayer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -177,7 +195,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-CustomHtmlUi/Pods-CustomHtmlUi-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CustomHtmlUi/Pods-CustomHtmlUi-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C1D201763CA5944B400202D7 /* [CP] Check Pods Manifest.lock */ = {
