@@ -6,7 +6,7 @@ This repository contains sample apps which are using the Bitmovin Player iOS SDK
 +   **BasicDRMPlayback:** Shows how the Bitmovin Player can be setup and configured for playback of FairPlay Streaming protected content.
 +   **BasicCasting** Shows how the ChromeCast support of the Bitmovin Player can be setup and configured.
 +   **BasicMetadataHandling** Shows how the Bitmovin Player can be setup and configured for playback of content which contains metadata.
-+   **CustomHtmlUi** Shows how the Bitmovin Player can be setup and configured to use a custom HTML UI.
++   **CustomHtmlUi** Shows how the Bitmovin Player can be setup and configured to use a custom HTML UI. In addition this sample includes how to communication between the javascript UI and the native code.
 +   **BasicAds** Shows how the Bitmovin Player can be setup and configured for playback of ads.
 +   **AirPlay** Shows how AirPlay support can be enabled for the Bitmovin Player.
 +   **SystemUI** Shows how the system UI can be used instead of Bitmovin's default UI.
@@ -58,7 +58,7 @@ Add `pod 'BitmovinPlayer', git: 'https://github.com/bitmovin/bitmovin-player-ios
 
     When you do not do this, you'll get a license error when starting the application which contains the player.
 
-+   If developing using Xcode 10 and targeting iOS 12 or higher, for some sample applications it’s necessary to create and use an App ID which has the app service `Access WiFi Information` enabled. This currently affects the `BasicCasting` and `AdvancedCasting` applications.
++   If you develop using XCode 10 targeting iOS 12 make sure you use a provisioning profile with `Access WiFi Information` enabled for the `BasicCasting` as well as for the `AdvancedCasting` sample.
 
 ## Documentation And Release Notes
 -   You can find the latest API documentation [here](https://bitmovin.com/ios-sdk-documentation/)
