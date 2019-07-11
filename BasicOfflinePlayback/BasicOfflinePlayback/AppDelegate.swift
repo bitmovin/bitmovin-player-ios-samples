@@ -26,4 +26,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         return true
     }
+    
+    /**
+     If your app is in the background, the system may suspend your app while the download is performed in another process.
+     In this case, when the download finishes, the system resumes the app and calls this delegate method. In case this delegate method is NOT implemented,
+     then as soon as currently scheduled background download is finished the app is not going to be waken up for the further downloads.
+     */
+    func application(_ application: UIApplication, handleEventsForBackgroundURLSession identifier: String, completionHandler: @escaping () -> Void) {
+        OfflineManager.sharedInstance().add(completionHandler: completionHandler, for: identifier)
+    }
 }
