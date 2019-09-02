@@ -111,6 +111,7 @@
 				6E189351211D7B9F00F45656 /* Frameworks */,
 				6E189352211D7B9F00F45656 /* Resources */,
 				F0CF6756232FE4A4550933CC /* [CP] Embed Pods Frameworks */,
+				6EF10DBF212C2D31003E7A0F /* Swift Lint */,
 			);
 			buildRules = (
 			);
@@ -169,6 +170,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6EF10DBF212C2D31003E7A0F /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which ${PODS_ROOT}/SwiftLint/swiftlint >/dev/null; then\n  ${PODS_ROOT}/SwiftLint/swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 		B946F7A957F39EF4685B6F29 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,7 +208,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BasicFullscreenHandling/Pods-BasicFullscreenHandling-frameworks.sh",
+				"${SRCROOT}/../Pods/Target Support Files/Pods-BasicFullscreenHandling/Pods-BasicFullscreenHandling-frameworks.sh",
 				"${PODS_ROOT}/BitmovinPlayer/iOS/BitmovinPlayer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -202,7 +217,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BasicFullscreenHandling/Pods-BasicFullscreenHandling-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-BasicFullscreenHandling/Pods-BasicFullscreenHandling-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

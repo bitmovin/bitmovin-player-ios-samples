@@ -32,6 +32,7 @@ extension SamplesTableViewController {
             let sourceItem = SourceItem(hlsSource: hlsSource)
             sourceItem.itemTitle = "Art of Motion"
             sourceItem.itemDescription = "Single audio track"
+            sourceItem.posterSource = URL(string: "https://bitdash-a.akamaihd.net/content/art-of-motion_drm/art-of-motion_poster.jpg")!
 
             return sourceItem
         }
@@ -42,6 +43,7 @@ extension SamplesTableViewController {
             let sourceItem = SourceItem(hlsSource: hlsSource)
             sourceItem.itemTitle = "Sintel"
             sourceItem.itemDescription = "Multiple subtitle languages, Multiple audio tracks"
+            sourceItem.posterSource = URL(string: "http://bitdash-a.akamaihd.net/content/sintel/poster.png")!
 
             return sourceItem
         }

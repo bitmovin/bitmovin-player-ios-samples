@@ -186,7 +186,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CustomHtmlUi/Pods-CustomHtmlUi-frameworks.sh",
+				"${SRCROOT}/../Pods/Target Support Files/Pods-CustomHtmlUi/Pods-CustomHtmlUi-frameworks.sh",
 				"${PODS_ROOT}/BitmovinPlayer/iOS/BitmovinPlayer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -195,7 +195,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CustomHtmlUi/Pods-CustomHtmlUi-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-CustomHtmlUi/Pods-CustomHtmlUi-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C1D201763CA5944B400202D7 /* [CP] Check Pods Manifest.lock */ = {

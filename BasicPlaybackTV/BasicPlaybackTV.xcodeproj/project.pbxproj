@@ -182,7 +182,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BasicPlaybackTV/Pods-BasicPlaybackTV-frameworks.sh",
+				"${SRCROOT}/../Pods/Target Support Files/Pods-BasicPlaybackTV/Pods-BasicPlaybackTV-frameworks.sh",
 				"${PODS_ROOT}/BitmovinPlayer/tvOS/BitmovinPlayer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -191,7 +191,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BasicPlaybackTV/Pods-BasicPlaybackTV-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-BasicPlaybackTV/Pods-BasicPlaybackTV-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

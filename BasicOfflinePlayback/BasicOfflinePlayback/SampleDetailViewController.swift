@@ -68,7 +68,19 @@ final class SampleDetailViewController: UIViewController {
             present(alert, animated: true)
             return
         }
-        offlineManager.download(sourceItem: sourceItem)
+
+        if let posterUrl = sourceItem.posterSource {
+            downloadArtworkData(posterUrl) { artworkData in
+                self.sourceItem.metadata[MetadataIdentifierArtwork] = artworkData
+                self.download(sourceItem: self.sourceItem)
+            }
+        } else {
+            download(sourceItem: sourceItem)
+        }
+    }
+
+    func download(sourceItem: SourceItem) {
+        offlineManager.download(sourceItem: sourceItem, minimumBitrate: 825_000)
         setViewState(.downloading)
     }
 
@@ -216,5 +228,22 @@ extension SampleDetailViewController: OfflineManagerListener {
     
     func offlineManagerOfflineLicenseDidExpire(_ offlineManager: OfflineManager) {
         print("[SampleDetailViewController] License expired")
+    }
+}
+
+// MARK: - Artwork helper methods
+extension SampleDetailViewController {
+    func downloadArtworkData(_ imageUrl: URL, completion: @escaping (_ data: Data?) -> Void) {
+        let task = URLSession.shared.dataTask(with: imageUrl) { data, _, error in
+            guard let data = data, let _ = UIImage(data: data), error == nil else {
+                completion(nil)
+                return
+            }
+
+            DispatchQueue.main.async {
+                completion(data)
+            }
+        }
+        task.resume()
     }
 }

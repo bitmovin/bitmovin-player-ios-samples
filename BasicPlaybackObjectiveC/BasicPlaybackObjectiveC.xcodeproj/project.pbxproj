@@ -169,7 +169,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BasicPlaybackObjectiveC/Pods-BasicPlaybackObjectiveC-frameworks.sh",
+				"${SRCROOT}/../Pods/Target Support Files/Pods-BasicPlaybackObjectiveC/Pods-BasicPlaybackObjectiveC-frameworks.sh",
 				"${PODS_ROOT}/BitmovinPlayer/iOS/BitmovinPlayer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -178,7 +178,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BasicPlaybackObjectiveC/Pods-BasicPlaybackObjectiveC-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-BasicPlaybackObjectiveC/Pods-BasicPlaybackObjectiveC-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CDC5BC0700654FCC41E48B08 /* [CP] Check Pods Manifest.lock */ = {

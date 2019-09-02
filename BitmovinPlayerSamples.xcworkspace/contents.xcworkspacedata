@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:BasicFullscreenHandling/BasicFullscreenHandling.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BasicPlaybackObjectiveC/BasicPlaybackObjectiveC.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:BackgroundPlayback/BackgroundPlayback.xcodeproj">
    </FileRef>
    <FileRef
@@ -32,9 +38,6 @@
       location = "group:BasicPlayback/BasicPlayback.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:BasicPlaybackObjectiveC/BasicPlaybackObjectiveC.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:BasicDRMPlayback/BasicDRMPlayback.xcodeproj">
    </FileRef>
    <FileRef
@@ -45,8 +48,5 @@
    </FileRef>
    <FileRef
       location = "group:AdvancedCasting/AdvancedCasting.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:BasicFullscreenHandling/BasicFullscreenHandling.xcodeproj">
    </FileRef>
 </Workspace>
