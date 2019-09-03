@@ -58,7 +58,11 @@ Add `pod 'BitmovinPlayer', git: 'https://github.com/bitmovin/bitmovin-player-ios
 
     When you do not do this, you'll get a license error when starting the application which contains the player.
 
-+   If you develop using XCode 10 targeting iOS 12 make sure you use a provisioning profile with `Access WiFi Information` enabled for the `BasicCasting` as well as for the `AdvancedCasting` sample.
+#### Note for iOS 12
+If you develop using XCode 10 targeting iOS 12 make sure you use a provisioning profile with `Access WiFi Information` enabled for the `BasicCasting` as well as for the `AdvancedCasting` sample.
+
+#### Note for iOS 13
+If you develop using XCode 11 targeting iOS 13 please make sure the `NSBluetoothAlwaysUsageDescription` key is set in the `info.plist` for both the `BasicCasting` and the `AdvancedCasting` samples.
 
 ## Documentation And Release Notes
 -   You can find the latest API documentation [here](https://bitmovin.com/ios-sdk-documentation/)
