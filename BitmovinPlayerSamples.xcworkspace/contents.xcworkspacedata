@@ -2,48 +2,48 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:BasicFullscreenHandling/BasicFullscreenHandling.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:BasicPlaybackObjectiveC/BasicPlaybackObjectiveC.xcodeproj">
+      location = "group:AdvancedCasting/AdvancedCasting.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:BackgroundPlayback/BackgroundPlayback.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:BasicPlaylist/BasicPlaylist.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:SystemUI/SystemUI.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:BasicPlaybackTV/BasicPlaybackTV.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:BasicAds/BasicAds.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:BasicMetadataHandling/BasicMetadataHandling.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:BasicCasting/BasicCasting.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:CustomHtmlUi/CustomHtmlUi.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:BasicPlayback/BasicPlayback.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:BasicDRMPlayback/BasicDRMPlayback.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Pods/Pods.xcodeproj">
+      location = "group:BasicFullscreenHandling/BasicFullscreenHandling.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BasicMetadataHandling/BasicMetadataHandling.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:BasicOfflinePlayback/BasicOfflinePlayback.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:AdvancedCasting/AdvancedCasting.xcodeproj">
+      location = "group:BasicPlayback/BasicPlayback.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BasicPlaybackObjectiveC/BasicPlaybackObjectiveC.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BasicPlaybackTV/BasicPlaybackTV.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BasicPlaylist/BasicPlaylist.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CustomHtmlUi/CustomHtmlUi.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SystemUI/SystemUI.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
