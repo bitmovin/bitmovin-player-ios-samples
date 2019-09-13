@@ -20,9 +20,6 @@
       location = "group:BasicPlaybackTV/BasicPlaybackTV.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:AirPlay/AirPlay.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:BasicAds/BasicAds.xcodeproj">
    </FileRef>
    <FileRef

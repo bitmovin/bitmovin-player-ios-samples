@@ -61,12 +61,6 @@ target 'BasicAds' do
     pod 'GoogleAds-IMA-iOS-SDK', '3.9.2'
 end
 
-target 'AirPlay' do
-    project 'AirPlay/AirPlay.xcodeproj'
-    use_frameworks!
-    bitmovin_player
-end
-
 target 'BasicPlaybackTV' do
     project 'BasicPlaybackTV/BasicPlaybackTV.xcodeproj'
     use_frameworks!

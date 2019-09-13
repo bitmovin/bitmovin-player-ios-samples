@@ -8,7 +8,6 @@ This repository contains sample apps which are using the Bitmovin Player iOS SDK
 +   **BasicMetadataHandling** Shows how the Bitmovin Player can be setup and configured for playback of content which contains metadata.
 +   **CustomHtmlUi** Shows how the Bitmovin Player can be setup and configured to use a custom HTML UI. In addition this sample includes how to communication between the javascript UI and the native code.
 +   **BasicAds** Shows how the Bitmovin Player can be setup and configured for playback of ads.
-+   **AirPlay** Shows how AirPlay support can be enabled for the Bitmovin Player.
 +   **SystemUI** Shows how the system UI can be used instead of Bitmovin's default UI.
 +   **BasicPlaylist** Shows how to implement queueing / playlists.
 +   **BasicOfflinePlayback** Shows how the Bitmovin Player can be used to download protected and unprotected content for offline playback.
@@ -28,7 +27,6 @@ In addition to that you have to log in to [https://dashboard.bitmovin.com](https
     com.bitmovin.player.samples.metadata.basic
     com.bitmovin.player.samples.custom.ui.html
     com.bitmovin.player.samples.ads.basic
-    com.bitmovin.player.samples.airplay
     com.bitmovin.player.samples.systemui
     com.bitmovin.player.samples.playlist.basic
     com.bitmovin.player.samples.offline.basic
