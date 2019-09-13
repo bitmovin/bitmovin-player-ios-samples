@@ -41,7 +41,7 @@ When you want to develop an own iOS application using the Bitmovin Player iOS SD
 To add the SDK as a dependency to your project, you have two options: Using CocoaPods or adding the SDK bundle directly.
 
 #### Using CocoaPods
-Add `pod 'BitmovinPlayer', git: 'https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod.git', tag: '2.30.0'` to your Podfile. After that, install the pod using `pod install`. See the `Podfile` of this repository for a full example.
+Add `pod 'BitmovinPlayer', git: 'https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod.git', tag: '2.31.0'` to your Podfile. After that, install the pod using `pod install`. See the `Podfile` of this repository for a full example.
 
 #### Adding the SDK Directly
 +   When using Xcode, go to the `General` settings page and add the SDK bundle (`BitmovinPlayer.framework`) under `Linked Frameworks and Libraries`. The SDK bundle can be downloaded from the [release page of the GitHub repository](https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod/releases).
