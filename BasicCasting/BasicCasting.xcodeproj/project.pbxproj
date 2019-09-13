@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6E57E8E9216C891300550E9A /* BasicCasting.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BasicCasting.entitlements; sourceTree = "<group>"; };
+		6E57E8EB216C8E4500550E9A /* BasicCasting.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BasicCasting.entitlements; sourceTree = "<group>"; };
 		AC773EB91F0622DC005C3B0E /* BasicCasting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicCasting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC773EBC1F0622DC005C3B0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC773EBE1F0622DC005C3B0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 		AC773EBB1F0622DC005C3B0E /* BasicCasting */ = {
 			isa = PBXGroup;
 			children = (
-				6E57E8E9216C891300550E9A /* BasicCasting.entitlements */,
+				6E57E8EB216C8E4500550E9A /* BasicCasting.entitlements */,
 				AC773EBC1F0622DC005C3B0E /* AppDelegate.swift */,
 				AC773EBE1F0622DC005C3B0E /* ViewController.swift */,
 				AC773EC01F0622DC005C3B0E /* Main.storyboard */,

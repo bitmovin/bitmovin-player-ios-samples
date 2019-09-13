@@ -19,7 +19,7 @@
 		35828319F3271045F5DEC3F8 /* Pods-AdvancedCasting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvancedCasting.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-AdvancedCasting/Pods-AdvancedCasting.debug.xcconfig"; sourceTree = "<group>"; };
 		38D7FD37BEF36419616949ED /* Pods-AdvancedCasting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvancedCasting.release.xcconfig"; path = "../Pods/Target Support Files/Pods-AdvancedCasting/Pods-AdvancedCasting.release.xcconfig"; sourceTree = "<group>"; };
 		431C18267ABE0029A1B4275A /* Pods_AdvancedCasting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdvancedCasting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E57E8EA216C8B4E00550E9A /* AdvancedCasting.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AdvancedCasting.entitlements; sourceTree = "<group>"; };
+		6E57E8EC216C8F2000550E9A /* AdvancedCasting.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AdvancedCasting.entitlements; sourceTree = "<group>"; };
 		AC34AFB3208E1BC6003B07B0 /* AdvancedCasting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvancedCasting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC34AFB6208E1BC6003B07B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC34AFB8208E1BC6003B07B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 		AC34AFB5208E1BC6003B07B0 /* AdvancedCasting */ = {
 			isa = PBXGroup;
 			children = (
-				6E57E8EA216C8B4E00550E9A /* AdvancedCasting.entitlements */,
+				6E57E8EC216C8F2000550E9A /* AdvancedCasting.entitlements */,
 				AC34AFB6208E1BC6003B07B0 /* AppDelegate.swift */,
 				AC34AFB8208E1BC6003B07B0 /* ViewController.swift */,
 				AC34AFBA208E1BC6003B07B0 /* Main.storyboard */,

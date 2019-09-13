@@ -8,7 +8,6 @@
 
 import UIKit
 import BitmovinPlayer
-import GoogleCast
 
 final class ViewController: UIViewController {
     
@@ -22,11 +21,6 @@ final class ViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .black
-        
-        // add cast button
-        let castButton = GCKUICastButton(frame: CGRect(x: 0, y: 0, width: 24, height: 24))
-        let barButton = UIBarButtonItem(customView: castButton)
-        navigationItem.rightBarButtonItem = barButton
         
         // Define needed resources
         guard let streamUrl = URL(string: "https://bitmovin-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8"),

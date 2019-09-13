@@ -13,19 +13,16 @@ final class ItemCell: UITableViewCell {
 
     static let identifier = "ItemCell"
 
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
-
     var item: SourceItem? {
         didSet {
-            titleLabel?.text = item?.itemTitle
-            descriptionLabel?.text = item?.itemDescription
+            textLabel?.text = item?.itemTitle
+            detailTextLabel?.text = item?.itemDescription
         }
     }
 
     override func prepareForReuse() {
         super.prepareForReuse()
-        titleLabel?.text = ""
-        descriptionLabel?.text = ""
+        textLabel?.text = ""
+        detailTextLabel?.text = ""
     }
 }

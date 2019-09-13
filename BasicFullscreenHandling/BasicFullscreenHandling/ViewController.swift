@@ -144,7 +144,7 @@ extension ViewController: FullscreenHandler {
             // Force orientation; this will be used when supportedInterfaceOrientation is called
             orientation = fullscreen ? .landscape : .portrait
 
-            // Presend dummy controller so that after push, supportedInterfaceOrientations is called again
+            // Present dummy controller so that after push, supportedInterfaceOrientations is called again
             let dummy = UIViewController()
             navigationController?.present(dummy, animated: false) {
                 dummy.dismiss(animated: false) {
