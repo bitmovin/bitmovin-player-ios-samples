@@ -41,10 +41,15 @@ When you want to develop an own iOS application using the Bitmovin Player iOS SD
 To add the SDK as a dependency to your project, you have two options: Using CocoaPods or adding the SDK bundle directly.
 
 #### Using CocoaPods
-Add `pod 'BitmovinPlayer', git: 'https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod.git', tag: '2.35.0'` to your Podfile. After that, install the pod using `pod install`. See the `Podfile` of this repository for a full example.
+1. Add `source 'https://github.com/bitmovin/cocoapod-specs.git'` to your Podfile.
+1. Run `pod repo update` to add the newly added source.
+1. Add `pod 'BitmovinPlayer', '2.35.0'` to your Podfile. 
+1. Install the pod using `pod install`. 
+
+See the `Podfile` of this repository for a full example.
 
 #### Adding the SDK Directly
-+   When using Xcode, go to the `General` settings page and add the SDK bundle (`BitmovinPlayer.framework`) under `Linked Frameworks and Libraries`. The SDK bundle can be downloaded from the [release page of the GitHub repository](https://github.com/bitmovin/bitmovin-player-ios-sdk-cocoapod/releases).
+When using Xcode, go to the `General` settings page and add the SDK bundle (`BitmovinPlayer.framework`) under `Linked Frameworks and Libraries`. The SDK bundles for iOS and tvOS can be downloaded [here](https://cdn.bitmovin.com/player/ios_tvos/2.35.0/BitmovinPlayer.zip).
 
 ### Project Setup
 
@@ -63,5 +68,5 @@ If you develop using XCode 10 targeting iOS 12 make sure you use a provisioning 
 If you develop using XCode 11 targeting iOS 13 please make sure the `NSBluetoothAlwaysUsageDescription` key is set in the `info.plist` for both the `BasicCasting` and the `AdvancedCasting` samples.
 
 ## Documentation And Release Notes
--   You can find the latest API documentation [here](https://bitmovin.com/ios-sdk-documentation/)
--   The release notes can be found [here](https://bitmovin.com/release-notes-ios-sdk/)
+-   You can find the latest API documentation [here](https://bitmovin.com/ios-sdk-documentation/).
+-   The release notes can be found [here](https://bitmovin.com/release-notes-ios-sdk/).

@@ -173,8 +173,8 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-BasicCasting/Pods-BasicCasting-frameworks.sh",
-				"${PODS_ROOT}/BitmovinPlayer/iOS/BitmovinPlayer.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-BasicCasting/Pods-BasicCasting-frameworks.sh",
+				"${PODS_ROOT}/BitmovinPlayer/BitmovinPlayer/iOS/BitmovinPlayer.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -184,7 +184,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-BasicCasting/Pods-BasicCasting-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BasicCasting/Pods-BasicCasting-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		94ECAA3A2509F54A6A36DA1B /* [CP] Copy Pods Resources */ = {
@@ -193,7 +193,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-BasicCasting/Pods-BasicCasting-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-BasicCasting/Pods-BasicCasting-resources.sh",
 				"${PODS_ROOT}/google-cast-sdk/GoogleCastSDK-ios-4.4.4_static/GoogleCast.framework/GoogleCastCoreResources.bundle",
 				"${PODS_ROOT}/google-cast-sdk/GoogleCastSDK-ios-4.4.4_static/GoogleCast.framework/GoogleCastUIResources.bundle",
 			);
@@ -204,7 +204,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-BasicCasting/Pods-BasicCasting-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BasicCasting/Pods-BasicCasting-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E96B75268799F000B6FFF2AF /* [CP] Check Pods Manifest.lock */ = {

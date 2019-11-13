@@ -146,6 +146,7 @@ extension ViewController: FullscreenHandler {
 
             // Present dummy controller so that after push, supportedInterfaceOrientations is called again
             let dummy = UIViewController()
+            dummy.modalPresentationStyle = .fullScreen
             navigationController?.present(dummy, animated: false) {
                 dummy.dismiss(animated: false) {
                     // reset orientation
