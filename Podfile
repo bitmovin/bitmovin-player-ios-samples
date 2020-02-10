@@ -4,11 +4,11 @@ source 'https://github.com/bitmovin/cocoapod-specs.git'
 workspace 'BitmovinPlayerSamples'
 
 def bitmovin_player
-  pod 'BitmovinPlayer', '2.36.0'
+  pod 'BitmovinPlayer', '2.39.0'
 end
 
 def google_cast
-  pod 'google-cast-sdk', '4.4.4'
+  pod 'google-cast-sdk', '4.4.6'
 end
 
 target 'BasicPlayback' do
