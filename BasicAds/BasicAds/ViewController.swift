@@ -32,7 +32,11 @@ final class ViewController: UIViewController {
         
         // Create player configuration
         let config = PlayerConfiguration()
-        
+
+        let uiConfig = BitmovinUserInterfaceConfiguration()
+        uiConfig.hideFirstFrame = true
+        config.styleConfiguration.userInterfaceConfiguration = uiConfig
+
         // Create Advertising configuration
         let adSource1 = AdSource(tag: urlWithCorrelator(adTag: adTagVastSkippable), ofType: .IMA)
         let adSource2 = AdSource(tag: urlWithCorrelator(adTag: adTagVast1), ofType: .IMA)
@@ -75,28 +79,36 @@ final class ViewController: UIViewController {
 }
 
 extension ViewController: PlayerListener {
-    
+
     func onAdScheduled(_ event: AdScheduledEvent) {
         print("onAdScheduled \(event.timestamp)")
     }
-    
+
+    func onAdManifestLoaded(_ event: AdManifestLoadedEvent) {
+        print("onAdManifestLoaded \(event.timestamp) \(event.adBreak?.identifier ?? "")")
+    }
+
     func onAdBreakStarted(_ event: AdBreakStartedEvent) {
-        print("onAdBreakStarted \(event.timestamp)")
+        print("onAdBreakStarted \(event.timestamp) \(event.adBreak.identifier)")
     }
     
     func onAdStarted(_ event: AdStartedEvent) {
-        print("onAdStarted \(event.timestamp)")
+        print("onAdStarted \(event.timestamp) \(event.ad.identifier ?? "")")
     }
-    
+
+    func onAdQuartile(_ event: AdQuartileEvent) {
+        print("onAdQuartile \(event.adQuartile.rawValue)")
+    }
+
     func onAdFinished(_ event: AdFinishedEvent) {
         print("onAdFinished \(event.timestamp)")
     }
     
     func onAdBreakFinished(_ event: AdBreakFinishedEvent) {
-        print("onAdBreakFinished \(event.timestamp)")
+        print("onAdBreakFinished \(event.timestamp) \(event.adBreak.identifier)")
     }
-    
+
     func onAdError(_ event: AdErrorEvent) {
-        print("onAdError \(event.timestamp)")
+        print("onAdError \(event.timestamp) \(event.adConfig?.debugDescription ?? "")")
     }
 }

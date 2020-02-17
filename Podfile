@@ -1,10 +1,12 @@
 platform :ios, '10.3'
 
+source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/bitmovin/cocoapod-specs.git'
+
 workspace 'BitmovinPlayerSamples'
 
 def bitmovin_player
-  pod 'BitmovinPlayer', '2.39.0'
+  pod 'BitmovinPlayer', '2.40.0'
 end
 
 def google_cast

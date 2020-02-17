@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BitmovinPlayerLicenseKey</key>
-	<string></string>
+	<string>--Your-Key--</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
