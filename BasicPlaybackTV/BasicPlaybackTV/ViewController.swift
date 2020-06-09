@@ -79,4 +79,8 @@ extension ViewController: PlayerListener {
     func onError(_ event: ErrorEvent) {
         print("onError \(event.message)")
     }
+
+    func onSubtitleChanged(_ event: SubtitleChangedEvent) {
+        print("onSubtitleChanged from: \(event.subtitleTrackOld?.label ?? "") to: \(event.subtitleTrackNew?.label ?? "")")
+    }
 }
