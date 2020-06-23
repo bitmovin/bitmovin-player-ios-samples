@@ -43,7 +43,7 @@ To add the SDK as a dependency to your project, you have two options: Using Coco
 #### Using CocoaPods
 1. Add `source 'https://github.com/bitmovin/cocoapod-specs.git'` to your Podfile.
 1. Run `pod repo update` to add the newly added source.
-1. Add `pod 'BitmovinPlayer', '2.46.1'` to your Podfile.
+1. Add `pod 'BitmovinPlayer', '2.47.0'` to your Podfile.
 1. Install the pod using `pod install`.
 
 See the `Podfile` of this repository for a full example.
