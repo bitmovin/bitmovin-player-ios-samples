@@ -11,7 +11,7 @@ import BitmovinPlayer
 
 final class ViewController: UIViewController {
 
-    var player: BitmovinPlayer?
+    var player: Player?
 
     deinit {
         player?.destroy()
@@ -38,7 +38,7 @@ final class ViewController: UIViewController {
             config.sourceItem?.posterSource = posterUrl
 
             // Create player based on player configuration
-            let player = BitmovinPlayer(configuration: config)
+            let player = Player(configuration: config)
 
             // Create player view and pass the player instance to it
             let playerView = BMPBitmovinPlayerView(player: player, frame: .zero)

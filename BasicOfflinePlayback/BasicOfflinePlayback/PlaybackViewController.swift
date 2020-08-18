@@ -14,7 +14,7 @@ final class PlaybackViewController: UIViewController {
     @IBOutlet weak var playerViewContainer: UIView!
 
     var sourceItem: SourceItem?
-    var player: BitmovinPlayer?
+    var player: Player?
     var playerView: BMPBitmovinPlayerView?
     var reach: Reachability!
     var offlineManager = OfflineManager.sharedInstance()
@@ -81,7 +81,7 @@ final class PlaybackViewController: UIViewController {
         let config = PlayerConfiguration()
         config.sourceItem = sourceItem
 
-        let player = BitmovinPlayer(configuration: config)
+        let player = Player(configuration: config)
         let playerView = BMPBitmovinPlayerView(player: player, frame: CGRect.zero)
 
         player.add(listener: self)

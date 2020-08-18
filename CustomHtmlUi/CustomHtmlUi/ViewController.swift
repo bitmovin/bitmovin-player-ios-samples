@@ -11,7 +11,7 @@ import BitmovinPlayer
 
 final class ViewController: UIViewController {
 
-    fileprivate var player: BitmovinPlayer?
+    fileprivate var player: Player?
     fileprivate var customMessageHandler: CustomMessageHandler?
 
     @IBOutlet fileprivate weak var playerContainerView: UIView!
@@ -48,7 +48,7 @@ final class ViewController: UIViewController {
             try config.setSourceItem(url: streamUrl)
 
             // Create player based on player configuration
-            let player = BitmovinPlayer(configuration: config)
+            let player = Player(configuration: config)
 
             // Create player view and pass the player instance to it
             let playerView = BMPBitmovinPlayerView(player: player, frame: .zero)

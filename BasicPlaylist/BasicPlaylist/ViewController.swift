@@ -11,7 +11,7 @@ import BitmovinPlayer
 
 final class ViewController: UIViewController {
     
-    var player: BitmovinPlayer?
+    var player: Player?
     // Stores the index of the next playlist item to be played
     var nextPlaylistItem = 0;
     // Holds all items of the playlist
@@ -39,7 +39,7 @@ final class ViewController: UIViewController {
         playlist.append(PlaylistItem(url: stream2, title: "Sintel", type: .HLS))
         
         // Create player based with a default configuration
-        let player = BitmovinPlayer()
+        let player = Player()
         
         // Create player view and pass the player instance to it
         let playerView = BMPBitmovinPlayerView(player: player, frame: .zero)

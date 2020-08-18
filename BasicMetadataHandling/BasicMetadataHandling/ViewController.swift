@@ -11,7 +11,7 @@ import BitmovinPlayer
 
 final class ViewController: UIViewController {
 
-    var player: BitmovinPlayer?
+    var player: Player?
 
     deinit {
         player?.destroy()
@@ -26,7 +26,7 @@ final class ViewController: UIViewController {
          * TODO: Add URLs below to make this sample application work.
          */
         // Define needed resources
-        guard let streamUrl = URL(string: "") else {
+        guard let streamUrl = URL(string: "https://bitmovin-a.akamaihd.net/content/metadata/media.m3u8") else {
             print("Please specify the needed resources marked with TODO in ViewController.swift file.")
             return
         }
@@ -38,7 +38,7 @@ final class ViewController: UIViewController {
             try config.setSourceItem(url: streamUrl)
 
             // Create player based on player configuration
-            let player = BitmovinPlayer(configuration: config)
+            let player = Player(configuration: config)
 
             // Create player view and pass the player instance to it
             let playerView = BMPBitmovinPlayerView(player: player, frame: .zero)
