@@ -1,6 +1,6 @@
 platform :ios, '10.3'
 
-source 'https://github.com/CocoaPods/Specs.git'
+source 'https://cdn.cocoapods.org'
 source 'https://github.com/bitmovin/cocoapod-specs.git'
 
 workspace 'BitmovinPlayerSamples'
