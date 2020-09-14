@@ -6,11 +6,11 @@ source 'https://github.com/bitmovin/cocoapod-specs.git'
 workspace 'BitmovinPlayerSamples'
 
 def bitmovin_player
-  pod 'BitmovinPlayer', '2.51.1'
+  pod 'BitmovinPlayer', '2.52.0'
 end
 
 def google_cast
-  pod 'google-cast-sdk', '4.4.6'
+  pod 'google-cast-sdk', '4.4.8'
 end
 
 target 'BasicPlayback' do
@@ -61,7 +61,7 @@ target 'BasicAds' do
     project 'BasicAds/BasicAds.xcodeproj'
     use_frameworks!
     bitmovin_player
-    pod 'GoogleAds-IMA-iOS-SDK', '3.11.4'
+    pod 'GoogleAds-IMA-iOS-SDK', '3.12.1'
 end
 
 target 'BasicPlaybackTV' do
