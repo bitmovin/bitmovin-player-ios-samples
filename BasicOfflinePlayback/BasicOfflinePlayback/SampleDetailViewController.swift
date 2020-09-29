@@ -202,7 +202,7 @@ extension SampleDetailViewController: OfflineManagerListener {
     }
 
     func offlineManager(_ offlineManager: OfflineManager, didProgressTo progress: Double) {
-        print("[SampleDetailViewController] Progress")
+        print("[SampleDetailViewController] Progress: \(progress)")
         // update ui with current progress
         setViewState(.downloading, withProgress: progress)
     }
