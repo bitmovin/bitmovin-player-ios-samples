@@ -1,4 +1,4 @@
-platform :ios, '10.3'
+platform :ios, '10.0'
 
 source 'https://cdn.cocoapods.org'
 source 'https://github.com/bitmovin/cocoapod-specs.git'
@@ -6,7 +6,7 @@ source 'https://github.com/bitmovin/cocoapod-specs.git'
 workspace 'BitmovinPlayerSamples'
 
 def bitmovin_player
-  pod 'BitmovinPlayer', '2.54.1'
+  pod 'BitmovinPlayer', '2.55.0'
 end
 
 def google_cast
@@ -67,7 +67,7 @@ end
 target 'BasicPlaybackTV' do
     project 'BasicPlaybackTV/BasicPlaybackTV.xcodeproj'
     use_frameworks!
-    platform :tvos
+    platform :tvos, '10.0'
     bitmovin_player
 end
 
