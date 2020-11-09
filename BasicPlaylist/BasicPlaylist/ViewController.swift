@@ -13,7 +13,7 @@ final class ViewController: UIViewController {
     
     var player: Player?
     // Stores the index of the next playlist item to be played
-    var nextPlaylistItem = 0;
+    var nextPlaylistItem = 0
     // Holds all items of the playlist
     var playlist: [PlaylistItem] = []
     var lastItemFinished = false

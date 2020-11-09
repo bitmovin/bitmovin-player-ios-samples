@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
 
         // Initialize ChromeCast support for this application
-        BitmovinCastManager.initializeCasting();
+        BitmovinCastManager.initializeCasting()
 
         // Initialize logging
         GCKLogger.sharedInstance().delegate = self
