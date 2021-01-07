@@ -1,6 +1,6 @@
 ---
 name: Missing sample
-about: This template should be used to request a new sample to be added.
+about: This template should be used to request a new sample.
 title: "[New sample]"
 labels: new sample
 assignees: ''
@@ -8,7 +8,7 @@ assignees: ''
 ---
 
 ## Sample's title suggestion
-< Please provide a title suggestion for the new sample >
+<!--Please provide a title suggestion for the new sampl-->
 
 ## Sample's objective
-< Describe what you want to be addressed by the sample >
+<!--Describe what you want to be addressed by the sample-->
