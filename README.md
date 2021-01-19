@@ -16,7 +16,7 @@ This repository contains sample apps which are using the Bitmovin Player iOS SDK
 +   **BasicFullscreenHandling** Shows how to use the `BitmovinFullscreenHandler`-protocol to implement basic fullscreen handling.
 
 ## Using The Sample Apps
-Please execute `pod install` to properly initialize the workspace. In each sample app you also have to add your Bitmovin Player license key to `Info.plist` file as `BitmovinPlayerLicenseKey`.
+Please execute `pod install --repo-update` to properly initialize the workspace. In each sample app you also have to add your Bitmovin Player license key to `Info.plist` file as `BitmovinPlayerLicenseKey`.
 
 In addition to that you have to log in to [https://dashboard.bitmovin.com](https://dashboard.bitmovin.com), where you have to add the following bundle identifier of the sample application as an allowed domain under `Player -> Licenses`:
 
@@ -43,13 +43,13 @@ To add the SDK as a dependency to your project, you have two options: Using Coco
 #### Using CocoaPods
 1. Add `source 'https://github.com/bitmovin/cocoapod-specs.git'` to your Podfile.
 1. Run `pod repo update` to add the newly added source.
-1. Add `pod 'BitmovinPlayer', '2.58.0'` to your Podfile.
+1. Add `pod 'BitmovinPlayer', '2.59.0'` to your Podfile.
 1. Install the pod using `pod install`.
 
 See the `Podfile` of this repository for a full example.
 
 #### Adding the SDK Directly
-When using Xcode, go to the `General` settings page and add the SDK bundle (`BitmovinPlayer.framework`) under `Linked Frameworks and Libraries`. The SDK bundles for iOS and tvOS can be downloaded [here](https://cdn.bitmovin.com/player/ios_tvos/2.58.0/BitmovinPlayer.zip).
+When using Xcode, go to the `General` settings page and add the SDK bundle (`BitmovinPlayer.framework`) under `Linked Frameworks and Libraries`. The SDK bundles for iOS and tvOS can be downloaded [here](https://cdn.bitmovin.com/player/ios_tvos/2.59.0/BitmovinPlayer.zip).
 
 ### Project Setup
 
