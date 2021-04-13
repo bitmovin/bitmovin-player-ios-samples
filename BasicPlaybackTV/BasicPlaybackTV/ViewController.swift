@@ -72,6 +72,14 @@ extension ViewController: PlayerListener {
         print("onTimeChanged \(event.currentTime)")
     }
 
+    func onSeek(_ event: SeekEvent) {
+        print("onSeek")
+    }
+
+    func onSeeked(_ event: SeekedEvent) {
+        print("onSeeked")
+    }
+
     func onDurationChanged(_ event: DurationChangedEvent) {
         print("onDurationChanged \(event.duration)")
     }
