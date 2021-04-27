@@ -20,33 +20,36 @@ This repository contains sample apps which are using the Bitmovin Player iOS SDK
 ## Available Sample Apps
 
 ### Basics
-+   **BasicPlayback:** Shows how the Bitmovin Player can be setup for basic playback of HLS or progressive streams.
-+   **BasicPlaybackTV:** Shows how the Bitmovin Player can be setup for basic playback of HLS or progressive streams in a tvOS application.
-+   **BasicPlaylist** Shows how to implement queueing / playlists.
-+   **BasicMetadataHandling** Shows how the Bitmovin Player can be setup and configured for playback of content which contains metadata.
++   **BasicPlayback:** Shows how to set up the Bitmovin Player for basic playback of HLS or progressive streams.
++   **BasicPlaybackTV:** Shows how to set up the Bitmovin Player for basic playback of HLS or progressive streams in a tvOS application.
++   **BasicMetadataHandling** Shows how to set up and configure the Bitmovin Player for playback of content that contains metadata.
 
 ### DRM
-+   **BasicDRMPlayback:** Shows how the Bitmovin Player can be setup and configured for playback of FairPlay Streaming protected content.
++   **BasicDRMPlayback:** Shows how to set up and configure the Bitmovin Player for playback of FairPlay Streaming protected content.
 
 ### Offline Playback
-+   **BasicOfflinePlayback** Shows how the Bitmovin Player can be used to download protected and unprotected content for offline playback.
++   **BasicOfflinePlayback** Shows how to set up the Bitmovin Player to download protected and unprotected content for offline playback.
 
 ### Playback & Casting
-+   **BackgroundPlayback** Shows how background playback can be implemented for the Bitmovin Player (e.g. to play audio in silent mode).
-+   **BasicCasting** Shows how the ChromeCast support of the Bitmovin Player can be setup and configured. (Please mind the [Casting Requirements](#casting-requirements))
++   **BackgroundPlayback** Shows how to set up the Bitmovin Player for background playback (e.g. to play audio in silent mode).
++   **BasicCasting** Shows how to set up and configure Google ChromeCast support with the Bitmovin Player. (Please mind the [Casting Requirements](#casting-requirements))
 +   **AdvancedCasting** Shows how to implement advanced casting use cases. (Please mind the [Casting Requirements](#casting-requirements))
 
 ### Advertising
-+   **BasicAds** Shows how the Bitmovin Player can be setup and configured for playback of ads.
++   **BasicAds** Shows how to set up and configure the Bitmovin Player for playback of ads.
 
 ### UI
-+   **CustomHtmlUi** Shows how the Bitmovin Player can be setup and configured to use a custom HTML UI. In addition this sample includes how to communication between the javascript UI and the native code.
-+   **SystemUI** Shows how the system UI can be used instead of Bitmovin's default UI.
++   **CustomHtmlUi** Shows how to set up and configured the Bitmovin Player to use a custom HTML UI. Besides, this sample includes how to communicate between the javascript UI and the native code.
++   **SystemUI** Shows how to use the system UI instead of the default UI.
 +   **BasicFullscreenHandling** Shows how to use the `BitmovinFullscreenHandler`-protocol to implement basic fullscreen handling.
+
+### Playlist
++   **BasicPlaylist** Shows how to implement queueing / playlists.
++   **BasicPlaylistTV** Shows how to implement queueing / playlists in a tvOS application.
 
 
 ## Sample App Setup Instructions
-Please execute `pod install --repo-update` to properly initialize the workspace. In each sample app you also have to add your Bitmovin Player license key to `Info.plist` file as `BitmovinPlayerLicenseKey`.
+Please execute `pod install --repo-update` to properly initialize the workspace. In each sample app, you also have to add your Bitmovin Player license key to `Info.plist` file as `BitmovinPlayerLicenseKey` or provide it via the `PlayerConfig.key` property.
 
 In addition to that you have to log in to [https://bitmovin.com/dashboard](https://bitmovin.com/dashboard), where you have to add the following bundle identifier of the sample application as an allowed domain under `Player -> Licenses`:
 
@@ -58,11 +61,12 @@ In addition to that you have to log in to [https://bitmovin.com/dashboard](https
     com.bitmovin.player.samples.custom.ui.html
     com.bitmovin.player.samples.ads.basic
     com.bitmovin.player.samples.systemui
-    com.bitmovin.player.samples.playlist.basic
     com.bitmovin.player.samples.offline.basic
     com.bitmovin.player.samples.playback.background
     com.bitmovin.player.samples.casting.advanced
     com.bitmovin.player.samples.fullscreen.basic
+    com.bitmovin.player.samples.playlist.basic
+    com.bitmovin.player.samples.tv.playlist.basic
 
 ## How to integrate the Bitmovin Player iOS SDK
 When you want to develop an own iOS application using the Bitmovin Player iOS SDK read through the following steps.
@@ -73,17 +77,17 @@ To add the SDK as a dependency to your project, you have two options: Using Coco
 #### Using CocoaPods
 1. Add `source 'https://github.com/bitmovin/cocoapod-specs.git'` to your Podfile.
 1. Run `pod repo update` to add the newly added source.
-1. Add `pod 'BitmovinPlayer', '2.64.0'` to your Podfile.
+1. Add `pod 'BitmovinPlayer', '3.0.0'` to your Podfile.
 1. Install the pod using `pod install`.
 
 See the `Podfile` of this repository for a full example.
 
 #### Adding the SDK Directly
-When using Xcode, go to the `General` settings page and add the SDK bundle (`BitmovinPlayer.framework`) under `Linked Frameworks and Libraries`. The SDK bundles for iOS and tvOS can be downloaded [here](https://cdn.bitmovin.com/player/ios_tvos/2.64.0/BitmovinPlayer.zip).
+When using Xcode, go to the `General` page or your app target and add the SDK bundle (`BitmovinPlayer.xcframework`) under `Linked Frameworks and Libraries`. The latest SDK for iOS and tvOS can be downloaded [here](https://cdn.bitmovin.com/player/ios_tvos/3.0.0/BitmovinPlayer.zip).
 
 #### Prepare your Bitmovin Player license
 
-+   Add your Bitmovin player license key to the `Info.plist` file as `BitmovinPlayerLicenseKey`.
++   Add your Bitmovin player license key to the `Info.plist` file as `BitmovinPlayerLicenseKey`. Alternatively you can also set the license key via the `PlayerConfig.key` property when creating a `Player` instance.
 
     Your player license key can be found when logging in into [https://bitmovin.com/dashboard](https://bitmovin.com/dashboard) and navigating to `Player -> Licenses`.
 
@@ -93,8 +97,9 @@ When using Xcode, go to the `General` settings page and add the SDK bundle (`Bit
 
 ## Development Notes
 ### Casting Requirements
-* If you develop using **XCode 10 targeting iOS 12** make sure you use a provisioning profile with `Access WiFi Information` enabled for the `BasicCasting` as well as for the `AdvancedCasting` sample.
-* If you develop using **XCode 11 targeting iOS 13** please make sure the `NSBluetoothAlwaysUsageDescription` key is set in the `info.plist` for both the `BasicCasting` and the `AdvancedCasting` samples.
+* If you are using the Google Cast SDK (`BasicCasting` or `AdvancedCasting`), make sure the following requirements are met:
+- Use a provisioning profile with `Access WiFi Information` enabled
+- The `NSBluetoothAlwaysUsageDescription` key is set in the `info.plist`
 
 ## Documentation And Release Notes
 -   You can find the latest API documentation [here](https://bitmovin.com/ios-sdk-documentation/).

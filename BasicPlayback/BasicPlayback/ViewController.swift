@@ -1,6 +1,6 @@
 //
 // Bitmovin Player iOS SDK
-// Copyright (C) 2017, Bitmovin GmbH, All Rights Reserved
+// Copyright (C) 2021, Bitmovin GmbH, All Rights Reserved
 //
 // This source code and its use and distribution, is subject to the terms
 // and conditions of the applicable license agreement.
@@ -10,8 +10,7 @@ import UIKit
 import BitmovinPlayer
 
 final class ViewController: UIViewController {
-
-    var player: Player?
+    var player: Player!
 
     deinit {
         player?.destroy()
@@ -29,56 +28,33 @@ final class ViewController: UIViewController {
         }
 
         // Create player configuration
-        let config = PlayerConfiguration()
+        let playerConfig = PlayerConfig()
 
-        do {
-            try config.setSourceItem(url: streamUrl)
+        // Create player based on player config
+        player = PlayerFactory.create(playerConfig: playerConfig)
 
-            // Set a poster image
-            config.sourceItem?.posterSource = posterUrl
+        // Create player view and pass the player instance to it
+        let playerView = PlayerView(player: player, frame: .zero)
 
-            // Create player based on player configuration
-            let player = Player(configuration: config)
+        // Listen to player events
+        player.add(listener: self)
 
-            // Create player view and pass the player instance to it
-            let playerView = BMPBitmovinPlayerView(player: player, frame: .zero)
+        playerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        playerView.frame = view.bounds
 
-            // Listen to player events
-            player.add(listener: self)
+        view.addSubview(playerView)
+        view.bringSubviewToFront(playerView)
 
-            playerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-            playerView.frame = view.bounds
-
-            view.addSubview(playerView)
-            view.bringSubviewToFront(playerView)
-
-            self.player = player
-        } catch {
-            print("Configuration error: \(error)")
-        }
+        // Create source config
+        let sourceConfig = SourceConfig(url: streamUrl, type: .hls)
+        // Set a poster image
+        sourceConfig.posterSource = posterUrl
+        player.load(sourceConfig: sourceConfig)
     }
 }
 
 extension ViewController: PlayerListener {
-
-    func onPlay(_ event: PlayEvent) {
-        print("onPlay \(event.time)")
-    }
-
-    func onPaused(_ event: PausedEvent) {
-        print("onPaused \(event.time)")
-    }
-
-    func onTimeChanged(_ event: TimeChangedEvent) {
-        print("onTimeChanged \(event.currentTime)")
-    }
-
-    func onDurationChanged(_ event: DurationChangedEvent) {
-        print("onDurationChanged \(event.duration)")
-    }
-
-    func onError(_ event: ErrorEvent) {
-        print("onError \(event.message)")
+    func onEvent(_ event: Event, player: Player) {
+        dump(event, name: "[Player Event]", maxDepth: 1)
     }
 }
-

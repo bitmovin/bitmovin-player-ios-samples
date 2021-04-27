@@ -1,6 +1,6 @@
 //
 // Bitmovin Player iOS SDK
-// Copyright (C) 2017, Bitmovin GmbH, All Rights Reserved
+// Copyright (C) 2021, Bitmovin GmbH, All Rights Reserved
 //
 // This source code and its use and distribution, is subject to the terms
 // and conditions of the applicable license agreement.
@@ -31,7 +31,7 @@ final class SamplesTableViewController: UIViewController, UITableViewDataSource,
                 return
         }
 
-        controller.sourceItem = cell.item
+        controller.sourceConfig = cell.sourceConfig
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -39,15 +39,15 @@ final class SamplesTableViewController: UIViewController, UITableViewDataSource,
             let cell = tableView.dequeueReusableCell(withIdentifier: ItemCell.identifier, for: indexPath) as? ItemCell else {
                 return UITableViewCell()
         }
-        cell.item = item
+        cell.sourceConfig = item
         return cell
     }
 
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        guard let sourceItemSection = viewModel.sourceItemSection(for: section) else {
+        guard let sourceConfigSection = viewModel.sourceConfigSection(for: section) else {
             return nil
         }
-        return sourceItemSection.name
+        return sourceConfigSection.name
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {

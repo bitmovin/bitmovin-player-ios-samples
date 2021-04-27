@@ -1,6 +1,6 @@
 //
 // Bitmovin Player iOS SDK
-// Copyright (C) 2017, Bitmovin GmbH, All Rights Reserved
+// Copyright (C) 2021, Bitmovin GmbH, All Rights Reserved
 //
 // This source code and its use and distribution, is subject to the terms
 // and conditions of the applicable license agreement.
@@ -11,7 +11,7 @@ import BitmovinPlayer
 
 final class ViewController: UIViewController {
 
-    fileprivate var player: Player?
+    fileprivate var player: Player!
     fileprivate var customMessageHandler: CustomMessageHandler?
 
     @IBOutlet fileprivate weak var playerContainerView: UIView!
@@ -28,9 +28,6 @@ final class ViewController: UIViewController {
             return
         }
 
-        // Create player configuration
-        let config = PlayerConfiguration()
-
         /**
          * Go to https://github.com/bitmovin/bitmovin-player-ui to get started with creating a custom player UI.
          */
@@ -39,33 +36,31 @@ final class ViewController: UIViewController {
             print("Please specify the needed resources marked with TODO in ViewController.swift file.")
             return
         }
-        config.styleConfiguration.playerUiCss = cssURL
-        config.styleConfiguration.playerUiJs = jsURL
 
-        config.styleConfiguration.userInterfaceConfiguration = bitmovinUserInterfaceConfiguration
+        // Create player configuration
+        let config = PlayerConfig()
 
-        do {
-            try config.setSourceItem(url: streamUrl)
+        config.styleConfig.playerUiCss = cssURL
+        config.styleConfig.playerUiJs = jsURL
+        config.styleConfig.userInterfaceConfig = bitmovinUserInterfaceConfig
 
-            // Create player based on player configuration
-            let player = Player(configuration: config)
+        // Create player based on player configuration
+        player = PlayerFactory.create(playerConfig: config)
 
-            // Create player view and pass the player instance to it
-            let playerView = BMPBitmovinPlayerView(player: player, frame: .zero)
+        // Create player view and pass the player instance to it
+        let playerView = PlayerView(player: player, frame: .zero)
 
-            // Listen to player events
-            player.add(listener: self)
+        // Listen to player events
+        player.add(listener: self)
 
-            playerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-            playerView.frame = playerContainerView.bounds
+        playerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        playerView.frame = playerContainerView.bounds
 
-            playerContainerView.addSubview(playerView)
-            playerContainerView.bringSubviewToFront(playerView)
+        playerContainerView.addSubview(playerView)
+        playerContainerView.bringSubviewToFront(playerView)
 
-            self.player = player
-        } catch {
-            print("Configuration error: \(error)")
-        }
+        let sourceConfig = SourceConfig(url: streamUrl, type: .hls)
+        player.load(sourceConfig: sourceConfig)
     }
 
     @IBAction fileprivate func toggleCloseButton(_ sender: Any) {
@@ -73,14 +68,14 @@ final class ViewController: UIViewController {
         customMessageHandler?.sendMessage("toggleCloseButton")
     }
 
-    fileprivate var bitmovinUserInterfaceConfiguration: BitmovinUserInterfaceConfiguration {
+    fileprivate var bitmovinUserInterfaceConfig: BitmovinUserInterfaceConfig {
         // Configure the JS <> Native communication
-        let bitmovinUserInterfaceConfiguration = BitmovinUserInterfaceConfiguration()
+        let bitmovinUserInterfaceConfig = BitmovinUserInterfaceConfig()
         // Create an instance of the custom message handler
         customMessageHandler = CustomMessageHandler()
         customMessageHandler?.delegate = self
-        bitmovinUserInterfaceConfiguration.customMessageHandler = customMessageHandler
-        return bitmovinUserInterfaceConfiguration
+        bitmovinUserInterfaceConfig.customMessageHandler = customMessageHandler
+        return bitmovinUserInterfaceConfig
     }
 }
 
@@ -99,27 +94,8 @@ extension ViewController: CustomMessageHandlerDelegate {
     }
 }
 
-// MARK: - PlayerListener
 extension ViewController: PlayerListener {
-
-    func onPlay(_ event: PlayEvent) {
-        print("onPlay \(event.time)")
-    }
-
-    func onPaused(_ event: PausedEvent) {
-        print("onPaused \(event.time)")
-    }
-
-    func onTimeChanged(_ event: TimeChangedEvent) {
-        print("onTimeChanged \(event.currentTime)")
-    }
-
-    func onDurationChanged(_ event: DurationChangedEvent) {
-        print("onDurationChanged \(event.duration)")
-    }
-
-    func onError(_ event: ErrorEvent) {
-        print("onError \(event.message)")
+    func onEvent(_ event: Event, player: Player) {
+        dump(event, name: "[Player Event]", maxDepth: 1)
     }
 }
-

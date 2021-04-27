@@ -1,6 +1,6 @@
 //
 // Bitmovin Player iOS SDK
-// Copyright (C) 2017, Bitmovin GmbH, All Rights Reserved
+// Copyright (C) 2021, Bitmovin GmbH, All Rights Reserved
 //
 // This source code and its use and distribution, is subject to the terms
 // and conditions of the applicable license agreement.
@@ -14,7 +14,7 @@ final class ViewController: UIViewController {
     let adTagVast1 = "https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/single_ad_samples&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dlinear&correlator="
     let adTagVast2 = "https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/ad_rule_samples&ciu_szs=300x250&ad_rule=1&impl=s&gdfp_req=1&env=vp&output=vmap&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ar%3Dpostonly&cmsid=496&vid=short_onecue&correlator="
     
-    var player: Player?
+    var player: Player!
     
     deinit {
         player?.destroy()
@@ -31,46 +31,41 @@ final class ViewController: UIViewController {
         }
         
         // Create player configuration
-        let config = PlayerConfiguration()
+        let config = PlayerConfig()
 
-        let uiConfig = BitmovinUserInterfaceConfiguration()
+        let uiConfig = BitmovinUserInterfaceConfig()
         uiConfig.hideFirstFrame = true
-        config.styleConfiguration.userInterfaceConfiguration = uiConfig
+        config.styleConfig.userInterfaceConfig = uiConfig
 
         // Create Advertising configuration
-        let adSource1 = AdSource(tag: urlWithCorrelator(adTag: adTagVastSkippable), ofType: .IMA)
-        let adSource2 = AdSource(tag: urlWithCorrelator(adTag: adTagVast1), ofType: .IMA)
-        let adSource3 = AdSource(tag: urlWithCorrelator(adTag: adTagVast2), ofType: .IMA)
+        let adSource1 = AdSource(tag: urlWithCorrelator(adTag: adTagVastSkippable), ofType: .ima)
+        let adSource2 = AdSource(tag: urlWithCorrelator(adTag: adTagVast1), ofType: .ima)
+        let adSource3 = AdSource(tag: urlWithCorrelator(adTag: adTagVast2), ofType: .ima)
         
         let preRoll = AdItem(adSources: [adSource1], atPosition: "pre")
         let midRoll = AdItem(adSources: [adSource2], atPosition: "20%")
         let postRoll = AdItem(adSources: [adSource3], atPosition: "post")
         
-        let adConfig = AdvertisingConfiguration(schedule: [preRoll, midRoll, postRoll])
-        config.advertisingConfiguration = adConfig
-        
-        do {
-            try config.setSourceItem(url: streamUrl)
-            
-            // Create player based on player configuration
-            let player = Player(configuration: config)
-            
-            // Create player view and pass the player instance to it
-            let playerView = BMPBitmovinPlayerView(player: player, frame: .zero)
+        let adConfig = AdvertisingConfig(schedule: [preRoll, midRoll, postRoll])
+        config.advertisingConfig = adConfig
 
-            // Listen to player events
-            player.add(listener: self)
+        // Create player based on player configuration
+        player = PlayerFactory.create(playerConfig: config)
 
-            playerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-            playerView.frame = view.bounds
-            
-            view.addSubview(playerView)
-            view.bringSubviewToFront(playerView)
-            
-            self.player = player
-        } catch {
-            print("Configuration error: \(error)")
-        }
+        // Create player view and pass the player instance to it
+        let playerView = PlayerView(player: player, frame: .zero)
+
+        // Listen to player events
+        player.add(listener: self)
+
+        playerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        playerView.frame = view.bounds
+
+        view.addSubview(playerView)
+        view.bringSubviewToFront(playerView)
+
+        let sourceConfig = SourceConfig(url: streamUrl, type: .hls)
+        player.load(sourceConfig: sourceConfig)
     }
     
     func urlWithCorrelator(adTag: String) -> URL {
@@ -79,36 +74,7 @@ final class ViewController: UIViewController {
 }
 
 extension ViewController: PlayerListener {
-
-    func onAdScheduled(_ event: AdScheduledEvent) {
-        print("onAdScheduled \(event.timestamp)")
-    }
-
-    func onAdManifestLoaded(_ event: AdManifestLoadedEvent) {
-        print("onAdManifestLoaded \(event.timestamp) \(event.adBreak?.identifier ?? "")")
-    }
-
-    func onAdBreakStarted(_ event: AdBreakStartedEvent) {
-        print("onAdBreakStarted \(event.timestamp) \(event.adBreak.identifier)")
-    }
-    
-    func onAdStarted(_ event: AdStartedEvent) {
-        print("onAdStarted \(event.timestamp) \(event.ad.identifier ?? "")")
-    }
-
-    func onAdQuartile(_ event: AdQuartileEvent) {
-        print("onAdQuartile \(event.adQuartile.rawValue)")
-    }
-
-    func onAdFinished(_ event: AdFinishedEvent) {
-        print("onAdFinished \(event.timestamp)")
-    }
-    
-    func onAdBreakFinished(_ event: AdBreakFinishedEvent) {
-        print("onAdBreakFinished \(event.timestamp) \(event.adBreak.identifier)")
-    }
-
-    func onAdError(_ event: AdErrorEvent) {
-        print("onAdError \(event.timestamp) \(event.adConfig?.debugDescription ?? "")")
+    func onEvent(_ event: Event, player: Player) {
+        dump(event, name: "[Player Event]", maxDepth: 1)
     }
 }

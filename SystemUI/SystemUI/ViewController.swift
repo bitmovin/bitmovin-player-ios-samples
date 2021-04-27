@@ -1,6 +1,6 @@
 //
 // Bitmovin Player iOS SDK
-// Copyright (C) 2017, Bitmovin GmbH, All Rights Reserved
+// Copyright (C) 2021, Bitmovin GmbH, All Rights Reserved
 //
 // This source code and its use and distribution, is subject to the terms
 // and conditions of the applicable license agreement.
@@ -10,8 +10,7 @@ import UIKit
 import BitmovinPlayer
 
 final class ViewController: UIViewController {
-    
-    var player: Player?
+    var player: Player!
     
     deinit {
         player?.destroy()
@@ -28,56 +27,33 @@ final class ViewController: UIViewController {
         }
         
         // Create player configuration
-        let config = PlayerConfiguration()
-        
-        do {
-            try config.setSourceItem(url: streamUrl)
-            
-            // configure the player to use the systems default user interface 
-            config.styleConfiguration.userInterfaceType = .system
-            
-            // Create player based on player configuration
-            let player = Player(configuration: config)
-            
-            // Create player view and pass the player instance to it
-            let playerView = BMPBitmovinPlayerView(player: player, frame: .zero)
+        let config = PlayerConfig()
 
-            // Listen to player events
-            player.add(listener: self)
-            
-            playerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-            playerView.frame = view.bounds
-            
-            view.addSubview(playerView)
-            view.bringSubviewToFront(playerView)
-            
-            self.player = player
-        } catch {
-            print("Configuration error: \(error)")
-        }
+        // configure the player to use the systems default user interface
+        config.styleConfig.userInterfaceType = .system
+
+        // Create player based on player configuration
+        player = PlayerFactory.create(playerConfig: config)
+
+        // Create player view and pass the player instance to it
+        let playerView = PlayerView(player: player, frame: .zero)
+
+        // Listen to player events
+        player.add(listener: self)
+
+        playerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        playerView.frame = view.bounds
+
+        view.addSubview(playerView)
+        view.bringSubviewToFront(playerView)
+
+        let sourceConfig = SourceConfig(url: streamUrl, type: .hls)
+        player.load(sourceConfig: sourceConfig)
     }
 }
 
 extension ViewController: PlayerListener {
-    
-    func onPlay(_ event: PlayEvent) {
-        print("onPlay \(event.time)")
-    }
-    
-    func onPaused(_ event: PausedEvent) {
-        print("onPaused \(event.time)")
-    }
-    
-    func onTimeChanged(_ event: TimeChangedEvent) {
-        print("onTimeChanged \(event.currentTime)")
-    }
-    
-    func onDurationChanged(_ event: DurationChangedEvent) {
-        print("onDurationChanged \(event.duration)")
-    }
-    
-    func onError(_ event: ErrorEvent) {
-        print("onError \(event.message)")
+    func onEvent(_ event: Event, player: Player) {
+        dump(event, name: "[Player Event]", maxDepth: 1)
     }
 }
-

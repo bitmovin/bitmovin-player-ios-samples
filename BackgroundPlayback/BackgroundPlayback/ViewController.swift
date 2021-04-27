@@ -1,6 +1,6 @@
 //
 // Bitmovin Player iOS SDK
-// Copyright (C) 2017, Bitmovin GmbH, All Rights Reserved
+// Copyright (C) 2021, Bitmovin GmbH, All Rights Reserved
 //
 // This source code and its use and distribution, is subject to the terms
 // and conditions of the applicable license agreement.
@@ -11,8 +11,7 @@ import BitmovinPlayer
 import MediaPlayer
 
 final class ViewController: UIViewController {
-
-    var player: Player?
+    var player: Player!
     var nowPlayingInfo: [String: Any] = [:]
 
     deinit {
@@ -31,42 +30,37 @@ final class ViewController: UIViewController {
         }
 
         // Create player configuration
-        let config = PlayerConfiguration()
+        let config = PlayerConfig()
 
-        do {
-            try config.setSourceItem(url: streamUrl)
+        // Enable background playback for the BitmovinPlayer
+        config.playbackConfig.isBackgroundPlaybackEnabled = true
 
-            config.sourceItem?.itemTitle = "Art Of Motion"
-            config.sourceItem?.posterSource = posterUrl
-            
-            // Enable background playback for the BitmovinPlayer
-            config.playbackConfiguration.isBackgroundPlaybackEnabled = true
+        // Create player based on player configuration
+        player = PlayerFactory.create(playerConfig: config)
 
-            // Create player based on player configuration
-            let player = Player(configuration: config)
+        // Create player view and pass the player instance to it
+        let playerView = PlayerView(player: player, frame: .zero)
 
-            // Create player view and pass the player instance to it
-            let playerView = BMPBitmovinPlayerView(player: player, frame: .zero)
+        // Listen to player events
+        player.add(listener: self)
 
-            // Listen to player events
-            player.add(listener: self)
+        playerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        playerView.frame = view.bounds
 
-            playerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-            playerView.frame = view.bounds
+        view.addSubview(playerView)
+        view.bringSubviewToFront(playerView)
 
-            view.addSubview(playerView)
-            view.bringSubviewToFront(playerView)
+        let sourceConfig = SourceConfig(url: streamUrl, type: .hls)
 
-            self.player = player
+        sourceConfig.title = "Art Of Motion"
+        sourceConfig.posterSource = posterUrl
+        player.load(sourceConfig: sourceConfig)
 
-            // Setup remote control commands to be able to control playback from Control Center
-            setupRemoteTransportControls()
+        // Setup remote control commands to be able to control playback from Control Center
+        setupRemoteTransportControls()
 
-            // Set playback metadata. Updates to the other metadata values are done in the specific listeners
-            setupNowPlayingMetadata(imageUrl: posterUrl, sourceItem: config.sourceItem)
-        } catch {
-            print("Configuration error: \(error)")
-        }
+        // Set playback metadata. Updates to the other metadata values are done in the specific listeners
+        setupNowPlayingMetadata(imageUrl: posterUrl, sourceConfig: sourceConfig)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -122,7 +116,7 @@ final class ViewController: UIViewController {
         }
     }
 
-    func setupNowPlayingMetadata(imageUrl: URL, sourceItem: SourceItem?) {
+    func setupNowPlayingMetadata(imageUrl: URL, sourceConfig: SourceConfig) {
         URLSession.shared.dataTask(with: imageUrl) { data, response, error in
             guard error == nil,
                   let httpResponse = response as? HTTPURLResponse,
@@ -139,7 +133,7 @@ final class ViewController: UIViewController {
             }
         }.resume()
 
-        updateNowPlayingMetadata(key: MPMediaItemPropertyTitle, value: sourceItem?.itemTitle ?? "No Title")
+        updateNowPlayingMetadata(key: MPMediaItemPropertyTitle, value: sourceConfig.title ?? "No Title")
     }
 
     func updateNowPlayingMetadata(key: String, value: Any) {
@@ -148,14 +142,8 @@ final class ViewController: UIViewController {
     }
 }
 
-/* Listener for player events */
 extension ViewController: PlayerListener {
-
-    func onTimeChanged(_ event: TimeChangedEvent) {
-        updateNowPlayingMetadata(key: MPNowPlayingInfoPropertyElapsedPlaybackTime, value: event.currentTime)
-    }
-
-    func onDurationChanged(_ event: DurationChangedEvent) {
-        updateNowPlayingMetadata(key: MPMediaItemPropertyPlaybackDuration, value: event.duration)
+    func onEvent(_ event: Event, player: Player) {
+        dump(event, name: "[Player Event]", maxDepth: 1)
     }
 }

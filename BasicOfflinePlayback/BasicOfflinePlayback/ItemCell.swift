@@ -1,6 +1,6 @@
 //
 // Bitmovin Player iOS SDK
-// Copyright (C) 2017, Bitmovin GmbH, All Rights Reserved
+// Copyright (C) 2021, Bitmovin GmbH, All Rights Reserved
 //
 // This source code and its use and distribution, is subject to the terms
 // and conditions of the applicable license agreement.
@@ -13,10 +13,10 @@ final class ItemCell: UITableViewCell {
 
     static let identifier = "ItemCell"
 
-    var item: SourceItem? {
+    var sourceConfig: SourceConfig? {
         didSet {
-            textLabel?.text = item?.itemTitle
-            detailTextLabel?.text = item?.itemDescription
+            textLabel?.text = sourceConfig?.title
+            detailTextLabel?.text = sourceConfig?.sourceDescription
         }
     }
 

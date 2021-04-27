@@ -1,6 +1,6 @@
 //
 // Bitmovin Player iOS SDK
-// Copyright (C) 2017, Bitmovin GmbH, All Rights Reserved
+// Copyright (C) 2021, Bitmovin GmbH, All Rights Reserved
 //
 // This source code and its use and distribution, is subject to the terms
 // and conditions of the applicable license agreement.
@@ -10,8 +10,7 @@ import UIKit
 import BitmovinPlayer
 
 final class ViewController: UIViewController {
-
-    var player: Player?
+    var player: Player!
 
     deinit {
         player?.destroy()
@@ -32,37 +31,35 @@ final class ViewController: UIViewController {
         }
 
         // Create player configuration
-        let config = PlayerConfiguration()
+        let config = PlayerConfig()
 
-        do {
-            try config.setSourceItem(url: streamUrl)
+        // Create player based on player configuration
+        player = PlayerFactory.create(playerConfig: config)
 
-            // Create player based on player configuration
-            let player = Player(configuration: config)
+        // Create player view and pass the player instance to it
+        let playerView = PlayerView(player: player, frame: .zero)
 
-            // Create player view and pass the player instance to it
-            let playerView = BMPBitmovinPlayerView(player: player, frame: .zero)
+        // Listen to player events
+        player.add(listener: self)
 
-            // Listen to player events
-            player.add(listener: self)
+        playerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        playerView.frame = view.bounds
 
-            playerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-            playerView.frame = view.bounds
+        view.addSubview(playerView)
+        view.bringSubviewToFront(playerView)
 
-            view.addSubview(playerView)
-            view.bringSubviewToFront(playerView)
-
-            self.player = player
-        } catch {
-            print("Configuration error: \(error)")
-        }
+        let sourceConfig = SourceConfig(url: streamUrl, type: .hls)
+        player.load(sourceConfig: sourceConfig)
     }
 }
 
 extension ViewController: PlayerListener {
+    func onEvent(_ event: Event, player: Player) {
+        dump(event, name: "[Player Event]", maxDepth: 1)
+    }
 
-    public func onMetadata(_ event: MetadataEvent) {
-        if (event.metadataType == .ID3) {
+    public func onMetadata(_ event: MetadataEvent, player: Player) {
+        if event.metadataType == .ID3 {
             for entry in event.metadata.entries {
                 if let metadataEntry = entry as? AVMetadataItem,
                    let id3Key = metadataEntry.key {

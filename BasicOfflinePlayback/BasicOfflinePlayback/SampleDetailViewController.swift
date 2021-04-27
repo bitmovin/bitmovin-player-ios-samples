@@ -1,6 +1,6 @@
 //
 // Bitmovin Player iOS SDK
-// Copyright (C) 2017, Bitmovin GmbH, All Rights Reserved
+// Copyright (C) 2021, Bitmovin GmbH, All Rights Reserved
 //
 // This source code and its use and distribution, is subject to the terms
 // and conditions of the applicable license agreement.
@@ -23,15 +23,15 @@ final class SampleDetailViewController: UIViewController {
     @IBOutlet private weak var deleteButton: UIButton!
     @IBOutlet private weak var playButton: UIButton!
 
-    var sourceItem: SourceItem!
-    
+    var sourceConfig: SourceConfig!
+
     private var reach: Reachability!
     private var offlineManager = OfflineManager.sharedInstance()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        guard let sourceItem = sourceItem else {
+        guard let sourceConfig = sourceConfig else {
             finishWithError(title: "No item", message: "There is no item to display")
             return
         }
@@ -45,18 +45,18 @@ final class SampleDetailViewController: UIViewController {
         // Store reference to reachability manager to be able to check for an existing network connection
         self.reach = reach
 
-        // Display name of stream and init the view state based on the current state of the sourceItem
-        itemNameLabel.text = sourceItem.itemTitle
-        setViewState(offlineManager.offlineState(for: sourceItem))
+        // Display name of stream and init the view state based on the current state of the sourceConfig
+        itemNameLabel.text = sourceConfig.title
+        setViewState(offlineManager.offlineState(for: sourceConfig))
 
-        offlineManager.add(listener: self, for: sourceItem)
+        offlineManager.add(listener: self, for: sourceConfig)
     }
 
     override func didMove(toParent parent: UIViewController?) {
         super.didMove(toParent: parent)
         if parent == nil {
             // Back button was pressed. Clean up code goes here.
-            offlineManager.remove(listener: self, for: sourceItem)
+            offlineManager.remove(listener: self, for: sourceConfig)
         }
     }
 
@@ -69,47 +69,49 @@ final class SampleDetailViewController: UIViewController {
             return
         }
 
-        if let posterUrl = sourceItem.posterSource {
+        if let posterUrl = sourceConfig.posterSource {
             downloadArtworkData(posterUrl) { artworkData in
-                self.sourceItem.metadata[MetadataIdentifierArtwork] = artworkData
-                self.download(sourceItem: self.sourceItem)
+                self.sourceConfig.metadata[MetadataIdentifierArtwork] = artworkData
+                self.download(sourceConfig: self.sourceConfig)
             }
         } else {
-            download(sourceItem: sourceItem)
+            download(sourceConfig: sourceConfig)
         }
     }
 
-    func download(sourceItem: SourceItem) {
-        offlineManager.download(sourceItem: sourceItem, minimumBitrate: 825_000)
+    func download(sourceConfig: SourceConfig) {
+        let downloadConfig = DownloadConfig()
+        downloadConfig.minimumBitrate = 825_000
+        offlineManager.download(sourceConfig: sourceConfig, downloadConfig: downloadConfig)
         setViewState(.downloading)
     }
 
     @IBAction private func didTapPauseButton() {
-        guard offlineManager.offlineState(for: sourceItem) == .downloading else {
+        guard offlineManager.offlineState(for: sourceConfig) == .downloading else {
             return
         }
         print("[SampleDetailViewController] Pausing downloads")
-        offlineManager.suspendDownload(for: sourceItem)
+        offlineManager.suspendDownload(for: sourceConfig)
     }
 
     @IBAction private func didTapResumeButton() {
-        guard offlineManager.offlineState(for: sourceItem) == .suspended else {
+        guard offlineManager.offlineState(for: sourceConfig) == .suspended else {
             return
         }
         print("[SampleDetailViewController] Resuming downloads")
-        offlineManager.resumeDownload(for: sourceItem)
+        offlineManager.resumeDownload(for: sourceConfig)
     }
 
     @IBAction private func didTapCancelButton() {
-        guard offlineManager.offlineState(for: sourceItem) == .downloading else {
+        guard offlineManager.offlineState(for: sourceConfig) == .downloading else {
             return
         }
         print("[SampleDetailViewController] Canceling downloads")
-        offlineManager.cancelDownload(for: sourceItem)
+        offlineManager.cancelDownload(for: sourceConfig)
     }
 
     @IBAction private func didTapDeleteButton() {
-        offlineManager.deleteOfflineData(for: sourceItem)
+        offlineManager.deleteOfflineData(for: sourceConfig)
         setViewState(.notDownloaded)
     }
 
@@ -120,7 +122,7 @@ final class SampleDetailViewController: UIViewController {
             return
         }
 
-        controller.sourceItem = sourceItem
+        controller.sourceConfig = sourceConfig
     }
 
     private func finishWithError(title: String, message: String) {
@@ -133,7 +135,7 @@ final class SampleDetailViewController: UIViewController {
         present(alert, animated: true)
     }
 
-    private func setViewState(_ viewState: BMPOfflineState, withProgress progress: Double) {
+    private func setViewState(_ viewState: OfflineState, withProgress progress: Double) {
         switch viewState {
         case .downloaded:
             downloadButton.isHidden = true
@@ -182,7 +184,7 @@ final class SampleDetailViewController: UIViewController {
         }
     }
 
-    private func setViewState(_ viewState: BMPOfflineState) {
+    private func setViewState(_ viewState: OfflineState) {
         setViewState(viewState, withProgress: 0.0)
     }
 }
@@ -225,7 +227,7 @@ extension SampleDetailViewController: OfflineManagerListener {
     func offlineManagerDidRenewOfflineLicense(_ offlineManager: OfflineManager) {
         print("[SampleDetailViewController] License renewed")
     }
-    
+
     func offlineManagerOfflineLicenseDidExpire(_ offlineManager: OfflineManager) {
         print("[SampleDetailViewController] License expired")
     }

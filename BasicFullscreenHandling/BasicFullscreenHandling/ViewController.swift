@@ -1,6 +1,6 @@
 //
 // Bitmovin Player iOS SDK
-// Copyright (C) 2018, Bitmovin GmbH, All Rights Reserved
+// Copyright (C) 2021, Bitmovin GmbH, All Rights Reserved
 //
 // This source code and its use and distribution, is subject to the terms
 // and conditions of the applicable license agreement.
@@ -10,9 +10,8 @@ import UIKit
 import BitmovinPlayer
 
 final class ViewController: UIViewController {
-
-    weak var player: Player?
-    var playerView: BMPBitmovinPlayerView?
+    var player: Player!
+    var playerView: PlayerView!
 
     var orientation: UIInterfaceOrientationMask = .allButUpsideDown
     var fullscreenRequestedByOrientationChange: Bool = false
@@ -56,25 +55,13 @@ final class ViewController: UIViewController {
         }
 
         // Create player configuration
-        let config = PlayerConfiguration()
-
-        // Create HLS source
-        let hlsSource = HLSSource(url: streamUrl)
-
-        // Create source item
-        let sourceItem = SourceItem(hlsSource: hlsSource)
-
-        // Set a poster image
-        sourceItem.posterSource = posterUrl
-
-        // Set config source
-        config.sourceItem = sourceItem
+        let config = PlayerConfig()
 
         // Create player based on player configuration
-        let player = Player(configuration: config)
+        player = PlayerFactory.create(playerConfig: config)
 
         // Create player view and pass the player instance to it
-        let playerView = BMPBitmovinPlayerView(player: player, frame: .zero)
+        playerView = PlayerView(player: player, frame: .zero)
 
         // Set fullscreen handler
         playerView.fullscreenHandler = self
@@ -88,8 +75,10 @@ final class ViewController: UIViewController {
         view.addSubview(playerView)
         view.bringSubviewToFront(playerView)
 
-        self.playerView = playerView
-        self.player = player
+        let sourceConfig = SourceConfig(url: streamUrl, type: .hls)
+        sourceConfig.posterSource = posterUrl
+
+        player.load(sourceConfig: sourceConfig)
     }
 
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -160,27 +149,8 @@ extension ViewController: FullscreenHandler {
     }
 }
 
-// MARK: Player Listener
-
 extension ViewController: PlayerListener {
-
-    func onPlay(_ event: PlayEvent) {
-        print("onPlay \(event.time)")
-    }
-
-    func onPaused(_ event: PausedEvent) {
-        print("onPaused \(event.time)")
-    }
-
-    func onTimeChanged(_ event: TimeChangedEvent) {
-        print("onTimeChanged \(event.currentTime)")
-    }
-
-    func onDurationChanged(_ event: DurationChangedEvent) {
-        print("onDurationChanged \(event.duration)")
-    }
-
-    func onError(_ event: ErrorEvent) {
-        print("onError \(event.message)")
+    func onEvent(_ event: Event, player: Player) {
+        dump(event, name: "[Player Event]", maxDepth: 1)
     }
 }

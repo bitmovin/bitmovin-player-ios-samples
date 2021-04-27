@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1100"
+   LastUpgradeVersion = "1240"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ACCE9F181FC5D8B900EA5FB1"
+               BlueprintIdentifier = "65C8575B25DB163E009FA5A1"
                BuildableName = "BasicPlaylist.app"
                BlueprintName = "BasicPlaylist"
                ReferencedContainer = "container:BasicPlaylist.xcodeproj">
@@ -44,7 +44,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "ACCE9F181FC5D8B900EA5FB1"
+            BlueprintIdentifier = "65C8575B25DB163E009FA5A1"
             BuildableName = "BasicPlaylist.app"
             BlueprintName = "BasicPlaylist"
             ReferencedContainer = "container:BasicPlaylist.xcodeproj">
@@ -61,7 +61,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "ACCE9F181FC5D8B900EA5FB1"
+            BlueprintIdentifier = "65C8575B25DB163E009FA5A1"
             BuildableName = "BasicPlaylist.app"
             BlueprintName = "BasicPlaylist"
             ReferencedContainer = "container:BasicPlaylist.xcodeproj">
