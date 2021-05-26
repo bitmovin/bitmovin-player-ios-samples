@@ -7,7 +7,7 @@ source 'https://github.com/bitmovin/cocoapod-specs.git'
 workspace 'BitmovinPlayerSamples'
 
 def bitmovin_player
-  pod 'BitmovinPlayer', '3.0.1'
+  pod 'BitmovinPlayer', '3.1.0'
 end
 
 def google_cast
@@ -33,6 +33,11 @@ target 'BasicCasting' do
     project 'BasicCasting/BasicCasting.xcodeproj'
     bitmovin_player
     google_cast
+end
+
+target 'BasicPictureInPicture' do
+    project 'BasicPictureInPicture/BasicPictureInPicture.xcodeproj'
+    bitmovin_player
 end
 
 target 'AdvancedCasting' do

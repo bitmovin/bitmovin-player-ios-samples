@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cE7-0A-RRo">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Id2-sg-vUm">
+            <objects>
+                <navigationController id="cE7-0A-RRo" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tyf-b8-eq5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="AhM-rx-I5Z" kind="relationship" relationship="rootViewController" id="22q-zb-CUz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kQh-n9-2yL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1938" y="126"/>
+        </scene>
+        <!--Setup Player View Controller-->
+        <scene sceneID="DsH-qV-9x7">
+            <objects>
+                <viewController id="AhM-rx-I5Z" customClass="SetupPlayerViewController" customModule="BasicPictureInPicture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hLX-bO-TXY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We support Picture in Picture playback starting with `iOS 14.2`. Here you can select the `UserInterfaceType` for this sample." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHv-XK-PU7">
+                                <rect key="frame" x="16" y="104" width="382" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rtP-5Y-11k">
+                                <rect key="frame" x="75.5" y="190" width="263" height="32"/>
+                                <segments>
+                                    <segment title="Bitmovin Player UI"/>
+                                    <segment title="System UI"/>
+                                </segments>
+                                <connections>
+                                    <action selector="selectPlayerSegmentControlValueChanged:" destination="AhM-rx-I5Z" eventType="valueChanged" id="QXG-gq-LEl"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YyA-Rv-wzV">
+                                <rect key="frame" x="16" y="246" width="382" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ipN-Lo-6Zv"/>
+                                </constraints>
+                                <state key="normal" title="Setup Player"/>
+                                <connections>
+                                    <segue destination="Y6W-OH-hqX" kind="show" identifier="fromSetupPlayerToViewController" id="zXo-Fb-q6z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ws8-l7-LKP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YyA-Rv-wzV" firstAttribute="top" secondItem="rtP-5Y-11k" secondAttribute="bottom" constant="25" id="1M8-Wm-ggk"/>
+                            <constraint firstItem="YyA-Rv-wzV" firstAttribute="leading" secondItem="Ws8-l7-LKP" secondAttribute="leading" constant="16" id="9ue-KB-ADi"/>
+                            <constraint firstItem="cHv-XK-PU7" firstAttribute="top" secondItem="Ws8-l7-LKP" secondAttribute="top" constant="16" id="AZo-Zq-AUc"/>
+                            <constraint firstItem="Ws8-l7-LKP" firstAttribute="trailing" secondItem="YyA-Rv-wzV" secondAttribute="trailing" constant="16" id="JwH-GG-71o"/>
+                            <constraint firstItem="cHv-XK-PU7" firstAttribute="leading" secondItem="Ws8-l7-LKP" secondAttribute="leading" constant="16" id="bEL-Fc-e3i"/>
+                            <constraint firstItem="rtP-5Y-11k" firstAttribute="centerX" secondItem="hLX-bO-TXY" secondAttribute="centerX" id="cmT-cz-40a"/>
+                            <constraint firstAttribute="trailing" secondItem="cHv-XK-PU7" secondAttribute="trailing" constant="16" id="k2N-Sq-mRM"/>
+                            <constraint firstItem="rtP-5Y-11k" firstAttribute="top" secondItem="cHv-XK-PU7" secondAttribute="bottom" constant="25" id="vd8-5N-bIe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="TzH-Kb-XmP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wVG-BZ-HqV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-930" y="126"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="ViewController" customModule="BasicPictureInPicture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="t0l-HP-ZRu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128" y="126"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

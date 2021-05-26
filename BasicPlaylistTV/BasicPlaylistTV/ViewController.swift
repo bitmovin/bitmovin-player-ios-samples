@@ -21,11 +21,6 @@ final class ViewController: UIViewController {
 
         self.view.backgroundColor = .black
 
-        // Define needed resources
-        guard let streamUrl = URL(string: "https://bitmovin-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8") else {
-            return
-        }
-
         // Create player configuration
         let config = PlayerConfig()
 
@@ -52,7 +47,7 @@ final class ViewController: UIViewController {
         // Configure playlist-specific options
         let playlistOptions = PlaylistOptions(preloadAllSources: false)
 
-        // Create a playlist configuration containt the playlist items (sources) and the playlist options
+        // Create a playlist configuration containing the playlist items (sources) and the playlist options
         let playlistConfig = PlaylistConfig(
             sources: sources,
             options: playlistOptions

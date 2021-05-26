@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         // Configure playlist-specific options
         let playlistOptions = PlaylistOptions(preloadAllSources: false)
 
-        // Create a playlist configuration containt the playlist items (sources) and the playlist options
+        // Create a playlist configuration containing the playlist items (sources) and the playlist options
         let playlistConfig = PlaylistConfig(
             sources: sources,
             options: playlistOptions
