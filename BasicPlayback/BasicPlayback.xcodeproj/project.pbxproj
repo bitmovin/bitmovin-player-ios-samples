@@ -369,7 +369,7 @@
 				INFOPLIST_FILE = BasicPlayback/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bitmovin.player.samples.playback.basic;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.playback.basic-$(DEVELOPMENT_TEAM)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
@@ -389,7 +389,7 @@
 				INFOPLIST_FILE = BasicPlayback/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bitmovin.player.samples.playback.basic;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.playback.basic-$(DEVELOPMENT_TEAM)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};

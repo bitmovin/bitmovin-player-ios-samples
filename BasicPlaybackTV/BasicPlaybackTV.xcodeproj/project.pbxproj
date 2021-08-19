@@ -342,7 +342,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BasicPlaybackTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bitmovin.player.samples.tv.playback.basic;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.tv.playback.basic-$(DEVELOPMENT_TEAM)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -360,7 +360,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BasicPlaybackTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bitmovin.player.samples.tv.playback.basic;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.tv.playback.basic-$(DEVELOPMENT_TEAM)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
