@@ -125,6 +125,7 @@
 				TargetAttributes = {
 					AC094ABE1F3CD4C100EF6F94 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = "";
 						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
