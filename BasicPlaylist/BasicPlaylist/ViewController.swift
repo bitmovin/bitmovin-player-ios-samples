@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.view.backgroundColor = .black
+
         // Create a player configuration with the default settings
         let playerConfig = PlayerConfig()
 
@@ -46,6 +48,10 @@ class ViewController: UIViewController {
 
         // Load the playlist configuration into the player instance
         player.load(playlistConfig: playlistConfig)
+    }
+
+    override var prefersStatusBarHidden: Bool {
+        true
     }
 
     func createPlaylist() -> [Source] {
