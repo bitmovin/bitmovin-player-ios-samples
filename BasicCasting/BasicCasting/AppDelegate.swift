@@ -24,8 +24,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Initialize logging
         GCKLogger.sharedInstance().delegate = self
 
-        GCKCastContext.sharedInstance().discoveryManager.startDiscovery()
-
         return true
     }
 }

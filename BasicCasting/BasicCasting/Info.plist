@@ -27,6 +27,7 @@
 	<key>NSBonjourServices</key>
 	<array>
 		<string>_googlecast._tcp</string>
+		<string>_FFE417E5._googlecast._tcp</string>
 	</array>
 	<key>NSLocalNetworkUsageDescription</key>
 	<string>Required by Google Cast to use the local network to connect to Cast-enabled devices on your WiFi network starting with iOS 14.</string>

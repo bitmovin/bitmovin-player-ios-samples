@@ -39,8 +39,14 @@ final class PlaybackViewController: UIViewController {
         // Store reference to reachability manager to be able to check for an existing network connection
         self.reach = reach
 
+        // Get offline content manager for the source config
+        guard let offlineContentManager = try? offlineManager.offlineContentManager(for: sourceConfig) else {
+            finishWithError(title: "Internal error", message: "OfflineContentManager not found for source config")
+            return
+        }
+
         // Check the offline state of the SourceConfig to determine which action to take here
-        switch offlineManager.offlineState(for: sourceConfig) {
+        switch offlineContentManager.offlineState {
         case .downloaded, .downloading, .suspended:
             // When device is offline, we need to check if the asset can be played offline
             if reach.currentReachabilityStatus() == NetworkStatus.NotReachable {
@@ -49,8 +55,8 @@ final class PlaybackViewController: UIViewController {
                 restrict it to the audio and subtitle tracks which are cached on disk. As a result of that, tracks which
                 are not cached, does not show up as selectable in the player UI.
                 */
-                guard offlineManager.isPlayableOffline(sourceConfig: sourceConfig),
-                      let offlineSourceConfig = offlineManager.createOfflineSourceConfig(for: sourceConfig, restrictedToAssetCache: true) else {
+                guard offlineContentManager.offlineState == .downloaded,
+                      let offlineSourceConfig = offlineContentManager.createOfflineSourceConfig(restrictedToAssetCache: true) else {
                     finishWithError(title: "Error", message: "The device seems to be offline, but no offline content for the selected source available.")
                     return
                 }
@@ -62,7 +68,7 @@ final class PlaybackViewController: UIViewController {
                 tracks which are already cached. This way the user can select also renditions which are not downloaded
                 or downloading.
                 */
-                if let offlineSourceConfig = offlineManager.createOfflineSourceConfig(for: sourceConfig, restrictedToAssetCache: false) {
+                if let offlineSourceConfig = offlineContentManager.createOfflineSourceConfig(restrictedToAssetCache: false) {
                     sourceConfig = offlineSourceConfig
                 }
             }

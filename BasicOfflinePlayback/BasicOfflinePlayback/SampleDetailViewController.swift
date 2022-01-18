@@ -24,6 +24,7 @@ final class SampleDetailViewController: UIViewController {
     @IBOutlet private weak var playButton: UIButton!
 
     var sourceConfig: SourceConfig!
+    var offlineContentManager: OfflineContentManager?
 
     private var reach: Reachability!
     private var offlineManager = OfflineManager.sharedInstance()
@@ -47,16 +48,24 @@ final class SampleDetailViewController: UIViewController {
 
         // Display name of stream and init the view state based on the current state of the sourceConfig
         itemNameLabel.text = sourceConfig.title
-        setViewState(offlineManager.offlineState(for: sourceConfig))
 
-        offlineManager.add(listener: self, for: sourceConfig)
+        // Get offline content manager for the source config
+        guard let offlineContentManager = try? offlineManager.offlineContentManager(for: sourceConfig) else {
+            finishWithError(title: "Internal error", message: "OfflineContentManager not found for source config")
+            return
+        }
+        self.offlineContentManager = offlineContentManager
+
+        setViewState(offlineContentManager.offlineState)
+
+        offlineContentManager.add(listener: self)
     }
 
     override func didMove(toParent parent: UIViewController?) {
         super.didMove(toParent: parent)
         if parent == nil {
             // Back button was pressed. Clean up code goes here.
-            offlineManager.remove(listener: self, for: sourceConfig)
+            offlineContentManager?.remove(listener: self)
         }
     }
 
@@ -82,36 +91,36 @@ final class SampleDetailViewController: UIViewController {
     func download(sourceConfig: SourceConfig) {
         let downloadConfig = DownloadConfig()
         downloadConfig.minimumBitrate = 825_000
-        offlineManager.download(sourceConfig: sourceConfig, downloadConfig: downloadConfig)
+        offlineContentManager?.download(downloadConfig: downloadConfig)
         setViewState(.downloading)
     }
 
     @IBAction private func didTapPauseButton() {
-        guard offlineManager.offlineState(for: sourceConfig) == .downloading else {
+        guard offlineContentManager?.offlineState == .downloading else {
             return
         }
         print("[SampleDetailViewController] Pausing downloads")
-        offlineManager.suspendDownload(for: sourceConfig)
+        offlineContentManager?.suspendDownload()
     }
 
     @IBAction private func didTapResumeButton() {
-        guard offlineManager.offlineState(for: sourceConfig) == .suspended else {
+        guard offlineContentManager?.offlineState == .suspended else {
             return
         }
         print("[SampleDetailViewController] Resuming downloads")
-        offlineManager.resumeDownload(for: sourceConfig)
+        offlineContentManager?.resumeDownload()
     }
 
     @IBAction private func didTapCancelButton() {
-        guard offlineManager.offlineState(for: sourceConfig) == .downloading else {
+        guard offlineContentManager?.offlineState == .downloading else {
             return
         }
         print("[SampleDetailViewController] Canceling downloads")
-        offlineManager.cancelDownload(for: sourceConfig)
+        offlineContentManager?.cancelDownload()
     }
 
     @IBAction private func didTapDeleteButton() {
-        offlineManager.deleteOfflineData(for: sourceConfig)
+        offlineContentManager?.deleteOfflineData()
         setViewState(.notDownloaded)
     }
 
@@ -189,46 +198,44 @@ final class SampleDetailViewController: UIViewController {
     }
 }
 
-// MARK: OfflineManagerListener
-extension SampleDetailViewController: OfflineManagerListener {
-
-    func offlineManager(_ offlineManager: OfflineManager, didFailWithError error: Error?) {
-        let errorMessage = error?.localizedDescription ?? "unknown"
-        print("[SampleDetailViewController] Download resulted in error: \(errorMessage)")
+// MARK: OfflineContentManagerListener
+extension SampleDetailViewController: OfflineContentManagerListener {
+    func onOfflineError(_ event: OfflineErrorEvent, offlineContentManager: OfflineContentManager) {
+        print("[SampleDetailViewController] Download resulted in error: \(event.message)")
         setViewState(.notDownloaded)
     }
 
-    func offlineManagerDidFinishDownload(_ offlineManager: OfflineManager) {
+    func onContentDownloadFinished(_ event: ContentDownloadFinishedEvent, offlineContentManager: OfflineContentManager) {
         print("[SampleDetailViewController] Download Finished")
         setViewState(.downloaded)
     }
 
-    func offlineManager(_ offlineManager: OfflineManager, didProgressTo progress: Double) {
-        print("[SampleDetailViewController] Progress: \(progress)")
+    func onContentDownloadProgressChanged(_ event: ContentDownloadProgressChangedEvent, offlineContentManager: OfflineContentManager) {
+        print("[SampleDetailViewController] Progress: \(event.progress)")
         // update ui with current progress
-        setViewState(.downloading, withProgress: progress)
+        setViewState(.downloading, withProgress: event.progress)
     }
 
-    func offlineManagerDidSuspendDownload(_ offlineManager: OfflineManager) {
+    func onContentDownloadSuspended(_ event: ContentDownloadSuspendedEvent, offlineContentManager: OfflineContentManager) {
         print("[SampleDetailViewController] Suspended")
         setViewState(.suspended)
     }
 
-    func offlineManager(_ offlineManager: OfflineManager, didResumeDownloadWithProgress progress: Double) {
+    func onContentDownloadResumed(_ event: ContentDownloadResumedEvent, offlineContentManager: OfflineContentManager) {
         print("[SampleDetailViewController] Resumed")
-        setViewState(.downloading, withProgress: progress)
+        setViewState(.downloading, withProgress: event.progress)
     }
 
-    func offlineManagerDidCancelDownload(_ offlineManager: OfflineManager) {
+    func onContentDownloadCanceled(_ event: ContentDownloadCanceledEvent, offlineContentManager: OfflineContentManager) {
         print("[SampleDetailViewController] Cancelled")
         setViewState(.notDownloaded)
     }
 
-    func offlineManagerDidRenewOfflineLicense(_ offlineManager: OfflineManager) {
+    func onOfflineContentLicenseRenewed(_ event: OfflineContentLicenseRenewedEvent, offlineContentManager: OfflineContentManager) {
         print("[SampleDetailViewController] License renewed")
     }
 
-    func offlineManagerOfflineLicenseDidExpire(_ offlineManager: OfflineManager) {
+    func onOfflineContentLicenseExpired(_ event: OfflineContentLicenseExpiredEvent, offlineContentManager: OfflineContentManager) {
         print("[SampleDetailViewController] License expired")
     }
 }
