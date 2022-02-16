@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="19529" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BasicContentProposalTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-51" y="-54"/>
+        </scene>
+        <!--Content Proposal View Controller-->
+        <scene sceneID="U4h-15-IwV">
+            <objects>
+                <viewController storyboardIdentifier="ContentProposalViewController" id="ZlN-Uf-0Nf" customClass="ContentProposalViewController" customModule="PlayerDemoAppTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="85S-5g-bl5"/>
+                        <viewControllerLayoutGuide type="bottom" id="BiJ-Y6-BOE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vlf-eh-Ttm">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b52-7O-JJB">
+                                <rect key="frame" x="96" y="80" width="600" height="337.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="b52-7O-JJB" secondAttribute="height" multiplier="16:9" id="g3S-Xc-ZiA"/>
+                                    <constraint firstAttribute="width" constant="600" id="zmW-8e-IdA"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9kt-yd-ZHb">
+                                <rect key="frame" x="776" y="80" width="1044" height="336"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="TUn-mH-3tA">
+                                        <rect key="frame" x="0.0" y="0.0" width="1044" height="86"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T33-f4-pn7">
+                                                <rect key="frame" x="0.0" y="0.0" width="492" height="86"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                <state key="normal" title="Play Next"/>
+                                                <connections>
+                                                    <action selector="accept:" destination="ZlN-Uf-0Nf" eventType="primaryActionTriggered" id="Lqe-8c-bVd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pm-gw-2Qz">
+                                                <rect key="frame" x="552" y="0.0" width="492" height="86"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                <state key="normal" title="Return To Video"/>
+                                                <connections>
+                                                    <action selector="reject:" destination="ZlN-Uf-0Nf" eventType="primaryActionTriggered" id="qXR-BG-1Hx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhl-91-s7d">
+                                        <rect key="frame" x="0.0" y="94" width="1044" height="91"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u03-2X-lE2">
+                                        <rect key="frame" x="0.0" y="193" width="1044" height="143"/>
+                                        <string key="text">Description line 1
+Description line 2
+Description line 3
+Description line 4</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ipq-uj-zYI"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="b52-7O-JJB" firstAttribute="leading" secondItem="vlf-eh-Ttm" secondAttribute="leadingMargin" id="Aie-wO-Ich"/>
+                            <constraint firstItem="9kt-yd-ZHb" firstAttribute="top" secondItem="85S-5g-bl5" secondAttribute="bottom" constant="20" id="C12-3t-o1y"/>
+                            <constraint firstItem="9kt-yd-ZHb" firstAttribute="leading" secondItem="b52-7O-JJB" secondAttribute="trailing" constant="80" id="Jer-BZ-W1Z"/>
+                            <constraint firstItem="b52-7O-JJB" firstAttribute="top" secondItem="85S-5g-bl5" secondAttribute="bottom" constant="20" id="fdy-6Z-S87"/>
+                            <constraint firstItem="Ipq-uj-zYI" firstAttribute="trailing" secondItem="9kt-yd-ZHb" secondAttribute="trailing" constant="20" id="kbm-Cl-S7S"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="acceptButton" destination="T33-f4-pn7" id="5B1-XG-yAC"/>
+                        <outlet property="descriptionLabel" destination="u03-2X-lE2" id="ymX-q5-BIt"/>
+                        <outlet property="previewImageView" destination="b52-7O-JJB" id="xG5-oA-drh"/>
+                        <outlet property="rejectButton" destination="6pm-gw-2Qz" id="XSt-A7-E6P"/>
+                        <outlet property="titleLabel" destination="nhl-91-s7d" id="NnG-Mg-uGb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kVP-wq-1PG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-31" y="1346"/>
+        </scene>
+    </scenes>
+</document>
