@@ -7,7 +7,7 @@ source 'https://github.com/bitmovin/cocoapod-specs.git'
 workspace 'BitmovinPlayerSamples'
 
 def bitmovin_player
-  pod 'BitmovinPlayer', '3.13.0'
+  pod 'BitmovinPlayer', '3.14.0'
 end
 
 def google_cast
@@ -96,6 +96,12 @@ end
 
 target 'BasicPlaylistTV' do
     project 'BasicPlaylistTV/BasicPlaylistTV.xcodeproj'
+    platform :tvos, '12.0'
+    bitmovin_player
+end
+
+target 'NextUpTV' do
+    project 'NextUpTV/NextUpTV.xcodeproj'
     platform :tvos, '12.0'
     bitmovin_player
 end

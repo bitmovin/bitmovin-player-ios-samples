@@ -47,6 +47,8 @@ This repository contains sample apps which are using the Bitmovin Player iOS SDK
 +   **BasicPlaylist** Shows how to implement queueing / playlists.
 +   **BasicPlaylistTV** Shows how to implement queueing / playlists in a tvOS application.
 
+### Next Up
++ **NextUpTV** Shows how to implement next-up feature in a tvOS application
 
 ## Sample App Setup Instructions
 Please execute `pod install --repo-update` to properly initialize the workspace. In each sample app, you also have to add your Bitmovin Player license key to `Info.plist` file as `BitmovinPlayerLicenseKey` or provide it via the `PlayerConfig.key` property.
@@ -77,13 +79,13 @@ To add the SDK as a dependency to your project, you have two options: Using Coco
 #### Using CocoaPods
 1. Add `source 'https://github.com/bitmovin/cocoapod-specs.git'` to your Podfile.
 1. Run `pod repo update` to add the newly added source.
-1. Add `pod 'BitmovinPlayer', '3.13.0'` to your Podfile.
+1. Add `pod 'BitmovinPlayer', '3.14.0'` to your Podfile.
 1. Install the pod using `pod install`.
 
 See the `Podfile` of this repository for a full example.
 
 #### Adding the SDK Directly
-When using Xcode, go to the `General` page or your app target and add the SDK bundle (`BitmovinPlayer.xcframework`) under `Linked Frameworks and Libraries`. The latest SDK for iOS and tvOS can be downloaded [here](https://cdn.bitmovin.com/player/ios_tvos/3.13.0/BitmovinPlayer.zip).
+When using Xcode, go to the `General` page or your app target and add the SDK bundle (`BitmovinPlayer.xcframework`) under `Linked Frameworks and Libraries`. The latest SDK for iOS and tvOS can be downloaded [here](https://cdn.bitmovin.com/player/ios_tvos/3.14.0/BitmovinPlayer.zip).
 
 #### Prepare your Bitmovin Player license
 
