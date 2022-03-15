@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "BitmovinPlayer",
+        "repositoryURL": "https://github.com/bitmovin/player-ios.git",
+        "state": {
+          "branch": null,
+          "revision": "77b84e3e87368a6440a8ab5eb76f7a3df4c6639d",
+          "version": "3.15.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

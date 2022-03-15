@@ -35,6 +35,9 @@
       location = "group:BasicPlaybackObjectiveC/BasicPlaybackObjectiveC.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:BasicPlaybackSPM/BasicPlaybackSPM.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:BasicPlaybackTV/BasicPlaybackTV.xcodeproj">
    </FileRef>
    <FileRef
