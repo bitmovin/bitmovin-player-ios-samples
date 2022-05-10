@@ -22,8 +22,7 @@ final class ViewController: UIViewController {
         self.view.backgroundColor = .black
 
         // Define needed resources
-        guard let streamUrl = URL(string: "https://bitmovin-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8"),
-              let posterUrl = URL(string: "https://bitmovin-a.akamaihd.net/content/MI201109210084_1/poster.jpg") else {
+        guard let streamUrl = URL(string: "https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8") else {
             return
         }
 
@@ -48,8 +47,7 @@ final class ViewController: UIViewController {
         let sourceConfig = SourceConfig(url: streamUrl, type: .hls)
 
         // Set title and poster image
-        sourceConfig.title = "Demo Stream"
-        sourceConfig.posterSource = posterUrl
+        sourceConfig.title = "BipBop - Apple sample stream"
 
         player.load(sourceConfig: sourceConfig)
     }
