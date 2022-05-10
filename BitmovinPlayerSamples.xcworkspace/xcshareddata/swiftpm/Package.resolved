@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/bitmovin/player-ios.git",
         "state": {
           "branch": null,
-          "revision": "6a63b8529bab5106dcf6d269a1149ebb3275e088",
-          "version": "3.18.0"
+          "revision": "8f2a74b2cb43975ddfcb6468cae92605ce918b8f",
+          "version": "3.19.0"
         }
       }
     ]
