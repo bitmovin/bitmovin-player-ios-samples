@@ -1,16 +1,14 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "BitmovinPlayer",
-        "repositoryURL": "https://github.com/bitmovin/player-ios.git",
-        "state": {
-          "branch": null,
-          "revision": "8f2a74b2cb43975ddfcb6468cae92605ce918b8f",
-          "version": "3.19.0"
-        }
+  "pins" : [
+    {
+      "identity" : "player-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/bitmovin/player-ios.git",
+      "state" : {
+        "revision" : "ab519278142dd6c4c84cee7bbbbf0aa762940c20",
+        "version" : "3.20.0"
       }
-    ]
-  },
-  "version": 1
+    }
+  ],
+  "version" : 2
 }
