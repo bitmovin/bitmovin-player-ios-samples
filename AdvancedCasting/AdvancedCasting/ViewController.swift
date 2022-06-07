@@ -60,7 +60,7 @@ final class ViewController: UIViewController {
             case .cast:
                 // Create a different source for casting
                 guard let streamUrl = URL(string: "https://bitmovin-a.akamaihd.net/content/art-of-motion_drm/mpds/11331.mpd"),
-                      let licenseUrl = URL(string: "https://widevine-proxy.appspot.com/proxy") else {
+                      let licenseUrl = URL(string: "https://cwip-shaka-proxy.appspot.com/no_auth") else {
                     return nil
                 }
 
