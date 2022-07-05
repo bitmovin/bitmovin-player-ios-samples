@@ -21,13 +21,10 @@ class ViewController: UIViewController {
 
         self.view.backgroundColor = .black
 
-        /**
-         * TODO: Add URLs below to make this sample application work.
-         */
         // Define needed resources
-        guard let fairplayStreamUrl = URL(string: "https://easeltvinternal.origin.mediaservices.windows.net/5cd4d1e2-a5c3-4223-862d-cfad90074e09/ETV_BIG_BUCK_BUNNY_1_FEATURE.ism/manifest(format=m3u8-aapl)"),
-              let certificateUrl = URL(string: "http://demo.suggestedtvconfig.co.uk/bitdash/fairplay.cer"),
-              let licenseUrl = URL(string: "https://easeltvinternal.keydelivery.mediaservices.windows.net/FairPlay/?KID=bb216c0f-c8f7-40b7-84da-8a7525f56635") else {
+        guard let fairplayStreamUrl = URL(string: "https://fps.ezdrm.com/demo/video/ezdrm.m3u8"),
+              let certificateUrl = URL(string: "https://fps.ezdrm.com/demo/video/eleisure.cer"),
+              let licenseUrl = URL(string: "https://fps.ezdrm.com/api/licenses/09cc0377-6dd4-40cb-b09d-b582236e70fe") else {
             print("Please specify the needed resources marked with TODO in ViewController.swift file.")
             return
         }
@@ -52,6 +49,11 @@ class ViewController: UIViewController {
 
         // create drm configuration
         let fpsConfig = FairplayConfig(license: licenseUrl, certificateURL: certificateUrl)
+
+        // Example of how message request data can be prepared if custom modifications are needed
+        fpsConfig.prepareMessage = { spcData, assetId in
+            spcData
+        }
 
         // Example of how certificate data can be prepared if custom modifications are needed
         fpsConfig.prepareCertificate = { (data: Data) -> Data in
