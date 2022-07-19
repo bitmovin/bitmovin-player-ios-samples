@@ -104,8 +104,8 @@ When using Xcode, go to the `General` page or your app target and add the SDK bu
 - The `NSBluetoothAlwaysUsageDescription` key is set in the `info.plist`
 
 ## Documentation And Release Notes
--   You can find the latest API documentation [here](https://bitmovin.com/ios-sdk-documentation/).
--   The release notes can be found [here](https://bitmovin.com/release-notes-ios-sdk/).
+-   You can find the latest API documentation [here](https://bitmovin.com/docs/player/api-reference/ios/ios-sdk-api-reference-v3#/player/ios/3/docs/index.html).
+-   The release notes can be found [here](https://bitmovin.com/docs/player/releases/ios).
 
 ## Support
 If you have any questions or issues with this SDK or its examples, or you require other technical support for our services, please login to your Bitmovin Dashboard at https://bitmovin.com/dashboard and [create a new support case](https://bitmovin.com/dashboard/support/cases/create). Our team will get back to you as soon as possible :+1:
