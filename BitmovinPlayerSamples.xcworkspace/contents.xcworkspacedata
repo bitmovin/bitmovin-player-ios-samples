@@ -53,6 +53,9 @@
       location = "group:NextUpTV/NextUpTV.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:SharePlay/SharePlay.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:SystemUI/SystemUI.xcodeproj">
    </FileRef>
    <FileRef

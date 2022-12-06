@@ -48,7 +48,10 @@ This repository contains sample apps which are using the Bitmovin Player iOS SDK
 +   **BasicPlaylistTV** Shows how to implement queueing / playlists in a tvOS application.
 
 ### Next Up
-+ **NextUpTV** Shows how to implement next-up feature in a tvOS application
++   **NextUpTV** Shows how to implement next-up feature in a tvOS application
+
+### SharePlay
++   **SharePlay** Shows how to use the SharePlay feature to coordinate playback for multiple participants.
 
 ## Sample App Setup Instructions
 Please execute `pod install --repo-update` to properly initialize the workspace. In each sample app, you also have to add your Bitmovin Player license key to `Info.plist` file as `BitmovinPlayerLicenseKey` or provide it via the `PlayerConfig.key` property.
@@ -69,6 +72,7 @@ In addition to that you have to log in to [https://bitmovin.com/dashboard](https
     com.bitmovin.player.samples.fullscreen.basic
     com.bitmovin.player.samples.playlist.basic
     com.bitmovin.player.samples.tv.playlist.basic
+    com.bitmovin.player.samples.shareplay
 
 ## How to integrate the Bitmovin Player iOS SDK
 When you want to develop an own iOS application using the Bitmovin Player iOS SDK read through the following steps.

@@ -105,3 +105,9 @@ target 'NextUpTV' do
     platform :tvos, '12.0'
     bitmovin_player
 end
+
+target 'SharePlay' do
+    project 'SharePlay/SharePlay.xcodeproj'
+    platform :ios, '15.0'
+    bitmovin_player
+end
