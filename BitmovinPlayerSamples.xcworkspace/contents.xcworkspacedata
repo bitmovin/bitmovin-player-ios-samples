@@ -47,6 +47,9 @@
       location = "group:BasicPlaylistTV/BasicPlaylistTV.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:BasicSwiftUI/BasicSwiftUI.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:CustomHtmlUi/CustomHtmlUi.xcodeproj">
    </FileRef>
    <FileRef
