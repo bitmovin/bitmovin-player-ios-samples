@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import <BitmovinPlayer/BitmovinPlayer.h>
+#import <BitmovinPlayerCore/BitmovinPlayerCore.h>
 
 @interface ViewController () <BMPPlayerListener>
 @property (nonatomic, strong) id<BMPPlayer> player;

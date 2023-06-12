@@ -36,7 +36,10 @@ struct ContentView: View {
             ZStack {
                 Color.black
 
-                SwiftUIPlayerView(player: player, playerViewConfig: playerViewConfig)
+                VideoPlayerView(
+                    player: player,
+                    playerViewConfig: playerViewConfig
+                )
             }
         }
         .padding()
