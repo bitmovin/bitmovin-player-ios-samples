@@ -7,12 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC094AC31F3CD4C100EF6F94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC094AC21F3CD4C100EF6F94 /* AppDelegate.swift */; };
-		AC094AC51F3CD4C100EF6F94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC094AC41F3CD4C100EF6F94 /* ViewController.swift */; };
-		AC094AC81F3CD4C100EF6F94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC094AC61F3CD4C100EF6F94 /* Main.storyboard */; };
-		AC094ACB1F3CD4C100EF6F94 /* BasicMetadataHandling.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC094AC91F3CD4C100EF6F94 /* BasicMetadataHandling.xcdatamodeld */; };
 		AC094ACD1F3CD4C100EF6F94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC094ACC1F3CD4C100EF6F94 /* Assets.xcassets */; };
-		AC094AD01F3CD4C100EF6F94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC094ACE1F3CD4C100EF6F94 /* LaunchScreen.storyboard */; };
+		D631FEEB2A49CAB20025049C /* BasicMetadataHandlingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631FEEA2A49CAB20025049C /* BasicMetadataHandlingApp.swift */; };
+		D631FEED2A49CAEF0025049C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631FEEC2A49CAEF0025049C /* ContentView.swift */; };
 		FF2CEDAA7C9DFC74C5B0A7B9 /* Pods_BasicMetadataHandling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C4A826740A975A355DDEAE /* Pods_BasicMetadataHandling.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,13 +18,10 @@
 		49C4A826740A975A355DDEAE /* Pods_BasicMetadataHandling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicMetadataHandling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EF72D8FCFDA20DB4E4FD76 /* Pods-BasicMetadataHandling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicMetadataHandling.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicMetadataHandling/Pods-BasicMetadataHandling.debug.xcconfig"; sourceTree = "<group>"; };
 		AC094ABF1F3CD4C100EF6F94 /* BasicMetadataHandling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicMetadataHandling.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC094AC21F3CD4C100EF6F94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC094AC41F3CD4C100EF6F94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AC094AC71F3CD4C100EF6F94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AC094ACA1F3CD4C100EF6F94 /* BasicMetadataHandling.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BasicMetadataHandling.xcdatamodel; sourceTree = "<group>"; };
 		AC094ACC1F3CD4C100EF6F94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AC094ACF1F3CD4C100EF6F94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC094AD11F3CD4C100EF6F94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D631FEEA2A49CAB20025049C /* BasicMetadataHandlingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicMetadataHandlingApp.swift; sourceTree = "<group>"; };
+		D631FEEC2A49CAEF0025049C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,13 +74,10 @@
 		AC094AC11F3CD4C100EF6F94 /* BasicMetadataHandling */ = {
 			isa = PBXGroup;
 			children = (
-				AC094AC21F3CD4C100EF6F94 /* AppDelegate.swift */,
-				AC094AC41F3CD4C100EF6F94 /* ViewController.swift */,
-				AC094AC61F3CD4C100EF6F94 /* Main.storyboard */,
+				D631FEEA2A49CAB20025049C /* BasicMetadataHandlingApp.swift */,
+				D631FEEC2A49CAEF0025049C /* ContentView.swift */,
 				AC094ACC1F3CD4C100EF6F94 /* Assets.xcassets */,
-				AC094ACE1F3CD4C100EF6F94 /* LaunchScreen.storyboard */,
 				AC094AD11F3CD4C100EF6F94 /* Info.plist */,
-				AC094AC91F3CD4C100EF6F94 /* BasicMetadataHandling.xcdatamodeld */,
 			);
 			path = BasicMetadataHandling;
 			sourceTree = "<group>";
@@ -155,9 +146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC094AD01F3CD4C100EF6F94 /* LaunchScreen.storyboard in Resources */,
 				AC094ACD1F3CD4C100EF6F94 /* Assets.xcassets in Resources */,
-				AC094AC81F3CD4C100EF6F94 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,32 +198,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC094AC51F3CD4C100EF6F94 /* ViewController.swift in Sources */,
-				AC094AC31F3CD4C100EF6F94 /* AppDelegate.swift in Sources */,
-				AC094ACB1F3CD4C100EF6F94 /* BasicMetadataHandling.xcdatamodeld in Sources */,
+				D631FEEB2A49CAB20025049C /* BasicMetadataHandlingApp.swift in Sources */,
+				D631FEED2A49CAEF0025049C /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		AC094AC61F3CD4C100EF6F94 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC094AC71F3CD4C100EF6F94 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AC094ACE1F3CD4C100EF6F94 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC094ACF1F3CD4C100EF6F94 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AC094AD21F3CD4C100EF6F94 /* Debug */ = {
@@ -402,19 +371,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		AC094AC91F3CD4C100EF6F94 /* BasicMetadataHandling.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				AC094ACA1F3CD4C100EF6F94 /* BasicMetadataHandling.xcdatamodel */,
-			);
-			currentVersion = AC094ACA1F3CD4C100EF6F94 /* BasicMetadataHandling.xcdatamodel */;
-			path = BasicMetadataHandling.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = AC094AB71F3CD4C100EF6F94 /* Project object */;
 }

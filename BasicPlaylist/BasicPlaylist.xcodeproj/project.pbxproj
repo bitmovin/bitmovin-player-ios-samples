@@ -8,24 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		3A3B1915B5DB95372D4341A5 /* Pods_BasicPlaylist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A4475288AC392C0AFAE2E9 /* Pods_BasicPlaylist.framework */; };
-		65C8576025DB163E009FA5A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C8575F25DB163E009FA5A1 /* AppDelegate.swift */; };
-		65C8576425DB163E009FA5A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C8576325DB163E009FA5A1 /* ViewController.swift */; };
-		65C8576725DB163E009FA5A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65C8576525DB163E009FA5A1 /* Main.storyboard */; };
 		65C8576925DB163F009FA5A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65C8576825DB163F009FA5A1 /* Assets.xcassets */; };
-		65C8576C25DB163F009FA5A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65C8576A25DB163F009FA5A1 /* LaunchScreen.storyboard */; };
+		D6AC0BB52A4B18BD000AD742 /* BasicPlaylistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AC0BB32A4B18BD000AD742 /* BasicPlaylistApp.swift */; };
+		D6AC0BB62A4B18BD000AD742 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AC0BB42A4B18BD000AD742 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		65C8575C25DB163E009FA5A1 /* BasicPlaylist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicPlaylist.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		65C8575F25DB163E009FA5A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		65C8576325DB163E009FA5A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		65C8576625DB163E009FA5A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65C8576825DB163F009FA5A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		65C8576B25DB163F009FA5A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65C8576D25DB163F009FA5A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A9A637B7021AF9339A75F78 /* Pods-BasicPlaylistApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicPlaylistApi.release.xcconfig"; path = "Target Support Files/Pods-BasicPlaylistApi/Pods-BasicPlaylistApi.release.xcconfig"; sourceTree = "<group>"; };
 		ADBF8323EDFE449253882FE3 /* Pods-BasicPlaylist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicPlaylist.release.xcconfig"; path = "Target Support Files/Pods-BasicPlaylist/Pods-BasicPlaylist.release.xcconfig"; sourceTree = "<group>"; };
 		B7A4475288AC392C0AFAE2E9 /* Pods_BasicPlaylist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicPlaylist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6AC0BB32A4B18BD000AD742 /* BasicPlaylistApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicPlaylistApp.swift; sourceTree = "<group>"; };
+		D6AC0BB42A4B18BD000AD742 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E6C3E9BF33303EC2D4C62A94 /* Pods-BasicPlaylistApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicPlaylistApi.debug.xcconfig"; path = "Target Support Files/Pods-BasicPlaylistApi/Pods-BasicPlaylistApi.debug.xcconfig"; sourceTree = "<group>"; };
 		F73C19BA05627AADDE82C3A4 /* Pods-BasicPlaylist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicPlaylist.debug.xcconfig"; path = "Target Support Files/Pods-BasicPlaylist/Pods-BasicPlaylist.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,11 +79,9 @@
 		65C8575E25DB163E009FA5A1 /* BasicPlaylist */ = {
 			isa = PBXGroup;
 			children = (
-				65C8575F25DB163E009FA5A1 /* AppDelegate.swift */,
-				65C8576325DB163E009FA5A1 /* ViewController.swift */,
-				65C8576525DB163E009FA5A1 /* Main.storyboard */,
+				D6AC0BB32A4B18BD000AD742 /* BasicPlaylistApp.swift */,
+				D6AC0BB42A4B18BD000AD742 /* ContentView.swift */,
 				65C8576825DB163F009FA5A1 /* Assets.xcassets */,
-				65C8576A25DB163F009FA5A1 /* LaunchScreen.storyboard */,
 				65C8576D25DB163F009FA5A1 /* Info.plist */,
 			);
 			path = BasicPlaylist;
@@ -152,9 +146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65C8576C25DB163F009FA5A1 /* LaunchScreen.storyboard in Resources */,
 				65C8576925DB163F009FA5A1 /* Assets.xcassets in Resources */,
-				65C8576725DB163E009FA5A1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,31 +199,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65C8576425DB163E009FA5A1 /* ViewController.swift in Sources */,
-				65C8576025DB163E009FA5A1 /* AppDelegate.swift in Sources */,
+				D6AC0BB62A4B18BD000AD742 /* ContentView.swift in Sources */,
+				D6AC0BB52A4B18BD000AD742 /* BasicPlaylistApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		65C8576525DB163E009FA5A1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				65C8576625DB163E009FA5A1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		65C8576A25DB163F009FA5A1 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				65C8576B25DB163F009FA5A1 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		65C8576E25DB163F009FA5A1 /* Debug */ = {

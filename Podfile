@@ -112,8 +112,14 @@ target 'SharePlay' do
     bitmovin_player
 end
 
-target 'BasicSwiftUI' do
-    project 'BasicSwiftUI/BasicSwiftUI.xcodeproj'
+target 'BasicUIKit' do
+    project 'BasicUIKit/BasicUIKit.xcodeproj'
     platform :ios, '14.0'
+    bitmovin_player
+end
+
+target 'BasicUIKitTV' do
+    project 'BasicUIKitTV/BasicUIKitTV.xcodeproj'
+    platform :tvos, '14.0'
     bitmovin_player
 end

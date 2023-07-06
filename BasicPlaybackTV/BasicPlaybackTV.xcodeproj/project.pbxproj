@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC3C1C691F978B300096D607 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C1C681F978B300096D607 /* AppDelegate.swift */; };
-		AC3C1C6B1F978B300096D607 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C1C6A1F978B300096D607 /* ViewController.swift */; };
 		AC3C1C6E1F978B300096D607 /* BasicPlaybackTV.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC3C1C6C1F978B300096D607 /* BasicPlaybackTV.xcdatamodeld */; };
-		AC3C1C711F978B300096D607 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3C1C6F1F978B300096D607 /* Main.storyboard */; };
 		AC3C1C731F978B300096D607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3C1C721F978B300096D607 /* Assets.xcassets */; };
+		D6DE5AEE2A4B06C00096EB57 /* BasicPlaybackTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DE5AEC2A4B06C00096EB57 /* BasicPlaybackTVApp.swift */; };
+		D6DE5AEF2A4B06C00096EB57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DE5AED2A4B06C00096EB57 /* ContentView.swift */; };
 		F106F14E7546EF414FBB518C /* Pods_BasicPlaybackTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152B63546272559BDE3E4C15 /* Pods_BasicPlaybackTV.framework */; };
 /* End PBXBuildFile section */
 
@@ -19,12 +18,11 @@
 		152B63546272559BDE3E4C15 /* Pods_BasicPlaybackTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicPlaybackTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABDAAC0F9CCE0C6FCD69C2FA /* Pods-BasicPlaybackTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicPlaybackTV.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicPlaybackTV/Pods-BasicPlaybackTV.debug.xcconfig"; sourceTree = "<group>"; };
 		AC3C1C651F978B300096D607 /* BasicPlaybackTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicPlaybackTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC3C1C681F978B300096D607 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC3C1C6A1F978B300096D607 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC3C1C6D1F978B300096D607 /* BasicPlaybackTV.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BasicPlaybackTV.xcdatamodel; sourceTree = "<group>"; };
-		AC3C1C701F978B300096D607 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC3C1C721F978B300096D607 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC3C1C741F978B300096D607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6DE5AEC2A4B06C00096EB57 /* BasicPlaybackTVApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicPlaybackTVApp.swift; sourceTree = "<group>"; };
+		D6DE5AED2A4B06C00096EB57 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA558D23C4E6EF6B765AAE84 /* Pods-BasicPlaybackTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicPlaybackTV.release.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicPlaybackTV/Pods-BasicPlaybackTV.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,9 +76,8 @@
 		AC3C1C671F978B300096D607 /* BasicPlaybackTV */ = {
 			isa = PBXGroup;
 			children = (
-				AC3C1C681F978B300096D607 /* AppDelegate.swift */,
-				AC3C1C6A1F978B300096D607 /* ViewController.swift */,
-				AC3C1C6F1F978B300096D607 /* Main.storyboard */,
+				D6DE5AEC2A4B06C00096EB57 /* BasicPlaybackTVApp.swift */,
+				D6DE5AED2A4B06C00096EB57 /* ContentView.swift */,
 				AC3C1C721F978B300096D607 /* Assets.xcassets */,
 				AC3C1C741F978B300096D607 /* Info.plist */,
 				AC3C1C6C1F978B300096D607 /* BasicPlaybackTV.xcdatamodeld */,
@@ -151,7 +148,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC3C1C731F978B300096D607 /* Assets.xcassets in Resources */,
-				AC3C1C711F978B300096D607 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,23 +200,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC3C1C6E1F978B300096D607 /* BasicPlaybackTV.xcdatamodeld in Sources */,
-				AC3C1C6B1F978B300096D607 /* ViewController.swift in Sources */,
-				AC3C1C691F978B300096D607 /* AppDelegate.swift in Sources */,
+				D6DE5AEF2A4B06C00096EB57 /* ContentView.swift in Sources */,
+				D6DE5AEE2A4B06C00096EB57 /* BasicPlaybackTVApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		AC3C1C6F1F978B300096D607 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC3C1C701F978B300096D607 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AC3C1C751F978B300096D607 /* Debug */ = {

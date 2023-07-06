@@ -23,7 +23,8 @@ This repository contains sample apps which are using the Bitmovin Player iOS SDK
 +   **BasicPlayback:** Shows how to set up the Bitmovin Player for basic playback of HLS or progressive streams.
 +   **BasicPlaybackTV:** Shows how to set up the Bitmovin Player for basic playback of HLS or progressive streams in a tvOS application.
 +   **BasicMetadataHandling** Shows how to set up and configure the Bitmovin Player for playback of content that contains metadata.
-+   **BasicSwiftUI** Shows how to integrate the Bitmovin Player and the Player View into SwiftUI.
++   **BasicUIKit** Shows how to integrate the Bitmovin Player and the Player View using UIKit.
++   **BasicUIKitTV** Shows how to integrate the Bitmovin Player and the Player View using UIKit in a tvOS application.
 
 ### DRM
 +   **BasicDRMPlayback:** Shows how to set up and configure the Bitmovin Player for playback of FairPlay Streaming protected content.
@@ -49,7 +50,7 @@ This repository contains sample apps which are using the Bitmovin Player iOS SDK
 +   **BasicPlaylistTV** Shows how to implement queueing / playlists in a tvOS application.
 
 ### Next Up
-+   **NextUpTV** Shows how to implement next-up feature in a tvOS application
++   **NextUpTV** Shows how to implement next-up feature in a tvOS application.
 
 ### SharePlay
 +   **SharePlay** Shows how to use the SharePlay feature to coordinate playback for multiple participants.

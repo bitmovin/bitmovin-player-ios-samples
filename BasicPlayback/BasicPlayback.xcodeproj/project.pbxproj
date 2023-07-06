@@ -8,11 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		778A395D285E9801EB98AAA6 /* Pods_BasicPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C5536D0A7B4A0D2ABC8225 /* Pods_BasicPlayback.framework */; };
-		AC5046A51EC4B9A400F18C0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5046A41EC4B9A400F18C0F /* AppDelegate.swift */; };
-		AC5046A71EC4B9A400F18C0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5046A61EC4B9A400F18C0F /* ViewController.swift */; };
-		AC5046AA1EC4B9A400F18C0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5046A81EC4B9A400F18C0F /* Main.storyboard */; };
 		AC5046AC1EC4B9A400F18C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5046AB1EC4B9A400F18C0F /* Assets.xcassets */; };
-		AC5046AF1EC4B9A400F18C0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5046AD1EC4B9A400F18C0F /* LaunchScreen.storyboard */; };
+		D67D6FC12A49C5F20033AA00 /* BasicPlaybackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67D6FC02A49C5F20033AA00 /* BasicPlaybackApp.swift */; };
+		D67D6FC32A49C62D0033AA00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67D6FC22A49C62D0033AA00 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,13 +30,11 @@
 		36C5536D0A7B4A0D2ABC8225 /* Pods_BasicPlayback.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicPlayback.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A247B194D2B6FE692BB7D2E /* Pods-BasicPlayback.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicPlayback.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicPlayback/Pods-BasicPlayback.debug.xcconfig"; sourceTree = "<group>"; };
 		AC5046A11EC4B9A400F18C0F /* BasicPlayback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicPlayback.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC5046A41EC4B9A400F18C0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC5046A61EC4B9A400F18C0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AC5046A91EC4B9A400F18C0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC5046AB1EC4B9A400F18C0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AC5046AE1EC4B9A400F18C0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC5046B01EC4B9A400F18C0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AED9AD61B234923B370C0F4E /* Pods-BasicPlayback.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicPlayback.release.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicPlayback/Pods-BasicPlayback.release.xcconfig"; sourceTree = "<group>"; };
+		D67D6FC02A49C5F20033AA00 /* BasicPlaybackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicPlaybackApp.swift; sourceTree = "<group>"; };
+		D67D6FC22A49C62D0033AA00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,12 +78,10 @@
 		AC5046A31EC4B9A400F18C0F /* BasicPlayback */ = {
 			isa = PBXGroup;
 			children = (
-				AC5046A41EC4B9A400F18C0F /* AppDelegate.swift */,
-				AC5046A61EC4B9A400F18C0F /* ViewController.swift */,
-				AC5046A81EC4B9A400F18C0F /* Main.storyboard */,
 				AC5046AB1EC4B9A400F18C0F /* Assets.xcassets */,
-				AC5046AD1EC4B9A400F18C0F /* LaunchScreen.storyboard */,
 				AC5046B01EC4B9A400F18C0F /* Info.plist */,
+				D67D6FC02A49C5F20033AA00 /* BasicPlaybackApp.swift */,
+				D67D6FC22A49C62D0033AA00 /* ContentView.swift */,
 			);
 			path = BasicPlayback;
 			sourceTree = "<group>";
@@ -166,9 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC5046AF1EC4B9A400F18C0F /* LaunchScreen.storyboard in Resources */,
 				AC5046AC1EC4B9A400F18C0F /* Assets.xcassets in Resources */,
-				AC5046AA1EC4B9A400F18C0F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,31 +212,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC5046A71EC4B9A400F18C0F /* ViewController.swift in Sources */,
-				AC5046A51EC4B9A400F18C0F /* AppDelegate.swift in Sources */,
+				D67D6FC32A49C62D0033AA00 /* ContentView.swift in Sources */,
+				D67D6FC12A49C5F20033AA00 /* BasicPlaybackApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		AC5046A81EC4B9A400F18C0F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC5046A91EC4B9A400F18C0F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AC5046AD1EC4B9A400F18C0F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC5046AE1EC4B9A400F18C0F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AC5046C71EC4B9A400F18C0F /* Debug */ = {

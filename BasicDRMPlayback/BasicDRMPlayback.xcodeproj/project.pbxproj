@@ -8,11 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3A0D0619BD02E6CFA01B2C9D /* Pods_BasicDRMPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D9AC0ED4321DB051708F9F /* Pods_BasicDRMPlayback.framework */; };
-		AC773E831F061017005C3B0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC773E821F061017005C3B0E /* AppDelegate.swift */; };
-		AC773E851F061017005C3B0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC773E841F061017005C3B0E /* ViewController.swift */; };
-		AC773E881F061017005C3B0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC773E861F061017005C3B0E /* Main.storyboard */; };
 		AC773E8A1F061017005C3B0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC773E891F061017005C3B0E /* Assets.xcassets */; };
-		AC773E8D1F061017005C3B0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC773E8B1F061017005C3B0E /* LaunchScreen.storyboard */; };
+		D6D218872A4ED8A100F17E32 /* BasicDRMPlaybackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D218852A4ED8A100F17E32 /* BasicDRMPlaybackApp.swift */; };
+		D6D218882A4ED8A100F17E32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D218862A4ED8A100F17E32 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +18,10 @@
 		6C73832CD38787F694B6A6B6 /* Pods-BasicDRMPlayback.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicDRMPlayback.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicDRMPlayback/Pods-BasicDRMPlayback.debug.xcconfig"; sourceTree = "<group>"; };
 		73B88C1ECBA3920B8220B4A5 /* Pods-BasicDRMPlayback.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicDRMPlayback.release.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicDRMPlayback/Pods-BasicDRMPlayback.release.xcconfig"; sourceTree = "<group>"; };
 		AC773E7F1F061017005C3B0E /* BasicDRMPlayback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicDRMPlayback.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC773E821F061017005C3B0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC773E841F061017005C3B0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AC773E871F061017005C3B0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC773E891F061017005C3B0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AC773E8C1F061017005C3B0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC773E8E1F061017005C3B0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6D218852A4ED8A100F17E32 /* BasicDRMPlaybackApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicDRMPlaybackApp.swift; sourceTree = "<group>"; };
+		D6D218862A4ED8A100F17E32 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,11 +66,9 @@
 		AC773E811F061017005C3B0E /* BasicDRMPlayback */ = {
 			isa = PBXGroup;
 			children = (
-				AC773E821F061017005C3B0E /* AppDelegate.swift */,
-				AC773E841F061017005C3B0E /* ViewController.swift */,
-				AC773E861F061017005C3B0E /* Main.storyboard */,
+				D6D218852A4ED8A100F17E32 /* BasicDRMPlaybackApp.swift */,
+				D6D218862A4ED8A100F17E32 /* ContentView.swift */,
 				AC773E891F061017005C3B0E /* Assets.xcassets */,
-				AC773E8B1F061017005C3B0E /* LaunchScreen.storyboard */,
 				AC773E8E1F061017005C3B0E /* Info.plist */,
 			);
 			path = BasicDRMPlayback;
@@ -152,9 +146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC773E8D1F061017005C3B0E /* LaunchScreen.storyboard in Resources */,
 				AC773E8A1F061017005C3B0E /* Assets.xcassets in Resources */,
-				AC773E881F061017005C3B0E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,31 +198,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC773E851F061017005C3B0E /* ViewController.swift in Sources */,
-				AC773E831F061017005C3B0E /* AppDelegate.swift in Sources */,
+				D6D218882A4ED8A100F17E32 /* ContentView.swift in Sources */,
+				D6D218872A4ED8A100F17E32 /* BasicDRMPlaybackApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		AC773E861F061017005C3B0E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC773E871F061017005C3B0E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AC773E8B1F061017005C3B0E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC773E8C1F061017005C3B0E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AC773EA51F061017005C3B0E /* Debug */ = {
