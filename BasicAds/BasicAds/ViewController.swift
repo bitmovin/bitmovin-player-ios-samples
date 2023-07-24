@@ -69,7 +69,11 @@ final class ViewController: UIViewController {
     }
     
     func urlWithCorrelator(adTag: String) -> URL {
-        return URL(string: String(format: "%@%d", adTag, Int(arc4random_uniform(100000))))!
+        var urlString = adTag
+        #if targetEnvironment(simulator)
+            urlString = adTag.addingPercentEncoding( withAllowedCharacters: .urlQueryAllowed )!
+        #endif
+        return URL(string: String(format: "%@%d", urlString, Int(arc4random_uniform(100000))))!
     }
 }
 
