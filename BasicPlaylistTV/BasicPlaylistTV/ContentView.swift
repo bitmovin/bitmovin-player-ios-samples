@@ -10,12 +10,18 @@ import BitmovinPlayer
 import Combine
 import SwiftUI
 
+// You can find your player license key on the player license dashboard:
+// https://bitmovin.com/dashboard/player/licenses
+private let playerLicenseKey = "<PLAYER_LICENSE_KEY>"
+// You can find your analytics license key on the analytics license dashboard:
+// https://bitmovin.com/dashboard/analytics/licenses
+private let analyticsLicenseKey = "<ANALYTICS_LICENSE_KEY>"
+
 struct ContentView: View {
     private let player: Player
     private let playerViewConfig: PlayerViewConfig
     private let sources: [Source]
     private let playlistConfig: PlaylistConfig
-
 
     init() {
         // Create player configuration with the default settings
@@ -24,8 +30,17 @@ struct ContentView: View {
         // Enable auto play
         playerConfig.playbackConfig.isAutoplayEnabled = true
 
-        // Use the PlayerFactory to create a new player instance with the provided configuration
-        player = PlayerFactory.create(playerConfig: playerConfig)
+        // Set your player license key on the player configuration
+        playerConfig.key = playerLicenseKey
+
+        // Create analytics configuration with your analytics license key
+        let analyticsConfig = AnalyticsConfig(licenseKey: analyticsLicenseKey)
+
+        // Create player based on player and analytics configurations
+        player = PlayerFactory.create(
+            playerConfig: playerConfig,
+            analyticsConfig: analyticsConfig
+        )
 
         sources = createPlaylist()
 

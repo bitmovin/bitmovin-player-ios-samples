@@ -11,6 +11,13 @@ import Combine
 import Foundation
 import UIKit
 
+// You can find your player license key on the player license dashboard:
+// https://bitmovin.com/dashboard/player/licenses
+private let playerLicenseKey = "<PLAYER_LICENSE_KEY>"
+// You can find your analytics license key on the analytics license dashboard:
+// https://bitmovin.com/dashboard/analytics/licenses
+private let analyticsLicenseKey = "<ANALYTICS_LICENSE_KEY>"
+
 class PlaybackViewController: UIViewController {
     @IBOutlet weak var suspendedSwitch: UIBarButtonItem!
     @IBOutlet weak var playerViewContainer: UIView!
@@ -21,6 +28,10 @@ class PlaybackViewController: UIViewController {
     private var player: Player!
     private var currentSuspension: SharePlaySuspension?
     private var cancellables = Set<AnyCancellable>()
+
+    deinit {
+        player?.destroy()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +67,21 @@ class PlaybackViewController: UIViewController {
 
 private extension PlaybackViewController {
     func setupPlayer() -> Player {
-        let player = PlayerFactory.create()
+        // Create player configuration
+        let playerConfig = PlayerConfig()
+
+        // Set your player license key on the player configuration
+        playerConfig.key = playerLicenseKey
+
+        // Create analytics configuration with your analytics license key
+        let analyticsConfig = AnalyticsConfig(licenseKey: analyticsLicenseKey)
+
+        // Create player based on player and analytics configurations
+        let player = PlayerFactory.create(
+            playerConfig: playerConfig,
+            analyticsConfig: analyticsConfig
+        )
+        
         player.add(listener: self)
 
         // Check if there is a group session to coordinate playback with.

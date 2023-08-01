@@ -9,6 +9,13 @@
 import UIKit
 import BitmovinPlayer
 
+// You can find your player license key on the player license dashboard:
+// https://bitmovin.com/dashboard/player/licenses
+private let playerLicenseKey = "<PLAYER_LICENSE_KEY>"
+// You can find your analytics license key on the analytics license dashboard:
+// https://bitmovin.com/dashboard/analytics/licenses
+private let analyticsLicenseKey = "<ANALYTICS_LICENSE_KEY>"
+
 final class ViewController: UIViewController {
     private var player: Player!
 
@@ -28,10 +35,19 @@ final class ViewController: UIViewController {
         }
 
         // Create player configuration
-        let config = PlayerConfig()
+        let playerConfig = PlayerConfig()
 
-        // Create player based on player configuration
-        player = PlayerFactory.create(playerConfig: config)
+        // Set your player license key on the player configuration
+        playerConfig.key = playerLicenseKey
+
+        // Create analytics configuration with your analytics license key
+        let analyticsConfig = AnalyticsConfig(licenseKey: analyticsLicenseKey)
+
+        // Create player based on player and analytics configurations
+        player = PlayerFactory.create(
+            playerConfig: playerConfig,
+            analyticsConfig: analyticsConfig
+        )
 
         // Create player view and pass the player instance to it
         let playerView = PlayerView(player: player, frame: .zero)
@@ -55,7 +71,7 @@ final class ViewController: UIViewController {
 
         // Provide a different SourceConfig for casting. For local playback we use a HLS stream and for casting a
         // Widevine protected DASH stream with the same content.
-        config.remoteControlConfig.prepareSource = { type, sourceConfig in
+        playerConfig.remoteControlConfig.prepareSource = { type, sourceConfig in
             switch type {
             case .cast:
                 // Create a different source for casting

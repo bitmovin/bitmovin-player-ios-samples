@@ -1,19 +1,31 @@
-# bitmovin-player-ios-samples
+**Bitmovin Player iOS Samples**
+
 This repository contains sample apps which are using the Bitmovin Player iOS SDK.
 
-**Table of Content**
+**Table of Contents**
 
-* [Available Sample Apps](#available-sample-apps)
-* [Sample Apps Setup Instructions](#sample-app-setup-instructions)
-* [How to integrate the Bitmovin Player iOS SDK](#how-to-integrate-the-bitmovin-player-ios-sdk)
-    * [Adding the SDK To Your Project](#adding-the-sdk-to-your-project)
-    * [Using CocoaPods](#using-cocoapods)
-    * [Add the SDK directly](#adding-the-sdk-directly)
-    * [Prepare your Bitmovin Player License](#prepare-your-bitmovin-player-license)
-* [Development Notes](#development-notes)
-    * [Casting Requirements](#casting-requirements)
-* [Documentation & Release Notes](#documentation-and-release-notes)
-* [Support](#support)
+- [Available Sample Apps](#available-sample-apps)
+  - [Basics](#basics)
+  - [DRM](#drm)
+  - [Offline Playback](#offline-playback)
+  - [Playback \& Casting](#playback--casting)
+  - [Advertising](#advertising)
+  - [UI](#ui)
+  - [Playlist](#playlist)
+  - [Next Up](#next-up)
+  - [SharePlay](#shareplay)
+- [Sample App Setup Instructions](#sample-app-setup-instructions)
+  - [Provide License Keys](#provide-license-keys)
+  - [Add the Bundle Identifier as an Allowed Domain](#add-the-bundle-identifier-as-an-allowed-domain)
+- [How to integrate the Bitmovin Player iOS SDK](#how-to-integrate-the-bitmovin-player-ios-sdk)
+  - [Adding the SDK To Your Project](#adding-the-sdk-to-your-project)
+    - [Using CocoaPods](#using-cocoapods)
+    - [Adding the SDK Directly](#adding-the-sdk-directly)
+    - [Prepare your Bitmovin Player license](#prepare-your-bitmovin-player-license)
+- [Development Notes](#development-notes)
+  - [Casting Requirements](#casting-requirements)
+- [Documentation And Release Notes](#documentation-and-release-notes)
+- [Support](#support)
 
 ---
 
@@ -22,59 +34,98 @@ This repository contains sample apps which are using the Bitmovin Player iOS SDK
 ### Basics
 +   **BasicPlayback:** Shows how to set up the Bitmovin Player for basic playback of HLS or progressive streams.
 +   **BasicPlaybackTV:** Shows how to set up the Bitmovin Player for basic playback of HLS or progressive streams in a tvOS application.
-+   **BasicMetadataHandling** Shows how to set up and configure the Bitmovin Player for playback of content that contains metadata.
-+   **BasicUIKit** Shows how to integrate the Bitmovin Player and the Player View using UIKit.
-+   **BasicUIKitTV** Shows how to integrate the Bitmovin Player and the Player View using UIKit in a tvOS application.
++   **BasicMetadataHandling:** Shows how to set up and configure the Bitmovin Player for playback of content that contains metadata.
++   **BasicUIKit:** Shows how to integrate the Bitmovin Player and the Player View using UIKit.
++   **BasicUIKitTV:** Shows how to integrate the Bitmovin Player and the Player View using UIKit in a tvOS application.
++   **BasicPlaybackObjectiveC:** Shows how to set up the Bitmovin Player for basic playback of HLS or progressive streams using Objective-C.
++   **BasicPlaybackSPM:** Shows how to set up the Bitmovin Player for basic playback of HLS or progressive streams with the Swift Package Manager (SPM.)
 
 ### DRM
 +   **BasicDRMPlayback:** Shows how to set up and configure the Bitmovin Player for playback of FairPlay Streaming protected content.
 
 ### Offline Playback
-+   **BasicOfflinePlayback** Shows how to set up the Bitmovin Player to download protected and unprotected content for offline playback.
++   **BasicOfflinePlayback:** Shows how to set up the Bitmovin Player to download protected and unprotected content for offline playback.
 
 ### Playback & Casting
-+   **BackgroundPlayback** Shows how to set up the Bitmovin Player for background playback (e.g. to play audio in silent mode).
-+   **BasicCasting** Shows how to set up and configure Google ChromeCast support with the Bitmovin Player. (Please mind the [Casting Requirements](#casting-requirements))
-+   **AdvancedCasting** Shows how to implement advanced casting use cases. (Please mind the [Casting Requirements](#casting-requirements))
++   **BackgroundPlayback:** Shows how to set up the Bitmovin Player for background playback (e.g. to play audio in silent mode).
++   **BasicCasting:** Shows how to set up and configure Google ChromeCast support with the Bitmovin Player. (Please mind the [Casting Requirements](#casting-requirements))
++   **AdvancedCasting:** Shows how to implement advanced casting use cases. (Please mind the [Casting Requirements](#casting-requirements))
 
 ### Advertising
-+   **BasicAds** Shows how to set up and configure the Bitmovin Player for playback of ads.
++   **BasicAds:** Shows how to set up and configure the Bitmovin Player for playback of ads.
 
 ### UI
-+   **CustomHtmlUi** Shows how to set up and configured the Bitmovin Player to use a custom HTML UI. Besides, this sample includes how to communicate between the javascript UI and the native code.
-+   **SystemUI** Shows how to use the system UI instead of the default UI.
-+   **BasicFullscreenHandling** Shows how to use the `BitmovinFullscreenHandler`-protocol to implement basic fullscreen handling.
-
++   **CustomHtmlUi:** Shows how to set up and configure the Bitmovin Player to use a custom HTML UI. Besides, this sample includes how to communicate between the javascript UI and the native code.
++   **SystemUI:** Shows how to use the system UI instead of the default UI.
++   **BasicFullscreenHandling:** Shows how to use the `BitmovinFullscreenHandler`-protocol to implement basic fullscreen handling.
++   **BasicPictureInPicture:** Shows how to set up and configure the Bitmovin Player to use Picture in Picture.
+  
 ### Playlist
-+   **BasicPlaylist** Shows how to implement queueing / playlists.
-+   **BasicPlaylistTV** Shows how to implement queueing / playlists in a tvOS application.
++   **BasicPlaylist:** Shows how to implement queueing / playlists.
++   **BasicPlaylistTV:** Shows how to implement queueing / playlists in a tvOS application.
 
 ### Next Up
-+   **NextUpTV** Shows how to implement next-up feature in a tvOS application.
++   **NextUpTV:** Shows how to implement next-up feature in a tvOS application.
 
 ### SharePlay
-+   **SharePlay** Shows how to use the SharePlay feature to coordinate playback for multiple participants.
++   **SharePlay:** Shows how to use the SharePlay feature to coordinate playback for multiple participants.
 
 ## Sample App Setup Instructions
-Please execute `pod install --repo-update` to properly initialize the workspace. In each sample app, you also have to add your Bitmovin Player license key to `Info.plist` file as `BitmovinPlayerLicenseKey` or provide it via the `PlayerConfig.key` property.
+Please execute `pod install --repo-update` to properly initialize the workspace. 
 
-In addition to that you have to log in to [https://bitmovin.com/dashboard](https://bitmovin.com/dashboard), where you have to add the following bundle identifier of the sample application as an allowed domain under `Player -> Licenses`:
+### Provide License Keys
+In each sample app, you also have to provide two license keys, a Bitmovin Player license key and a Bitmovin Analytics license key. 
 
-    com.bitmovin.player.samples.playback.basic
-    com.bitmovin.player.samples.tv.playback.basic
-    com.bitmovin.player.samples.drm.basic
-    com.bitmovin.player.samples.casting.basic
-    com.bitmovin.player.samples.metadata.basic
-    com.bitmovin.player.samples.custom.ui.html
-    com.bitmovin.player.samples.ads.basic
-    com.bitmovin.player.samples.systemui
-    com.bitmovin.player.samples.offline.basic
-    com.bitmovin.player.samples.playback.background
-    com.bitmovin.player.samples.casting.advanced
-    com.bitmovin.player.samples.fullscreen.basic
-    com.bitmovin.player.samples.playlist.basic
-    com.bitmovin.player.samples.tv.playlist.basic
-    com.bitmovin.player.samples.shareplay
+Your Bitmovin Player license key can be found when logging in into [https://bitmovin.com/dashboard](https://bitmovin.com/dashboard) and navigating to `Player -> Licenses`.
+You need to provide your player license key via the `PlayerConfig.key` property, that is used when creating a `Player` instance.
+
+Your Bitmovin Analytics license key can be found when logging in into [https://bitmovin.com/dashboard](https://bitmovin.com/dashboard) and navigating to `Analytics -> Licenses`. Refer to our samples to see how the anayltics license key is provided when creating a `Player` instance.
+
+### Add the Bundle Identifier as an Allowed Domain
+
+Once you have set up your project’s development team, you’ll have a unique bundle identifier. This is because the bundle identifier is based on the `DEVELOPMENT_TEAM` value.
+This is the final and unique bundle identifier that you have to enter to our dashboard:
+
+Add the following bundle identifier of the sample application ending with your unique `DEVELOPMENT_TEAM` value as an allowed domain on [https://bitmovin.com/dashboard](https://bitmovin.com/dashboard), under `Player -> Licenses` and also under `Analytics -> Licenses`.
+
+Make sure to replace `$(DEVELOPMENT_TEAM)` with your Apple development team's ID.
+
+    # Basics:
+    com.bitmovin.player.samples.playback.basic-$(DEVELOPMENT_TEAM)
+    com.bitmovin.player.samples.tv.playback.basic-$(DEVELOPMENT_TEAM)
+    com.bitmovin.player.samples.playback.basicuikit-$(DEVELOPMENT_TEAM)
+    com.bitmovin.player.samples.tv.playback.basicuikit-$(DEVELOPMENT_TEAM)
+    com.bitmovin.player.samples.metadata.basic-$(DEVELOPMENT_TEAM)
+
+    # DRM:
+    com.bitmovin.player.samples.drm.basic-$(DEVELOPMENT_TEAM)
+
+    # Offline Playback:
+    com.bitmovin.player.samples.offline.basic-$(DEVELOPMENT_TEAM)
+
+    # Playback & Casting:
+    com.bitmovin.player.samples.playback.background-$(DEVELOPMENT_TEAM)
+    com.bitmovin.player.samples.casting.basic-$(DEVELOPMENT_TEAM)
+    com.bitmovin.player.samples.casting.advanced-$(DEVELOPMENT_TEAM)
+
+    # Advertising:
+    com.bitmovin.player.samples.ads.basic-$(DEVELOPMENT_TEAM)
+    
+    # UI:
+    com.bitmovin.player.samples.custom.ui.html-$(DEVELOPMENT_TEAM)
+    com.bitmovin.player.samples.fullscreen.basic-$(DEVELOPMENT_TEAM)
+    com.bitmovin.player.samples.pictureinpicture.basic-$(DEVELOPMENT_TEAM)
+    com.bitmovin.player.samples.systemui-$(DEVELOPMENT_TEAM)
+    
+    # Playlist:
+    com.bitmovin.player.samples.playlist.basic-$(DEVELOPMENT_TEAM)
+    com.bitmovin.player.samples.tv.playlist.basic-$(DEVELOPMENT_TEAM)
+
+    # Next Up:
+    com.bitmovin.player.samples.tv.nextup-$(DEVELOPMENT_TEAM)
+
+    # SharePlay
+    com.bitmovin.player.samples.shareplay-$(DEVELOPMENT_TEAM)
 
 ## How to integrate the Bitmovin Player iOS SDK
 When you want to develop an own iOS application using the Bitmovin Player iOS SDK read through the following steps.
@@ -85,13 +136,13 @@ To add the SDK as a dependency to your project, you have two options: Using Coco
 #### Using CocoaPods
 1. Add `source 'https://github.com/bitmovin/cocoapod-specs.git'` to your Podfile.
 1. Run `pod repo update` to add the newly added source.
-1. Add `pod 'BitmovinPlayer', '3.41.2'` to your Podfile.
+1. Add `pod 'BitmovinPlayer', '3.42.0'` to your Podfile.
 1. Install the pod using `pod install`.
 
 See the `Podfile` of this repository for a full example.
 
 #### Adding the SDK Directly
-When using Xcode, go to the `General` page or your app target and add the SDK bundle (`BitmovinPlayer.xcframework`) under `Linked Frameworks and Libraries`. The latest SDK for iOS and tvOS can be downloaded [here](https://cdn.bitmovin.com/player/ios_tvos/3.41.2/BitmovinPlayer.zip).
+When using Xcode, go to the `General` page or your app target and add the SDK bundle (`BitmovinPlayer.xcframework`) under `Linked Frameworks and Libraries`. The latest SDK for iOS and tvOS can be downloaded [here](https://cdn.bitmovin.com/player/ios_tvos/3.42.0/BitmovinPlayer.zip).
 
 #### Prepare your Bitmovin Player license
 
