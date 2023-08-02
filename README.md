@@ -14,6 +14,7 @@ This repository contains sample apps which are using the Bitmovin Player iOS SDK
   - [Playlist](#playlist)
   - [Next Up](#next-up)
   - [SharePlay](#shareplay)
+  - [Analytics](#analytics)
 - [Sample App Setup Instructions](#sample-app-setup-instructions)
   - [Provide License Keys](#provide-license-keys)
   - [Add the Bundle Identifier as an Allowed Domain](#add-the-bundle-identifier-as-an-allowed-domain)
@@ -59,7 +60,7 @@ This repository contains sample apps which are using the Bitmovin Player iOS SDK
 +   **SystemUI:** Shows how to use the system UI instead of the default UI.
 +   **BasicFullscreenHandling:** Shows how to use the `BitmovinFullscreenHandler`-protocol to implement basic fullscreen handling.
 +   **BasicPictureInPicture:** Shows how to set up and configure the Bitmovin Player to use Picture in Picture.
-  
+
 ### Playlist
 +   **BasicPlaylist:** Shows how to implement queueing / playlists.
 +   **BasicPlaylistTV:** Shows how to implement queueing / playlists in a tvOS application.
@@ -70,11 +71,14 @@ This repository contains sample apps which are using the Bitmovin Player iOS SDK
 ### SharePlay
 +   **SharePlay:** Shows how to use the SharePlay feature to coordinate playback for multiple participants.
 
+### Analytics
++   **Analytics:** Shows how to set up Analytics for the Bitmovin Player.
+
 ## Sample App Setup Instructions
-Please execute `pod install --repo-update` to properly initialize the workspace. 
+Please execute `pod install --repo-update` to properly initialize the workspace.
 
 ### Provide License Keys
-In each sample app, you also have to provide two license keys, a Bitmovin Player license key and a Bitmovin Analytics license key. 
+In each sample app, you also have to provide two license keys, a Bitmovin Player license key and a Bitmovin Analytics license key.
 
 Your Bitmovin Player license key can be found when logging in into [https://bitmovin.com/dashboard](https://bitmovin.com/dashboard) and navigating to `Player -> Licenses`.
 You need to provide your player license key via the `PlayerConfig.key` property, that is used when creating a `Player` instance.
@@ -110,13 +114,13 @@ Make sure to replace `$(DEVELOPMENT_TEAM)` with your Apple development team's ID
 
     # Advertising:
     com.bitmovin.player.samples.ads.basic-$(DEVELOPMENT_TEAM)
-    
+
     # UI:
     com.bitmovin.player.samples.custom.ui.html-$(DEVELOPMENT_TEAM)
     com.bitmovin.player.samples.fullscreen.basic-$(DEVELOPMENT_TEAM)
     com.bitmovin.player.samples.pictureinpicture.basic-$(DEVELOPMENT_TEAM)
     com.bitmovin.player.samples.systemui-$(DEVELOPMENT_TEAM)
-    
+
     # Playlist:
     com.bitmovin.player.samples.playlist.basic-$(DEVELOPMENT_TEAM)
     com.bitmovin.player.samples.tv.playlist.basic-$(DEVELOPMENT_TEAM)
@@ -126,6 +130,9 @@ Make sure to replace `$(DEVELOPMENT_TEAM)` with your Apple development team's ID
 
     # SharePlay
     com.bitmovin.player.samples.shareplay-$(DEVELOPMENT_TEAM)
+
+    # Analytics
+    com.bitmovin.player.samples.analytics-$(DEVELOPMENT_TEAM)
 
 ## How to integrate the Bitmovin Player iOS SDK
 When you want to develop an own iOS application using the Bitmovin Player iOS SDK read through the following steps.

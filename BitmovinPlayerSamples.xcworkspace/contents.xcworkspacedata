@@ -5,6 +5,9 @@
       location = "group:AdvancedCasting/AdvancedCasting.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Analytics/Analytics.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:BackgroundPlayback/BackgroundPlayback.xcodeproj">
    </FileRef>
    <FileRef
