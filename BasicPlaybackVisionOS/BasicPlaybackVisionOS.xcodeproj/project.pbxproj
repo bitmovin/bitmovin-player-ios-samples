@@ -7,107 +7,98 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		378FB1AA2A77DE4800EC16F5 /* AnalyticsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378FB1A92A77DE4800EC16F5 /* AnalyticsApp.swift */; };
-		378FB1AC2A77DE4800EC16F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378FB1AB2A77DE4800EC16F5 /* ContentView.swift */; };
-		378FB1AE2A77DE4900EC16F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 378FB1AD2A77DE4900EC16F5 /* Assets.xcassets */; };
-		378FB1B12A77DE4900EC16F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 378FB1B02A77DE4900EC16F5 /* Preview Assets.xcassets */; };
-		37B21BEF2A79242800875B2D /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 37B21BEE2A79242800875B2D /* BitmovinPlayer */; };
+		37063D1B2B0234C2005AC8DE /* BasicPlaybackVisionOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37063D1A2B0234C2005AC8DE /* BasicPlaybackVisionOSApp.swift */; };
+		37063D1D2B0234C2005AC8DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37063D1C2B0234C2005AC8DE /* ContentView.swift */; };
+		37063D1F2B0234C4005AC8DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37063D1E2B0234C4005AC8DE /* Assets.xcassets */; };
+		37063D2E2B023565005AC8DE /* BitmovinPlayerCore in Frameworks */ = {isa = PBXBuildFile; productRef = 37063D2D2B023565005AC8DE /* BitmovinPlayerCore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		378FB1A62A77DE4800EC16F5 /* Analytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Analytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		378FB1A92A77DE4800EC16F5 /* AnalyticsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsApp.swift; sourceTree = "<group>"; };
-		378FB1AB2A77DE4800EC16F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		378FB1AD2A77DE4900EC16F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		378FB1B02A77DE4900EC16F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		37063D132B0234C2005AC8DE /* BasicPlaybackVisionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicPlaybackVisionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37063D1A2B0234C2005AC8DE /* BasicPlaybackVisionOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicPlaybackVisionOSApp.swift; sourceTree = "<group>"; };
+		37063D1C2B0234C2005AC8DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		37063D1E2B0234C4005AC8DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37063D232B0234C4005AC8DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		378FB1A32A77DE4800EC16F5 /* Frameworks */ = {
+		37063D102B0234C2005AC8DE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37B21BEF2A79242800875B2D /* BitmovinPlayer in Frameworks */,
+				37063D2E2B023565005AC8DE /* BitmovinPlayerCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		378FB19D2A77DE4800EC16F5 = {
+		37063D0A2B0234C2005AC8DE = {
 			isa = PBXGroup;
 			children = (
-				378FB1A82A77DE4800EC16F5 /* Analytics */,
-				378FB1A72A77DE4800EC16F5 /* Products */,
+				37063D152B0234C2005AC8DE /* BasicPlaybackVisionOS */,
+				37063D142B0234C2005AC8DE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		378FB1A72A77DE4800EC16F5 /* Products */ = {
+		37063D142B0234C2005AC8DE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				378FB1A62A77DE4800EC16F5 /* Analytics.app */,
+				37063D132B0234C2005AC8DE /* BasicPlaybackVisionOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		378FB1A82A77DE4800EC16F5 /* Analytics */ = {
+		37063D152B0234C2005AC8DE /* BasicPlaybackVisionOS */ = {
 			isa = PBXGroup;
 			children = (
-				378FB1A92A77DE4800EC16F5 /* AnalyticsApp.swift */,
-				378FB1AB2A77DE4800EC16F5 /* ContentView.swift */,
-				378FB1AD2A77DE4900EC16F5 /* Assets.xcassets */,
-				378FB1AF2A77DE4900EC16F5 /* Preview Content */,
+				37063D1A2B0234C2005AC8DE /* BasicPlaybackVisionOSApp.swift */,
+				37063D1C2B0234C2005AC8DE /* ContentView.swift */,
+				37063D1E2B0234C4005AC8DE /* Assets.xcassets */,
+				37063D232B0234C4005AC8DE /* Info.plist */,
 			);
-			path = Analytics;
-			sourceTree = "<group>";
-		};
-		378FB1AF2A77DE4900EC16F5 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				378FB1B02A77DE4900EC16F5 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
+			path = BasicPlaybackVisionOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		378FB1A52A77DE4800EC16F5 /* Analytics */ = {
+		37063D122B0234C2005AC8DE /* BasicPlaybackVisionOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 378FB1B42A77DE4900EC16F5 /* Build configuration list for PBXNativeTarget "Analytics" */;
+			buildConfigurationList = 37063D262B0234C4005AC8DE /* Build configuration list for PBXNativeTarget "BasicPlaybackVisionOS" */;
 			buildPhases = (
-				378FB1A22A77DE4800EC16F5 /* Sources */,
-				378FB1A32A77DE4800EC16F5 /* Frameworks */,
-				378FB1A42A77DE4800EC16F5 /* Resources */,
+				37063D0F2B0234C2005AC8DE /* Sources */,
+				37063D102B0234C2005AC8DE /* Frameworks */,
+				37063D112B0234C2005AC8DE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Analytics;
+			name = BasicPlaybackVisionOS;
 			packageProductDependencies = (
-				37B21BEE2A79242800875B2D /* BitmovinPlayer */,
+				37063D2D2B023565005AC8DE /* BitmovinPlayerCore */,
 			);
-			productName = Analytics;
-			productReference = 378FB1A62A77DE4800EC16F5 /* Analytics.app */;
+			productName = BasicPlaybackVisionOS;
+			productReference = 37063D132B0234C2005AC8DE /* BasicPlaybackVisionOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		378FB19E2A77DE4800EC16F5 /* Project object */ = {
+		37063D0B2B0234C2005AC8DE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
 				TargetAttributes = {
-					378FB1A52A77DE4800EC16F5 = {
-						CreatedOnToolsVersion = 14.3;
+					37063D122B0234C2005AC8DE = {
+						CreatedOnToolsVersion = 15.1;
 					};
 				};
 			};
-			buildConfigurationList = 378FB1A12A77DE4800EC16F5 /* Build configuration list for PBXProject "Analytics" */;
+			buildConfigurationList = 37063D0E2B0234C2005AC8DE /* Build configuration list for PBXProject "BasicPlaybackVisionOS" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,48 +106,48 @@
 				en,
 				Base,
 			);
-			mainGroup = 378FB19D2A77DE4800EC16F5;
+			mainGroup = 37063D0A2B0234C2005AC8DE;
 			packageReferences = (
-				37B21BED2A79242800875B2D /* XCRemoteSwiftPackageReference "player-ios" */,
+				37063D2C2B023565005AC8DE /* XCRemoteSwiftPackageReference "player-ios-core" */,
 			);
-			productRefGroup = 378FB1A72A77DE4800EC16F5 /* Products */;
+			productRefGroup = 37063D142B0234C2005AC8DE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				378FB1A52A77DE4800EC16F5 /* Analytics */,
+				37063D122B0234C2005AC8DE /* BasicPlaybackVisionOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		378FB1A42A77DE4800EC16F5 /* Resources */ = {
+		37063D112B0234C2005AC8DE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				378FB1B12A77DE4900EC16F5 /* Preview Assets.xcassets in Resources */,
-				378FB1AE2A77DE4900EC16F5 /* Assets.xcassets in Resources */,
+				37063D1F2B0234C4005AC8DE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		378FB1A22A77DE4800EC16F5 /* Sources */ = {
+		37063D0F2B0234C2005AC8DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				378FB1AC2A77DE4800EC16F5 /* ContentView.swift in Sources */,
-				378FB1AA2A77DE4800EC16F5 /* AnalyticsApp.swift in Sources */,
+				37063D1D2B0234C2005AC8DE /* ContentView.swift in Sources */,
+				37063D1B2B0234C2005AC8DE /* BasicPlaybackVisionOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		378FB1B22A77DE4900EC16F5 /* Debug */ = {
+		37063D242B0234C4005AC8DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -189,7 +180,8 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -203,20 +195,22 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Debug;
 		};
-		378FB1B32A77DE4900EC16F5 /* Release */ = {
+		37063D252B0234C4005AC8DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -249,7 +243,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -257,91 +252,87 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = xros;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Release;
 		};
-		378FB1B52A77DE4900EC16F5 /* Debug */ = {
+		37063D272B0234C4005AC8DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Analytics/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "visionOS Sample";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.analytics-$(DEVELOPMENT_TEAM)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.visionos.playback.basic-$(DEVELOPMENT_TEAM)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
 			};
 			name = Debug;
 		};
-		378FB1B62A77DE4900EC16F5 /* Release */ = {
+		37063D282B0234C4005AC8DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Analytics/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "visionOS Sample";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.analytics-$(DEVELOPMENT_TEAM)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.visionos.playback.basic-$(DEVELOPMENT_TEAM)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		378FB1A12A77DE4800EC16F5 /* Build configuration list for PBXProject "Analytics" */ = {
+		37063D0E2B0234C2005AC8DE /* Build configuration list for PBXProject "BasicPlaybackVisionOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				378FB1B22A77DE4900EC16F5 /* Debug */,
-				378FB1B32A77DE4900EC16F5 /* Release */,
+				37063D242B0234C4005AC8DE /* Debug */,
+				37063D252B0234C4005AC8DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		378FB1B42A77DE4900EC16F5 /* Build configuration list for PBXNativeTarget "Analytics" */ = {
+		37063D262B0234C4005AC8DE /* Build configuration list for PBXNativeTarget "BasicPlaybackVisionOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				378FB1B52A77DE4900EC16F5 /* Debug */,
-				378FB1B62A77DE4900EC16F5 /* Release */,
+				37063D272B0234C4005AC8DE /* Debug */,
+				37063D282B0234C4005AC8DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -349,9 +340,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		37B21BED2A79242800875B2D /* XCRemoteSwiftPackageReference "player-ios" */ = {
+		37063D2C2B023565005AC8DE /* XCRemoteSwiftPackageReference "player-ios-core" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/bitmovin/player-ios";
+			repositoryURL = "https://github.com/bitmovin/player-ios-core.git";
 			requirement = {
 				kind = exactVersion;
 				version = 3.48.0;
@@ -360,12 +351,12 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		37B21BEE2A79242800875B2D /* BitmovinPlayer */ = {
+		37063D2D2B023565005AC8DE /* BitmovinPlayerCore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 37B21BED2A79242800875B2D /* XCRemoteSwiftPackageReference "player-ios" */;
-			productName = BitmovinPlayer;
+			package = 37063D2C2B023565005AC8DE /* XCRemoteSwiftPackageReference "player-ios-core" */;
+			productName = BitmovinPlayerCore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 378FB19E2A77DE4800EC16F5 /* Project object */;
+	rootObject = 37063D0B2B0234C2005AC8DE /* Project object */;
 }
