@@ -10,7 +10,7 @@
 		37063D1B2B0234C2005AC8DE /* BasicPlaybackVisionOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37063D1A2B0234C2005AC8DE /* BasicPlaybackVisionOSApp.swift */; };
 		37063D1D2B0234C2005AC8DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37063D1C2B0234C2005AC8DE /* ContentView.swift */; };
 		37063D1F2B0234C4005AC8DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37063D1E2B0234C4005AC8DE /* Assets.xcassets */; };
-		37063D2E2B023565005AC8DE /* BitmovinPlayerCore in Frameworks */ = {isa = PBXBuildFile; productRef = 37063D2D2B023565005AC8DE /* BitmovinPlayerCore */; };
+		3790423D2B07885C00EFD803 /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 3790423C2B07885C00EFD803 /* BitmovinPlayer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +26,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37063D2E2B023565005AC8DE /* BitmovinPlayerCore in Frameworks */,
+				3790423D2B07885C00EFD803 /* BitmovinPlayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +77,7 @@
 			);
 			name = BasicPlaybackVisionOS;
 			packageProductDependencies = (
-				37063D2D2B023565005AC8DE /* BitmovinPlayerCore */,
+				3790423C2B07885C00EFD803 /* BitmovinPlayer */,
 			);
 			productName = BasicPlaybackVisionOS;
 			productReference = 37063D132B0234C2005AC8DE /* BasicPlaybackVisionOS.app */;
@@ -108,7 +108,7 @@
 			);
 			mainGroup = 37063D0A2B0234C2005AC8DE;
 			packageReferences = (
-				37063D2C2B023565005AC8DE /* XCRemoteSwiftPackageReference "player-ios-core" */,
+				3790423B2B07885C00EFD803 /* XCRemoteSwiftPackageReference "player-ios" */,
 			);
 			productRefGroup = 37063D142B0234C2005AC8DE /* Products */;
 			projectDirPath = "";
@@ -340,21 +340,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		37063D2C2B023565005AC8DE /* XCRemoteSwiftPackageReference "player-ios-core" */ = {
+		3790423B2B07885C00EFD803 /* XCRemoteSwiftPackageReference "player-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/bitmovin/player-ios-core.git";
+			repositoryURL = "https://github.com/bitmovin/player-ios";
 			requirement = {
 				kind = exactVersion;
-				version = 3.48.0;
+				version = 3.49.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		37063D2D2B023565005AC8DE /* BitmovinPlayerCore */ = {
+		3790423C2B07885C00EFD803 /* BitmovinPlayer */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 37063D2C2B023565005AC8DE /* XCRemoteSwiftPackageReference "player-ios-core" */;
-			productName = BitmovinPlayerCore;
+			package = 3790423B2B07885C00EFD803 /* XCRemoteSwiftPackageReference "player-ios" */;
+			productName = BitmovinPlayer;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
