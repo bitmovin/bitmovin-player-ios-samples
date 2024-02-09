@@ -98,9 +98,11 @@ final class PlaybackViewController: UIViewController {
         let analyticsConfig = AnalyticsConfig(licenseKey: analyticsLicenseKey)
 
         // Create player based on player and analytics configurations
-        player = PlayerFactory.create(
+        player = PlayerFactory.createPlayer(
             playerConfig: playerConfig,
-            analyticsConfig: analyticsConfig
+            analytics: .enabled(
+                analyticsConfig: analyticsConfig
+            )
         )
 
         let playerView = PlayerView(player: player, frame: CGRect.zero)

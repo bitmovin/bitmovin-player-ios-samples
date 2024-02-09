@@ -37,9 +37,11 @@ struct ContentView: View {
         let analyticsConfig = AnalyticsConfig(licenseKey: analyticsLicenseKey)
 
         // Create player based on player and analytics configurations
-        player = PlayerFactory.create(
+        player = PlayerFactory.createPlayer(
             playerConfig: playerConfig,
-            analyticsConfig: analyticsConfig
+            analytics: .enabled(
+                analyticsConfig: analyticsConfig
+            )
         )
 
         sources = createPlaylist()
@@ -112,5 +114,5 @@ func createSource(from url: URL, title: String) -> Source {
     let sourceConfig = SourceConfig(url: url, type: .hls)
     sourceConfig.title = title
 
-    return SourceFactory.create(from: sourceConfig)
+    return SourceFactory.createSource(from: sourceConfig)
 }

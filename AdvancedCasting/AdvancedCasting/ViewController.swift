@@ -44,9 +44,9 @@ final class ViewController: UIViewController {
         let analyticsConfig = AnalyticsConfig(licenseKey: analyticsLicenseKey)
 
         // Create player based on player and analytics configurations
-        player = PlayerFactory.create(
+        player = PlayerFactory.createPlayer(
             playerConfig: playerConfig,
-            analyticsConfig: analyticsConfig
+            analytics: .enabled(analyticsConfig: analyticsConfig)
         )
 
         // Create player view and pass the player instance to it
@@ -89,6 +89,8 @@ final class ViewController: UIViewController {
                 castSourceConfig.drmConfig = widevineConfig
 
                 return castSourceConfig
+            @unknown default:
+                return nil
             }
         }
 

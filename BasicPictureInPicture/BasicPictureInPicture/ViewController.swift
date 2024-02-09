@@ -43,9 +43,11 @@ class ViewController: UIViewController {
         let analyticsConfig = AnalyticsConfig(licenseKey: analyticsLicenseKey)
 
         // Create player based on player and analytics configurations
-        let player = PlayerFactory.create(
+        let player = PlayerFactory.createPlayer(
             playerConfig: playerConfig,
-            analyticsConfig: analyticsConfig
+            analytics: .enabled(
+                analyticsConfig: analyticsConfig
+            )
         )
 
         let playerView = createPlayerView(player: player)
@@ -54,7 +56,7 @@ class ViewController: UIViewController {
             posterUrl: posterUrl,
             type: .hls
         )
-        let source = SourceFactory.create(from: sourceConfig)
+        let source = SourceFactory.createSource(from: sourceConfig)
         
         player.add(listener: self)
         // If you want to be notified about PiP state

@@ -50,7 +50,8 @@ static NSString *const analyticsLicenseKey = @"<ANALYTICS_LICENSE_KEY>";
     BMAAnalyticsConfig *analyticsConfig = [[BMAAnalyticsConfig alloc] initWithLicenseKey:analyticsLicenseKey];
 
     // Create player based on player and analytics configurations
-    self.player = [BMPPlayerFactory createWithPlayerConfig:playerConfig analyticsConfig: analyticsConfig];
+    self.player = [BMPPlayerFactory createPlayerWithPlayerConfig:playerConfig
+                                                       analytics:[BMPAnalyticsPlayerConfig enabledWithAnalyticsConfig:analyticsConfig]];
 
     // Create player view and pass the player instance to it
     BMPPlayerView *playerView = [[BMPPlayerView alloc] initWithPlayer:self.player frame:CGRectZero];

@@ -77,9 +77,11 @@ private extension PlaybackViewController {
         let analyticsConfig = AnalyticsConfig(licenseKey: analyticsLicenseKey)
 
         // Create player based on player and analytics configurations
-        let player = PlayerFactory.create(
+        let player = PlayerFactory.createPlayer(
             playerConfig: playerConfig,
-            analyticsConfig: analyticsConfig
+            analytics: .enabled(
+                analyticsConfig: analyticsConfig
+            )
         )
         
         player.add(listener: self)
