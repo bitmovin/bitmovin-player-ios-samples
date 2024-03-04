@@ -110,7 +110,7 @@
 		AC618B691FC4E612003315B0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0910;
+				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1420;
 				ORGANIZATIONNAME = Bitmovin;
 				TargetAttributes = {

@@ -8,6 +8,9 @@
       location = "group:Analytics/Analytics.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:AVPlayerViewController/AVPlayerViewController.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:BackgroundPlayback/BackgroundPlayback.xcodeproj">
    </FileRef>
    <FileRef

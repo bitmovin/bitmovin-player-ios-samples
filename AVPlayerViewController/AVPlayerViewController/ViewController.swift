@@ -6,6 +6,7 @@
 // and conditions of the applicable license agreement.
 //
 
+import AVKit
 import UIKit
 import BitmovinPlayer
 import MediaPlayer
@@ -19,6 +20,7 @@ private let analyticsLicenseKey = "<ANALYTICS_LICENSE_KEY>"
 
 final class ViewController: UIViewController {
     var player: Player!
+    var avPlayerViewController: AVPlayerViewController!
     var nowPlayingInfo: [String: Any] = [:]
 
     deinit {
@@ -56,22 +58,34 @@ final class ViewController: UIViewController {
             )
         )
 
-        // Create player view and pass the player instance to it
-        let playerView = PlayerView(player: player, frame: .zero)
+        avPlayerViewController = AVPlayerViewController()
+
+        // Disable built-in updates to the now playing info center
+        avPlayerViewController.updatesNowPlayingInfoCenter = false
+
+        avPlayerViewController.allowsPictureInPicturePlayback = true
+        if #available(iOS 14.2, *) {
+            avPlayerViewController.canStartPictureInPictureAutomaticallyFromInline = true
+        }
+
+        addChild(avPlayerViewController)
+        avPlayerViewController.didMove(toParent: self)
+
+        view.addSubview(avPlayerViewController.view)
+        avPlayerViewController.view.frame = view.bounds
+
+        // Register AVPlayerViewController to the player
+        player.register(avPlayerViewController)
 
         // Listen to player events
         player.add(listener: self)
 
-        playerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-        playerView.frame = view.bounds
-
-        view.addSubview(playerView)
-        view.bringSubviewToFront(playerView)
-
         let sourceConfig = SourceConfig(url: streamUrl, type: .hls)
 
+        // Set title and poster image
         sourceConfig.title = "Art Of Motion"
         sourceConfig.posterSource = posterUrl
+
         player.load(sourceConfig: sourceConfig)
 
         // Setup remote control commands to be able to control playback from Control Center
@@ -141,11 +155,11 @@ final class ViewController: UIViewController {
                   200 ... 299 ~= httpResponse.statusCode,
                   let imageData = data,
                   let image = UIImage(data: imageData) else { return }
-            
+
             let mediaItemArtwork = MPMediaItemArtwork(boundsSize: image.size) { size in
                 return image
             }
-            
+
             DispatchQueue.main.async {
                 self.updateNowPlayingMetadata(key: MPMediaItemPropertyArtwork, value: mediaItemArtwork)
             }

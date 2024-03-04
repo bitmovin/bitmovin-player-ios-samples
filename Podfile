@@ -7,7 +7,7 @@ source 'https://github.com/bitmovin/cocoapod-specs.git'
 workspace 'BitmovinPlayerSamples'
 
 def bitmovin_player
-  pod 'BitmovinPlayer', '3.56.2'
+  pod 'BitmovinPlayer', '3.56.3'
 end
 
 def google_cast
@@ -69,7 +69,7 @@ target 'BasicPlaybackTV' do
 end
 
 target 'SystemUI' do
-    project 'SystemUI/SystemUI'
+    project 'SystemUI/SystemUI.xcodeproj'
     bitmovin_player
 end
 
@@ -121,5 +121,10 @@ end
 target 'BasicUIKitTV' do
     project 'BasicUIKitTV/BasicUIKitTV.xcodeproj'
     platform :tvos, '14.0'
+    bitmovin_player
+end
+
+target 'AVPlayerViewController' do
+    project 'AVPlayerViewController/AVPlayerViewController.xcodeproj'
     bitmovin_player
 end
