@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/bitmovin/player-ios.git",
       "state" : {
-        "revision" : "2e6a5bd35589888fc2b11dc15ad0105b29252a53",
-        "version" : "3.58.0"
+        "revision" : "ea57618c9cfced3ad57cea75301207879db4bcd7",
+        "version" : "3.59.0"
       }
     },
     {
@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/bitmovin/player-ios-core.git",
       "state" : {
-        "revision" : "13cbad432de03a55e6c733488f0c0d166c9a9593",
-        "version" : "3.58.0"
+        "revision" : "0304c5b365565a679362c8a39c02617ffe43b06f",
+        "version" : "3.59.0"
       }
     }
   ],
