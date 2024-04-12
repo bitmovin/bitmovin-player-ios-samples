@@ -14,7 +14,7 @@
       location = "group:BackgroundPlayback/BackgroundPlayback.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:BasicAds/BasicAds.xcodeproj">
+      location = "group:ImaAdvertising/ImaAdvertising.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:BasicCasting/BasicCasting.xcodeproj">
@@ -60,6 +60,9 @@
    </FileRef>
    <FileRef
       location = "group:BasicUIKitTV/BasicUIKitTV.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BitmovinAdvertising/BitmovinAdvertising.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:CustomHtmlUi/CustomHtmlUi.xcodeproj">

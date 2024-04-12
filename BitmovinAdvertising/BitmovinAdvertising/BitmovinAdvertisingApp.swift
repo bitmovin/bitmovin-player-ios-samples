@@ -9,7 +9,7 @@
 import SwiftUI
 
 @main
-struct BasicAdsApp: App {
+struct BitmovinAdvertisingApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

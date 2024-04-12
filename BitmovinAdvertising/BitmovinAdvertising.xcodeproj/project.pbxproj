@@ -7,175 +7,151 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A8D14C9227BC057200FDF2F4 /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = A8D14C9127BC057200FDF2F4 /* BitmovinPlayer */; };
-		AC5046AC1EC4B9A400F18C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5046AB1EC4B9A400F18C0F /* Assets.xcassets */; };
-		D66F5C892A4B0BBC006372BB /* BasicPlaybackSPMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F5C872A4B0BBC006372BB /* BasicPlaybackSPMApp.swift */; };
-		D66F5C8A2A4B0BBC006372BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F5C882A4B0BBC006372BB /* ContentView.swift */; };
+		AC6F030D1F7E6D38004B1816 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6F030C1F7E6D38004B1816 /* Assets.xcassets */; };
+		D6FEF8992A4C6D3C002E8AB7 /* BitmovinAdvertisingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FEF8972A4C6D3B002E8AB7 /* BitmovinAdvertisingApp.swift */; };
+		D6FEF89A2A4C6D3C002E8AB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FEF8982A4C6D3B002E8AB7 /* ContentView.swift */; };
+		D88E49E82BC4371600A80252 /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = D88E49E72BC4371600A80252 /* BitmovinPlayer */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		AC5046D91EC4BFF000F18C0F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		AC5046A11EC4B9A400F18C0F /* BasicPlaybackSPM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicPlaybackSPM.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC5046AB1EC4B9A400F18C0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AC5046B01EC4B9A400F18C0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D66F5C872A4B0BBC006372BB /* BasicPlaybackSPMApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicPlaybackSPMApp.swift; sourceTree = "<group>"; };
-		D66F5C882A4B0BBC006372BB /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AC6F02FF1F7E6D38004B1816 /* BitmovinAdvertising.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitmovinAdvertising.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC6F030C1F7E6D38004B1816 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC6F03111F7E6D38004B1816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6FEF8972A4C6D3B002E8AB7 /* BitmovinAdvertisingApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitmovinAdvertisingApp.swift; sourceTree = "<group>"; };
+		D6FEF8982A4C6D3B002E8AB7 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AC50469E1EC4B9A400F18C0F /* Frameworks */ = {
+		AC6F02FC1F7E6D38004B1816 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8D14C9227BC057200FDF2F4 /* BitmovinPlayer in Frameworks */,
+				D88E49E82BC4371600A80252 /* BitmovinPlayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A873550027BA7A56006FA7B0 /* Frameworks */ = {
+		AC6F02F61F7E6D38004B1816 = {
 			isa = PBXGroup;
 			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		AC5046981EC4B9A400F18C0F = {
-			isa = PBXGroup;
-			children = (
-				AC5046A31EC4B9A400F18C0F /* BasicPlaybackSPM */,
-				AC5046A21EC4B9A400F18C0F /* Products */,
-				A873550027BA7A56006FA7B0 /* Frameworks */,
+				AC6F03011F7E6D38004B1816 /* BitmovinAdvertising */,
+				AC6F03001F7E6D38004B1816 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		AC5046A21EC4B9A400F18C0F /* Products */ = {
+		AC6F03001F7E6D38004B1816 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC5046A11EC4B9A400F18C0F /* BasicPlaybackSPM.app */,
+				AC6F02FF1F7E6D38004B1816 /* BitmovinAdvertising.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AC5046A31EC4B9A400F18C0F /* BasicPlaybackSPM */ = {
+		AC6F03011F7E6D38004B1816 /* BitmovinAdvertising */ = {
 			isa = PBXGroup;
 			children = (
-				D66F5C872A4B0BBC006372BB /* BasicPlaybackSPMApp.swift */,
-				D66F5C882A4B0BBC006372BB /* ContentView.swift */,
-				AC5046AB1EC4B9A400F18C0F /* Assets.xcassets */,
-				AC5046B01EC4B9A400F18C0F /* Info.plist */,
+				D6FEF8972A4C6D3B002E8AB7 /* BitmovinAdvertisingApp.swift */,
+				D6FEF8982A4C6D3B002E8AB7 /* ContentView.swift */,
+				AC6F030C1F7E6D38004B1816 /* Assets.xcassets */,
+				AC6F03111F7E6D38004B1816 /* Info.plist */,
 			);
-			path = BasicPlaybackSPM;
+			path = BitmovinAdvertising;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AC5046A01EC4B9A400F18C0F /* BasicPlaybackSPM */ = {
+		AC6F02FE1F7E6D38004B1816 /* BitmovinAdvertising */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC5046C91EC4B9A400F18C0F /* Build configuration list for PBXNativeTarget "BasicPlaybackSPM" */;
+			buildConfigurationList = AC6F03141F7E6D38004B1816 /* Build configuration list for PBXNativeTarget "BitmovinAdvertising" */;
 			buildPhases = (
-				AC50469D1EC4B9A400F18C0F /* Sources */,
-				AC50469E1EC4B9A400F18C0F /* Frameworks */,
-				AC50469F1EC4B9A400F18C0F /* Resources */,
-				AC5046D91EC4BFF000F18C0F /* Embed Frameworks */,
+				AC6F02FB1F7E6D38004B1816 /* Sources */,
+				AC6F02FC1F7E6D38004B1816 /* Frameworks */,
+				AC6F02FD1F7E6D38004B1816 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = BasicPlaybackSPM;
+			name = BitmovinAdvertising;
 			packageProductDependencies = (
-				A8D14C9127BC057200FDF2F4 /* BitmovinPlayer */,
+				D88E49E72BC4371600A80252 /* BitmovinPlayer */,
 			);
-			productName = BasicPlayback;
-			productReference = AC5046A11EC4B9A400F18C0F /* BasicPlaybackSPM.app */;
+			productName = BitmovinAdvertising;
+			productReference = AC6F02FF1F7E6D38004B1816 /* BitmovinAdvertising.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AC5046991EC4B9A400F18C0F /* Project object */ = {
+		AC6F02F71F7E6D38004B1816 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 1420;
 				ORGANIZATIONNAME = Bitmovin;
 				TargetAttributes = {
-					AC5046A01EC4B9A400F18C0F = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = "";
+					AC6F02FE1F7E6D38004B1816 = {
+						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = AC50469C1EC4B9A400F18C0F /* Build configuration list for PBXProject "BasicPlaybackSPM" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			buildConfigurationList = AC6F02FA1F7E6D38004B1816 /* Build configuration list for PBXProject "BitmovinAdvertising" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
-			mainGroup = AC5046981EC4B9A400F18C0F;
+			mainGroup = AC6F02F61F7E6D38004B1816;
 			packageReferences = (
-				A8D14C9027BC04A100FDF2F4 /* XCRemoteSwiftPackageReference "player-ios" */,
+				D88E49E62BC4371600A80252 /* XCRemoteSwiftPackageReference "player-ios" */,
 			);
-			productRefGroup = AC5046A21EC4B9A400F18C0F /* Products */;
+			productRefGroup = AC6F03001F7E6D38004B1816 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AC5046A01EC4B9A400F18C0F /* BasicPlaybackSPM */,
+				AC6F02FE1F7E6D38004B1816 /* BitmovinAdvertising */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AC50469F1EC4B9A400F18C0F /* Resources */ = {
+		AC6F02FD1F7E6D38004B1816 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC5046AC1EC4B9A400F18C0F /* Assets.xcassets in Resources */,
+				AC6F030D1F7E6D38004B1816 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AC50469D1EC4B9A400F18C0F /* Sources */ = {
+		AC6F02FB1F7E6D38004B1816 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D66F5C8A2A4B0BBC006372BB /* ContentView.swift in Sources */,
-				D66F5C892A4B0BBC006372BB /* BasicPlaybackSPMApp.swift in Sources */,
+				D6FEF89A2A4C6D3C002E8AB7 /* ContentView.swift in Sources */,
+				D6FEF8992A4C6D3C002E8AB7 /* BitmovinAdvertisingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		AC5046C71EC4B9A400F18C0F /* Debug */ = {
+		AC6F03121F7E6D38004B1816 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -198,14 +174,15 @@
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -226,17 +203,16 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		AC5046C81EC4B9A400F18C0F /* Release */ = {
+		AC6F03131F7E6D38004B1816 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -259,14 +235,15 @@
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -280,68 +257,61 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		AC5046CA1EC4B9A400F18C0F /* Debug */ = {
+		AC6F03151F7E6D38004B1816 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-					../,
-				);
-				INFOPLIST_FILE = BasicPlaybackSPM/Info.plist;
+				INFOPLIST_FILE = BitmovinAdvertising/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.playback.basic-$(DEVELOPMENT_TEAM)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.ads.bitmovin-$(DEVELOPMENT_TEAM)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		AC5046CB1EC4B9A400F18C0F /* Release */ = {
+		AC6F03161F7E6D38004B1816 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-					../,
-				);
-				INFOPLIST_FILE = BasicPlaybackSPM/Info.plist;
+				INFOPLIST_FILE = BitmovinAdvertising/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.playback.basic-$(DEVELOPMENT_TEAM)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.ads.bitmovin-$(DEVELOPMENT_TEAM)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AC50469C1EC4B9A400F18C0F /* Build configuration list for PBXProject "BasicPlaybackSPM" */ = {
+		AC6F02FA1F7E6D38004B1816 /* Build configuration list for PBXProject "BitmovinAdvertising" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AC5046C71EC4B9A400F18C0F /* Debug */,
-				AC5046C81EC4B9A400F18C0F /* Release */,
+				AC6F03121F7E6D38004B1816 /* Debug */,
+				AC6F03131F7E6D38004B1816 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC5046C91EC4B9A400F18C0F /* Build configuration list for PBXNativeTarget "BasicPlaybackSPM" */ = {
+		AC6F03141F7E6D38004B1816 /* Build configuration list for PBXNativeTarget "BitmovinAdvertising" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AC5046CA1EC4B9A400F18C0F /* Debug */,
-				AC5046CB1EC4B9A400F18C0F /* Release */,
+				AC6F03151F7E6D38004B1816 /* Debug */,
+				AC6F03161F7E6D38004B1816 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -349,7 +319,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A8D14C9027BC04A100FDF2F4 /* XCRemoteSwiftPackageReference "player-ios" */ = {
+		D88E49E62BC4371600A80252 /* XCRemoteSwiftPackageReference "player-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/bitmovin/player-ios.git";
 			requirement = {
@@ -360,12 +330,12 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A8D14C9127BC057200FDF2F4 /* BitmovinPlayer */ = {
+		D88E49E72BC4371600A80252 /* BitmovinPlayer */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A8D14C9027BC04A100FDF2F4 /* XCRemoteSwiftPackageReference "player-ios" */;
+			package = D88E49E62BC4371600A80252 /* XCRemoteSwiftPackageReference "player-ios" */;
 			productName = BitmovinPlayer;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = AC5046991EC4B9A400F18C0F /* Project object */;
+	rootObject = AC6F02F71F7E6D38004B1816 /* Project object */;
 }

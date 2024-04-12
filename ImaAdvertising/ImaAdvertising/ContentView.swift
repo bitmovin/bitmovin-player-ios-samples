@@ -101,6 +101,6 @@ struct ContentView_Previews: PreviewProvider {
 
 extension String {
     func urlWithCorrelator() -> URL {
-        URL(string: String(format: "%@%d", self, Int(arc4random_uniform(100000))))!
+        URL(string: String(format: "%@%d", self, Int.random(in: 0..<100000)))!
     }
 }

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AC6F02FE1F7E6D38004B1816"
-               BuildableName = "BasicAds.app"
-               BlueprintName = "BasicAds"
-               ReferencedContainer = "container:BasicAds.xcodeproj">
+               BuildableName = "BitmovinAdvertising.app"
+               BlueprintName = "BitmovinAdvertising"
+               ReferencedContainer = "container:BitmovinAdvertising.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AC6F02FE1F7E6D38004B1816"
-            BuildableName = "BasicAds.app"
-            BlueprintName = "BasicAds"
-            ReferencedContainer = "container:BasicAds.xcodeproj">
+            BuildableName = "BitmovinAdvertising.app"
+            BlueprintName = "BitmovinAdvertising"
+            ReferencedContainer = "container:BitmovinAdvertising.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AC6F02FE1F7E6D38004B1816"
-            BuildableName = "BasicAds.app"
-            BlueprintName = "BasicAds"
-            ReferencedContainer = "container:BasicAds.xcodeproj">
+            BuildableName = "BitmovinAdvertising.app"
+            BlueprintName = "BitmovinAdvertising"
+            ReferencedContainer = "container:BitmovinAdvertising.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -7,23 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8469A387B0E64E189AD78F04 /* Pods_BasicAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B826631924D953E39F1A8C6 /* Pods_BasicAds.framework */; };
-		AC6F030B1F7E6D38004B1816 /* BasicAds.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC6F03091F7E6D38004B1816 /* BasicAds.xcdatamodeld */; };
+		339B33090719E4A54CE9ABDB /* Pods_ImaAdvertising.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10DE879FD9444F2659429BEE /* Pods_ImaAdvertising.framework */; };
 		AC6F030D1F7E6D38004B1816 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6F030C1F7E6D38004B1816 /* Assets.xcassets */; };
-		D6FEF8992A4C6D3C002E8AB7 /* BasicAdsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FEF8972A4C6D3B002E8AB7 /* BasicAdsApp.swift */; };
+		D6FEF8992A4C6D3C002E8AB7 /* ImaAdvertisingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FEF8972A4C6D3B002E8AB7 /* ImaAdvertisingApp.swift */; };
 		D6FEF89A2A4C6D3C002E8AB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FEF8982A4C6D3B002E8AB7 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0BAF4C557D595E811CBB9D48 /* Pods-BasicAds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicAds.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicAds/Pods-BasicAds.debug.xcconfig"; sourceTree = "<group>"; };
-		2B826631924D953E39F1A8C6 /* Pods_BasicAds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicAds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		33401C10AEF15283DB08DCC6 /* Pods-BasicAds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicAds.release.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicAds/Pods-BasicAds.release.xcconfig"; sourceTree = "<group>"; };
-		AC6F02FF1F7E6D38004B1816 /* BasicAds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicAds.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC6F030A1F7E6D38004B1816 /* BasicAds.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BasicAds.xcdatamodel; sourceTree = "<group>"; };
+		10DE879FD9444F2659429BEE /* Pods_ImaAdvertising.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImaAdvertising.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B81CA32392B05C3E3BEF81E /* Pods-ImaAdvertising.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImaAdvertising.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ImaAdvertising/Pods-ImaAdvertising.release.xcconfig"; sourceTree = "<group>"; };
+		AC6F02FF1F7E6D38004B1816 /* ImaAdvertising.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImaAdvertising.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6F030C1F7E6D38004B1816 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC6F03111F7E6D38004B1816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6FEF8972A4C6D3B002E8AB7 /* BasicAdsApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicAdsApp.swift; sourceTree = "<group>"; };
+		D6FEF8972A4C6D3B002E8AB7 /* ImaAdvertisingApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImaAdvertisingApp.swift; sourceTree = "<group>"; };
 		D6FEF8982A4C6D3B002E8AB7 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DF38995281A22A268D39C796 /* Pods-ImaAdvertising.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImaAdvertising.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ImaAdvertising/Pods-ImaAdvertising.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,7 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8469A387B0E64E189AD78F04 /* Pods_BasicAds.framework in Frameworks */,
+				339B33090719E4A54CE9ABDB /* Pods_ImaAdvertising.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,8 +39,8 @@
 		49420FF4AD157BE2844033FC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0BAF4C557D595E811CBB9D48 /* Pods-BasicAds.debug.xcconfig */,
-				33401C10AEF15283DB08DCC6 /* Pods-BasicAds.release.xcconfig */,
+				DF38995281A22A268D39C796 /* Pods-ImaAdvertising.debug.xcconfig */,
+				1B81CA32392B05C3E3BEF81E /* Pods-ImaAdvertising.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -50,7 +48,7 @@
 		AC6F02F61F7E6D38004B1816 = {
 			isa = PBXGroup;
 			children = (
-				AC6F03011F7E6D38004B1816 /* BasicAds */,
+				AC6F03011F7E6D38004B1816 /* ImaAdvertising */,
 				AC6F03001F7E6D38004B1816 /* Products */,
 				49420FF4AD157BE2844033FC /* Pods */,
 				F02FC58AE5EF7E6B3AF0EFF6 /* Frameworks */,
@@ -60,27 +58,26 @@
 		AC6F03001F7E6D38004B1816 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC6F02FF1F7E6D38004B1816 /* BasicAds.app */,
+				AC6F02FF1F7E6D38004B1816 /* ImaAdvertising.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AC6F03011F7E6D38004B1816 /* BasicAds */ = {
+		AC6F03011F7E6D38004B1816 /* ImaAdvertising */ = {
 			isa = PBXGroup;
 			children = (
-				D6FEF8972A4C6D3B002E8AB7 /* BasicAdsApp.swift */,
+				D6FEF8972A4C6D3B002E8AB7 /* ImaAdvertisingApp.swift */,
 				D6FEF8982A4C6D3B002E8AB7 /* ContentView.swift */,
 				AC6F030C1F7E6D38004B1816 /* Assets.xcassets */,
 				AC6F03111F7E6D38004B1816 /* Info.plist */,
-				AC6F03091F7E6D38004B1816 /* BasicAds.xcdatamodeld */,
 			);
-			path = BasicAds;
+			path = ImaAdvertising;
 			sourceTree = "<group>";
 		};
 		F02FC58AE5EF7E6B3AF0EFF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2B826631924D953E39F1A8C6 /* Pods_BasicAds.framework */,
+				10DE879FD9444F2659429BEE /* Pods_ImaAdvertising.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -88,9 +85,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AC6F02FE1F7E6D38004B1816 /* BasicAds */ = {
+		AC6F02FE1F7E6D38004B1816 /* ImaAdvertising */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC6F03141F7E6D38004B1816 /* Build configuration list for PBXNativeTarget "BasicAds" */;
+			buildConfigurationList = AC6F03141F7E6D38004B1816 /* Build configuration list for PBXNativeTarget "ImaAdvertising" */;
 			buildPhases = (
 				5164735D4C8F1B1B6A75A015 /* [CP] Check Pods Manifest.lock */,
 				AC6F02FB1F7E6D38004B1816 /* Sources */,
@@ -102,9 +99,9 @@
 			);
 			dependencies = (
 			);
-			name = BasicAds;
-			productName = BasicAds;
-			productReference = AC6F02FF1F7E6D38004B1816 /* BasicAds.app */;
+			name = ImaAdvertising;
+			productName = ImaAdvertising;
+			productReference = AC6F02FF1F7E6D38004B1816 /* ImaAdvertising.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -124,7 +121,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AC6F02FA1F7E6D38004B1816 /* Build configuration list for PBXProject "BasicAds" */;
+			buildConfigurationList = AC6F02FA1F7E6D38004B1816 /* Build configuration list for PBXProject "ImaAdvertising" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -137,7 +134,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AC6F02FE1F7E6D38004B1816 /* BasicAds */,
+				AC6F02FE1F7E6D38004B1816 /* ImaAdvertising */,
 			);
 		};
 /* End PBXProject section */
@@ -160,7 +157,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BasicAds/Pods-BasicAds-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ImaAdvertising/Pods-ImaAdvertising-frameworks.sh",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinAnalyticsCollector/BitmovinPlayer/BitmovinCollector.framework/BitmovinCollector",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinAnalyticsCollector/Core/CoreCollector.framework/CoreCollector",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinPlayer/BitmovinPlayer.framework/BitmovinPlayer",
@@ -179,7 +176,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BasicAds/Pods-BasicAds-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImaAdvertising/Pods-ImaAdvertising-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5164735D4C8F1B1B6A75A015 /* [CP] Check Pods Manifest.lock */ = {
@@ -193,7 +190,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BasicAds-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ImaAdvertising-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -208,8 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6FEF89A2A4C6D3C002E8AB7 /* ContentView.swift in Sources */,
-				AC6F030B1F7E6D38004B1816 /* BasicAds.xcdatamodeld in Sources */,
-				D6FEF8992A4C6D3C002E8AB7 /* BasicAdsApp.swift in Sources */,
+				D6FEF8992A4C6D3C002E8AB7 /* ImaAdvertisingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,14 +329,14 @@
 		};
 		AC6F03151F7E6D38004B1816 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0BAF4C557D595E811CBB9D48 /* Pods-BasicAds.debug.xcconfig */;
+			baseConfigurationReference = DF38995281A22A268D39C796 /* Pods-ImaAdvertising.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = BasicAds/Info.plist;
+				INFOPLIST_FILE = ImaAdvertising/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.ads.basic-$(DEVELOPMENT_TEAM)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.ads.ima-$(DEVELOPMENT_TEAM)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -348,14 +344,14 @@
 		};
 		AC6F03161F7E6D38004B1816 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33401C10AEF15283DB08DCC6 /* Pods-BasicAds.release.xcconfig */;
+			baseConfigurationReference = 1B81CA32392B05C3E3BEF81E /* Pods-ImaAdvertising.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = BasicAds/Info.plist;
+				INFOPLIST_FILE = ImaAdvertising/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.ads.basic-$(DEVELOPMENT_TEAM)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.ads.ima-$(DEVELOPMENT_TEAM)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,7 +360,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AC6F02FA1F7E6D38004B1816 /* Build configuration list for PBXProject "BasicAds" */ = {
+		AC6F02FA1F7E6D38004B1816 /* Build configuration list for PBXProject "ImaAdvertising" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC6F03121F7E6D38004B1816 /* Debug */,
@@ -373,7 +369,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC6F03141F7E6D38004B1816 /* Build configuration list for PBXNativeTarget "BasicAds" */ = {
+		AC6F03141F7E6D38004B1816 /* Build configuration list for PBXNativeTarget "ImaAdvertising" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC6F03151F7E6D38004B1816 /* Debug */,
@@ -383,19 +379,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		AC6F03091F7E6D38004B1816 /* BasicAds.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				AC6F030A1F7E6D38004B1816 /* BasicAds.xcdatamodel */,
-			);
-			currentVersion = AC6F030A1F7E6D38004B1816 /* BasicAds.xcdatamodel */;
-			path = BasicAds.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = AC6F02F71F7E6D38004B1816 /* Project object */;
 }
