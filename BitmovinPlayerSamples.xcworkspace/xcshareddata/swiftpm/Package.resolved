@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/bitmovin/bitmovin-analytics-collector-ios.git",
       "state" : {
-        "revision" : "7a4fe8090579b908baf2697d61523b804d61f0c0",
-        "version" : "3.5.0"
+        "revision" : "ee3b51682995c8cbbe76c7f43d21a4491d5c48a4",
+        "version" : "3.7.0"
       }
     },
     {
@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/bitmovin/player-ios.git",
       "state" : {
-        "revision" : "a1b1120d3233c121cea88d051f8478e38f1c5f6e",
-        "version" : "3.63.0"
+        "revision" : "728bb80f12fb5939ea7ee11dc77e4522f6233b72",
+        "version" : "3.64.0"
       }
     },
     {
@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/bitmovin/player-ios-core.git",
       "state" : {
-        "revision" : "91e643139dae47d0795e146512a70ccc67186fe7",
-        "version" : "3.63.0"
+        "revision" : "d61159f594f4be6620835fb822a29ae9631cefc3",
+        "version" : "3.64.0"
       }
     }
   ],
