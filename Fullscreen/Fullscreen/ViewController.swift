@@ -17,11 +17,21 @@ private let playerLicenseKey = "<PLAYER_LICENSE_KEY>"
 private let analyticsLicenseKey = "<ANALYTICS_LICENSE_KEY>"
 
 final class ViewController: UIViewController {
+    @IBOutlet private weak var playerHolderView: UIView!
+
+    // default constraints
+    @IBOutlet private weak var pvLeftConstraint: NSLayoutConstraint!
+    @IBOutlet private weak var pvTopConstraint: NSLayoutConstraint!
+    @IBOutlet private weak var pvRightConstraint: NSLayoutConstraint!
+    @IBOutlet private weak var pvBottomConstraint: NSLayoutConstraint!
+    // fullscreen constraints
+    @IBOutlet private weak var pvFullScreenLeftConstraint: NSLayoutConstraint!
+    @IBOutlet private weak var pvFullScreenTopConstraint: NSLayoutConstraint!
+    @IBOutlet private weak var pvFullScreenRightConstraint: NSLayoutConstraint!
+    @IBOutlet private weak var pvFullScreenBottomConstraint: NSLayoutConstraint!
+
     var player: Player!
     var playerView: PlayerView!
-
-    var orientation: UIInterfaceOrientationMask = .allButUpsideDown
-    var fullscreenRequestedByOrientationChange: Bool = false
 
     var fullscreen: Bool = false {
         didSet {
@@ -32,18 +42,12 @@ final class ViewController: UIViewController {
         }
     }
 
-    // To have this method called correctly, the UINavigationController+Extensions are needed
-    override var shouldAutorotate: Bool {
-        return true
-    }
-
-    // To have this method called correctly, the UINavigationController+Extensions are needed
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return orientation
-    }
-
     override var prefersStatusBarHidden: Bool {
-        return fullscreen
+        fullscreen
+    }
+
+    override var prefersHomeIndicatorAutoHidden: Bool {
+        fullscreen
     }
 
     deinit {
@@ -52,8 +56,6 @@ final class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = .black
 
         // Define needed resources
         guard let streamUrl = URL(string: "https://bitmovin-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8"),
@@ -88,39 +90,15 @@ final class ViewController: UIViewController {
         player.add(listener: self)
 
         playerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-        playerView.frame = view.bounds
+        playerView.frame = playerHolderView.bounds
 
-        view.addSubview(playerView)
-        view.bringSubviewToFront(playerView)
+        playerHolderView.addSubview(playerView)
+        playerHolderView.bringSubviewToFront(playerView)
 
         let sourceConfig = SourceConfig(url: streamUrl, type: .hls)
         sourceConfig.posterSource = posterUrl
 
         player.load(sourceConfig: sourceConfig)
-    }
-
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        playerView?.willRotate()
-
-        let width = size.width
-        let height = size.height
-
-        // Distinguish between fullscreen requested either by touching fullscreen button or changing orientation
-        self.fullscreenRequestedByOrientationChange = width > height
-
-        coordinator.animate(alongsideTransition: { _ in
-            if width > height {
-                // Will enter landscape
-                self.playerView?.enterFullscreen()
-            } else {
-                // Will enter portrait
-                self.playerView?.exitFullscreen()
-            }
-        }) { _ in
-            self.playerView?.didRotate()
-        }
-
-        super.viewWillTransition(to: size, with: coordinator)
     }
 }
 
@@ -128,7 +106,7 @@ final class ViewController: UIViewController {
 
 extension ViewController: FullscreenHandler {
     var isFullscreen: Bool {
-        return fullscreen
+        fullscreen
     }
 
     func onFullscreenRequested() {
@@ -145,25 +123,16 @@ extension ViewController: FullscreenHandler {
         // Update navigation bar
         navigationController?.setNavigationBarHidden(fullscreen, animated: true)
 
-        if !fullscreenRequestedByOrientationChange {
-            playerView?.willRotate()
+        // Switch layout constraints
+        self.pvLeftConstraint.isActive = !fullscreen
+        self.pvBottomConstraint.isActive = !fullscreen
+        self.pvRightConstraint.isActive = !fullscreen
+        self.pvTopConstraint.isActive = !fullscreen
 
-            // Force orientation; this will be used when supportedInterfaceOrientation is called
-            orientation = fullscreen ? .landscape : .portrait
-
-            // Present dummy controller so that after push, supportedInterfaceOrientations is called again
-            let dummy = UIViewController()
-            dummy.modalPresentationStyle = .fullScreen
-            navigationController?.present(dummy, animated: false) {
-                dummy.dismiss(animated: false) {
-                    // reset orientation
-                    self.orientation = .allButUpsideDown
-                    self.playerView?.didRotate()
-                }
-            }
-        } else {
-            fullscreenRequestedByOrientationChange = false
-        }
+        self.pvFullScreenTopConstraint.isActive = fullscreen
+        self.pvFullScreenRightConstraint.isActive = fullscreen
+        self.pvFullScreenBottomConstraint.isActive = fullscreen
+        self.pvFullScreenLeftConstraint.isActive = fullscreen
     }
 }
 

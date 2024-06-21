@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lFW-o9-iOs">
+    <device id="retina4_7" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="HQ2-ly-VQ2">
+            <objects>
+                <navigationController id="lFW-o9-iOs" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GEY-Bw-MgW">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="NjI-cQ-5Db"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hyq-gJ-BLY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-698" y="9"/>
+        </scene>
+        <!--Basic Fullscreen Sample-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Fullscreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ETo-QN-kFk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QRT-bw-Qhk">
+                                <rect key="frame" x="16" y="80" width="343" height="571"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dpK-eG-ptX"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QRT-bw-Qhk" firstAttribute="top" secondItem="dpK-eG-ptX" secondAttribute="top" constant="16" id="8cP-Ri-Qlq"/>
+                            <constraint firstItem="QRT-bw-Qhk" firstAttribute="leading" secondItem="ETo-QN-kFk" secondAttribute="leading" id="EGR-XG-vEC"/>
+                            <constraint firstAttribute="bottom" secondItem="QRT-bw-Qhk" secondAttribute="bottom" id="Gtc-En-hYZ"/>
+                            <constraint firstItem="QRT-bw-Qhk" firstAttribute="top" secondItem="ETo-QN-kFk" secondAttribute="top" id="aij-vb-Sme"/>
+                            <constraint firstItem="dpK-eG-ptX" firstAttribute="bottom" secondItem="QRT-bw-Qhk" secondAttribute="bottom" constant="16" id="bRi-Ls-wxb"/>
+                            <constraint firstAttribute="trailing" secondItem="QRT-bw-Qhk" secondAttribute="trailing" id="ilX-Xn-PyY"/>
+                            <constraint firstItem="QRT-bw-Qhk" firstAttribute="leading" secondItem="dpK-eG-ptX" secondAttribute="leading" constant="16" id="lRG-bA-MN8"/>
+                            <constraint firstItem="dpK-eG-ptX" firstAttribute="trailing" secondItem="QRT-bw-Qhk" secondAttribute="trailing" constant="16" id="oxh-5S-Bae"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ilX-Xn-PyY"/>
+                                <exclude reference="EGR-XG-vEC"/>
+                                <exclude reference="Gtc-En-hYZ"/>
+                                <exclude reference="aij-vb-Sme"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Basic Fullscreen Sample" id="eNB-E0-kTF"/>
+                    <connections>
+                        <outlet property="playerHolderView" destination="QRT-bw-Qhk" id="oaE-3r-hGW"/>
+                        <outlet property="pvBottomConstraint" destination="bRi-Ls-wxb" id="Vf3-5e-Ezc"/>
+                        <outlet property="pvFullScreenBottomConstraint" destination="Gtc-En-hYZ" id="lrK-VJ-cSc"/>
+                        <outlet property="pvFullScreenLeftConstraint" destination="EGR-XG-vEC" id="aa4-on-fDB"/>
+                        <outlet property="pvFullScreenRightConstraint" destination="ilX-Xn-PyY" id="nE9-Oc-rjd"/>
+                        <outlet property="pvFullScreenTopConstraint" destination="aij-vb-Sme" id="alr-zd-rRW"/>
+                        <outlet property="pvLeftConstraint" destination="lRG-bA-MN8" id="XC5-ZB-tsx"/>
+                        <outlet property="pvRightConstraint" destination="oxh-5S-Bae" id="hY9-Ld-iLr"/>
+                        <outlet property="pvTopConstraint" destination="8cP-Ri-Qlq" id="3b1-Ra-nPl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="183" y="9"/>
+        </scene>
+    </scenes>
+</document>

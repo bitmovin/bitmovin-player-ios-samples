@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6E189353211D7B9F00F45656"
-               BuildableName = "BasicFullscreenHandling.app"
-               BlueprintName = "BasicFullscreenHandling"
-               ReferencedContainer = "container:BasicFullscreenHandling.xcodeproj">
+               BuildableName = "Fullscreen.app"
+               BlueprintName = "Fullscreen"
+               ReferencedContainer = "container:Fullscreen.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6E189353211D7B9F00F45656"
-            BuildableName = "BasicFullscreenHandling.app"
-            BlueprintName = "BasicFullscreenHandling"
-            ReferencedContainer = "container:BasicFullscreenHandling.xcodeproj">
+            BuildableName = "Fullscreen.app"
+            BlueprintName = "Fullscreen"
+            ReferencedContainer = "container:Fullscreen.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>

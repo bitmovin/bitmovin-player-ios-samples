@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,20 +12,20 @@
 		6E18935D211D7B9F00F45656 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E18935B211D7B9F00F45656 /* Main.storyboard */; };
 		6E18935F211D7BA100F45656 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E18935E211D7BA100F45656 /* Assets.xcassets */; };
 		6E189362211D7BA100F45656 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E189360211D7BA100F45656 /* LaunchScreen.storyboard */; };
-		6EF10DBE212C08C4003E7A0F /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF10DBD212C08C4003E7A0F /* UINavigationController+Extensions.swift */; };
-		E944EC53EFC975F45BAAD95B /* Pods_BasicFullscreenHandling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 983547E43CEB5452210BA72C /* Pods_BasicFullscreenHandling.framework */; };
+		C77DA9156B03A9520CB3293A /* Pods_Fullscreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49033C816980F367109BD6D6 /* Pods_Fullscreen.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6E189354211D7B9F00F45656 /* BasicFullscreenHandling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicFullscreenHandling.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22B50A6A56C7485517326AF9 /* Pods-Fullscreen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fullscreen.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Fullscreen/Pods-Fullscreen.debug.xcconfig"; sourceTree = "<group>"; };
+		49033C816980F367109BD6D6 /* Pods_Fullscreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fullscreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B4DC663BE08148796CDC881 /* Pods-Fullscreen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fullscreen.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Fullscreen/Pods-Fullscreen.release.xcconfig"; sourceTree = "<group>"; };
+		6E189354211D7B9F00F45656 /* Fullscreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fullscreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E189357211D7B9F00F45656 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E189359211D7B9F00F45656 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6E18935C211D7B9F00F45656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6E18935E211D7BA100F45656 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E189361211D7BA100F45656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E189363211D7BA100F45656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6EF10DBD212C08C4003E7A0F /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
-		983547E43CEB5452210BA72C /* Pods_BasicFullscreenHandling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicFullscreenHandling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA266CBADFBF58E91DCF8D1A /* Pods-BasicFullscreenHandling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicFullscreenHandling.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicFullscreenHandling/Pods-BasicFullscreenHandling.debug.xcconfig"; sourceTree = "<group>"; };
 		FCC5606B8F00C7EF642B81C2 /* Pods-BasicFullscreenHandling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicFullscreenHandling.release.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicFullscreenHandling/Pods-BasicFullscreenHandling.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -35,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E944EC53EFC975F45BAAD95B /* Pods_BasicFullscreenHandling.framework in Frameworks */,
+				C77DA9156B03A9520CB3293A /* Pods_Fullscreen.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +45,7 @@
 		6E18934B211D7B9F00F45656 = {
 			isa = PBXGroup;
 			children = (
-				6E189356211D7B9F00F45656 /* BasicFullscreenHandling */,
+				6E189356211D7B9F00F45656 /* Fullscreen */,
 				6E189355211D7B9F00F45656 /* Products */,
 				A8CFA4AF9036EC6C0658DB7C /* Pods */,
 				96EE551AE2C13F5290FCC67C /* Frameworks */,
@@ -55,15 +55,14 @@
 		6E189355211D7B9F00F45656 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6E189354211D7B9F00F45656 /* BasicFullscreenHandling.app */,
+				6E189354211D7B9F00F45656 /* Fullscreen.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6E189356211D7B9F00F45656 /* BasicFullscreenHandling */ = {
+		6E189356211D7B9F00F45656 /* Fullscreen */ = {
 			isa = PBXGroup;
 			children = (
-				6EF10DBC212C08B1003E7A0F /* Extensions */,
 				6E189357211D7B9F00F45656 /* AppDelegate.swift */,
 				6E189359211D7B9F00F45656 /* ViewController.swift */,
 				6E18935B211D7B9F00F45656 /* Main.storyboard */,
@@ -71,21 +70,13 @@
 				6E189360211D7BA100F45656 /* LaunchScreen.storyboard */,
 				6E189363211D7BA100F45656 /* Info.plist */,
 			);
-			path = BasicFullscreenHandling;
-			sourceTree = "<group>";
-		};
-		6EF10DBC212C08B1003E7A0F /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				6EF10DBD212C08C4003E7A0F /* UINavigationController+Extensions.swift */,
-			);
-			path = Extensions;
+			path = Fullscreen;
 			sourceTree = "<group>";
 		};
 		96EE551AE2C13F5290FCC67C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				983547E43CEB5452210BA72C /* Pods_BasicFullscreenHandling.framework */,
+				49033C816980F367109BD6D6 /* Pods_Fullscreen.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -95,6 +86,8 @@
 			children = (
 				FA266CBADFBF58E91DCF8D1A /* Pods-BasicFullscreenHandling.debug.xcconfig */,
 				FCC5606B8F00C7EF642B81C2 /* Pods-BasicFullscreenHandling.release.xcconfig */,
+				22B50A6A56C7485517326AF9 /* Pods-Fullscreen.debug.xcconfig */,
+				6B4DC663BE08148796CDC881 /* Pods-Fullscreen.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -102,24 +95,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6E189353211D7B9F00F45656 /* BasicFullscreenHandling */ = {
+		6E189353211D7B9F00F45656 /* Fullscreen */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E189366211D7BA100F45656 /* Build configuration list for PBXNativeTarget "BasicFullscreenHandling" */;
+			buildConfigurationList = 6E189366211D7BA100F45656 /* Build configuration list for PBXNativeTarget "Fullscreen" */;
 			buildPhases = (
 				B946F7A957F39EF4685B6F29 /* [CP] Check Pods Manifest.lock */,
 				6E189350211D7B9F00F45656 /* Sources */,
 				6E189351211D7B9F00F45656 /* Frameworks */,
 				6E189352211D7B9F00F45656 /* Resources */,
 				F0CF6756232FE4A4550933CC /* [CP] Embed Pods Frameworks */,
-				6EF10DBF212C2D31003E7A0F /* Swift Lint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = BasicFullscreenHandling;
+			name = Fullscreen;
 			productName = BasicFullscreenHandling;
-			productReference = 6E189354211D7B9F00F45656 /* BasicFullscreenHandling.app */;
+			productReference = 6E189354211D7B9F00F45656 /* Fullscreen.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -138,7 +130,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6E18934F211D7B9F00F45656 /* Build configuration list for PBXProject "BasicFullscreenHandling" */;
+			buildConfigurationList = 6E18934F211D7B9F00F45656 /* Build configuration list for PBXProject "Fullscreen" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -151,7 +143,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6E189353211D7B9F00F45656 /* BasicFullscreenHandling */,
+				6E189353211D7B9F00F45656 /* Fullscreen */,
 			);
 		};
 /* End PBXProject section */
@@ -170,20 +162,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6EF10DBF212C2D31003E7A0F /* Swift Lint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Swift Lint";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which ${PODS_ROOT}/SwiftLint/swiftlint >/dev/null; then\n  ${PODS_ROOT}/SwiftLint/swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
 		B946F7A957F39EF4685B6F29 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -195,7 +173,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BasicFullscreenHandling-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Fullscreen-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -208,15 +186,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BasicFullscreenHandling/Pods-BasicFullscreenHandling-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Fullscreen/Pods-Fullscreen-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BasicFullscreenHandling/Pods-BasicFullscreenHandling-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Fullscreen/Pods-Fullscreen-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BasicFullscreenHandling/Pods-BasicFullscreenHandling-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fullscreen/Pods-Fullscreen-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -227,7 +205,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E18935A211D7B9F00F45656 /* ViewController.swift in Sources */,
-				6EF10DBE212C08C4003E7A0F /* UINavigationController+Extensions.swift in Sources */,
 				6E189358211D7B9F00F45656 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,12 +351,12 @@
 		};
 		6E189367211D7BA100F45656 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA266CBADFBF58E91DCF8D1A /* Pods-BasicFullscreenHandling.debug.xcconfig */;
+			baseConfigurationReference = 22B50A6A56C7485517326AF9 /* Pods-Fullscreen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = BasicFullscreenHandling/Info.plist;
+				INFOPLIST_FILE = Fullscreen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,12 +369,12 @@
 		};
 		6E189368211D7BA100F45656 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FCC5606B8F00C7EF642B81C2 /* Pods-BasicFullscreenHandling.release.xcconfig */;
+			baseConfigurationReference = 6B4DC663BE08148796CDC881 /* Pods-Fullscreen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = BasicFullscreenHandling/Info.plist;
+				INFOPLIST_FILE = Fullscreen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -411,7 +388,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6E18934F211D7B9F00F45656 /* Build configuration list for PBXProject "BasicFullscreenHandling" */ = {
+		6E18934F211D7B9F00F45656 /* Build configuration list for PBXProject "Fullscreen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6E189364211D7BA100F45656 /* Debug */,
@@ -420,7 +397,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E189366211D7BA100F45656 /* Build configuration list for PBXNativeTarget "BasicFullscreenHandling" */ = {
+		6E189366211D7BA100F45656 /* Build configuration list for PBXNativeTarget "Fullscreen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6E189367211D7BA100F45656 /* Debug */,

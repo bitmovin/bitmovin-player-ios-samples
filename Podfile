@@ -7,11 +7,11 @@ source 'https://github.com/bitmovin/cocoapod-specs.git'
 workspace 'BitmovinPlayerSamples'
 
 def bitmovin_player
-  pod 'BitmovinPlayer', '3.65.0'
+  pod 'BitmovinPlayer', '3.66.0'
 end
 
 def google_cast
-  pod 'google-cast-sdk', '4.8.0'
+  pod 'google-cast-sdk', '4.8.1'
 end
 
 target 'BasicPlayback' do
@@ -59,7 +59,7 @@ end
 target 'ImaAdvertising' do
     project 'ImaAdvertising/ImaAdvertising.xcodeproj'
     bitmovin_player
-    pod 'GoogleAds-IMA-iOS-SDK', '3.19.1'
+    pod 'GoogleAds-IMA-iOS-SDK', '3.23.0'
 end
 
 target 'BasicPlaybackTV' do
@@ -88,10 +88,9 @@ target 'BackgroundPlayback' do
     bitmovin_player
 end
 
-target 'BasicFullscreenHandling' do
-    project 'BasicFullscreenHandling/BasicFullscreenHandling.xcodeproj'
+target 'Fullscreen' do
+    project 'Fullscreen/Fullscreen.xcodeproj'
     bitmovin_player
-    pod 'SwiftLint'
 end
 
 target 'BasicPlaylistTV' do

@@ -23,9 +23,6 @@
       location = "group:BasicDRMPlayback/BasicDRMPlayback.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:BasicFullscreenHandling/BasicFullscreenHandling.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:BasicMetadataHandling/BasicMetadataHandling.xcodeproj">
    </FileRef>
    <FileRef
@@ -66,6 +63,9 @@
    </FileRef>
    <FileRef
       location = "group:CustomHtmlUi/CustomHtmlUi.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Fullscreen/Fullscreen.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:NextUpTV/NextUpTV.xcodeproj">
