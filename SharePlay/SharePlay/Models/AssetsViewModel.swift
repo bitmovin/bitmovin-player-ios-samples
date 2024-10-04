@@ -24,15 +24,15 @@ extension AssetsTableViewController {
             customSharePlayIdentifier: "art-of-motion"
         )
 
-        private let sintel = Asset(
-            url: URL(string: "https://bitmovin-a.akamaihd.net/content/sintel/hls/playlist.m3u8")!,
-            posterUrl: URL(string: "https://bitdash-a.akamaihd.net/content/sintel/poster.png")!,
-            title: "Sintel",
-            customSharePlayIdentifier: "sintel"
+        private let sportsMashup = Asset(
+            url: URL(string: "https://cdn.bitmovin.com/content/sports-mashup/sports-mashup-hls/m3u8/master.m3u8")!,
+            posterUrl: URL(string: "https://cdn.bitmovin.com/content/sports-mashup/poster.jpg")!,
+            title: "Sports Mashup",
+            customSharePlayIdentifier: "sports-mashup"
         )
 
         init() {
-            assets = [artOfMotion, sintel]
+            assets = [artOfMotion, sportsMashup]
         }
 
         func item(for indexPath: IndexPath) -> Asset? {

@@ -94,7 +94,7 @@ struct ContentView_Previews: PreviewProvider {
 
 func createPlaylist() -> [Source] {
     guard let artOfMotionUrl = URL(string: "https://bitmovin-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8"),
-          let sintelUrl = URL(string: "https://bitmovin-a.akamaihd.net/content/sintel/hls/playlist.m3u8") else {
+          let sportsMashupUrl = URL(string: "https://cdn.bitmovin.com/content/sports-mashup/sports-mashup-hls/m3u8/master.m3u8") else {
         return []
     }
 
@@ -104,8 +104,8 @@ func createPlaylist() -> [Source] {
             title: "Art of Motion"
         ),
         createSource(
-            from: sintelUrl,
-            title: "Sintel"
+            from: sportsMashupUrl,
+            title: "Sports Mashup"
         )
     ]
 }

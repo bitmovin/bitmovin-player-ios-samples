@@ -21,7 +21,7 @@ extension SamplesTableViewController {
             sections.append(hlsSection)
 
             hlsSection.sourceConfigs.append(createArtOfMotionSourceConfig())
-            hlsSection.sourceConfigs.append(createSintelSourceConfig())
+            hlsSection.sourceConfigs.append(createSportsMashupSourceConfig())
             hlsSection.sourceConfigs.append(createAppleTestSequenceSimpleSourceConfig())
             hlsSection.sourceConfigs.append(createAppleTestSequenceAdvancedSourceConfig())
         }
@@ -37,13 +37,13 @@ extension SamplesTableViewController {
             return sourceConfig
         }
 
-        private func createSintelSourceConfig() -> SourceConfig {
-            let sourceUrl = URL(string: "http://bitmovin-a.akamaihd.net/content/sintel/hls/playlist.m3u8")!
+        private func createSportsMashupSourceConfig() -> SourceConfig {
+            let sourceUrl = URL(string: "https://cdn.bitmovin.com/content/sports-mashup/sports-mashup-hls/m3u8/master.m3u8")!
             let sourceConfig = SourceConfig(url: sourceUrl, type: .hls)
             
-            sourceConfig.title = "Sintel"
-            sourceConfig.sourceDescription = "Multiple subtitle languages, Multiple audio tracks"
-            sourceConfig.posterSource = URL(string: "http://bitdash-a.akamaihd.net/content/sintel/poster.png")!
+            sourceConfig.title = "Sports Mashup"
+            sourceConfig.sourceDescription = "Single audio track"
+            sourceConfig.posterSource = URL(string: "https://cdn.bitmovin.com/content/sports-mashup/poster.jpg")!
 
             return sourceConfig
         }

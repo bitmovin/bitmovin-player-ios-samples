@@ -34,7 +34,7 @@ final class ViewController: UIViewController {
 
         // Define needed resources
         guard let streamUrl = URL(string: "https://bitmovin-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8"),
-              let proposalStreamUrl = URL(string: "https://bitmovin-a.akamaihd.net/content/sintel/hls/playlist.m3u8") else {
+              let proposalStreamUrl = URL(string: "https://cdn.bitmovin.com/content/sports-mashup/sports-mashup-hls/m3u8/master.m3u8") else {
             return
         }
 
@@ -76,13 +76,15 @@ final class ViewController: UIViewController {
 
         pendingContentProposal = ContentProposal(
             contentTimeForTransition: 15,
-            previewImage: UIImage(named: "sintel-preview")!,
-            title: "Sintel",
+            previewImage: UIImage(named: "sports-mashup-preview")!,
+            title: "Sports Mashup",
             description: """
-                    A girl named Sintel searches for a baby dragon she calls Scales. \
-                    A flashback reveals that Sintel found Scales with its wing injured and helped care for it, \
-                    forming a close bond with it.
-                    """,
+                         A dynamic sports mashup showcasing the thrill and energy of \
+                         different games. It kicks off on the football field, then jumps \
+                         into the fast-paced action of basketball, reaching high speeds \
+                         with track cycling and car racing, and finally ends with the \
+                         hard-hitting drama of American football.
+                         """,
             source: proposalSource
         )
     }
