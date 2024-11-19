@@ -15,6 +15,7 @@ This repository contains sample apps which are using the Bitmovin Player iOS SDK
   - [Next Up](#next-up)
   - [SharePlay](#shareplay)
   - [Analytics](#analytics)
+  - [MultiView](#multiview)
 - [Sample App Setup Instructions](#sample-app-setup-instructions)
   - [Provide License Keys](#provide-license-keys)
   - [Add the Bundle Identifier as an Allowed Domain](#add-the-bundle-identifier-as-an-allowed-domain)
@@ -76,6 +77,9 @@ This repository contains sample apps which are using the Bitmovin Player iOS SDK
 
 ### Analytics
 +   **Analytics:** Shows how to set up Analytics for the Bitmovin Player.
+
+### MultiView
++  **MultiView:** Shows how to set up a MultiView experience with the Bitmovin Player.
 
 ## Sample App Setup Instructions
 Please execute `pod install --repo-update` to properly initialize the workspace.
@@ -139,6 +143,9 @@ Make sure to replace `$(DEVELOPMENT_TEAM)` with your Apple development team's ID
     # Analytics
     com.bitmovin.player.samples.analytics-$(DEVELOPMENT_TEAM)
 
+    # MultiView
+    com.bitmovin.player.samples.multiview-$(DEVELOPMENT_TEAM)
+
 ## How to integrate the Bitmovin Player iOS SDK
 When you want to develop an own iOS application using the Bitmovin Player iOS SDK read through the following steps.
 
@@ -146,8 +153,6 @@ When you want to develop an own iOS application using the Bitmovin Player iOS SD
 To add the SDK as a dependency to your project, you have two options: Using CocoaPods or adding the SDK bundle directly.
 
 #### Using CocoaPods
-1. Add `source 'https://github.com/bitmovin/cocoapod-specs.git'` to your Podfile.
-1. Run `pod repo update` to add the newly added source.
 1. Add `pod 'BitmovinPlayer', '3.77.0'` to your Podfile.
 1. Install the pod using `pod install`.
 

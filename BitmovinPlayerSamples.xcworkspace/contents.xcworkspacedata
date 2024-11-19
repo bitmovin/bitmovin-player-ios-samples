@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:MultiView/MultiView.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:AdvancedCasting/AdvancedCasting.xcodeproj">
    </FileRef>
    <FileRef

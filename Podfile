@@ -2,7 +2,6 @@ platform :ios, '14.0'
 use_frameworks!
 
 source 'https://cdn.cocoapods.org'
-source 'https://github.com/bitmovin/cocoapod-specs.git'
 
 workspace 'BitmovinPlayerSamples'
 
