@@ -16,6 +16,7 @@ This repository contains sample apps which are using the Bitmovin Player iOS SDK
   - [SharePlay](#shareplay)
   - [Analytics](#analytics)
   - [MultiView](#multiview)
+  - [NowPlaying](#nowplaying)
 - [Sample App Setup Instructions](#sample-app-setup-instructions)
   - [Provide License Keys](#provide-license-keys)
   - [Add the Bundle Identifier as an Allowed Domain](#add-the-bundle-identifier-as-an-allowed-domain)
@@ -80,6 +81,9 @@ This repository contains sample apps which are using the Bitmovin Player iOS SDK
 
 ### MultiView
 +  **MultiView:** Shows how to set up a MultiView experience with the Bitmovin Player.
+
+### NowPlaying
++  **NowPlaying** Shows how to enable and customize the Now Playing integration on iOS.
 
 ## Sample App Setup Instructions
 Please execute `pod install --repo-update` to properly initialize the workspace.

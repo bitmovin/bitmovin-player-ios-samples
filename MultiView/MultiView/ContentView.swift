@@ -31,7 +31,9 @@ struct ContentView: View {
                 playerPickerView
             }
         }
+#if !os(tvOS)
         .padding()
+#endif
     }
 
     @ViewBuilder
@@ -74,6 +76,9 @@ struct ContentView: View {
                 }
             }
         }
+#if os(tvOS)
+        .scrollClipDisabled()
+#endif
     }
 
     @ViewBuilder

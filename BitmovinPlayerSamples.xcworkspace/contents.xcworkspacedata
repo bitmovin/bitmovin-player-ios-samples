@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:MultiView/MultiView.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:AdvancedCasting/AdvancedCasting.xcodeproj">
    </FileRef>
    <FileRef
@@ -15,9 +12,6 @@
    </FileRef>
    <FileRef
       location = "group:BackgroundPlayback/BackgroundPlayback.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:ImaAdvertising/ImaAdvertising.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:BasicCasting/BasicCasting.xcodeproj">
@@ -71,7 +65,16 @@
       location = "group:Fullscreen/Fullscreen.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:ImaAdvertising/ImaAdvertising.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MultiView/MultiView.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:NextUpTV/NextUpTV.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NowPlaying/NowPlaying.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:SharePlay/SharePlay.xcodeproj">

@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "MultiViewPlayer",
     platforms: [
-        .iOS(.v14), .visionOS(.v1)
+        .iOS(.v14), .tvOS(.v17), .visionOS(.v1)
     ],
     products: [
         .library(

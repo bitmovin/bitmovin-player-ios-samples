@@ -24,6 +24,9 @@ public struct MultiViewPlayerView: View {
     @Environment(\.horizontalSizeClass) private var horizontalSizeClass: UserInterfaceSizeClass?
 
     @Namespace private var animation
+#if os(tvOS)
+    @FocusState private var focusedVideo: Video.ID?
+#endif
 
     private let spacing: Double = 10
     private let cornerRadius: Double = 8
@@ -39,21 +42,31 @@ public struct MultiViewPlayerView: View {
     }
 
     public var body: some View {
-        switch multiViewCoordinator.viewMode {
-        case .empty:
-            emptyStateView
-        case .single(video: let video):
-            playerTileView(video: video, showUi: true)
-        case .sideBySide(first: let firstVideo, second: let secondVideo):
-            sideBySideView(firstVideo: firstVideo, secondVideo: secondVideo)
-        case .focusedSideBar(focused: let focusedVideo, sidebar: let sidebarVideos):
-            focusedSideBarView(focusedVideo: focusedVideo, sidebarVideos: sidebarVideos)
-        case .tiled(videos: let tiledVideos):
-            tiledView(tiledVideos: tiledVideos)
-        case .centerSideBar(left: let leftVideos, center: let focusedVideo, right: let rightVideos):
-            centeredSidebarView(leftVideos: leftVideos, focusedVideo: focusedVideo, rightVideos: rightVideos)
-        default:
-            Text("Unsupported number of selectedItems: \(multiViewCoordinator.selectedItems.count)")
+        VStack {
+            switch multiViewCoordinator.viewMode {
+            case .empty:
+                emptyStateView
+            case .single(video: let video):
+                playerTileView(video: video, showUi: true)
+            case .sideBySide(first: let firstVideo, second: let secondVideo):
+                sideBySideView(firstVideo: firstVideo, secondVideo: secondVideo)
+            case .focusedSideBar(focused: let focusedVideo, sidebar: let sidebarVideos):
+                focusedSideBarView(focusedVideo: focusedVideo, sidebarVideos: sidebarVideos)
+            case .tiled(videos: let tiledVideos):
+                tiledView(tiledVideos: tiledVideos)
+            case .centerSideBar(left: let leftVideos, center: let focusedVideo, right: let rightVideos):
+                centeredSidebarView(leftVideos: leftVideos, focusedVideo: focusedVideo, rightVideos: rightVideos)
+            default:
+                Text("Unsupported number of selectedItems: \(multiViewCoordinator.selectedItems.count)")
+            }
+        }
+        .fullScreenCover(item: $multiViewCoordinator.fullScreenItem) { video in
+            playerTileView(
+                video: video,
+                showUi: true,
+                isFullScreen: true
+            )
+            .ignoresSafeArea()
         }
     }
 
@@ -88,13 +101,16 @@ public struct MultiViewPlayerView: View {
                     compactStackType: .horizontal
                 ) {
                     ForEach(sidebarVideos) { video in
-                        Button {
-                            withAnimation {
-                                multiViewCoordinator.swap(video: video)
-                            }
-                        } label: {
-                            playerTileView(video: video, showUi: false)
-                        }
+                        playerTileView(video: video, showUi: false)
+                            .simultaneousGesture(
+                                TapGesture()
+                                    .onEnded {
+                                        withAnimation {
+                                            multiViewCoordinator.swap(video: video)
+                                        }
+                                    },
+                                including: .all
+                            )
                     }
                 }
                 .frame(width: !isCompact ? geometry.size.width * 0.3 : geometry.size.width)
@@ -129,13 +145,12 @@ public struct MultiViewPlayerView: View {
                     compactStackType: .horizontal
                 ) {
                     ForEach(leftVideos) { video in
-                        Button {
-                            withAnimation {
-                                multiViewCoordinator.swap(video: video)
+                        playerTileView(video: video, showUi: false)
+                            .onTapGesture {
+                                withAnimation {
+                                    multiViewCoordinator.swap(video: video)
+                                }
                             }
-                        } label: {
-                            playerTileView(video: video, showUi: false)
-                        }
                     }
                 }
                 playerTileView(video: focusedVideo, showUi: true)
@@ -147,13 +162,12 @@ public struct MultiViewPlayerView: View {
                     compactStackType: .horizontal
                 ) {
                     ForEach(rightVideos) { video in
-                        Button {
-                            withAnimation {
-                                multiViewCoordinator.swap(video: video)
+                        playerTileView(video: video, showUi: false)
+                            .onTapGesture {
+                                withAnimation {
+                                    multiViewCoordinator.swap(video: video)
+                                }
                             }
-                        } label: {
-                            playerTileView(video: video, showUi: false)
-                        }
                     }
                 }
             }
@@ -161,11 +175,48 @@ public struct MultiViewPlayerView: View {
     }
 
     @ViewBuilder
-    private func playerTileView(video: Video, showUi: Bool) -> some View {
-        PlayerTileView(video: video, showUi: showUi, cornerRadius: cornerRadius)
-            .id(video.id)
-            .fillSpace()
-            .matchedGeometryEffect(id: video.id, in: animation)
+    private func playerTileView(
+        video: Video,
+        showUi: Bool,
+        isFullScreen: Bool = false
+    ) -> some View {
+        PlayerTileView(
+            video: video,
+            showUi: showUi,
+            isFullScreen: isFullScreen,
+            cornerRadius: cornerRadius
+        )
+        .id(video.id)
+        .fillSpace()
+        .matchedGeometryEffect(id: video.id, in: animation)
+#if os(tvOS)
+        .focusable()
+        .focused($focusedVideo, equals: video.id)
+        .onChange(of: focusedVideo) { _, videoId in
+            let video = multiViewCoordinator.selectedItems.first { $0.id == videoId }
+            multiViewCoordinator.focus(video: video)
+        }
+        .overlay(
+            RoundedRectangle(cornerRadius: cornerRadius)
+                .stroke(
+                    .white,
+                    lineWidth: multiViewCoordinator.fullScreenItem == nil && focusedVideo == video.id ? 6 : 0
+                )
+        )
+        .animation(.easeInOut(duration: 0.2), value: focusedVideo)
+        .simultaneousGesture(
+            TapGesture()
+                .onEnded {
+                    guard showUi else {
+                        return
+                    }
+                    withAnimation {
+                        multiViewCoordinator.fullScreenItem = video
+                    }
+                },
+            including: .all
+        )
+#endif
     }
 }
 

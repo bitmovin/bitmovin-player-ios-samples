@@ -12,8 +12,17 @@ import Foundation
 
 /// A coordinator that manages the selected Player instances for MultiView playback.
 public class MultiViewCoordinator: ObservableObject {
-    @Published private(set) var selectedItems = [Video]()
-    @Published private(set) var focusedItem: Video?
+    @Published private(set) var selectedItems = [Video]() {
+        didSet {
+            muteAll(except: selectedItems.first?.player)
+        }
+    }
+    @Published private(set) var focusedItem: Video? {
+        didSet {
+            muteAll(except: focusedItem?.player)
+        }
+    }
+    @Published var fullScreenItem: Video?
     // For now the `fourPlayerMode` is considered private. It is still included in the project for showcasing purposes.
     @Published private var fourPlayerMode: FourPlayerMode
 
@@ -52,6 +61,10 @@ public class MultiViewCoordinator: ObservableObject {
 
     /// Adds the given Player to the MultiView layout.
     public func add(player: Player) {
+        if !player.isMuted {
+            player.mute()
+        }
+
         let video = Video(player: player)
         toggleSelectedVideo(video)
     }
@@ -68,7 +81,7 @@ public class MultiViewCoordinator: ObservableObject {
         selectedItems.swapAt(0, index)
     }
 
-    internal func focus(video: Video) {
+    internal func focus(video: Video?) {
         focusedItem = video
     }
 
@@ -81,5 +94,17 @@ public class MultiViewCoordinator: ObservableObject {
         guard selectedItems.count < 5 else { return }
 
         selectedItems.append(video)
+    }
+
+    private func muteAll(except player: Player?) {
+        selectedItems
+            .map(\.player)
+            .filter { !$0.isMuted }
+            .filter { $0 !== player }
+            .forEach { $0.mute() }
+
+        if let player, player.isMuted {
+            player.unmute()
+        }
     }
 }

@@ -126,3 +126,8 @@ target 'AVPlayerViewController' do
     project 'AVPlayerViewController/AVPlayerViewController.xcodeproj'
     bitmovin_player
 end
+
+target 'NowPlaying' do
+    project 'NowPlaying/NowPlaying.xcodeproj'
+    bitmovin_player
+end
