@@ -27,12 +27,12 @@ extension SamplesTableViewController {
         }
 
         private func createArtOfMotionSourceConfig() -> SourceConfig {
-            let sourceUrl = URL(string: "https://bitmovin-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8")!
+            let sourceUrl = URL(string: "https://cdn.bitmovin.com/content/assets/MI201109210084/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8")!
             let sourceConfig = SourceConfig(url: sourceUrl, type: .hls)
             
             sourceConfig.title = "Art of Motion"
             sourceConfig.sourceDescription = "Single audio track"
-            sourceConfig.posterSource = URL(string: "https://bitdash-a.akamaihd.net/content/art-of-motion_drm/art-of-motion_poster.jpg")!
+            sourceConfig.posterSource = URL(string: "https://cdn.bitmovin.com/content/assets/art-of-motion_drm/art-of-motion_poster.jpg")!
 
             return sourceConfig
         }

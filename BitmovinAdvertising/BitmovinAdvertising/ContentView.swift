@@ -22,7 +22,7 @@ struct ContentView: View {
     private let playerViewConfig: PlayerViewConfig
     private var sourceConfig: SourceConfig {
         // Define needed resources
-        guard let streamUrl = URL(string: "https://bitmovin-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8")  else {
+        guard let streamUrl = URL(string: "https://cdn.bitmovin.com/content/assets/MI201109210084/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8")  else {
             fatalError("Invalid URL")
         }
 
