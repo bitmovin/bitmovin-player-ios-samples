@@ -18,8 +18,8 @@ extension AssetsTableViewController {
         let numberOfSections = 1
         private let assets: [Asset]
         private let artOfMotion = Asset(
-            url: URL(string: "https://cdn.bitmovin.com/content/assets/MI201109210084/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8")!,
-            posterUrl: URL(string: "https://cdn.bitmovin.com/content/assets/art-of-motion_drm/art-of-motion_poster.jpg")!,
+            url: URL(string: "https://cdn.bitmovin.com/content/internal/assets/MI201109210084/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8")!,
+            posterUrl: URL(string: "https://cdn.bitmovin.com/content/internal/assets/art-of-motion_drm/art-of-motion_poster.jpg")!,
             title: "Art of Motion",
             customSharePlayIdentifier: "art-of-motion"
         )

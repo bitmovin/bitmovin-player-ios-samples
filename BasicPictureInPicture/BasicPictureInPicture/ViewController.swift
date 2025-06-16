@@ -17,8 +17,8 @@ private let playerLicenseKey = "<PLAYER_LICENSE_KEY>"
 private let analyticsLicenseKey = "<ANALYTICS_LICENSE_KEY>"
 
 class ViewController: UIViewController {
-    let streamUrl = URL(string: "https://cdn.bitmovin.com/content/assets/MI201109210084/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8")!
-    let posterUrl = URL(string: "https://cdn.bitmovin.com/content/assets/MI201109210084/poster.jpg")!
+    let streamUrl = URL(string: "https://cdn.bitmovin.com/content/internal/assets/MI201109210084/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8")!
+    let posterUrl = URL(string: "https://cdn.bitmovin.com/content/internal/assets/MI201109210084/poster.jpg")!
     
     var userInterfaceType: UserInterfaceType = .bitmovin
     

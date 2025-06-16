@@ -33,8 +33,8 @@ static NSString *const analyticsLicenseKey = @"<ANALYTICS_LICENSE_KEY>";
 
     self.view.backgroundColor = UIColor.blackColor;
 
-    NSURL *streamUrl = [NSURL URLWithString:@"https://cdn.bitmovin.com/content/assets/MI201109210084/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8"];
-    NSURL *posterUrl = [NSURL URLWithString:@"https://cdn.bitmovin.com/content/assets/MI201109210084/poster.jpg"];
+    NSURL *streamUrl = [NSURL URLWithString:@"https://cdn.bitmovin.com/content/internal/assets/MI201109210084/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8"];
+    NSURL *posterUrl = [NSURL URLWithString:@"https://cdn.bitmovin.com/content/internal/assets/MI201109210084/poster.jpg"];
 
     if (streamUrl == nil || posterUrl == nil) {
         return;

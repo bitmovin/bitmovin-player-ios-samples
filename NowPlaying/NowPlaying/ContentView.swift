@@ -26,8 +26,8 @@ struct ContentView: View {
         playerConfig.nowPlayingConfig.isNowPlayingInfoEnabled = true
 
         // Create a source config that has some meta data like a poster image and a title
-        guard let streamUrl = URL(string: "https://cdn.bitmovin.com/content/assets/MI201109210084/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8"),
-              let posterUrl = URL(string: "https://cdn.bitmovin.com/content/assets/MI201109210084/poster.jpg") else {
+        guard let streamUrl = URL(string: "https://cdn.bitmovin.com/content/internal/assets/MI201109210084/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8"),
+              let posterUrl = URL(string: "https://cdn.bitmovin.com/content/internal/assets/MI201109210084/poster.jpg") else {
             fatalError("Invalid URLs")
         }
 

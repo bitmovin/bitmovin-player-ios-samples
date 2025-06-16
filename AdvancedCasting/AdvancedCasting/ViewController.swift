@@ -29,8 +29,8 @@ final class ViewController: UIViewController {
         view.backgroundColor = .black
 
         // Define needed resources
-        guard let streamUrl = URL(string: "https://cdn.bitmovin.com/content/assets/MI201109210084/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8"),
-              let posterUrl = URL(string: "https://cdn.bitmovin.com/content/assets/MI201109210084/poster.jpg") else {
+        guard let streamUrl = URL(string: "https://cdn.bitmovin.com/content/internal/assets/MI201109210084/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8"),
+              let posterUrl = URL(string: "https://cdn.bitmovin.com/content/internal/assets/MI201109210084/poster.jpg") else {
             return
         }
 
@@ -75,7 +75,7 @@ final class ViewController: UIViewController {
             switch type {
             case .cast:
                 // Create a different source for casting
-                guard let streamUrl = URL(string: "https://cdn.bitmovin.com/content/assets/art-of-motion_drm/mpds/11331.mpd"),
+                guard let streamUrl = URL(string: "https://cdn.bitmovin.com/content/internal/assets/art-of-motion_drm/mpds/11331.mpd"),
                       let licenseUrl = URL(string: "https://cwip-shaka-proxy.appspot.com/no_auth") else {
                     return nil
                 }
