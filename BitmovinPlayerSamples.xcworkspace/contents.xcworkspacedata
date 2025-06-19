@@ -65,6 +65,9 @@
       location = "group:Fullscreen/Fullscreen.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:HlsInterstitials/HlsInterstitials.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ImaAdvertising/ImaAdvertising.xcodeproj">
    </FileRef>
    <FileRef

@@ -3,166 +3,158 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		378FB1AA2A77DE4800EC16F5 /* AnalyticsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378FB1A92A77DE4800EC16F5 /* AnalyticsApp.swift */; };
-		378FB1AC2A77DE4800EC16F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378FB1AB2A77DE4800EC16F5 /* ContentView.swift */; };
-		378FB1AE2A77DE4900EC16F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 378FB1AD2A77DE4900EC16F5 /* Assets.xcassets */; };
-		378FB1B12A77DE4900EC16F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 378FB1B02A77DE4900EC16F5 /* Preview Assets.xcassets */; };
-		37B21BEF2A79242800875B2D /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 37B21BEE2A79242800875B2D /* BitmovinPlayer */; };
+		AC6F030D1F7E6D38004B1816 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6F030C1F7E6D38004B1816 /* Assets.xcassets */; };
+		D6FEF8992A4C6D3C002E8AB7 /* HlsInterstitialsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FEF8972A4C6D3B002E8AB7 /* HlsInterstitialsApp.swift */; };
+		D6FEF89A2A4C6D3C002E8AB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FEF8982A4C6D3B002E8AB7 /* ContentView.swift */; };
+		D88E49E82BC4371600A80252 /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = D88E49E72BC4371600A80252 /* BitmovinPlayer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		378FB1A62A77DE4800EC16F5 /* Analytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Analytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		378FB1A92A77DE4800EC16F5 /* AnalyticsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsApp.swift; sourceTree = "<group>"; };
-		378FB1AB2A77DE4800EC16F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		378FB1AD2A77DE4900EC16F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		378FB1B02A77DE4900EC16F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AC6F02FF1F7E6D38004B1816 /* HlsInterstitials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HlsInterstitials.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC6F030C1F7E6D38004B1816 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC6F03111F7E6D38004B1816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6FEF8972A4C6D3B002E8AB7 /* HlsInterstitialsApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HlsInterstitialsApp.swift; sourceTree = "<group>"; };
+		D6FEF8982A4C6D3B002E8AB7 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		378FB1A32A77DE4800EC16F5 /* Frameworks */ = {
+		AC6F02FC1F7E6D38004B1816 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37B21BEF2A79242800875B2D /* BitmovinPlayer in Frameworks */,
+				D88E49E82BC4371600A80252 /* BitmovinPlayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		378FB19D2A77DE4800EC16F5 = {
+		AC6F02F61F7E6D38004B1816 = {
 			isa = PBXGroup;
 			children = (
-				378FB1A82A77DE4800EC16F5 /* Analytics */,
-				378FB1A72A77DE4800EC16F5 /* Products */,
+				AC6F03011F7E6D38004B1816 /* HlsInterstitials */,
+				AC6F03001F7E6D38004B1816 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		378FB1A72A77DE4800EC16F5 /* Products */ = {
+		AC6F03001F7E6D38004B1816 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				378FB1A62A77DE4800EC16F5 /* Analytics.app */,
+				AC6F02FF1F7E6D38004B1816 /* HlsInterstitials.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		378FB1A82A77DE4800EC16F5 /* Analytics */ = {
+		AC6F03011F7E6D38004B1816 /* HlsInterstitials */ = {
 			isa = PBXGroup;
 			children = (
-				378FB1A92A77DE4800EC16F5 /* AnalyticsApp.swift */,
-				378FB1AB2A77DE4800EC16F5 /* ContentView.swift */,
-				378FB1AD2A77DE4900EC16F5 /* Assets.xcassets */,
-				378FB1AF2A77DE4900EC16F5 /* Preview Content */,
+				D6FEF8972A4C6D3B002E8AB7 /* HlsInterstitialsApp.swift */,
+				D6FEF8982A4C6D3B002E8AB7 /* ContentView.swift */,
+				AC6F030C1F7E6D38004B1816 /* Assets.xcassets */,
+				AC6F03111F7E6D38004B1816 /* Info.plist */,
 			);
-			path = Analytics;
-			sourceTree = "<group>";
-		};
-		378FB1AF2A77DE4900EC16F5 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				378FB1B02A77DE4900EC16F5 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
+			path = HlsInterstitials;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		378FB1A52A77DE4800EC16F5 /* Analytics */ = {
+		AC6F02FE1F7E6D38004B1816 /* HlsInterstitials */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 378FB1B42A77DE4900EC16F5 /* Build configuration list for PBXNativeTarget "Analytics" */;
+			buildConfigurationList = AC6F03141F7E6D38004B1816 /* Build configuration list for PBXNativeTarget "HlsInterstitials" */;
 			buildPhases = (
-				378FB1A22A77DE4800EC16F5 /* Sources */,
-				378FB1A32A77DE4800EC16F5 /* Frameworks */,
-				378FB1A42A77DE4800EC16F5 /* Resources */,
+				AC6F02FB1F7E6D38004B1816 /* Sources */,
+				AC6F02FC1F7E6D38004B1816 /* Frameworks */,
+				AC6F02FD1F7E6D38004B1816 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Analytics;
+			name = HlsInterstitials;
 			packageProductDependencies = (
-				37B21BEE2A79242800875B2D /* BitmovinPlayer */,
+				D88E49E72BC4371600A80252 /* BitmovinPlayer */,
 			);
-			productName = Analytics;
-			productReference = 378FB1A62A77DE4800EC16F5 /* Analytics.app */;
+			productName = HlsInterstitials;
+			productReference = AC6F02FF1F7E6D38004B1816 /* HlsInterstitials.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		378FB19E2A77DE4800EC16F5 /* Project object */ = {
+		AC6F02F71F7E6D38004B1816 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 1420;
+				ORGANIZATIONNAME = Bitmovin;
 				TargetAttributes = {
-					378FB1A52A77DE4800EC16F5 = {
-						CreatedOnToolsVersion = 14.3;
+					AC6F02FE1F7E6D38004B1816 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 378FB1A12A77DE4800EC16F5 /* Build configuration list for PBXProject "Analytics" */;
-			compatibilityVersion = "Xcode 14.0";
+			buildConfigurationList = AC6F02FA1F7E6D38004B1816 /* Build configuration list for PBXProject "HlsInterstitials" */;
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 378FB19D2A77DE4800EC16F5;
+			mainGroup = AC6F02F61F7E6D38004B1816;
 			packageReferences = (
-				37B21BED2A79242800875B2D /* XCRemoteSwiftPackageReference "player-ios" */,
+				D88E49E62BC4371600A80252 /* XCRemoteSwiftPackageReference "player-ios" */,
 			);
-			productRefGroup = 378FB1A72A77DE4800EC16F5 /* Products */;
+			productRefGroup = AC6F03001F7E6D38004B1816 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				378FB1A52A77DE4800EC16F5 /* Analytics */,
+				AC6F02FE1F7E6D38004B1816 /* HlsInterstitials */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		378FB1A42A77DE4800EC16F5 /* Resources */ = {
+		AC6F02FD1F7E6D38004B1816 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				378FB1B12A77DE4900EC16F5 /* Preview Assets.xcassets in Resources */,
-				378FB1AE2A77DE4900EC16F5 /* Assets.xcassets in Resources */,
+				AC6F030D1F7E6D38004B1816 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		378FB1A22A77DE4800EC16F5 /* Sources */ = {
+		AC6F02FB1F7E6D38004B1816 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				378FB1AC2A77DE4800EC16F5 /* ContentView.swift in Sources */,
-				378FB1AA2A77DE4800EC16F5 /* AnalyticsApp.swift in Sources */,
+				D6FEF89A2A4C6D3C002E8AB7 /* ContentView.swift in Sources */,
+				D6FEF8992A4C6D3C002E8AB7 /* HlsInterstitialsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		378FB1B22A77DE4900EC16F5 /* Debug */ = {
+		AC6F03121F7E6D38004B1816 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -185,6 +177,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -204,25 +197,25 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		378FB1B32A77DE4900EC16F5 /* Release */ = {
+		AC6F03131F7E6D38004B1816 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -245,6 +238,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -259,68 +253,44 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		378FB1B52A77DE4900EC16F5 /* Debug */ = {
+		AC6F03151F7E6D38004B1816 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Analytics/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_FILE = HlsInterstitials/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.analytics-$(DEVELOPMENT_TEAM)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.ads.bitmovin-$(DEVELOPMENT_TEAM)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		378FB1B62A77DE4900EC16F5 /* Release */ = {
+		AC6F03161F7E6D38004B1816 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Analytics/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_FILE = HlsInterstitials/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.analytics-$(DEVELOPMENT_TEAM)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.ads.bitmovin-$(DEVELOPMENT_TEAM)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -328,20 +298,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		378FB1A12A77DE4800EC16F5 /* Build configuration list for PBXProject "Analytics" */ = {
+		AC6F02FA1F7E6D38004B1816 /* Build configuration list for PBXProject "HlsInterstitials" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				378FB1B22A77DE4900EC16F5 /* Debug */,
-				378FB1B32A77DE4900EC16F5 /* Release */,
+				AC6F03121F7E6D38004B1816 /* Debug */,
+				AC6F03131F7E6D38004B1816 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		378FB1B42A77DE4900EC16F5 /* Build configuration list for PBXNativeTarget "Analytics" */ = {
+		AC6F03141F7E6D38004B1816 /* Build configuration list for PBXNativeTarget "HlsInterstitials" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				378FB1B52A77DE4900EC16F5 /* Debug */,
-				378FB1B62A77DE4900EC16F5 /* Release */,
+				AC6F03151F7E6D38004B1816 /* Debug */,
+				AC6F03161F7E6D38004B1816 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -349,9 +319,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		37B21BED2A79242800875B2D /* XCRemoteSwiftPackageReference "player-ios" */ = {
+		D88E49E62BC4371600A80252 /* XCRemoteSwiftPackageReference "player-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/bitmovin/player-ios";
+			repositoryURL = "https://github.com/bitmovin/player-ios.git";
 			requirement = {
 				kind = exactVersion;
 				version = 3.92.0;
@@ -360,12 +330,12 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		37B21BEE2A79242800875B2D /* BitmovinPlayer */ = {
+		D88E49E72BC4371600A80252 /* BitmovinPlayer */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 37B21BED2A79242800875B2D /* XCRemoteSwiftPackageReference "player-ios" */;
+			package = D88E49E62BC4371600A80252 /* XCRemoteSwiftPackageReference "player-ios" */;
 			productName = BitmovinPlayer;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 378FB19E2A77DE4800EC16F5 /* Project object */;
+	rootObject = AC6F02F71F7E6D38004B1816 /* Project object */;
 }
