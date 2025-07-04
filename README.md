@@ -58,6 +58,7 @@ This repository contains sample apps which are using the Bitmovin Player iOS SDK
 ### Advertising
 +   **ImaAdvertising:** Shows how to set up and configure the Bitmovin Player for playback of IMA ads.
 +   **BitmovinAdvertising:** Shows how to set up and configure the Bitmovin Player for playback of BAM ads.
++   **HlsInterstitials:** Shows how to set up and configure the Bitmovin Player for playback of HLS Interstitial ads.
 
 ### UI
 +   **CustomHtmlUi:** Shows how to set up and configure the Bitmovin Player to use a custom HTML UI. Besides, this sample includes how to communicate between the javascript UI and the native code.
@@ -157,13 +158,13 @@ When you want to develop an own iOS application using the Bitmovin Player iOS SD
 To add the SDK as a dependency to your project, you have two options: Using CocoaPods or adding the SDK bundle directly.
 
 #### Using CocoaPods
-1. Add `pod 'BitmovinPlayer', '3.92.0'` to your Podfile.
+1. Add `pod 'BitmovinPlayer', '3.92.1'` to your Podfile.
 1. Install the pod using `pod install`.
 
 See the `Podfile` of this repository for a full example.
 
 #### Adding the SDK Directly
-When using Xcode, go to the `General` page or your app target and add the SDK bundle (`BitmovinPlayer.xcframework`) under `Linked Frameworks and Libraries`. The latest SDK for iOS and tvOS can be downloaded [here](https://cdn.bitmovin.com/player/ios_tvos/3.92.0/BitmovinPlayer.zip).
+When using Xcode, go to the `General` page or your app target and add the SDK bundle (`BitmovinPlayer.xcframework`) under `Linked Frameworks and Libraries`. The latest SDK for iOS and tvOS can be downloaded [here](https://cdn.bitmovin.com/player/ios_tvos/3.92.1/BitmovinPlayer.zip).
 
 #### Prepare your Bitmovin Player license
 
