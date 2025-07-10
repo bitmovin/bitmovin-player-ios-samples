@@ -127,6 +127,8 @@ Make sure to replace `$(DEVELOPMENT_TEAM)` with your Apple development team's ID
 
     # Advertising:
     com.bitmovin.player.samples.ads.basic-$(DEVELOPMENT_TEAM)
+    com.bitmovin.player.samples.ads.bitmovin-$(DEVELOPMENT_TEAM)
+    com.bitmovin.player.samples.ads.interstitial-$(DEVELOPMENT_TEAM)
 
     # UI:
     com.bitmovin.player.samples.avplayerviewcontroller-$(DEVELOPMENT_TEAM)
@@ -151,6 +153,9 @@ Make sure to replace `$(DEVELOPMENT_TEAM)` with your Apple development team's ID
     # MultiView
     com.bitmovin.player.samples.multiview-$(DEVELOPMENT_TEAM)
 
+    # Now Playing:
+    com.bitmovin.player.samples.nowplaying-$(DEVELOPMENT_TEAM)
+
 ## How to integrate the Bitmovin Player iOS SDK
 When you want to develop an own iOS application using the Bitmovin Player iOS SDK read through the following steps.
 
@@ -158,13 +163,13 @@ When you want to develop an own iOS application using the Bitmovin Player iOS SD
 To add the SDK as a dependency to your project, you have two options: Using CocoaPods or adding the SDK bundle directly.
 
 #### Using CocoaPods
-1. Add `pod 'BitmovinPlayer', '3.92.1'` to your Podfile.
+1. Add `pod 'BitmovinPlayer', '3.93.0'` to your Podfile.
 1. Install the pod using `pod install`.
 
 See the `Podfile` of this repository for a full example.
 
 #### Adding the SDK Directly
-When using Xcode, go to the `General` page or your app target and add the SDK bundle (`BitmovinPlayer.xcframework`) under `Linked Frameworks and Libraries`. The latest SDK for iOS and tvOS can be downloaded [here](https://cdn.bitmovin.com/player/ios_tvos/3.92.1/BitmovinPlayer.zip).
+When using Xcode, go to the `General` page or your app target and add the SDK bundle (`BitmovinPlayer.xcframework`) under `Linked Frameworks and Libraries`. The latest SDK for iOS and tvOS can be downloaded [here](https://cdn.bitmovin.com/player/ios_tvos/3.93.0/BitmovinPlayer.zip).
 
 #### Prepare your Bitmovin Player license
 
