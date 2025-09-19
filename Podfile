@@ -6,7 +6,7 @@ source 'https://cdn.cocoapods.org'
 workspace 'BitmovinPlayerSamples'
 
 def bitmovin_player
-  pod 'BitmovinPlayer', '3.95.0'
+  pod 'BitmovinPlayer', '3.97.0'
 end
 
 def google_cast
@@ -58,7 +58,7 @@ end
 target 'ImaAdvertising' do
     project 'ImaAdvertising/ImaAdvertising.xcodeproj'
     bitmovin_player
-    pod 'GoogleAds-IMA-iOS-SDK', '3.23.0'
+    pod 'GoogleAds-IMA-iOS-SDK', '3.26.1'
 end
 
 target 'BasicPlaybackTV' do
