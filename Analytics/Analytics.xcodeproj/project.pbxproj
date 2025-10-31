@@ -354,7 +354,7 @@
 			repositoryURL = "https://github.com/bitmovin/player-ios";
 			requirement = {
 				kind = exactVersion;
-				version = 3.97.2;
+				version = 3.98.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
