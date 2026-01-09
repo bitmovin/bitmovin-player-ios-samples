@@ -6,11 +6,11 @@ source 'https://cdn.cocoapods.org'
 workspace 'BitmovinPlayerSamples'
 
 def bitmovin_player
-  pod 'BitmovinPlayer', '3.104.0'
+  pod 'BitmovinPlayer', '3.105.0'
 end
 
 def google_cast
-  pod 'google-cast-sdk', '4.8.1'
+  pod 'google-cast-sdk', '4.8.4'
 end
 
 target 'BasicPlayback' do
@@ -30,6 +30,7 @@ end
 
 target 'BasicCasting' do
     project 'BasicCasting/BasicCasting.xcodeproj'
+    platform :ios, '15.0'
     bitmovin_player
     google_cast
 end
@@ -41,6 +42,7 @@ end
 
 target 'AdvancedCasting' do
     project 'AdvancedCasting/AdvancedCasting.xcodeproj'
+    platform :ios, '15.0'
     bitmovin_player
     google_cast
 end
