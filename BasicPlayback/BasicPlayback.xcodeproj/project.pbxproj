@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		778A395D285E9801EB98AAA6 /* Pods_BasicPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C5536D0A7B4A0D2ABC8225 /* Pods_BasicPlayback.framework */; };
+		37250B442FADD3AD000FEFD4 /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 37250B432FADD3AD000FEFD4 /* BitmovinPlayer */; };
 		AC5046AC1EC4B9A400F18C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5046AB1EC4B9A400F18C0F /* Assets.xcassets */; };
 		D67D6FC12A49C5F20033AA00 /* BasicPlaybackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67D6FC02A49C5F20033AA00 /* BasicPlaybackApp.swift */; };
 		D67D6FC32A49C62D0033AA00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67D6FC22A49C62D0033AA00 /* ContentView.swift */; };
@@ -27,12 +27,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		36C5536D0A7B4A0D2ABC8225 /* Pods_BasicPlayback.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicPlayback.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A247B194D2B6FE692BB7D2E /* Pods-BasicPlayback.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicPlayback.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicPlayback/Pods-BasicPlayback.debug.xcconfig"; sourceTree = "<group>"; };
 		AC5046A11EC4B9A400F18C0F /* BasicPlayback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicPlayback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5046AB1EC4B9A400F18C0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC5046B01EC4B9A400F18C0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AED9AD61B234923B370C0F4E /* Pods-BasicPlayback.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicPlayback.release.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicPlayback/Pods-BasicPlayback.release.xcconfig"; sourceTree = "<group>"; };
 		D67D6FC02A49C5F20033AA00 /* BasicPlaybackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicPlaybackApp.swift; sourceTree = "<group>"; };
 		D67D6FC22A49C62D0033AA00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -42,28 +39,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				778A395D285E9801EB98AAA6 /* Pods_BasicPlayback.framework in Frameworks */,
+				37250B442FADD3AD000FEFD4 /* BitmovinPlayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2EE9417484F16A9E27EE8BCC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				36C5536D0A7B4A0D2ABC8225 /* Pods_BasicPlayback.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		AC5046981EC4B9A400F18C0F = {
 			isa = PBXGroup;
 			children = (
 				AC5046A31EC4B9A400F18C0F /* BasicPlayback */,
 				AC5046A21EC4B9A400F18C0F /* Products */,
-				F17AE4023811317AD62188E0 /* Pods */,
-				2EE9417484F16A9E27EE8BCC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,15 +73,6 @@
 			path = BasicPlayback;
 			sourceTree = "<group>";
 		};
-		F17AE4023811317AD62188E0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9A247B194D2B6FE692BB7D2E /* Pods-BasicPlayback.debug.xcconfig */,
-				AED9AD61B234923B370C0F4E /* Pods-BasicPlayback.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,12 +80,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC5046C91EC4B9A400F18C0F /* Build configuration list for PBXNativeTarget "BasicPlayback" */;
 			buildPhases = (
-				050B22E38CAD7B24141185BC /* [CP] Check Pods Manifest.lock */,
 				AC50469D1EC4B9A400F18C0F /* Sources */,
 				AC50469E1EC4B9A400F18C0F /* Frameworks */,
 				AC50469F1EC4B9A400F18C0F /* Resources */,
 				AC5046D91EC4BFF000F18C0F /* Embed Frameworks */,
-				18611579B3F1C118CB099AFC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,6 +122,9 @@
 				Base,
 			);
 			mainGroup = AC5046981EC4B9A400F18C0F;
+			packageReferences = (
+				37250B422FADD3AD000FEFD4 /* XCRemoteSwiftPackageReference "player-ios" */,
+			);
 			productRefGroup = AC5046A21EC4B9A400F18C0F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -165,53 +144,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		050B22E38CAD7B24141185BC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BasicPlayback-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		18611579B3F1C118CB099AFC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BasicPlayback/Pods-BasicPlayback-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinAnalyticsCollector/BitmovinPlayer/BitmovinCollector.framework/BitmovinCollector",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinAnalyticsCollector/Core/CoreCollector.framework/CoreCollector",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinPlayer/BitmovinPlayer.framework/BitmovinPlayer",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinPlayer/BitmovinPlayerAnalytics.framework/BitmovinPlayerAnalytics",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinPlayerCore/BitmovinPlayerCore.framework/BitmovinPlayerCore",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitmovinCollector.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoreCollector.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitmovinPlayer.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitmovinPlayerAnalytics.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitmovinPlayerCore.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BasicPlayback/Pods-BasicPlayback-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC50469D1EC4B9A400F18C0F /* Sources */ = {
@@ -336,7 +268,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -345,7 +278,6 @@
 		};
 		AC5046CA1EC4B9A400F18C0F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A247B194D2B6FE692BB7D2E /* Pods-BasicPlayback.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -355,7 +287,10 @@
 					../,
 				);
 				INFOPLIST_FILE = BasicPlayback/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.playback.basic-$(DEVELOPMENT_TEAM)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -363,7 +298,6 @@
 		};
 		AC5046CB1EC4B9A400F18C0F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AED9AD61B234923B370C0F4E /* Pods-BasicPlayback.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -373,7 +307,10 @@
 					../,
 				);
 				INFOPLIST_FILE = BasicPlayback/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.playback.basic-$(DEVELOPMENT_TEAM)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -401,6 +338,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		37250B422FADD3AD000FEFD4 /* XCRemoteSwiftPackageReference "player-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bitmovin/player-ios";
+			requirement = {
+				kind = exactVersion;
+				version = 3.113.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		37250B432FADD3AD000FEFD4 /* BitmovinPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37250B422FADD3AD000FEFD4 /* XCRemoteSwiftPackageReference "player-ios" */;
+			productName = BitmovinPlayer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AC5046991EC4B9A400F18C0F /* Project object */;
 }

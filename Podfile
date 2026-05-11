@@ -6,16 +6,11 @@ source 'https://cdn.cocoapods.org'
 workspace 'BitmovinPlayerSamples'
 
 def bitmovin_player
-  pod 'BitmovinPlayer', '3.113.0'
+  pod 'BitmovinPlayer', '3.113.1'
 end
 
 def google_cast
   pod 'google-cast-sdk', '4.8.4'
-end
-
-target 'BasicPlayback' do
-    project 'BasicPlayback/BasicPlayback.xcodeproj'
-    bitmovin_player
 end
 
 target 'BasicPlaybackObjectiveC' do
@@ -61,12 +56,6 @@ target 'ImaAdvertising' do
     project 'ImaAdvertising/ImaAdvertising.xcodeproj'
     bitmovin_player
     pod 'GoogleAds-IMA-iOS-SDK', '3.26.1'
-end
-
-target 'BasicPlaybackTV' do
-    project 'BasicPlaybackTV/BasicPlaybackTV.xcodeproj'
-    platform :tvos, '14.0'
-    bitmovin_player
 end
 
 target 'SystemUI' do

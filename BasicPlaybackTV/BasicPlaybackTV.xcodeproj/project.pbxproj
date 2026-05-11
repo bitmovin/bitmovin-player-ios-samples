@@ -3,27 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37250B412FADD265000FEFD4 /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 37250B402FADD265000FEFD4 /* BitmovinPlayer */; };
 		AC3C1C6E1F978B300096D607 /* BasicPlaybackTV.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC3C1C6C1F978B300096D607 /* BasicPlaybackTV.xcdatamodeld */; };
 		AC3C1C731F978B300096D607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3C1C721F978B300096D607 /* Assets.xcassets */; };
 		D6DE5AEE2A4B06C00096EB57 /* BasicPlaybackTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DE5AEC2A4B06C00096EB57 /* BasicPlaybackTVApp.swift */; };
 		D6DE5AEF2A4B06C00096EB57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DE5AED2A4B06C00096EB57 /* ContentView.swift */; };
-		F106F14E7546EF414FBB518C /* Pods_BasicPlaybackTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152B63546272559BDE3E4C15 /* Pods_BasicPlaybackTV.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		152B63546272559BDE3E4C15 /* Pods_BasicPlaybackTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicPlaybackTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABDAAC0F9CCE0C6FCD69C2FA /* Pods-BasicPlaybackTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicPlaybackTV.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicPlaybackTV/Pods-BasicPlaybackTV.debug.xcconfig"; sourceTree = "<group>"; };
 		AC3C1C651F978B300096D607 /* BasicPlaybackTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicPlaybackTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC3C1C6D1F978B300096D607 /* BasicPlaybackTV.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BasicPlaybackTV.xcdatamodel; sourceTree = "<group>"; };
 		AC3C1C721F978B300096D607 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC3C1C741F978B300096D607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6DE5AEC2A4B06C00096EB57 /* BasicPlaybackTVApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicPlaybackTVApp.swift; sourceTree = "<group>"; };
 		D6DE5AED2A4B06C00096EB57 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		DA558D23C4E6EF6B765AAE84 /* Pods-BasicPlaybackTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicPlaybackTV.release.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicPlaybackTV/Pods-BasicPlaybackTV.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,37 +28,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F106F14E7546EF414FBB518C /* Pods_BasicPlaybackTV.framework in Frameworks */,
+				37250B412FADD265000FEFD4 /* BitmovinPlayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		201DE1957A84FBB851CBFA8E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				ABDAAC0F9CCE0C6FCD69C2FA /* Pods-BasicPlaybackTV.debug.xcconfig */,
-				DA558D23C4E6EF6B765AAE84 /* Pods-BasicPlaybackTV.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		A5C258E0F3246EDC1CF125AA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				152B63546272559BDE3E4C15 /* Pods_BasicPlaybackTV.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		AC3C1C5C1F978B300096D607 = {
 			isa = PBXGroup;
 			children = (
 				AC3C1C671F978B300096D607 /* BasicPlaybackTV */,
 				AC3C1C661F978B300096D607 /* Products */,
-				201DE1957A84FBB851CBFA8E /* Pods */,
-				A5C258E0F3246EDC1CF125AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,11 +70,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC3C1C771F978B300096D607 /* Build configuration list for PBXNativeTarget "BasicPlaybackTV" */;
 			buildPhases = (
-				1A0369F8062C9B68D03E0025 /* [CP] Check Pods Manifest.lock */,
 				AC3C1C611F978B300096D607 /* Sources */,
 				AC3C1C621F978B300096D607 /* Frameworks */,
 				AC3C1C631F978B300096D607 /* Resources */,
-				A032395B59DEF4F498365164 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +109,9 @@
 				Base,
 			);
 			mainGroup = AC3C1C5C1F978B300096D607;
+			packageReferences = (
+				37250B3F2FADD265000FEFD4 /* XCRemoteSwiftPackageReference "player-ios" */,
+			);
 			productRefGroup = AC3C1C661F978B300096D607 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -152,53 +131,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		1A0369F8062C9B68D03E0025 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BasicPlaybackTV-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A032395B59DEF4F498365164 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BasicPlaybackTV/Pods-BasicPlaybackTV-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinAnalyticsCollector/BitmovinPlayer/BitmovinCollector.framework/BitmovinCollector",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinAnalyticsCollector/Core/CoreCollector.framework/CoreCollector",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinPlayer/BitmovinPlayer.framework/BitmovinPlayer",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinPlayer/BitmovinPlayerAnalytics.framework/BitmovinPlayerAnalytics",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinPlayerCore/BitmovinPlayerCore.framework/BitmovinPlayerCore",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitmovinCollector.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoreCollector.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitmovinPlayer.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitmovinPlayerAnalytics.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitmovinPlayerCore.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BasicPlaybackTV/Pods-BasicPlaybackTV-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC3C1C611F978B300096D607 /* Sources */ = {
@@ -320,7 +252,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = appletvos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TVOS_DEPLOYMENT_TARGET = 14.0;
 				VALIDATE_PRODUCT = YES;
@@ -329,14 +262,16 @@
 		};
 		AC3C1C781F978B300096D607 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ABDAAC0F9CCE0C6FCD69C2FA /* Pods-BasicPlaybackTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BasicPlaybackTV/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.tv.playback.basic-$(DEVELOPMENT_TEAM)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 3;
@@ -345,14 +280,16 @@
 		};
 		AC3C1C791F978B300096D607 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA558D23C4E6EF6B765AAE84 /* Pods-BasicPlaybackTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BasicPlaybackTV/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.tv.playback.basic-$(DEVELOPMENT_TEAM)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 3;
@@ -381,6 +318,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		37250B3F2FADD265000FEFD4 /* XCRemoteSwiftPackageReference "player-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bitmovin/player-ios";
+			requirement = {
+				kind = exactVersion;
+				version = 3.113.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		37250B402FADD265000FEFD4 /* BitmovinPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37250B3F2FADD265000FEFD4 /* XCRemoteSwiftPackageReference "player-ios" */;
+			productName = BitmovinPlayer;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		AC3C1C6C1F978B300096D607 /* BasicPlaybackTV.xcdatamodeld */ = {
