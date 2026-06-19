@@ -63,6 +63,10 @@ final class ViewController: UIViewController {
         // Disable built-in updates to the now playing info center
         avPlayerViewController.updatesNowPlayingInfoCenter = false
 
+        // This sample uses an app-owned AVPlayerViewController as the PiP owner.
+        // Do not create a separate AVPictureInPictureController for the same
+        // playback session, as mixed PiP ownership can lead to lifecycle issues
+        // such as playback pausing during backgrounding or PiP restoration.
         avPlayerViewController.allowsPictureInPicturePlayback = true
         if #available(iOS 14.2, *) {
             avPlayerViewController.canStartPictureInPictureAutomaticallyFromInline = true

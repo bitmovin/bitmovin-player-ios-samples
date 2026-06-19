@@ -83,8 +83,12 @@ class ViewController: UIViewController {
     
     private func createPlayerConfig() -> PlayerConfig {
         let config = PlayerConfig()
-        // The 'isPictureInPictureEnabled' property of 'PlaybackConfig' is responsible
-        // for enabling the PiP functionality
+        // The 'isPictureInPictureEnabled' property of 'PlaybackConfig' enables
+        // Picture in Picture managed by PlayerView. Do not add a second PiP owner
+        // for the same playback session, such as an app-created
+        // AVPictureInPictureController or app-owned AVPlayerViewController, as
+        // mixed PiP ownership can lead to lifecycle issues such as playback
+        // pausing during backgrounding or PiP restoration.
         config.playbackConfig.isBackgroundPlaybackEnabled = true
         config.playbackConfig.isPictureInPictureEnabled = true
         config.styleConfig.userInterfaceType = userInterfaceType

@@ -63,8 +63,8 @@ This repository contains sample apps which are using the Bitmovin Player iOS SDK
 +   **CustomHtmlUi:** Shows how to set up and configure the Bitmovin Player to use a custom HTML UI. Besides, this sample includes how to communicate between the javascript UI and the native code.
 +   **SystemUI:** Shows how to use the system UI instead of the default UI.
 +   **Fullscreen:** Shows how to use the `BitmovinFullscreenHandler`-protocol to implement basic fullscreen handling.
-+   **BasicPictureInPicture:** Shows how to set up and configure the Bitmovin Player to use Picture in Picture.
-+   **AVPlayerViewController:** Shows how to set up and configure the Bitmovin Player to use with `AVPlayerViewController` directly.
++   **BasicPictureInPicture:** Shows how to set up and configure the Bitmovin Player to use `PlayerView`-managed Picture in Picture.
++   **AVPlayerViewController:** Shows how to set up and configure the Bitmovin Player to use with `AVPlayerViewController` directly, including `AVPlayerViewController` built-in Picture in Picture.
 
 ### Playlist
 +   **BasicPlaylist:** Shows how to implement queueing / playlists.
@@ -164,13 +164,13 @@ When you want to develop an own iOS application using the Bitmovin Player iOS SD
 To add the SDK as a dependency to your project, you have two options: Using CocoaPods or adding the SDK bundle directly.
 
 #### Using CocoaPods
-1. Add `pod 'BitmovinPlayer', '3.114.1'` to your Podfile.
+1. Add `pod 'BitmovinPlayer', '3.115.0'` to your Podfile.
 1. Install the pod using `pod install`.
 
 See the `Podfile` of this repository for a full example.
 
 #### Adding the SDK Directly
-When using Xcode, go to the `General` page or your app target and add the SDK bundle (`BitmovinPlayer.xcframework`) under `Linked Frameworks and Libraries`. The latest SDK for iOS and tvOS can be downloaded [here](https://cdn.bitmovin.com/player/ios_tvos/3.114.1/BitmovinPlayer.zip).
+When using Xcode, go to the `General` page or your app target and add the SDK bundle (`BitmovinPlayer.xcframework`) under `Linked Frameworks and Libraries`. The latest SDK for iOS and tvOS can be downloaded [here](https://cdn.bitmovin.com/player/ios_tvos/3.115.0/BitmovinPlayer.zip).
 
 #### Prepare your Bitmovin Player license
 
