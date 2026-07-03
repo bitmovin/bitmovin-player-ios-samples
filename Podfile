@@ -6,7 +6,7 @@ source 'https://cdn.cocoapods.org'
 workspace 'BitmovinPlayerSamples'
 
 def bitmovin_player
-  pod 'BitmovinPlayer', '3.115.0'
+  pod 'BitmovinPlayer', '3.116.1'
 end
 
 def google_cast
