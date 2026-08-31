@@ -82,7 +82,4 @@
    <FileRef
       location = "group:SystemUI/SystemUI.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:Pods/Pods.xcodeproj">
-   </FileRef>
 </Workspace>

@@ -17,7 +17,7 @@
 		5DC78C6720239C9E007BD016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DC78C5D20239C9E007BD016 /* Assets.xcassets */; };
 		5DC78C7720239F00007BD016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC78C7320239F00007BD016 /* LaunchScreen.storyboard */; };
 		5DC78C7820239F00007BD016 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC78C7520239F00007BD016 /* Main.storyboard */; };
-		BE2644913670DF4C05C1CA54 /* Pods_BasicOfflinePlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD65DFDF8A18BDD8FFE3BBD1 /* Pods_BasicOfflinePlayback.framework */; };
+		F5C30E2BDB7294FA17C7AFB5 /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = FDB846371293C761B55E34B6 /* BitmovinPlayer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,9 +36,6 @@
 		5DC78C7420239F00007BD016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5DC78C7620239F00007BD016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5DC78C7920239F6D007BD016 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		9A0EFB91E8D95F4F17EA2C9A /* Pods-BasicOfflinePlayback.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicOfflinePlayback.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicOfflinePlayback/Pods-BasicOfflinePlayback.debug.xcconfig"; sourceTree = "<group>"; };
-		AD65DFDF8A18BDD8FFE3BBD1 /* Pods_BasicOfflinePlayback.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicOfflinePlayback.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B611B0D00A735E76935D7376 /* Pods-BasicOfflinePlayback.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicOfflinePlayback.release.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicOfflinePlayback/Pods-BasicOfflinePlayback.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,28 +43,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE2644913670DF4C05C1CA54 /* Pods_BasicOfflinePlayback.framework in Frameworks */,
+				F5C30E2BDB7294FA17C7AFB5 /* BitmovinPlayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		06ABA391DE340ACABE478DAE /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9A0EFB91E8D95F4F17EA2C9A /* Pods-BasicOfflinePlayback.debug.xcconfig */,
-				B611B0D00A735E76935D7376 /* Pods-BasicOfflinePlayback.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		5D483B3920239B4B00E1428C = {
 			isa = PBXGroup;
 			children = (
 				5D483B4420239B4C00E1428C /* BasicOfflinePlayback */,
 				5D483B4320239B4C00E1428C /* Products */,
-				06ABA391DE340ACABE478DAE /* Pods */,
 				B6627A37ED97165F82BC78AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -136,7 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				5DC78C7920239F6D007BD016 /* SystemConfiguration.framework */,
-				AD65DFDF8A18BDD8FFE3BBD1 /* Pods_BasicOfflinePlayback.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -148,17 +134,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D483B5420239B4C00E1428C /* Build configuration list for PBXNativeTarget "BasicOfflinePlayback" */;
 			buildPhases = (
-				5F2E7C1B877B4B3060D60256 /* [CP] Check Pods Manifest.lock */,
 				5D483B3E20239B4C00E1428C /* Sources */,
 				5D483B3F20239B4C00E1428C /* Frameworks */,
 				5D483B4020239B4C00E1428C /* Resources */,
-				FFDF4227FB23D5AB33027C9B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = BasicOfflinePlayback;
+			packageProductDependencies = (
+				FDB846371293C761B55E34B6 /* BitmovinPlayer */,
+			);
 			productName = BasicOfflinePlayback;
 			productReference = 5D483B4220239B4C00E1428C /* BasicOfflinePlayback.app */;
 			productType = "com.apple.product-type.application";
@@ -189,6 +176,9 @@
 				Base,
 			);
 			mainGroup = 5D483B3920239B4B00E1428C;
+			packageReferences = (
+				17156512FCD8AB1BF6AEEB9E /* XCRemoteSwiftPackageReference "player-ios" */,
+			);
 			productRefGroup = 5D483B4320239B4C00E1428C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -210,53 +200,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		5F2E7C1B877B4B3060D60256 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BasicOfflinePlayback-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FFDF4227FB23D5AB33027C9B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BasicOfflinePlayback/Pods-BasicOfflinePlayback-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinAnalyticsCollector/BitmovinPlayer/BitmovinCollector.framework/BitmovinCollector",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinAnalyticsCollector/Core/CoreCollector.framework/CoreCollector",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinPlayer/BitmovinPlayer.framework/BitmovinPlayer",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinPlayer/BitmovinPlayerAnalytics.framework/BitmovinPlayerAnalytics",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinPlayerCore/BitmovinPlayerCore.framework/BitmovinPlayerCore",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitmovinCollector.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoreCollector.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitmovinPlayer.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitmovinPlayerAnalytics.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitmovinPlayerCore.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BasicOfflinePlayback/Pods-BasicOfflinePlayback-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5D483B3E20239B4C00E1428C /* Sources */ = {
@@ -412,7 +355,6 @@
 		};
 		5D483B5520239B4C00E1428C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A0EFB91E8D95F4F17EA2C9A /* Pods-BasicOfflinePlayback.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -430,7 +372,6 @@
 		};
 		5D483B5620239B4C00E1428C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B611B0D00A735E76935D7376 /* Pods-BasicOfflinePlayback.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -467,6 +408,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		17156512FCD8AB1BF6AEEB9E /* XCRemoteSwiftPackageReference "player-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bitmovin/player-ios.git";
+			requirement = {
+				kind = exactVersion;
+				version = 3.121.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FDB846371293C761B55E34B6 /* BitmovinPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17156512FCD8AB1BF6AEEB9E /* XCRemoteSwiftPackageReference "player-ios" */;
+			productName = BitmovinPlayer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5D483B3A20239B4C00E1428C /* Project object */;
 }

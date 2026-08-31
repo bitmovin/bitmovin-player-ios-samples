@@ -7,17 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2456310E394A0139AD0DD07A /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = C3FAF7A2419E29FCBBA92EC7 /* BitmovinPlayer */; };
 		ACDF6246207D1AB40027FC3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDF6245207D1AB40027FC3F /* AppDelegate.swift */; };
 		ACDF6248207D1AB40027FC3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDF6247207D1AB40027FC3F /* ViewController.swift */; };
 		ACDF624B207D1AB40027FC3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACDF6249207D1AB40027FC3F /* Main.storyboard */; };
 		ACDF624D207D1AB60027FC3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACDF624C207D1AB60027FC3F /* Assets.xcassets */; };
 		ACDF6250207D1AB60027FC3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACDF624E207D1AB60027FC3F /* LaunchScreen.storyboard */; };
-		F29F54EF0EC8DA45FCB80207 /* Pods_BackgroundPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324EE2F48D8C873873CD1818 /* Pods_BackgroundPlayback.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		324EE2F48D8C873873CD1818 /* Pods_BackgroundPlayback.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BackgroundPlayback.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D191066C0174931F7BDDE72 /* Pods-BackgroundPlayback.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackgroundPlayback.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-BackgroundPlayback/Pods-BackgroundPlayback.debug.xcconfig"; sourceTree = "<group>"; };
 		ACDF6242207D1AB40027FC3F /* BackgroundPlayback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackgroundPlayback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACDF6245207D1AB40027FC3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACDF6247207D1AB40027FC3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,7 +23,6 @@
 		ACDF624C207D1AB60027FC3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACDF624F207D1AB60027FC3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACDF6251207D1AB60027FC3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F82F78BA68E8484455A59553 /* Pods-BackgroundPlayback.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackgroundPlayback.release.xcconfig"; path = "../Pods/Target Support Files/Pods-BackgroundPlayback/Pods-BackgroundPlayback.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,37 +30,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F29F54EF0EC8DA45FCB80207 /* Pods_BackgroundPlayback.framework in Frameworks */,
+				2456310E394A0139AD0DD07A /* BitmovinPlayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		76207B8D823642872881F22A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6D191066C0174931F7BDDE72 /* Pods-BackgroundPlayback.debug.xcconfig */,
-				F82F78BA68E8484455A59553 /* Pods-BackgroundPlayback.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		93E68BC37200D24E6C9082DA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				324EE2F48D8C873873CD1818 /* Pods_BackgroundPlayback.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		ACDF6239207D1AB40027FC3F = {
 			isa = PBXGroup;
 			children = (
 				ACDF6244207D1AB40027FC3F /* BackgroundPlayback */,
 				ACDF6243207D1AB40027FC3F /* Products */,
-				76207B8D823642872881F22A /* Pods */,
-				93E68BC37200D24E6C9082DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,17 +73,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACDF6254207D1AB60027FC3F /* Build configuration list for PBXNativeTarget "BackgroundPlayback" */;
 			buildPhases = (
-				27D443C665FE07CF934569CC /* [CP] Check Pods Manifest.lock */,
 				ACDF623E207D1AB40027FC3F /* Sources */,
 				ACDF623F207D1AB40027FC3F /* Frameworks */,
 				ACDF6240207D1AB40027FC3F /* Resources */,
-				300E45B2624DFD0C28E37CD1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = BackgroundPlayback;
+			packageProductDependencies = (
+				C3FAF7A2419E29FCBBA92EC7 /* BitmovinPlayer */,
+			);
 			productName = BackgroundPlayback;
 			productReference = ACDF6242207D1AB40027FC3F /* BackgroundPlayback.app */;
 			productType = "com.apple.product-type.application";
@@ -140,6 +119,9 @@
 				Base,
 			);
 			mainGroup = ACDF6239207D1AB40027FC3F;
+			packageReferences = (
+				7674924325E1DA65234D42AF /* XCRemoteSwiftPackageReference "player-ios" */,
+			);
 			productRefGroup = ACDF6243207D1AB40027FC3F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -161,44 +143,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		27D443C665FE07CF934569CC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BackgroundPlayback-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		300E45B2624DFD0C28E37CD1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BackgroundPlayback/Pods-BackgroundPlayback-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BackgroundPlayback/Pods-BackgroundPlayback-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BackgroundPlayback/Pods-BackgroundPlayback-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ACDF623E207D1AB40027FC3F /* Sources */ = {
@@ -352,7 +296,6 @@
 		};
 		ACDF6255207D1AB60027FC3F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D191066C0174931F7BDDE72 /* Pods-BackgroundPlayback.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -370,7 +313,6 @@
 		};
 		ACDF6256207D1AB60027FC3F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F82F78BA68E8484455A59553 /* Pods-BackgroundPlayback.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -408,6 +350,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7674924325E1DA65234D42AF /* XCRemoteSwiftPackageReference "player-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bitmovin/player-ios.git";
+			requirement = {
+				kind = exactVersion;
+				version = 3.121.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C3FAF7A2419E29FCBBA92EC7 /* BitmovinPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7674924325E1DA65234D42AF /* XCRemoteSwiftPackageReference "player-ios" */;
+			productName = BitmovinPlayer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ACDF623A207D1AB40027FC3F /* Project object */;
 }

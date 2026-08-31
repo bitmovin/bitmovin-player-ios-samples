@@ -7,16 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A0D0619BD02E6CFA01B2C9D /* Pods_BasicDRMPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D9AC0ED4321DB051708F9F /* Pods_BasicDRMPlayback.framework */; };
+		6635544F7F71F2E832F96A94 /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 3CB284620AF0081825A373C4 /* BitmovinPlayer */; };
 		AC773E8A1F061017005C3B0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC773E891F061017005C3B0E /* Assets.xcassets */; };
 		D6D218872A4ED8A100F17E32 /* BasicDRMPlaybackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D218852A4ED8A100F17E32 /* BasicDRMPlaybackApp.swift */; };
 		D6D218882A4ED8A100F17E32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D218862A4ED8A100F17E32 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		39D9AC0ED4321DB051708F9F /* Pods_BasicDRMPlayback.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicDRMPlayback.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C73832CD38787F694B6A6B6 /* Pods-BasicDRMPlayback.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicDRMPlayback.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicDRMPlayback/Pods-BasicDRMPlayback.debug.xcconfig"; sourceTree = "<group>"; };
-		73B88C1ECBA3920B8220B4A5 /* Pods-BasicDRMPlayback.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicDRMPlayback.release.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicDRMPlayback/Pods-BasicDRMPlayback.release.xcconfig"; sourceTree = "<group>"; };
 		AC773E7F1F061017005C3B0E /* BasicDRMPlayback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicDRMPlayback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC773E891F061017005C3B0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC773E8E1F061017005C3B0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -29,29 +26,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A0D0619BD02E6CFA01B2C9D /* Pods_BasicDRMPlayback.framework in Frameworks */,
+				6635544F7F71F2E832F96A94 /* BitmovinPlayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		41DD341652A917CE2C854E31 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6C73832CD38787F694B6A6B6 /* Pods-BasicDRMPlayback.debug.xcconfig */,
-				73B88C1ECBA3920B8220B4A5 /* Pods-BasicDRMPlayback.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		AC773E761F061017005C3B0E = {
 			isa = PBXGroup;
 			children = (
 				AC773E811F061017005C3B0E /* BasicDRMPlayback */,
 				AC773E801F061017005C3B0E /* Products */,
-				41DD341652A917CE2C854E31 /* Pods */,
-				AE58DB904178C61B23A7C6D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,14 +60,6 @@
 			path = BasicDRMPlayback;
 			sourceTree = "<group>";
 		};
-		AE58DB904178C61B23A7C6D1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				39D9AC0ED4321DB051708F9F /* Pods_BasicDRMPlayback.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,17 +67,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC773EA71F061017005C3B0E /* Build configuration list for PBXNativeTarget "BasicDRMPlayback" */;
 			buildPhases = (
-				69F017CA089E2FA10FFFB59B /* [CP] Check Pods Manifest.lock */,
 				AC773E7B1F061017005C3B0E /* Sources */,
 				AC773E7C1F061017005C3B0E /* Frameworks */,
 				AC773E7D1F061017005C3B0E /* Resources */,
-				D12CDB5677B5E764DC72D40A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = BasicDRMPlayback;
+			packageProductDependencies = (
+				3CB284620AF0081825A373C4 /* BitmovinPlayer */,
+			);
 			productName = BasicDRMPlayback;
 			productReference = AC773E7F1F061017005C3B0E /* BasicDRMPlayback.app */;
 			productType = "com.apple.product-type.application";
@@ -132,6 +111,9 @@
 				Base,
 			);
 			mainGroup = AC773E761F061017005C3B0E;
+			packageReferences = (
+				A5CB1EC3A0AEFDEBA95FC395 /* XCRemoteSwiftPackageReference "player-ios" */,
+			);
 			productRefGroup = AC773E801F061017005C3B0E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -151,53 +133,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		69F017CA089E2FA10FFFB59B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BasicDRMPlayback-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D12CDB5677B5E764DC72D40A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BasicDRMPlayback/Pods-BasicDRMPlayback-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinAnalyticsCollector/BitmovinPlayer/BitmovinCollector.framework/BitmovinCollector",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinAnalyticsCollector/Core/CoreCollector.framework/CoreCollector",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinPlayer/BitmovinPlayer.framework/BitmovinPlayer",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinPlayer/BitmovinPlayerAnalytics.framework/BitmovinPlayerAnalytics",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinPlayerCore/BitmovinPlayerCore.framework/BitmovinPlayerCore",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitmovinCollector.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoreCollector.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitmovinPlayer.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitmovinPlayerAnalytics.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitmovinPlayerCore.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BasicDRMPlayback/Pods-BasicDRMPlayback-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC773E7B1F061017005C3B0E /* Sources */ = {
@@ -331,7 +266,6 @@
 		};
 		AC773EA81F061017005C3B0E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C73832CD38787F694B6A6B6 /* Pods-BasicDRMPlayback.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -344,7 +278,6 @@
 		};
 		AC773EA91F061017005C3B0E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73B88C1ECBA3920B8220B4A5 /* Pods-BasicDRMPlayback.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -377,6 +310,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A5CB1EC3A0AEFDEBA95FC395 /* XCRemoteSwiftPackageReference "player-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bitmovin/player-ios.git";
+			requirement = {
+				kind = exactVersion;
+				version = 3.121.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3CB284620AF0081825A373C4 /* BitmovinPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5CB1EC3A0AEFDEBA95FC395 /* XCRemoteSwiftPackageReference "player-ios" */;
+			productName = BitmovinPlayer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AC773E771F061017005C3B0E /* Project object */;
 }

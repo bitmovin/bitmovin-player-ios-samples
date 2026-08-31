@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/bitmovin/player-ios.git",
       "state" : {
-        "revision" : "e0f05f37b06c4923cbc58c1501ca00bb4dc8f7d3",
-        "version" : "3.119.0"
+        "revision" : "101f19beb5c91556456f6a905053a9476bac20f3",
+        "version" : "3.121.0"
       }
     },
     {
@@ -23,8 +23,17 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/bitmovin/player-ios-core.git",
       "state" : {
-        "revision" : "1602e49c0b2d47ee19f9539397a135b290d3ebc5",
-        "version" : "3.119.0"
+        "revision" : "b89e395b1dbca6dce332225dd3d21fa35d541004",
+        "version" : "3.121.0"
+      }
+    },
+    {
+      "identity" : "swift-package-manager-google-interactive-media-ads-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/googleads/swift-package-manager-google-interactive-media-ads-ios",
+      "state" : {
+        "revision" : "60c708f077d0d2aa02dfbfdeb60f2be8feb1c548",
+        "version" : "3.26.1"
       }
     }
   ],

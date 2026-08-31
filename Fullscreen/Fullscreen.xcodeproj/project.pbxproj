@@ -7,18 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		339B01A32548DBE61D3760F4 /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 09D3D359D68F2D0288DDC066 /* BitmovinPlayer */; };
 		6E189358211D7B9F00F45656 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E189357211D7B9F00F45656 /* AppDelegate.swift */; };
 		6E18935A211D7B9F00F45656 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E189359211D7B9F00F45656 /* ViewController.swift */; };
 		6E18935D211D7B9F00F45656 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E18935B211D7B9F00F45656 /* Main.storyboard */; };
 		6E18935F211D7BA100F45656 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E18935E211D7BA100F45656 /* Assets.xcassets */; };
 		6E189362211D7BA100F45656 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E189360211D7BA100F45656 /* LaunchScreen.storyboard */; };
-		C77DA9156B03A9520CB3293A /* Pods_Fullscreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49033C816980F367109BD6D6 /* Pods_Fullscreen.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		22B50A6A56C7485517326AF9 /* Pods-Fullscreen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fullscreen.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Fullscreen/Pods-Fullscreen.debug.xcconfig"; sourceTree = "<group>"; };
-		49033C816980F367109BD6D6 /* Pods_Fullscreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fullscreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B4DC663BE08148796CDC881 /* Pods-Fullscreen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fullscreen.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Fullscreen/Pods-Fullscreen.release.xcconfig"; sourceTree = "<group>"; };
 		6E189354211D7B9F00F45656 /* Fullscreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fullscreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E189357211D7B9F00F45656 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E189359211D7B9F00F45656 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,8 +23,6 @@
 		6E18935E211D7BA100F45656 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E189361211D7BA100F45656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E189363211D7BA100F45656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA266CBADFBF58E91DCF8D1A /* Pods-BasicFullscreenHandling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicFullscreenHandling.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicFullscreenHandling/Pods-BasicFullscreenHandling.debug.xcconfig"; sourceTree = "<group>"; };
-		FCC5606B8F00C7EF642B81C2 /* Pods-BasicFullscreenHandling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicFullscreenHandling.release.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicFullscreenHandling/Pods-BasicFullscreenHandling.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C77DA9156B03A9520CB3293A /* Pods_Fullscreen.framework in Frameworks */,
+				339B01A32548DBE61D3760F4 /* BitmovinPlayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,8 +42,6 @@
 			children = (
 				6E189356211D7B9F00F45656 /* Fullscreen */,
 				6E189355211D7B9F00F45656 /* Products */,
-				A8CFA4AF9036EC6C0658DB7C /* Pods */,
-				96EE551AE2C13F5290FCC67C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,25 +66,6 @@
 			path = Fullscreen;
 			sourceTree = "<group>";
 		};
-		96EE551AE2C13F5290FCC67C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				49033C816980F367109BD6D6 /* Pods_Fullscreen.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A8CFA4AF9036EC6C0658DB7C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FA266CBADFBF58E91DCF8D1A /* Pods-BasicFullscreenHandling.debug.xcconfig */,
-				FCC5606B8F00C7EF642B81C2 /* Pods-BasicFullscreenHandling.release.xcconfig */,
-				22B50A6A56C7485517326AF9 /* Pods-Fullscreen.debug.xcconfig */,
-				6B4DC663BE08148796CDC881 /* Pods-Fullscreen.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,17 +73,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E189366211D7BA100F45656 /* Build configuration list for PBXNativeTarget "Fullscreen" */;
 			buildPhases = (
-				B946F7A957F39EF4685B6F29 /* [CP] Check Pods Manifest.lock */,
 				6E189350211D7B9F00F45656 /* Sources */,
 				6E189351211D7B9F00F45656 /* Frameworks */,
 				6E189352211D7B9F00F45656 /* Resources */,
-				F0CF6756232FE4A4550933CC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Fullscreen;
+			packageProductDependencies = (
+				09D3D359D68F2D0288DDC066 /* BitmovinPlayer */,
+			);
 			productName = BasicFullscreenHandling;
 			productReference = 6E189354211D7B9F00F45656 /* Fullscreen.app */;
 			productType = "com.apple.product-type.application";
@@ -139,6 +114,9 @@
 				Base,
 			);
 			mainGroup = 6E18934B211D7B9F00F45656;
+			packageReferences = (
+				2B8B239E032072C842AF4CB8 /* XCRemoteSwiftPackageReference "player-ios" */,
+			);
 			productRefGroup = 6E189355211D7B9F00F45656 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -160,44 +138,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		B946F7A957F39EF4685B6F29 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Fullscreen-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F0CF6756232FE4A4550933CC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Fullscreen/Pods-Fullscreen-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Fullscreen/Pods-Fullscreen-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fullscreen/Pods-Fullscreen-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6E189350211D7B9F00F45656 /* Sources */ = {
@@ -351,7 +291,6 @@
 		};
 		6E189367211D7BA100F45656 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22B50A6A56C7485517326AF9 /* Pods-Fullscreen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -369,7 +308,6 @@
 		};
 		6E189368211D7BA100F45656 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B4DC663BE08148796CDC881 /* Pods-Fullscreen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -407,6 +345,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2B8B239E032072C842AF4CB8 /* XCRemoteSwiftPackageReference "player-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bitmovin/player-ios.git";
+			requirement = {
+				kind = exactVersion;
+				version = 3.121.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		09D3D359D68F2D0288DDC066 /* BitmovinPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B8B239E032072C842AF4CB8 /* XCRemoteSwiftPackageReference "player-ios" */;
+			productName = BitmovinPlayer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6E18934C211D7B9F00F45656 /* Project object */;
 }

@@ -22,7 +22,7 @@ This repository contains sample apps which are using the Bitmovin Player iOS SDK
   - [Add the Bundle Identifier as an Allowed Domain](#add-the-bundle-identifier-as-an-allowed-domain)
 - [How to integrate the Bitmovin Player iOS SDK](#how-to-integrate-the-bitmovin-player-ios-sdk)
   - [Adding the SDK To Your Project](#adding-the-sdk-to-your-project)
-    - [Using CocoaPods](#using-cocoapods)
+    - [Using Swift Package Manager](#using-swift-package-manager)
     - [Adding the SDK Directly](#adding-the-sdk-directly)
     - [Prepare your Bitmovin Player license](#prepare-your-bitmovin-player-license)
 - [Development Notes](#development-notes)
@@ -83,10 +83,10 @@ This repository contains sample apps which are using the Bitmovin Player iOS SDK
 +  **MultiView:** Shows how to set up a MultiView experience with the Bitmovin Player.
 
 ### NowPlaying
-+  **NowPlaying** Shows how to enable and customize the Now Playing integration on iOS.
++   **NowPlaying:** Shows how to enable and customize the Now Playing integration on iOS.
 
 ## Sample App Setup Instructions
-Please execute `pod install --repo-update` to properly initialize the workspace.
+Open `BitmovinPlayerSamples.xcworkspace`. Xcode resolves the Swift package dependencies automatically.
 
 ### Provide License Keys
 In each sample app, you also have to provide two license keys, a Bitmovin Player license key and a Bitmovin Analytics license key.
@@ -161,16 +161,17 @@ Make sure to replace `$(DEVELOPMENT_TEAM)` with your Apple development team's ID
 When you want to develop an own iOS application using the Bitmovin Player iOS SDK read through the following steps.
 
 ### Adding the SDK To Your Project
-To add the SDK as a dependency to your project, you have two options: Using CocoaPods or adding the SDK bundle directly.
+To add the SDK as a dependency to your project, you have two options: Using Swift Package Manager or adding the SDK bundle directly.
 
-#### Using CocoaPods
-1. Add `pod 'BitmovinPlayer', '3.119.0'` to your Podfile.
-1. Install the pod using `pod install`.
+#### Using Swift Package Manager
+1. In Xcode, select **File > Add Package Dependencies**.
+2. Enter `https://github.com/bitmovin/player-ios.git` as the package URL.
+3. Select version `3.121.0` and add the `BitmovinPlayer` product to your target.
 
-See the `Podfile` of this repository for a full example.
+See the sample Xcode projects in this repository for complete examples.
 
 #### Adding the SDK Directly
-When using Xcode, go to the `General` page or your app target and add the SDK bundle (`BitmovinPlayer.xcframework`) under `Linked Frameworks and Libraries`. The latest SDK for iOS and tvOS can be downloaded [here](https://cdn.bitmovin.com/player/ios_tvos/3.119.0/BitmovinPlayer.zip).
+When using Xcode, go to the `General` page or your app target and add the SDK bundle (`BitmovinPlayer.xcframework`) under `Linked Frameworks and Libraries`. The latest SDK for iOS and tvOS can be downloaded [here](https://cdn.bitmovin.com/player/ios_tvos/3.121.0/BitmovinPlayer.zip).
 
 #### Prepare your Bitmovin Player license
 
@@ -187,6 +188,7 @@ When using Xcode, go to the `General` page or your app target and add the SDK bu
 * If you are using the Google Cast SDK (`BasicCasting` or `AdvancedCasting`), make sure the following requirements are met:
 - Use a provisioning profile with `Access WiFi Information` enabled
 - The `NSBluetoothAlwaysUsageDescription` key is set in the `info.plist`
+- `BasicCasting` and `AdvancedCasting` use the local `GoogleCastSPMProxy` package, which exposes the manually distributed Google Cast 4.8.6 dynamic XCFramework through Swift Package Manager. Google announced in the [Cast SDK release notes](https://developers.google.com/cast/docs/release-notes) that 4.8.6 is the final CocoaPods release. Replace the proxy with the [official Google Cast iOS SDK repository](https://github.com/googlecast/google-cast-ios-sdk) once it provides a usable tagged Swift package.
 
 ## Documentation And Release Notes
 -   You can find the latest API documentation [here](https://bitmovin.com/docs/player/api-reference/ios/ios-sdk-api-reference-v3#/player/ios/3/docs/index.html).

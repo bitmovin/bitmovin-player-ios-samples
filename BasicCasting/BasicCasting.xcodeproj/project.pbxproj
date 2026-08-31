@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04BC921509C3C990DECC0B4D /* Pods_BasicCasting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB18835115642361206F617D /* Pods_BasicCasting.framework */; };
+		1B2F4F550F896E02541687EF /* GoogleCast in Frameworks */ = {isa = PBXBuildFile; productRef = 1CCF29B5324577B591DEA8DE /* GoogleCast */; };
+		74E319B7C63CE5D771C4B065 /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 7DB38ED9D3E2F37986659D96 /* BitmovinPlayer */; };
 		AC773EBD1F0622DC005C3B0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC773EBC1F0622DC005C3B0E /* AppDelegate.swift */; };
 		AC773EBF1F0622DC005C3B0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC773EBE1F0622DC005C3B0E /* ViewController.swift */; };
 		AC773EC21F0622DC005C3B0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC773EC01F0622DC005C3B0E /* Main.storyboard */; };
@@ -24,9 +25,6 @@
 		AC773EC31F0622DC005C3B0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC773EC61F0622DC005C3B0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC773EC81F0622DC005C3B0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6D037B86044560C5DA1F75E /* Pods-BasicCasting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicCasting.release.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicCasting/Pods-BasicCasting.release.xcconfig"; sourceTree = "<group>"; };
-		D02F29924D2B391899D2A679 /* Pods-BasicCasting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicCasting.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-BasicCasting/Pods-BasicCasting.debug.xcconfig"; sourceTree = "<group>"; };
-		EB18835115642361206F617D /* Pods_BasicCasting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicCasting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,29 +32,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04BC921509C3C990DECC0B4D /* Pods_BasicCasting.framework in Frameworks */,
+				74E319B7C63CE5D771C4B065 /* BitmovinPlayer in Frameworks */,
+				1B2F4F550F896E02541687EF /* GoogleCast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5B30870CDB9340F1CCC138AC /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D02F29924D2B391899D2A679 /* Pods-BasicCasting.debug.xcconfig */,
-				B6D037B86044560C5DA1F75E /* Pods-BasicCasting.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		AC773EB01F0622DC005C3B0E = {
 			isa = PBXGroup;
 			children = (
 				AC773EBB1F0622DC005C3B0E /* BasicCasting */,
 				AC773EBA1F0622DC005C3B0E /* Products */,
-				5B30870CDB9340F1CCC138AC /* Pods */,
-				F7B6F7887AD15AD6956D9DCE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,14 +70,6 @@
 			path = BasicCasting;
 			sourceTree = "<group>";
 		};
-		F7B6F7887AD15AD6956D9DCE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				EB18835115642361206F617D /* Pods_BasicCasting.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -97,18 +77,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC773ECB1F0622DC005C3B0E /* Build configuration list for PBXNativeTarget "BasicCasting" */;
 			buildPhases = (
-				E96B75268799F000B6FFF2AF /* [CP] Check Pods Manifest.lock */,
 				AC773EB51F0622DC005C3B0E /* Sources */,
 				AC773EB61F0622DC005C3B0E /* Frameworks */,
 				AC773EB71F0622DC005C3B0E /* Resources */,
-				694913E4614CBA79CCA20B3C /* [CP] Embed Pods Frameworks */,
-				94ECAA3A2509F54A6A36DA1B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = BasicCasting;
+			packageProductDependencies = (
+				7DB38ED9D3E2F37986659D96 /* BitmovinPlayer */,
+				1CCF29B5324577B591DEA8DE /* GoogleCast */,
+			);
 			productName = BasicCasting;
 			productReference = AC773EB91F0622DC005C3B0E /* BasicCasting.app */;
 			productType = "com.apple.product-type.application";
@@ -146,6 +127,10 @@
 				Base,
 			);
 			mainGroup = AC773EB01F0622DC005C3B0E;
+			packageReferences = (
+				ED39EF62DF81AF4B5C1A9EC2 /* XCRemoteSwiftPackageReference "player-ios" */,
+				CDED184D4DCEE0FF2FFB0414 /* XCLocalSwiftPackageReference "../GoogleCastSPMProxy" */,
+			);
 			productRefGroup = AC773EBA1F0622DC005C3B0E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -167,85 +152,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		694913E4614CBA79CCA20B3C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BasicCasting/Pods-BasicCasting-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinAnalyticsCollector/BitmovinPlayer/BitmovinCollector.framework/BitmovinCollector",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinAnalyticsCollector/Core/CoreCollector.framework/CoreCollector",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinPlayer/BitmovinPlayer.framework/BitmovinPlayer",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinPlayer/BitmovinPlayerAnalytics.framework/BitmovinPlayerAnalytics",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinPlayerCore/BitmovinPlayerCore.framework/BitmovinPlayerCore",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitmovinCollector.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoreCollector.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitmovinPlayer.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitmovinPlayerAnalytics.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitmovinPlayerCore.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BasicCasting/Pods-BasicCasting-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		94ECAA3A2509F54A6A36DA1B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BasicCasting/Pods-BasicCasting-resources.sh",
-				"${PODS_ROOT}/google-cast-sdk/GoogleCastSDK-ios-4.8.4_static_xcframework/GoogleCast.xcframework/ios-arm64/GoogleCast.framework/GoogleCastCoreResources.bundle",
-				"${PODS_ROOT}/google-cast-sdk/GoogleCastSDK-ios-4.8.4_static_xcframework/GoogleCast.xcframework/ios-arm64/GoogleCast.framework/GoogleCastUIResources.bundle",
-				"${PODS_ROOT}/google-cast-sdk/GoogleCastSDK-ios-4.8.4_static_xcframework/GoogleCast.xcframework/ios-arm64/GoogleCast.framework/GoogleCastOptionalUIResources.bundle",
-				"${PODS_ROOT}/google-cast-sdk/GoogleCastSDK-ios-4.8.4_static_xcframework/GoogleCast.xcframework/ios-arm64/GoogleCast.framework/MaterialDialogs.bundle",
-				"${PODS_ROOT}/google-cast-sdk/GoogleCastSDK-ios-4.8.4_static_xcframework/GoogleCast.xcframework/ios-arm64/GoogleCast.framework/GoogleSansBold.bundle",
-				"${PODS_ROOT}/google-cast-sdk/GoogleCastSDK-ios-4.8.4_static_xcframework/GoogleCast.xcframework/ios-arm64/GoogleCast.framework/GoogleSansMedium.bundle",
-				"${PODS_ROOT}/google-cast-sdk/GoogleCastSDK-ios-4.8.4_static_xcframework/GoogleCast.xcframework/ios-arm64/GoogleCast.framework/GoogleSansRegular.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/google-cast-sdk/GoogleCast.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleCastCoreResources.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleCastUIResources.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleCastOptionalUIResources.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialDialogs.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSansBold.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSansMedium.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSansRegular.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleCast.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BasicCasting/Pods-BasicCasting-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E96B75268799F000B6FFF2AF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BasicCasting-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC773EB51F0622DC005C3B0E /* Sources */ = {
@@ -389,7 +295,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -398,14 +305,16 @@
 		};
 		AC773ECC1F0622DC005C3B0E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D02F29924D2B391899D2A679 /* Pods-BasicCasting.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BasicCasting/BasicCasting.entitlements;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BasicCasting/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.casting.basic-$(DEVELOPMENT_TEAM)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -413,14 +322,16 @@
 		};
 		AC773ECD1F0622DC005C3B0E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6D037B86044560C5DA1F75E /* Pods-BasicCasting.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BasicCasting/BasicCasting.entitlements;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BasicCasting/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.casting.basic-$(DEVELOPMENT_TEAM)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -448,6 +359,36 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		CDED184D4DCEE0FF2FFB0414 /* XCLocalSwiftPackageReference "../GoogleCastSPMProxy" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../GoogleCastSPMProxy;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ED39EF62DF81AF4B5C1A9EC2 /* XCRemoteSwiftPackageReference "player-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bitmovin/player-ios.git";
+			requirement = {
+				kind = exactVersion;
+				version = 3.121.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1CCF29B5324577B591DEA8DE /* GoogleCast */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GoogleCast;
+		};
+		7DB38ED9D3E2F37986659D96 /* BitmovinPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED39EF62DF81AF4B5C1A9EC2 /* XCRemoteSwiftPackageReference "player-ios" */;
+			productName = BitmovinPlayer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AC773EB11F0622DC005C3B0E /* Project object */;
 }

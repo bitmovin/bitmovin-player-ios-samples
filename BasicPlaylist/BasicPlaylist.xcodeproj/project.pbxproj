@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A3B1915B5DB95372D4341A5 /* Pods_BasicPlaylist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A4475288AC392C0AFAE2E9 /* Pods_BasicPlaylist.framework */; };
+		0815AA2D9F6070034AC08F9F /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 2C5A8A72467B9FC1AA202322 /* BitmovinPlayer */; };
 		65C8576925DB163F009FA5A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65C8576825DB163F009FA5A1 /* Assets.xcassets */; };
 		D6AC0BB52A4B18BD000AD742 /* BasicPlaylistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AC0BB32A4B18BD000AD742 /* BasicPlaylistApp.swift */; };
 		D6AC0BB62A4B18BD000AD742 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AC0BB42A4B18BD000AD742 /* ContentView.swift */; };
@@ -17,13 +17,8 @@
 		65C8575C25DB163E009FA5A1 /* BasicPlaylist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicPlaylist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C8576825DB163F009FA5A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65C8576D25DB163F009FA5A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A9A637B7021AF9339A75F78 /* Pods-BasicPlaylistApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicPlaylistApi.release.xcconfig"; path = "Target Support Files/Pods-BasicPlaylistApi/Pods-BasicPlaylistApi.release.xcconfig"; sourceTree = "<group>"; };
-		ADBF8323EDFE449253882FE3 /* Pods-BasicPlaylist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicPlaylist.release.xcconfig"; path = "Target Support Files/Pods-BasicPlaylist/Pods-BasicPlaylist.release.xcconfig"; sourceTree = "<group>"; };
-		B7A4475288AC392C0AFAE2E9 /* Pods_BasicPlaylist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicPlaylist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6AC0BB32A4B18BD000AD742 /* BasicPlaylistApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicPlaylistApp.swift; sourceTree = "<group>"; };
 		D6AC0BB42A4B18BD000AD742 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		E6C3E9BF33303EC2D4C62A94 /* Pods-BasicPlaylistApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicPlaylistApi.debug.xcconfig"; path = "Target Support Files/Pods-BasicPlaylistApi/Pods-BasicPlaylistApi.debug.xcconfig"; sourceTree = "<group>"; };
-		F73C19BA05627AADDE82C3A4 /* Pods-BasicPlaylist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicPlaylist.debug.xcconfig"; path = "Target Support Files/Pods-BasicPlaylist/Pods-BasicPlaylist.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,40 +26,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A3B1915B5DB95372D4341A5 /* Pods_BasicPlaylist.framework in Frameworks */,
+				0815AA2D9F6070034AC08F9F /* BitmovinPlayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2EAB507123618CBBE5937CF6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B7A4475288AC392C0AFAE2E9 /* Pods_BasicPlaylist.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4D9D39D4BEB5171CBAD5B156 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E6C3E9BF33303EC2D4C62A94 /* Pods-BasicPlaylistApi.debug.xcconfig */,
-				8A9A637B7021AF9339A75F78 /* Pods-BasicPlaylistApi.release.xcconfig */,
-				F73C19BA05627AADDE82C3A4 /* Pods-BasicPlaylist.debug.xcconfig */,
-				ADBF8323EDFE449253882FE3 /* Pods-BasicPlaylist.release.xcconfig */,
-			);
-			name = Pods;
-			path = ../Pods;
-			sourceTree = "<group>";
-		};
 		65C8575325DB163E009FA5A1 = {
 			isa = PBXGroup;
 			children = (
 				65C8575E25DB163E009FA5A1 /* BasicPlaylist */,
 				65C8575D25DB163E009FA5A1 /* Products */,
-				4D9D39D4BEB5171CBAD5B156 /* Pods */,
-				2EAB507123618CBBE5937CF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,17 +67,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65C8577025DB163F009FA5A1 /* Build configuration list for PBXNativeTarget "BasicPlaylist" */;
 			buildPhases = (
-				F45955D6B56C500D643454A3 /* [CP] Check Pods Manifest.lock */,
 				65C8575825DB163E009FA5A1 /* Sources */,
 				65C8575925DB163E009FA5A1 /* Frameworks */,
 				65C8575A25DB163E009FA5A1 /* Resources */,
-				A30EA67630F01D1BA7358D86 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = BasicPlaylist;
+			packageProductDependencies = (
+				2C5A8A72467B9FC1AA202322 /* BitmovinPlayer */,
+			);
 			productName = BasicPlaylistApi;
 			productReference = 65C8575C25DB163E009FA5A1 /* BasicPlaylist.app */;
 			productType = "com.apple.product-type.application";
@@ -132,6 +106,9 @@
 				Base,
 			);
 			mainGroup = 65C8575325DB163E009FA5A1;
+			packageReferences = (
+				83A51BB5692A07F3521AA55A /* XCRemoteSwiftPackageReference "player-ios" */,
+			);
 			productRefGroup = 65C8575D25DB163E009FA5A1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -151,48 +128,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		A30EA67630F01D1BA7358D86 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BasicPlaylist/Pods-BasicPlaylist-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BasicPlaylist/Pods-BasicPlaylist-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BasicPlaylist/Pods-BasicPlaylist-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F45955D6B56C500D643454A3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BasicPlaylist-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		65C8575825DB163E009FA5A1 /* Sources */ = {
@@ -329,7 +264,6 @@
 		};
 		65C8577125DB163F009FA5A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F73C19BA05627AADDE82C3A4 /* Pods-BasicPlaylist.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -348,7 +282,6 @@
 		};
 		65C8577225DB163F009FA5A1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ADBF8323EDFE449253882FE3 /* Pods-BasicPlaylist.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -387,6 +320,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		83A51BB5692A07F3521AA55A /* XCRemoteSwiftPackageReference "player-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bitmovin/player-ios.git";
+			requirement = {
+				kind = exactVersion;
+				version = 3.121.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C5A8A72467B9FC1AA202322 /* BitmovinPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83A51BB5692A07F3521AA55A /* XCRemoteSwiftPackageReference "player-ios" */;
+			productName = BitmovinPlayer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 65C8575425DB163E009FA5A1 /* Project object */;
 }

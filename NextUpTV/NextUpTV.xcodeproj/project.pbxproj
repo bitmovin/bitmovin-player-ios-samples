@@ -7,19 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		944F77680326F7ECE83004CF /* Pods_NextUpTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 706D028A266A44F390D75FB6 /* Pods_NextUpTV.framework */; };
 		A88F29A527A8265A0053EF8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88F29A427A8265A0053EF8D /* AppDelegate.swift */; };
 		A88F29A727A8265A0053EF8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88F29A627A8265A0053EF8D /* ViewController.swift */; };
 		A88F29AA27A8265A0053EF8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A88F29A827A8265A0053EF8D /* Main.storyboard */; };
 		A88F29AC27A8265C0053EF8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A88F29AB27A8265C0053EF8D /* Assets.xcassets */; };
 		A88F29AF27A8265C0053EF8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A88F29AD27A8265C0053EF8D /* LaunchScreen.storyboard */; };
 		A88F29F527A8371A0053EF8D /* ContentProposalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88F29F427A8371A0053EF8D /* ContentProposalViewController.swift */; };
+		DB2B4A4931827F62C086310C /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 32EAC76F92A66995BBA2F8D1 /* BitmovinPlayer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		211F40AA584FA68439599D4A /* Pods-NextUpTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextUpTV.debug.xcconfig"; path = "Target Support Files/Pods-NextUpTV/Pods-NextUpTV.debug.xcconfig"; sourceTree = "<group>"; };
-		706D028A266A44F390D75FB6 /* Pods_NextUpTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NextUpTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		86084E126C3B449883B9379D /* Pods-NextUpTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextUpTV.release.xcconfig"; path = "Target Support Files/Pods-NextUpTV/Pods-NextUpTV.release.xcconfig"; sourceTree = "<group>"; };
 		A88F29A127A8265A0053EF8D /* NextUpTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextUpTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A88F29A427A8265A0053EF8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A88F29A627A8265A0053EF8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,38 +32,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				944F77680326F7ECE83004CF /* Pods_NextUpTV.framework in Frameworks */,
+				DB2B4A4931827F62C086310C /* BitmovinPlayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		39B41984D12D146995F91486 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				211F40AA584FA68439599D4A /* Pods-NextUpTV.debug.xcconfig */,
-				86084E126C3B449883B9379D /* Pods-NextUpTV.release.xcconfig */,
-			);
-			name = Pods;
-			path = ../Pods;
-			sourceTree = "<group>";
-		};
-		816CE94F4327F5B4ABCDCFF6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				706D028A266A44F390D75FB6 /* Pods_NextUpTV.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		A88F299827A8265A0053EF8D = {
 			isa = PBXGroup;
 			children = (
 				A88F29A327A8265A0053EF8D /* NextUpTV */,
 				A88F29A227A8265A0053EF8D /* Products */,
-				39B41984D12D146995F91486 /* Pods */,
-				816CE94F4327F5B4ABCDCFF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,17 +76,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A88F29B227A8265C0053EF8D /* Build configuration list for PBXNativeTarget "NextUpTV" */;
 			buildPhases = (
-				BAC45A416D7F7B2D306FAF15 /* [CP] Check Pods Manifest.lock */,
 				A88F299D27A8265A0053EF8D /* Sources */,
 				A88F299E27A8265A0053EF8D /* Frameworks */,
 				A88F299F27A8265A0053EF8D /* Resources */,
-				11C5EBFAF5B935772C32B705 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = NextUpTV;
+			packageProductDependencies = (
+				32EAC76F92A66995BBA2F8D1 /* BitmovinPlayer */,
+			);
 			productName = NextUpTV;
 			productReference = A88F29A127A8265A0053EF8D /* NextUpTV.app */;
 			productType = "com.apple.product-type.application";
@@ -138,6 +116,9 @@
 				Base,
 			);
 			mainGroup = A88F299827A8265A0053EF8D;
+			packageReferences = (
+				D4D2CDF4EF892D65D4350F82 /* XCRemoteSwiftPackageReference "player-ios" */,
+			);
 			productRefGroup = A88F29A227A8265A0053EF8D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -159,48 +140,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		11C5EBFAF5B935772C32B705 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NextUpTV/Pods-NextUpTV-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NextUpTV/Pods-NextUpTV-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NextUpTV/Pods-NextUpTV-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BAC45A416D7F7B2D306FAF15 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NextUpTV-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A88F299D27A8265A0053EF8D /* Sources */ = {
@@ -355,7 +294,6 @@
 		};
 		A88F29B327A8265C0053EF8D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 211F40AA584FA68439599D4A /* Pods-NextUpTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -381,7 +319,6 @@
 		};
 		A88F29B427A8265C0053EF8D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86084E126C3B449883B9379D /* Pods-NextUpTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -427,6 +364,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D4D2CDF4EF892D65D4350F82 /* XCRemoteSwiftPackageReference "player-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bitmovin/player-ios.git";
+			requirement = {
+				kind = exactVersion;
+				version = 3.121.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		32EAC76F92A66995BBA2F8D1 /* BitmovinPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4D2CDF4EF892D65D4350F82 /* XCRemoteSwiftPackageReference "player-ios" */;
+			productName = BitmovinPlayer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A88F299927A8265A0053EF8D /* Project object */;
 }

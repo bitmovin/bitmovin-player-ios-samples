@@ -7,18 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9F7DDC356B7F3EAB15CEFA1 /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 4262A7256FD1E1498271F388 /* BitmovinPlayer */; };
 		D67D6F212A4993F70033AA00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67D6F202A4993F70033AA00 /* AppDelegate.swift */; };
 		D67D6F252A4993F70033AA00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67D6F242A4993F70033AA00 /* ViewController.swift */; };
 		D67D6F282A4993F70033AA00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67D6F262A4993F70033AA00 /* Main.storyboard */; };
 		D67D6F2A2A4993F80033AA00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D67D6F292A4993F80033AA00 /* Assets.xcassets */; };
 		D67D6F2D2A4993F80033AA00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67D6F2B2A4993F80033AA00 /* LaunchScreen.storyboard */; };
-		F5C27E0B0A82B491A22E0785 /* Pods_BasicUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18DAF5F5C77272102B13C973 /* Pods_BasicUIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		18DAF5F5C77272102B13C973 /* Pods_BasicUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		291A8C0106CD883849C4C198 /* Pods-BasicUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicUIKit.debug.xcconfig"; path = "Target Support Files/Pods-BasicUIKit/Pods-BasicUIKit.debug.xcconfig"; sourceTree = "<group>"; };
-		B6919238A81EBDC4670D298D /* Pods-BasicUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicUIKit.release.xcconfig"; path = "Target Support Files/Pods-BasicUIKit/Pods-BasicUIKit.release.xcconfig"; sourceTree = "<group>"; };
 		D67D6F1D2A4993F70033AA00 /* BasicUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D67D6F202A4993F70033AA00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D67D6F242A4993F70033AA00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,38 +30,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5C27E0B0A82B491A22E0785 /* Pods_BasicUIKit.framework in Frameworks */,
+				C9F7DDC356B7F3EAB15CEFA1 /* BitmovinPlayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		920F6FA8A3CEA82B3B1A32D3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				291A8C0106CD883849C4C198 /* Pods-BasicUIKit.debug.xcconfig */,
-				B6919238A81EBDC4670D298D /* Pods-BasicUIKit.release.xcconfig */,
-			);
-			name = Pods;
-			path = ../Pods;
-			sourceTree = "<group>";
-		};
-		AA6BAE43CA16D28322484F47 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				18DAF5F5C77272102B13C973 /* Pods_BasicUIKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		D67D6F142A4993F70033AA00 = {
 			isa = PBXGroup;
 			children = (
 				D67D6F1F2A4993F70033AA00 /* BasicUIKit */,
 				D67D6F1E2A4993F70033AA00 /* Products */,
-				920F6FA8A3CEA82B3B1A32D3 /* Pods */,
-				AA6BAE43CA16D28322484F47 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,17 +73,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D67D6F312A4993F80033AA00 /* Build configuration list for PBXNativeTarget "BasicUIKit" */;
 			buildPhases = (
-				A5242D683E4AA27FBE95DE19 /* [CP] Check Pods Manifest.lock */,
 				D67D6F192A4993F70033AA00 /* Sources */,
 				D67D6F1A2A4993F70033AA00 /* Frameworks */,
 				D67D6F1B2A4993F70033AA00 /* Resources */,
-				D67D6F342A4998A20033AA00 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = BasicUIKit;
+			packageProductDependencies = (
+				4262A7256FD1E1498271F388 /* BitmovinPlayer */,
+			);
 			productName = BasicUIKit;
 			productReference = D67D6F1D2A4993F70033AA00 /* BasicUIKit.app */;
 			productType = "com.apple.product-type.application";
@@ -135,6 +113,9 @@
 				Base,
 			);
 			mainGroup = D67D6F142A4993F70033AA00;
+			packageReferences = (
+				24D969E6935756C8F2B9C13C /* XCRemoteSwiftPackageReference "player-ios" */,
+			);
 			productRefGroup = D67D6F1E2A4993F70033AA00 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -156,48 +137,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		A5242D683E4AA27FBE95DE19 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BasicUIKit-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D67D6F342A4998A20033AA00 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BasicUIKit/Pods-BasicUIKit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BasicUIKit/Pods-BasicUIKit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BasicUIKit/Pods-BasicUIKit-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D67D6F192A4993F70033AA00 /* Sources */ = {
@@ -349,7 +288,6 @@
 		};
 		D67D6F322A4993F80033AA00 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 291A8C0106CD883849C4C198 /* Pods-BasicUIKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -382,7 +320,6 @@
 		};
 		D67D6F332A4993F80033AA00 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6919238A81EBDC4670D298D /* Pods-BasicUIKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -435,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		24D969E6935756C8F2B9C13C /* XCRemoteSwiftPackageReference "player-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bitmovin/player-ios.git";
+			requirement = {
+				kind = exactVersion;
+				version = 3.121.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4262A7256FD1E1498271F388 /* BitmovinPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 24D969E6935756C8F2B9C13C /* XCRemoteSwiftPackageReference "player-ios" */;
+			productName = BitmovinPlayer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D67D6F152A4993F70033AA00 /* Project object */;
 }

@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F117D2B05D9F5784F1CFFC2 /* Pods_CustomHtmlUi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3060312D9EECBB5604476D /* Pods_CustomHtmlUi.framework */; };
 		375AB3B822CA37B200045AB5 /* bitmovinplayer-ui.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 375AB3B722CA37B200045AB5 /* bitmovinplayer-ui.min.js */; };
 		375AB3BA22CA37B800045AB5 /* bitmovinplayer-ui.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 375AB3B922CA37B800045AB5 /* bitmovinplayer-ui.min.css */; };
+		4529DD04E8DA7807FA2244DB /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 14EB35BF987C55BE4A4C47D1 /* BitmovinPlayer */; };
 		AC094AE41F3CD83D00EF6F94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC094AE31F3CD83D00EF6F94 /* AppDelegate.swift */; };
 		AC094AE61F3CD83D00EF6F94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC094AE51F3CD83D00EF6F94 /* ViewController.swift */; };
 		AC094AE91F3CD83D00EF6F94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC094AE71F3CD83D00EF6F94 /* Main.storyboard */; };
@@ -22,9 +22,6 @@
 		375AB3B422CA375800045AB5 /* customclosebutton.ts */ = {isa = PBXFileReference; lastKnownFileType = text; path = customclosebutton.ts; sourceTree = "<group>"; };
 		375AB3B722CA37B200045AB5 /* bitmovinplayer-ui.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "bitmovinplayer-ui.min.js"; sourceTree = "<group>"; };
 		375AB3B922CA37B800045AB5 /* bitmovinplayer-ui.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "bitmovinplayer-ui.min.css"; sourceTree = "<group>"; };
-		4335053FCF563334815F88DA /* Pods-CustomHtmlUi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomHtmlUi.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-CustomHtmlUi/Pods-CustomHtmlUi.debug.xcconfig"; sourceTree = "<group>"; };
-		8C3060312D9EECBB5604476D /* Pods_CustomHtmlUi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomHtmlUi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		971DF31B4589A0AA7A677280 /* Pods-CustomHtmlUi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomHtmlUi.release.xcconfig"; path = "../Pods/Target Support Files/Pods-CustomHtmlUi/Pods-CustomHtmlUi.release.xcconfig"; sourceTree = "<group>"; };
 		AC094AE01F3CD83D00EF6F94 /* CustomHtmlUi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomHtmlUi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC094AE31F3CD83D00EF6F94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC094AE51F3CD83D00EF6F94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,22 +37,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F117D2B05D9F5784F1CFFC2 /* Pods_CustomHtmlUi.framework in Frameworks */,
+				4529DD04E8DA7807FA2244DB /* BitmovinPlayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2E9152F56ECCCF7256A55488 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4335053FCF563334815F88DA /* Pods-CustomHtmlUi.debug.xcconfig */,
-				971DF31B4589A0AA7A677280 /* Pods-CustomHtmlUi.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		375AB3B322CA30BC00045AB5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -72,8 +60,6 @@
 				375AB3B322CA30BC00045AB5 /* Supporting Files */,
 				AC094AE21F3CD83D00EF6F94 /* CustomHtmlUi */,
 				AC094AE11F3CD83D00EF6F94 /* Products */,
-				2E9152F56ECCCF7256A55488 /* Pods */,
-				C0EC42B5840CC1E2960EFB3D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,14 +85,6 @@
 			path = CustomHtmlUi;
 			sourceTree = "<group>";
 		};
-		C0EC42B5840CC1E2960EFB3D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8C3060312D9EECBB5604476D /* Pods_CustomHtmlUi.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,17 +92,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC094AF51F3CD83D00EF6F94 /* Build configuration list for PBXNativeTarget "CustomHtmlUi" */;
 			buildPhases = (
-				C1D201763CA5944B400202D7 /* [CP] Check Pods Manifest.lock */,
 				AC094ADC1F3CD83D00EF6F94 /* Sources */,
 				AC094ADD1F3CD83D00EF6F94 /* Frameworks */,
 				AC094ADE1F3CD83D00EF6F94 /* Resources */,
-				4921319B4222D93033C18F68 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = CustomHtmlUi;
+			packageProductDependencies = (
+				14EB35BF987C55BE4A4C47D1 /* BitmovinPlayer */,
+			);
 			productName = CustomHtmlUi;
 			productReference = AC094AE01F3CD83D00EF6F94 /* CustomHtmlUi.app */;
 			productType = "com.apple.product-type.application";
@@ -157,6 +136,9 @@
 				Base,
 			);
 			mainGroup = AC094AD71F3CD83D00EF6F94;
+			packageReferences = (
+				0D20EF7A6ABAD25A4E0BBB96 /* XCRemoteSwiftPackageReference "player-ios" */,
+			);
 			productRefGroup = AC094AE11F3CD83D00EF6F94 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -180,53 +162,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		4921319B4222D93033C18F68 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CustomHtmlUi/Pods-CustomHtmlUi-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinAnalyticsCollector/BitmovinPlayer/BitmovinCollector.framework/BitmovinCollector",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinAnalyticsCollector/Core/CoreCollector.framework/CoreCollector",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinPlayer/BitmovinPlayer.framework/BitmovinPlayer",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinPlayer/BitmovinPlayerAnalytics.framework/BitmovinPlayerAnalytics",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinPlayerCore/BitmovinPlayerCore.framework/BitmovinPlayerCore",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitmovinCollector.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoreCollector.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitmovinPlayer.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitmovinPlayerAnalytics.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitmovinPlayerCore.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CustomHtmlUi/Pods-CustomHtmlUi-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C1D201763CA5944B400202D7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CustomHtmlUi-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC094ADC1F3CD83D00EF6F94 /* Sources */ = {
@@ -380,7 +315,6 @@
 		};
 		AC094AF61F3CD83D00EF6F94 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4335053FCF563334815F88DA /* Pods-CustomHtmlUi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -393,7 +327,6 @@
 		};
 		AC094AF71F3CD83D00EF6F94 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 971DF31B4589A0AA7A677280 /* Pods-CustomHtmlUi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -426,6 +359,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0D20EF7A6ABAD25A4E0BBB96 /* XCRemoteSwiftPackageReference "player-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bitmovin/player-ios.git";
+			requirement = {
+				kind = exactVersion;
+				version = 3.121.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		14EB35BF987C55BE4A4C47D1 /* BitmovinPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0D20EF7A6ABAD25A4E0BBB96 /* XCRemoteSwiftPackageReference "player-ios" */;
+			productName = BitmovinPlayer;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		AC094AEA1F3CD83D00EF6F94 /* CustomHtmlUi.xcdatamodeld */ = {

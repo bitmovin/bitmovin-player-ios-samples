@@ -7,21 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		339B33090719E4A54CE9ABDB /* Pods_ImaAdvertising.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10DE879FD9444F2659429BEE /* Pods_ImaAdvertising.framework */; };
+		09919D349F034AF9ED2800A3 /* GoogleInteractiveMediaAds in Frameworks */ = {isa = PBXBuildFile; productRef = B7D09564BA7FCA8E35A5B2D0 /* GoogleInteractiveMediaAds */; };
+		88537C829B7A1F089B25ED9B /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = EBC436F2472E8B9E3208DF65 /* BitmovinPlayer */; };
 		AC6F030D1F7E6D38004B1816 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6F030C1F7E6D38004B1816 /* Assets.xcassets */; };
 		D6FEF8992A4C6D3C002E8AB7 /* ImaAdvertisingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FEF8972A4C6D3B002E8AB7 /* ImaAdvertisingApp.swift */; };
 		D6FEF89A2A4C6D3C002E8AB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FEF8982A4C6D3B002E8AB7 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		10DE879FD9444F2659429BEE /* Pods_ImaAdvertising.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImaAdvertising.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B81CA32392B05C3E3BEF81E /* Pods-ImaAdvertising.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImaAdvertising.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ImaAdvertising/Pods-ImaAdvertising.release.xcconfig"; sourceTree = "<group>"; };
 		AC6F02FF1F7E6D38004B1816 /* ImaAdvertising.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImaAdvertising.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6F030C1F7E6D38004B1816 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC6F03111F7E6D38004B1816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6FEF8972A4C6D3B002E8AB7 /* ImaAdvertisingApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImaAdvertisingApp.swift; sourceTree = "<group>"; };
 		D6FEF8982A4C6D3B002E8AB7 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		DF38995281A22A268D39C796 /* Pods-ImaAdvertising.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImaAdvertising.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ImaAdvertising/Pods-ImaAdvertising.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,29 +27,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				339B33090719E4A54CE9ABDB /* Pods_ImaAdvertising.framework in Frameworks */,
+				88537C829B7A1F089B25ED9B /* BitmovinPlayer in Frameworks */,
+				09919D349F034AF9ED2800A3 /* GoogleInteractiveMediaAds in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		49420FF4AD157BE2844033FC /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DF38995281A22A268D39C796 /* Pods-ImaAdvertising.debug.xcconfig */,
-				1B81CA32392B05C3E3BEF81E /* Pods-ImaAdvertising.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		AC6F02F61F7E6D38004B1816 = {
 			isa = PBXGroup;
 			children = (
 				AC6F03011F7E6D38004B1816 /* ImaAdvertising */,
 				AC6F03001F7E6D38004B1816 /* Products */,
-				49420FF4AD157BE2844033FC /* Pods */,
-				F02FC58AE5EF7E6B3AF0EFF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,14 +62,6 @@
 			path = ImaAdvertising;
 			sourceTree = "<group>";
 		};
-		F02FC58AE5EF7E6B3AF0EFF6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				10DE879FD9444F2659429BEE /* Pods_ImaAdvertising.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,17 +69,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC6F03141F7E6D38004B1816 /* Build configuration list for PBXNativeTarget "ImaAdvertising" */;
 			buildPhases = (
-				5164735D4C8F1B1B6A75A015 /* [CP] Check Pods Manifest.lock */,
 				AC6F02FB1F7E6D38004B1816 /* Sources */,
 				AC6F02FC1F7E6D38004B1816 /* Frameworks */,
 				AC6F02FD1F7E6D38004B1816 /* Resources */,
-				3750C31B26C5BB069346D8C0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ImaAdvertising;
+			packageProductDependencies = (
+				EBC436F2472E8B9E3208DF65 /* BitmovinPlayer */,
+				B7D09564BA7FCA8E35A5B2D0 /* GoogleInteractiveMediaAds */,
+			);
 			productName = ImaAdvertising;
 			productReference = AC6F02FF1F7E6D38004B1816 /* ImaAdvertising.app */;
 			productType = "com.apple.product-type.application";
@@ -130,6 +112,10 @@
 				Base,
 			);
 			mainGroup = AC6F02F61F7E6D38004B1816;
+			packageReferences = (
+				BA487ED23ADA3AFC51B0E771 /* XCRemoteSwiftPackageReference "player-ios" */,
+				7CBA5A1F35C39EECADC9366B /* XCRemoteSwiftPackageReference "swift-package-manager-google-interactive-media-ads-ios" */,
+			);
 			productRefGroup = AC6F03001F7E6D38004B1816 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -149,55 +135,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		3750C31B26C5BB069346D8C0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ImaAdvertising/Pods-ImaAdvertising-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinAnalyticsCollector/BitmovinPlayer/BitmovinCollector.framework/BitmovinCollector",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinAnalyticsCollector/Core/CoreCollector.framework/CoreCollector",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinPlayer/BitmovinPlayer.framework/BitmovinPlayer",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinPlayer/BitmovinPlayerAnalytics.framework/BitmovinPlayerAnalytics",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BitmovinPlayerCore/BitmovinPlayerCore.framework/BitmovinPlayerCore",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/GoogleInteractiveMediaAds",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitmovinCollector.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoreCollector.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitmovinPlayer.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitmovinPlayerAnalytics.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BitmovinPlayerCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleInteractiveMediaAds.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImaAdvertising/Pods-ImaAdvertising-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5164735D4C8F1B1B6A75A015 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ImaAdvertising-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC6F02FB1F7E6D38004B1816 /* Sources */ = {
@@ -329,7 +266,6 @@
 		};
 		AC6F03151F7E6D38004B1816 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF38995281A22A268D39C796 /* Pods-ImaAdvertising.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -344,7 +280,6 @@
 		};
 		AC6F03161F7E6D38004B1816 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B81CA32392B05C3E3BEF81E /* Pods-ImaAdvertising.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -379,6 +314,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7CBA5A1F35C39EECADC9366B /* XCRemoteSwiftPackageReference "swift-package-manager-google-interactive-media-ads-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-interactive-media-ads-ios";
+			requirement = {
+				kind = exactVersion;
+				version = 3.26.1;
+			};
+		};
+		BA487ED23ADA3AFC51B0E771 /* XCRemoteSwiftPackageReference "player-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bitmovin/player-ios.git";
+			requirement = {
+				kind = exactVersion;
+				version = 3.121.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B7D09564BA7FCA8E35A5B2D0 /* GoogleInteractiveMediaAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7CBA5A1F35C39EECADC9366B /* XCRemoteSwiftPackageReference "swift-package-manager-google-interactive-media-ads-ios" */;
+			productName = GoogleInteractiveMediaAds;
+		};
+		EBC436F2472E8B9E3208DF65 /* BitmovinPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA487ED23ADA3AFC51B0E771 /* XCRemoteSwiftPackageReference "player-ios" */;
+			productName = BitmovinPlayer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AC6F02F71F7E6D38004B1816 /* Project object */;
 }
