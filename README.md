@@ -166,12 +166,12 @@ To add the SDK as a dependency to your project, you have two options: Using Swif
 #### Using Swift Package Manager
 1. In Xcode, select **File > Add Package Dependencies**.
 2. Enter `https://github.com/bitmovin/player-ios.git` as the package URL.
-3. Select version `3.121.0` and add the `BitmovinPlayer` product to your target.
+3. Select version `3.122.0` and add the `BitmovinPlayer` product to your target.
 
 See the sample Xcode projects in this repository for complete examples.
 
 #### Adding the SDK Directly
-When using Xcode, go to the `General` page or your app target and add the SDK bundle (`BitmovinPlayer.xcframework`) under `Linked Frameworks and Libraries`. The latest SDK for iOS and tvOS can be downloaded [here](https://cdn.bitmovin.com/player/ios_tvos/3.121.0/BitmovinPlayer.zip).
+When using Xcode, go to the `General` page or your app target and add the SDK bundle (`BitmovinPlayer.xcframework`) under `Linked Frameworks and Libraries`. The latest SDK for iOS and tvOS can be downloaded [here](https://cdn.bitmovin.com/player/ios_tvos/3.122.0/BitmovinPlayer.zip).
 
 #### Prepare your Bitmovin Player license
 
