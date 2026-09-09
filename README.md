@@ -86,6 +86,8 @@ This repository contains sample apps which are using the Bitmovin Player iOS SDK
 +   **NowPlaying:** Shows how to enable and customize the Now Playing integration on iOS.
 
 ## Sample App Setup Instructions
+The iOS and tvOS samples require iOS 15.0 and tvOS 15.0 or later, respectively. Some samples require a newer OS version; see their deployment targets in Xcode.
+
 Open `BitmovinPlayerSamples.xcworkspace`. Xcode resolves the Swift package dependencies automatically.
 
 ### Provide License Keys

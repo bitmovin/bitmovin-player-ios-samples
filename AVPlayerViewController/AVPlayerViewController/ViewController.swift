@@ -68,9 +68,7 @@ final class ViewController: UIViewController {
         // playback session, as mixed PiP ownership can lead to lifecycle issues
         // such as playback pausing during backgrounding or PiP restoration.
         avPlayerViewController.allowsPictureInPicturePlayback = true
-        if #available(iOS 14.2, *) {
-            avPlayerViewController.canStartPictureInPictureAutomaticallyFromInline = true
-        }
+        avPlayerViewController.canStartPictureInPictureAutomaticallyFromInline = true
 
         addChild(avPlayerViewController)
         avPlayerViewController.didMove(toParent: self)
