@@ -3,23 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		6635544F7F71F2E832F96A94 /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 3CB284620AF0081825A373C4 /* BitmovinPlayer */; };
-		AC773E8A1F061017005C3B0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC773E891F061017005C3B0E /* Assets.xcassets */; };
-		D6D218872A4ED8A100F17E32 /* BasicDRMPlaybackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D218852A4ED8A100F17E32 /* BasicDRMPlaybackApp.swift */; };
-		D6D218882A4ED8A100F17E32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D218862A4ED8A100F17E32 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC773E7F1F061017005C3B0E /* BasicDRMPlayback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicDRMPlayback.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC773E891F061017005C3B0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AC773E8E1F061017005C3B0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6D218852A4ED8A100F17E32 /* BasicDRMPlaybackApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicDRMPlaybackApp.swift; sourceTree = "<group>"; };
-		D6D218862A4ED8A100F17E32 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3797C8BE305859A200A839A9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = AC773E7E1F061017005C3B0E /* BasicDRMPlayback */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3797C8B0305859A000A839A9 /* BasicDRMPlayback */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (3797C8BE305859A200A839A9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = BasicDRMPlayback; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AC773E7C1F061017005C3B0E /* Frameworks */ = {
@@ -36,7 +43,7 @@
 		AC773E761F061017005C3B0E = {
 			isa = PBXGroup;
 			children = (
-				AC773E811F061017005C3B0E /* BasicDRMPlayback */,
+				3797C8B0305859A000A839A9 /* BasicDRMPlayback */,
 				AC773E801F061017005C3B0E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,17 +54,6 @@
 				AC773E7F1F061017005C3B0E /* BasicDRMPlayback.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		AC773E811F061017005C3B0E /* BasicDRMPlayback */ = {
-			isa = PBXGroup;
-			children = (
-				D6D218852A4ED8A100F17E32 /* BasicDRMPlaybackApp.swift */,
-				D6D218862A4ED8A100F17E32 /* ContentView.swift */,
-				AC773E891F061017005C3B0E /* Assets.xcassets */,
-				AC773E8E1F061017005C3B0E /* Info.plist */,
-			);
-			path = BasicDRMPlayback;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +70,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3797C8B0305859A000A839A9 /* BasicDRMPlayback */,
 			);
 			name = BasicDRMPlayback;
 			packageProductDependencies = (
@@ -128,7 +127,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC773E8A1F061017005C3B0E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +137,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6D218882A4ED8A100F17E32 /* ContentView.swift in Sources */,
-				D6D218872A4ED8A100F17E32 /* BasicDRMPlaybackApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +253,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -270,7 +267,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BasicDRMPlayback/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.drm.basic-$(DEVELOPMENT_TEAM)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -282,7 +282,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BasicDRMPlayback/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.drm.basic-$(DEVELOPMENT_TEAM)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -317,7 +320,7 @@
 			repositoryURL = "https://github.com/bitmovin/player-ios.git";
 			requirement = {
 				kind = exactVersion;
-				version = 3.123.0;
+				version = 3.124.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

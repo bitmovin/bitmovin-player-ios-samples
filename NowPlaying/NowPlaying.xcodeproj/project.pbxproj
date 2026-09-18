@@ -8,18 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		8221BA67469A31A797112BF2 /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 0582FC9A74BC81F16D4ADAB6 /* BitmovinPlayer */; };
-		ACC24D152CF89837007515B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC24D122CF89837007515B7 /* ContentView.swift */; };
-		ACC24D162CF89837007515B7 /* NowPlayingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC24D132CF89837007515B7 /* NowPlayingApp.swift */; };
-		ACC24D182CF89837007515B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC24D112CF89837007515B7 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ACBE27452CF77B52008EDE41 /* NowPlaying.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NowPlaying.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACC24D112CF89837007515B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ACC24D122CF89837007515B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		ACC24D132CF89837007515B7 /* NowPlayingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingApp.swift; sourceTree = "<group>"; };
-		D8F651402F04261E00131EF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3797C98A305859DE00A839A9 /* Exceptions for "NowPlaying" folder in "NowPlaying" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = ACBE27442CF77B52008EDE41 /* NowPlaying */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3797C985305859DD00A839A9 /* NowPlaying */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3797C98A305859DE00A839A9 /* Exceptions for "NowPlaying" folder in "NowPlaying" target */,
+			);
+			path = NowPlaying;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		ACBE27422CF77B52008EDE41 /* Frameworks */ = {
@@ -36,7 +50,7 @@
 		ACBE273C2CF77B52008EDE41 = {
 			isa = PBXGroup;
 			children = (
-				ACC24D142CF89837007515B7 /* NowPlaying */,
+				3797C985305859DD00A839A9 /* NowPlaying */,
 				ACBE27462CF77B52008EDE41 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,17 +61,6 @@
 				ACBE27452CF77B52008EDE41 /* NowPlaying.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		ACC24D142CF89837007515B7 /* NowPlaying */ = {
-			isa = PBXGroup;
-			children = (
-				D8F651402F04261E00131EF8 /* Info.plist */,
-				ACC24D112CF89837007515B7 /* Assets.xcassets */,
-				ACC24D122CF89837007515B7 /* ContentView.swift */,
-				ACC24D132CF89837007515B7 /* NowPlayingApp.swift */,
-			);
-			path = NowPlaying;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +77,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3797C985305859DD00A839A9 /* NowPlaying */,
 			);
 			name = NowPlaying;
 			packageProductDependencies = (
@@ -125,7 +131,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACC24D182CF89837007515B7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +141,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACC24D152CF89837007515B7 /* ContentView.swift in Sources */,
-				ACC24D162CF89837007515B7 /* NowPlayingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +359,7 @@
 			repositoryURL = "https://github.com/bitmovin/player-ios.git";
 			requirement = {
 				kind = exactVersion;
-				version = 3.123.0;
+				version = 3.124.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

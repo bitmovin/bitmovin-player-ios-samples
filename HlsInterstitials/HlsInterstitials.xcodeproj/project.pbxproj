@@ -3,23 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC6F030D1F7E6D38004B1816 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6F030C1F7E6D38004B1816 /* Assets.xcassets */; };
-		D6FEF8992A4C6D3C002E8AB7 /* HlsInterstitialsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FEF8972A4C6D3B002E8AB7 /* HlsInterstitialsApp.swift */; };
-		D6FEF89A2A4C6D3C002E8AB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FEF8982A4C6D3B002E8AB7 /* ContentView.swift */; };
 		D88E49E82BC4371600A80252 /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = D88E49E72BC4371600A80252 /* BitmovinPlayer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC6F02FF1F7E6D38004B1816 /* HlsInterstitials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HlsInterstitials.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC6F030C1F7E6D38004B1816 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AC6F03111F7E6D38004B1816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6FEF8972A4C6D3B002E8AB7 /* HlsInterstitialsApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HlsInterstitialsApp.swift; sourceTree = "<group>"; };
-		D6FEF8982A4C6D3B002E8AB7 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3797C96B305859D600A839A9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = AC6F02FE1F7E6D38004B1816 /* HlsInterstitials */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3797C95D305859D400A839A9 /* HlsInterstitials */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (3797C96B305859D600A839A9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = HlsInterstitials; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AC6F02FC1F7E6D38004B1816 /* Frameworks */ = {
@@ -36,7 +43,7 @@
 		AC6F02F61F7E6D38004B1816 = {
 			isa = PBXGroup;
 			children = (
-				AC6F03011F7E6D38004B1816 /* HlsInterstitials */,
+				3797C95D305859D400A839A9 /* HlsInterstitials */,
 				AC6F03001F7E6D38004B1816 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,17 +54,6 @@
 				AC6F02FF1F7E6D38004B1816 /* HlsInterstitials.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		AC6F03011F7E6D38004B1816 /* HlsInterstitials */ = {
-			isa = PBXGroup;
-			children = (
-				D6FEF8972A4C6D3B002E8AB7 /* HlsInterstitialsApp.swift */,
-				D6FEF8982A4C6D3B002E8AB7 /* ContentView.swift */,
-				AC6F030C1F7E6D38004B1816 /* Assets.xcassets */,
-				AC6F03111F7E6D38004B1816 /* Info.plist */,
-			);
-			path = HlsInterstitials;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +70,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3797C95D305859D400A839A9 /* HlsInterstitials */,
 			);
 			name = HlsInterstitials;
 			packageProductDependencies = (
@@ -126,7 +125,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC6F030D1F7E6D38004B1816 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +135,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6FEF89A2A4C6D3C002E8AB7 /* ContentView.swift in Sources */,
-				D6FEF8992A4C6D3C002E8AB7 /* HlsInterstitialsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +320,7 @@
 			repositoryURL = "https://github.com/bitmovin/player-ios.git";
 			requirement = {
 				kind = exactVersion;
-				version = 3.123.0;
+				version = 3.124.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

@@ -10,10 +10,8 @@ import UIKit
 import BitmovinPlayer
 import GoogleCast
 
-@UIApplicationMain
+@main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Initialize ChromeCast support for this application
@@ -29,5 +27,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate: GCKLoggerDelegate {
     public func log(fromFunction function: UnsafePointer<Int8>, message: String) {
         print("ChromeCast Log: \(function) \(message)")
+    }
+}
+
+extension AppDelegate {
+    func application(
+        _ application: UIApplication,
+        configurationForConnecting connectingSceneSession: UISceneSession,
+        options: UIScene.ConnectionOptions
+    ) -> UISceneConfiguration {
+        UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
 }

@@ -3,29 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A8566C7E93F37F7EC25D69D5 /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 5C3D87906E35E0A7B3D2CE64 /* BitmovinPlayer */; };
-		CA83B127264BDD6B00C3D150 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA83B126264BDD6B00C3D150 /* Main.storyboard */; };
-		CA86176F2643D2B800868075 /* SetupPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA86176E2643D2B800868075 /* SetupPlayerViewController.swift */; };
-		CADF65352642DB3B00D3DAF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADF65342642DB3B00D3DAF8 /* AppDelegate.swift */; };
-		CADF65392642DB3B00D3DAF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADF65382642DB3B00D3DAF8 /* ViewController.swift */; };
-		CADF653E2642DB3C00D3DAF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CADF653D2642DB3C00D3DAF8 /* Assets.xcassets */; };
-		CADF65412642DB3C00D3DAF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CADF653F2642DB3C00D3DAF8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CA83B126264BDD6B00C3D150 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		CA86176E2643D2B800868075 /* SetupPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupPlayerViewController.swift; sourceTree = "<group>"; };
 		CADF65312642DB3B00D3DAF8 /* BasicPictureInPicture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicPictureInPicture.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CADF65342642DB3B00D3DAF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CADF65382642DB3B00D3DAF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CADF653D2642DB3C00D3DAF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CADF65402642DB3C00D3DAF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CADF65422642DB3C00D3DAF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3797C8D2305859AD00A839A9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = CADF65302642DB3B00D3DAF8 /* BasicPictureInPicture */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3797C8C9305859AB00A839A9 /* BasicPictureInPicture */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (3797C8D2305859AD00A839A9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = BasicPictureInPicture; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CADF652E2642DB3B00D3DAF8 /* Frameworks */ = {
@@ -42,7 +43,7 @@
 		CADF65282642DB3B00D3DAF8 = {
 			isa = PBXGroup;
 			children = (
-				CADF65332642DB3B00D3DAF8 /* BasicPictureInPicture */,
+				3797C8C9305859AB00A839A9 /* BasicPictureInPicture */,
 				CADF65322642DB3B00D3DAF8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,20 +54,6 @@
 				CADF65312642DB3B00D3DAF8 /* BasicPictureInPicture.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		CADF65332642DB3B00D3DAF8 /* BasicPictureInPicture */ = {
-			isa = PBXGroup;
-			children = (
-				CADF65342642DB3B00D3DAF8 /* AppDelegate.swift */,
-				CA86176E2643D2B800868075 /* SetupPlayerViewController.swift */,
-				CADF65382642DB3B00D3DAF8 /* ViewController.swift */,
-				CA83B126264BDD6B00C3D150 /* Main.storyboard */,
-				CADF653F2642DB3C00D3DAF8 /* LaunchScreen.storyboard */,
-				CADF653D2642DB3C00D3DAF8 /* Assets.xcassets */,
-				CADF65422642DB3C00D3DAF8 /* Info.plist */,
-			);
-			path = BasicPictureInPicture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +70,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3797C8C9305859AB00A839A9 /* BasicPictureInPicture */,
 			);
 			name = BasicPictureInPicture;
 			packageProductDependencies = (
@@ -132,9 +122,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA83B127264BDD6B00C3D150 /* Main.storyboard in Resources */,
-				CADF65412642DB3C00D3DAF8 /* LaunchScreen.storyboard in Resources */,
-				CADF653E2642DB3C00D3DAF8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,24 +132,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CADF65392642DB3B00D3DAF8 /* ViewController.swift in Sources */,
-				CADF65352642DB3B00D3DAF8 /* AppDelegate.swift in Sources */,
-				CA86176F2643D2B800868075 /* SetupPlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		CADF653F2642DB3C00D3DAF8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CADF65402642DB3C00D3DAF8 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CADF65432642DB3C00D3DAF8 /* Debug */ = {
@@ -348,7 +321,7 @@
 			repositoryURL = "https://github.com/bitmovin/player-ios.git";
 			requirement = {
 				kind = exactVersion;
-				version = 3.123.0;
+				version = 3.124.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

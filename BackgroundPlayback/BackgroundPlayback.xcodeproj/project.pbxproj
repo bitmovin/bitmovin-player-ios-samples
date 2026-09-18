@@ -3,27 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2456310E394A0139AD0DD07A /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = C3FAF7A2419E29FCBBA92EC7 /* BitmovinPlayer */; };
-		ACDF6246207D1AB40027FC3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDF6245207D1AB40027FC3F /* AppDelegate.swift */; };
-		ACDF6248207D1AB40027FC3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDF6247207D1AB40027FC3F /* ViewController.swift */; };
-		ACDF624B207D1AB40027FC3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACDF6249207D1AB40027FC3F /* Main.storyboard */; };
-		ACDF624D207D1AB60027FC3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACDF624C207D1AB60027FC3F /* Assets.xcassets */; };
-		ACDF6250207D1AB60027FC3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACDF624E207D1AB60027FC3F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ACDF6242207D1AB40027FC3F /* BackgroundPlayback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackgroundPlayback.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACDF6245207D1AB40027FC3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ACDF6247207D1AB40027FC3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ACDF624A207D1AB40027FC3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		ACDF624C207D1AB60027FC3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ACDF624F207D1AB60027FC3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		ACDF6251207D1AB60027FC3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3797C8983058599B00A839A9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = ACDF6241207D1AB40027FC3F /* BackgroundPlayback */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3797C88F3058599A00A839A9 /* BackgroundPlayback */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (3797C8983058599B00A839A9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = BackgroundPlayback; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		ACDF623F207D1AB40027FC3F /* Frameworks */ = {
@@ -40,7 +43,7 @@
 		ACDF6239207D1AB40027FC3F = {
 			isa = PBXGroup;
 			children = (
-				ACDF6244207D1AB40027FC3F /* BackgroundPlayback */,
+				3797C88F3058599A00A839A9 /* BackgroundPlayback */,
 				ACDF6243207D1AB40027FC3F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,19 +54,6 @@
 				ACDF6242207D1AB40027FC3F /* BackgroundPlayback.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		ACDF6244207D1AB40027FC3F /* BackgroundPlayback */ = {
-			isa = PBXGroup;
-			children = (
-				ACDF6245207D1AB40027FC3F /* AppDelegate.swift */,
-				ACDF6247207D1AB40027FC3F /* ViewController.swift */,
-				ACDF6249207D1AB40027FC3F /* Main.storyboard */,
-				ACDF624C207D1AB60027FC3F /* Assets.xcassets */,
-				ACDF624E207D1AB60027FC3F /* LaunchScreen.storyboard */,
-				ACDF6251207D1AB60027FC3F /* Info.plist */,
-			);
-			path = BackgroundPlayback;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +70,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3797C88F3058599A00A839A9 /* BackgroundPlayback */,
 			);
 			name = BackgroundPlayback;
 			packageProductDependencies = (
@@ -136,9 +129,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACDF6250207D1AB60027FC3F /* LaunchScreen.storyboard in Resources */,
-				ACDF624D207D1AB60027FC3F /* Assets.xcassets in Resources */,
-				ACDF624B207D1AB40027FC3F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,31 +139,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACDF6248207D1AB40027FC3F /* ViewController.swift in Sources */,
-				ACDF6246207D1AB40027FC3F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		ACDF6249207D1AB40027FC3F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ACDF624A207D1AB40027FC3F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		ACDF624E207D1AB60027FC3F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ACDF624F207D1AB60027FC3F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		ACDF6252207D1AB60027FC3F /* Debug */ = {
@@ -357,7 +326,7 @@
 			repositoryURL = "https://github.com/bitmovin/player-ios.git";
 			requirement = {
 				kind = exactVersion;
-				version = 3.123.0;
+				version = 3.124.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

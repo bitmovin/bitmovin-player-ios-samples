@@ -3,23 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		58CCF7E1ABBB57288BE81913 /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = D2E5F6DB277FB72AB4C2FDE1 /* BitmovinPlayer */; };
-		AC094ACD1F3CD4C100EF6F94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC094ACC1F3CD4C100EF6F94 /* Assets.xcassets */; };
-		D631FEEB2A49CAB20025049C /* BasicMetadataHandlingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631FEEA2A49CAB20025049C /* BasicMetadataHandlingApp.swift */; };
-		D631FEED2A49CAEF0025049C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631FEEC2A49CAEF0025049C /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC094ABF1F3CD4C100EF6F94 /* BasicMetadataHandling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicMetadataHandling.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC094ACC1F3CD4C100EF6F94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AC094AD11F3CD4C100EF6F94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D631FEEA2A49CAB20025049C /* BasicMetadataHandlingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicMetadataHandlingApp.swift; sourceTree = "<group>"; };
-		D631FEEC2A49CAEF0025049C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3797C8BF305859A300A839A9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = AC094ABE1F3CD4C100EF6F94 /* BasicMetadataHandling */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3797C8B9305859A200A839A9 /* BasicMetadataHandling */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (3797C8BF305859A300A839A9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = BasicMetadataHandling; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AC094ABC1F3CD4C100EF6F94 /* Frameworks */ = {
@@ -36,7 +43,7 @@
 		AC094AB61F3CD4C100EF6F94 = {
 			isa = PBXGroup;
 			children = (
-				AC094AC11F3CD4C100EF6F94 /* BasicMetadataHandling */,
+				3797C8B9305859A200A839A9 /* BasicMetadataHandling */,
 				AC094AC01F3CD4C100EF6F94 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,17 +54,6 @@
 				AC094ABF1F3CD4C100EF6F94 /* BasicMetadataHandling.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		AC094AC11F3CD4C100EF6F94 /* BasicMetadataHandling */ = {
-			isa = PBXGroup;
-			children = (
-				D631FEEA2A49CAB20025049C /* BasicMetadataHandlingApp.swift */,
-				D631FEEC2A49CAEF0025049C /* ContentView.swift */,
-				AC094ACC1F3CD4C100EF6F94 /* Assets.xcassets */,
-				AC094AD11F3CD4C100EF6F94 /* Info.plist */,
-			);
-			path = BasicMetadataHandling;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +70,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3797C8B9305859A200A839A9 /* BasicMetadataHandling */,
 			);
 			name = BasicMetadataHandling;
 			packageProductDependencies = (
@@ -128,7 +127,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC094ACD1F3CD4C100EF6F94 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +137,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D631FEEB2A49CAB20025049C /* BasicMetadataHandlingApp.swift in Sources */,
-				D631FEED2A49CAEF0025049C /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +253,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -270,7 +267,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BasicMetadataHandling/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.metadata.basic-$(DEVELOPMENT_TEAM)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -282,7 +282,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BasicMetadataHandling/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.metadata.basic-$(DEVELOPMENT_TEAM)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -317,7 +320,7 @@
 			repositoryURL = "https://github.com/bitmovin/player-ios.git";
 			requirement = {
 				kind = exactVersion;
-				version = 3.123.0;
+				version = 3.124.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

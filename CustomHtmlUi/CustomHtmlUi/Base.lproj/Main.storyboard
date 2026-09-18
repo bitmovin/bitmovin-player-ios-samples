@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14865.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dmQ-bS-q3h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="25098" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dmQ-bS-q3h">
     <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14819.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="25073"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,11 +18,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="848"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cDd-GU-OnH">
-                                <rect key="frame" x="36" y="16" width="342" height="192.5"/>
+                                <rect key="frame" x="36" y="40" width="342" height="192.5"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="cDd-GU-OnH" secondAttribute="height" multiplier="16:9" id="ZaT-mV-OV0"/>
@@ -41,28 +43,21 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Moh-G8-sJ2">
-                                <rect key="frame" x="36" y="240.5" width="342" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Moh-G8-sJ2">
+                                <rect key="frame" x="36" y="264.5" width="342" height="34.5"/>
                                 <state key="normal" title="Toggle Close Button State"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                        <integer key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                                <buttonConfiguration key="configuration" style="filled" title="Toggle Close Button State"/>
                                 <connections>
                                     <action selector="toggleCloseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mkf-6w-7CJ"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="cDd-GU-OnH" secondAttribute="trailing" constant="16" id="0FT-bd-tHu"/>
                             <constraint firstItem="Moh-G8-sJ2" firstAttribute="top" secondItem="cDd-GU-OnH" secondAttribute="bottom" constant="32" id="8ku-cd-azY"/>
                             <constraint firstItem="Moh-G8-sJ2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="HGu-gE-RCm"/>
-                            <constraint firstItem="cDd-GU-OnH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="T1b-5a-0wN"/>
+                            <constraint firstItem="cDd-GU-OnH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="T1b-5a-0wN"/>
                             <constraint firstItem="cDd-GU-OnH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="Znd-DS-8G2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Moh-G8-sJ2" secondAttribute="trailing" constant="16" id="kll-Xp-uVG"/>
                         </constraints>
@@ -88,12 +83,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Art of Motion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5C4-zZ-SmA">
-                                <rect key="frame" x="52" y="76" width="310" height="21"/>
+                                <rect key="frame" x="52" y="128" width="310" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQ0-L6-mDH">
-                                <rect key="frame" x="52" y="113" width="310" height="174.5"/>
+                                <rect key="frame" x="52" y="165" width="310" height="174.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PosterImage" translatesAutoresizingMaskIntoConstraints="NO" id="xhj-LR-gfl">
                                         <rect key="frame" x="0.0" y="0.0" width="310" height="174.5"/>
@@ -103,15 +98,30 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlayButton" translatesAutoresizingMaskIntoConstraints="NO" id="J1A-EL-I1z">
-                                        <rect key="frame" x="125" y="70.5" width="60" height="33.5"/>
+                                    <imageView clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J1A-EL-I1z">
+                                        <rect key="frame" x="125" y="69.5" width="60" height="35.5"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="60" id="NO2-RK-PDg"/>
                                             <constraint firstAttribute="width" secondItem="J1A-EL-I1z" secondAttribute="height" multiplier="16:9" id="f0w-w6-btE"/>
                                         </constraints>
+                                        <imageReference key="image" image="play.fill" catalog="system" symbolScale="large" variableValue="0.80000000000000004"/>
+                                        <imageReference key="highlightedImage" image="play.fill" catalog="system" symbolScale="large"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBound" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                <size key="value" width="0.0" height="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="J1A-EL-I1z" firstAttribute="centerX" secondItem="xhj-LR-gfl" secondAttribute="centerX" id="5sn-UE-xTZ"/>
@@ -142,7 +152,7 @@
                                 </connections>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="5C4-zZ-SmA" firstAttribute="top" secondItem="oku-LE-DVF" secondAttribute="bottom" constant="32" id="8b8-HJ-dX9"/>
                             <constraint firstItem="5C4-zZ-SmA" firstAttribute="trailing" secondItem="eQ0-L6-mDH" secondAttribute="trailing" id="Ns0-eQ-ODu"/>
@@ -164,7 +174,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="PlayButton" width="31" height="43"/>
         <image name="PosterImage" width="960" height="540"/>
+        <image name="play.fill" catalog="system" width="115" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

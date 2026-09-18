@@ -3,24 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		378FB1AA2A77DE4800EC16F5 /* AnalyticsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378FB1A92A77DE4800EC16F5 /* AnalyticsApp.swift */; };
-		378FB1AC2A77DE4800EC16F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378FB1AB2A77DE4800EC16F5 /* ContentView.swift */; };
-		378FB1AE2A77DE4900EC16F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 378FB1AD2A77DE4900EC16F5 /* Assets.xcassets */; };
-		378FB1B12A77DE4900EC16F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 378FB1B02A77DE4900EC16F5 /* Preview Assets.xcassets */; };
 		37B21BEF2A79242800875B2D /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 37B21BEE2A79242800875B2D /* BitmovinPlayer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		378FB1A62A77DE4800EC16F5 /* Analytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Analytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		378FB1A92A77DE4800EC16F5 /* AnalyticsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsApp.swift; sourceTree = "<group>"; };
-		378FB1AB2A77DE4800EC16F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		378FB1AD2A77DE4900EC16F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		378FB1B02A77DE4900EC16F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3797C8703058599500A839A9 /* Analytics */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Analytics; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		378FB1A32A77DE4800EC16F5 /* Frameworks */ = {
@@ -37,7 +33,7 @@
 		378FB19D2A77DE4800EC16F5 = {
 			isa = PBXGroup;
 			children = (
-				378FB1A82A77DE4800EC16F5 /* Analytics */,
+				3797C8703058599500A839A9 /* Analytics */,
 				378FB1A72A77DE4800EC16F5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,25 +44,6 @@
 				378FB1A62A77DE4800EC16F5 /* Analytics.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		378FB1A82A77DE4800EC16F5 /* Analytics */ = {
-			isa = PBXGroup;
-			children = (
-				378FB1A92A77DE4800EC16F5 /* AnalyticsApp.swift */,
-				378FB1AB2A77DE4800EC16F5 /* ContentView.swift */,
-				378FB1AD2A77DE4900EC16F5 /* Assets.xcassets */,
-				378FB1AF2A77DE4900EC16F5 /* Preview Content */,
-			);
-			path = Analytics;
-			sourceTree = "<group>";
-		};
-		378FB1AF2A77DE4900EC16F5 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				378FB1B02A77DE4900EC16F5 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +60,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3797C8703058599500A839A9 /* Analytics */,
 			);
 			name = Analytics;
 			packageProductDependencies = (
@@ -133,8 +113,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				378FB1B12A77DE4900EC16F5 /* Preview Assets.xcassets in Resources */,
-				378FB1AE2A77DE4900EC16F5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,8 +123,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				378FB1AC2A77DE4800EC16F5 /* ContentView.swift in Sources */,
-				378FB1AA2A77DE4800EC16F5 /* AnalyticsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,7 +330,7 @@
 			repositoryURL = "https://github.com/bitmovin/player-ios";
 			requirement = {
 				kind = exactVersion;
-				version = 3.123.0;
+				version = 3.124.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

@@ -3,29 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1B2F4F550F896E02541687EF /* GoogleCast in Frameworks */ = {isa = PBXBuildFile; productRef = 1CCF29B5324577B591DEA8DE /* GoogleCast */; };
 		74E319B7C63CE5D771C4B065 /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 7DB38ED9D3E2F37986659D96 /* BitmovinPlayer */; };
-		AC773EBD1F0622DC005C3B0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC773EBC1F0622DC005C3B0E /* AppDelegate.swift */; };
-		AC773EBF1F0622DC005C3B0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC773EBE1F0622DC005C3B0E /* ViewController.swift */; };
-		AC773EC21F0622DC005C3B0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC773EC01F0622DC005C3B0E /* Main.storyboard */; };
-		AC773EC41F0622DC005C3B0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC773EC31F0622DC005C3B0E /* Assets.xcassets */; };
-		AC773EC71F0622DC005C3B0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC773EC51F0622DC005C3B0E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6E57E8EB216C8E4500550E9A /* BasicCasting.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BasicCasting.entitlements; sourceTree = "<group>"; };
 		AC773EB91F0622DC005C3B0E /* BasicCasting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicCasting.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC773EBC1F0622DC005C3B0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC773EBE1F0622DC005C3B0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AC773EC11F0622DC005C3B0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AC773EC31F0622DC005C3B0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AC773EC61F0622DC005C3B0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AC773EC81F0622DC005C3B0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3797C8AB3058599E00A839A9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = AC773EB81F0622DC005C3B0E /* BasicCasting */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3797C8A33058599D00A839A9 /* BasicCasting */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (3797C8AB3058599E00A839A9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = BasicCasting; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AC773EB61F0622DC005C3B0E /* Frameworks */ = {
@@ -43,7 +45,7 @@
 		AC773EB01F0622DC005C3B0E = {
 			isa = PBXGroup;
 			children = (
-				AC773EBB1F0622DC005C3B0E /* BasicCasting */,
+				3797C8A33058599D00A839A9 /* BasicCasting */,
 				AC773EBA1F0622DC005C3B0E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,20 +56,6 @@
 				AC773EB91F0622DC005C3B0E /* BasicCasting.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		AC773EBB1F0622DC005C3B0E /* BasicCasting */ = {
-			isa = PBXGroup;
-			children = (
-				6E57E8EB216C8E4500550E9A /* BasicCasting.entitlements */,
-				AC773EBC1F0622DC005C3B0E /* AppDelegate.swift */,
-				AC773EBE1F0622DC005C3B0E /* ViewController.swift */,
-				AC773EC01F0622DC005C3B0E /* Main.storyboard */,
-				AC773EC31F0622DC005C3B0E /* Assets.xcassets */,
-				AC773EC51F0622DC005C3B0E /* LaunchScreen.storyboard */,
-				AC773EC81F0622DC005C3B0E /* Info.plist */,
-			);
-			path = BasicCasting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +72,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3797C8A33058599D00A839A9 /* BasicCasting */,
 			);
 			name = BasicCasting;
 			packageProductDependencies = (
@@ -145,9 +136,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC773EC71F0622DC005C3B0E /* LaunchScreen.storyboard in Resources */,
-				AC773EC41F0622DC005C3B0E /* Assets.xcassets in Resources */,
-				AC773EC21F0622DC005C3B0E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,31 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC773EBF1F0622DC005C3B0E /* ViewController.swift in Sources */,
-				AC773EBD1F0622DC005C3B0E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		AC773EC01F0622DC005C3B0E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC773EC11F0622DC005C3B0E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AC773EC51F0622DC005C3B0E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC773EC61F0622DC005C3B0E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AC773EC91F0622DC005C3B0E /* Debug */ = {
@@ -373,7 +340,7 @@
 			repositoryURL = "https://github.com/bitmovin/player-ios.git";
 			requirement = {
 				kind = exactVersion;
-				version = 3.123.0;
+				version = 3.124.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

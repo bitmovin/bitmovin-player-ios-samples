@@ -3,23 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0815AA2D9F6070034AC08F9F /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 2C5A8A72467B9FC1AA202322 /* BitmovinPlayer */; };
-		65C8576925DB163F009FA5A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65C8576825DB163F009FA5A1 /* Assets.xcassets */; };
-		D6AC0BB52A4B18BD000AD742 /* BasicPlaylistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AC0BB32A4B18BD000AD742 /* BasicPlaylistApp.swift */; };
-		D6AC0BB62A4B18BD000AD742 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AC0BB42A4B18BD000AD742 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		65C8575C25DB163E009FA5A1 /* BasicPlaylist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicPlaylist.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		65C8576825DB163F009FA5A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		65C8576D25DB163F009FA5A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6AC0BB32A4B18BD000AD742 /* BasicPlaylistApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicPlaylistApp.swift; sourceTree = "<group>"; };
-		D6AC0BB42A4B18BD000AD742 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3797C8FC305859BB00A839A9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 65C8575B25DB163E009FA5A1 /* BasicPlaylist */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3797C8EE305859B800A839A9 /* BasicPlaylist */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (3797C8FC305859BB00A839A9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = BasicPlaylist; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		65C8575925DB163E009FA5A1 /* Frameworks */ = {
@@ -36,7 +43,7 @@
 		65C8575325DB163E009FA5A1 = {
 			isa = PBXGroup;
 			children = (
-				65C8575E25DB163E009FA5A1 /* BasicPlaylist */,
+				3797C8EE305859B800A839A9 /* BasicPlaylist */,
 				65C8575D25DB163E009FA5A1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,17 +54,6 @@
 				65C8575C25DB163E009FA5A1 /* BasicPlaylist.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		65C8575E25DB163E009FA5A1 /* BasicPlaylist */ = {
-			isa = PBXGroup;
-			children = (
-				D6AC0BB32A4B18BD000AD742 /* BasicPlaylistApp.swift */,
-				D6AC0BB42A4B18BD000AD742 /* ContentView.swift */,
-				65C8576825DB163F009FA5A1 /* Assets.xcassets */,
-				65C8576D25DB163F009FA5A1 /* Info.plist */,
-			);
-			path = BasicPlaylist;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +70,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3797C8EE305859B800A839A9 /* BasicPlaylist */,
 			);
 			name = BasicPlaylist;
 			packageProductDependencies = (
@@ -123,7 +122,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65C8576925DB163F009FA5A1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,8 +132,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6AC0BB62A4B18BD000AD742 /* ContentView.swift in Sources */,
-				D6AC0BB52A4B18BD000AD742 /* BasicPlaylistApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,7 +323,7 @@
 			repositoryURL = "https://github.com/bitmovin/player-ios.git";
 			requirement = {
 				kind = exactVersion;
-				version = 3.123.0;
+				version = 3.124.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

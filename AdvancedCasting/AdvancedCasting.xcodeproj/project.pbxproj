@@ -3,29 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		7E29A052325A7E1EDC3AA3AA /* GoogleCast in Frameworks */ = {isa = PBXBuildFile; productRef = 3CBF0210E4C2F7FBDCF2E495 /* GoogleCast */; };
-		AC34AFB7208E1BC6003B07B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC34AFB6208E1BC6003B07B0 /* AppDelegate.swift */; };
-		AC34AFB9208E1BC6003B07B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC34AFB8208E1BC6003B07B0 /* ViewController.swift */; };
-		AC34AFBC208E1BC6003B07B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC34AFBA208E1BC6003B07B0 /* Main.storyboard */; };
-		AC34AFBE208E1BC7003B07B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC34AFBD208E1BC7003B07B0 /* Assets.xcassets */; };
-		AC34AFC1208E1BC7003B07B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC34AFBF208E1BC7003B07B0 /* LaunchScreen.storyboard */; };
 		D44500C48FCC6CE1DC8B5B90 /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 9C347811FF9E00EC18125900 /* BitmovinPlayer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6E57E8EC216C8F2000550E9A /* AdvancedCasting.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AdvancedCasting.entitlements; sourceTree = "<group>"; };
 		AC34AFB3208E1BC6003B07B0 /* AdvancedCasting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvancedCasting.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC34AFB6208E1BC6003B07B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC34AFB8208E1BC6003B07B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AC34AFBB208E1BC6003B07B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AC34AFBD208E1BC7003B07B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AC34AFC0208E1BC7003B07B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AC34AFC2208E1BC7003B07B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3797C86A3058598E00A839A9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = AC34AFB2208E1BC6003B07B0 /* AdvancedCasting */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3797C8623058598D00A839A9 /* AdvancedCasting */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (3797C86A3058598E00A839A9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = AdvancedCasting; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AC34AFB0208E1BC6003B07B0 /* Frameworks */ = {
@@ -43,7 +45,7 @@
 		AC34AFAA208E1BC6003B07B0 = {
 			isa = PBXGroup;
 			children = (
-				AC34AFB5208E1BC6003B07B0 /* AdvancedCasting */,
+				3797C8623058598D00A839A9 /* AdvancedCasting */,
 				AC34AFB4208E1BC6003B07B0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,20 +56,6 @@
 				AC34AFB3208E1BC6003B07B0 /* AdvancedCasting.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		AC34AFB5208E1BC6003B07B0 /* AdvancedCasting */ = {
-			isa = PBXGroup;
-			children = (
-				6E57E8EC216C8F2000550E9A /* AdvancedCasting.entitlements */,
-				AC34AFB6208E1BC6003B07B0 /* AppDelegate.swift */,
-				AC34AFB8208E1BC6003B07B0 /* ViewController.swift */,
-				AC34AFBA208E1BC6003B07B0 /* Main.storyboard */,
-				AC34AFBD208E1BC7003B07B0 /* Assets.xcassets */,
-				AC34AFBF208E1BC7003B07B0 /* LaunchScreen.storyboard */,
-				AC34AFC2208E1BC7003B07B0 /* Info.plist */,
-			);
-			path = AdvancedCasting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +72,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3797C8623058598D00A839A9 /* AdvancedCasting */,
 			);
 			name = AdvancedCasting;
 			packageProductDependencies = (
@@ -126,7 +117,7 @@
 			mainGroup = AC34AFAA208E1BC6003B07B0;
 			packageReferences = (
 				2A4CD3909E36378AEDD813BD /* XCRemoteSwiftPackageReference "player-ios" */,
-				06CC9ED4C222F3EDB3358B4B /* XCLocalSwiftPackageReference "GoogleCastSPMProxy" */,
+				06CC9ED4C222F3EDB3358B4B /* XCLocalSwiftPackageReference "../GoogleCastSPMProxy" */,
 			);
 			productRefGroup = AC34AFB4208E1BC6003B07B0 /* Products */;
 			projectDirPath = "";
@@ -142,9 +133,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC34AFC1208E1BC7003B07B0 /* LaunchScreen.storyboard in Resources */,
-				AC34AFBE208E1BC7003B07B0 /* Assets.xcassets in Resources */,
-				AC34AFBC208E1BC6003B07B0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,31 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC34AFB9208E1BC6003B07B0 /* ViewController.swift in Sources */,
-				AC34AFB7208E1BC6003B07B0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		AC34AFBA208E1BC6003B07B0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC34AFBB208E1BC6003B07B0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AC34AFBF208E1BC7003B07B0 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC34AFC0208E1BC7003B07B0 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AC34AFC3208E1BC7003B07B0 /* Debug */ = {
@@ -362,7 +329,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		06CC9ED4C222F3EDB3358B4B /* XCLocalSwiftPackageReference "GoogleCastSPMProxy" */ = {
+		06CC9ED4C222F3EDB3358B4B /* XCLocalSwiftPackageReference "../GoogleCastSPMProxy" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../GoogleCastSPMProxy;
 		};
@@ -374,7 +341,7 @@
 			repositoryURL = "https://github.com/bitmovin/player-ios.git";
 			requirement = {
 				kind = exactVersion;
-				version = 3.123.0;
+				version = 3.124.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

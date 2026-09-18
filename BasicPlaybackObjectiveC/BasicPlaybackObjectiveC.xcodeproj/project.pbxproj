@@ -3,188 +3,205 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 110;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		24BE481D47A34E7C2DF51E49 /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 6B9021FFAB70C950135A47EE /* BitmovinPlayer */; };
-		6EDD9CDA211AE9D7003427D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EDD9CD9211AE9D7003427D6 /* AppDelegate.m */; };
-		6EDD9CDD211AE9D7003427D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EDD9CDC211AE9D7003427D6 /* ViewController.m */; };
-		6EDD9CE0211AE9D7003427D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EDD9CDE211AE9D7003427D6 /* Main.storyboard */; };
-		6EDD9CE2211AE9D9003427D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EDD9CE1211AE9D9003427D6 /* Assets.xcassets */; };
-		6EDD9CE5211AE9D9003427D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EDD9CE3211AE9D9003427D6 /* LaunchScreen.storyboard */; };
-		6EDD9CE8211AE9D9003427D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EDD9CE7211AE9D9003427D6 /* main.m */; };
+		3797CA8B3058642A00A839A9 /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 3797CA8A3058642A00A839A9 /* BitmovinPlayer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6EDD9CD5211AE9D7003427D6 /* BasicPlaybackObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicPlaybackObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6EDD9CD8211AE9D7003427D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		6EDD9CD9211AE9D7003427D6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6EDD9CDB211AE9D7003427D6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6EDD9CDC211AE9D7003427D6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6EDD9CDF211AE9D7003427D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6EDD9CE1211AE9D9003427D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6EDD9CE4211AE9D9003427D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6EDD9CE6211AE9D9003427D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6EDD9CE7211AE9D9003427D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3797CA57305863CE00A839A9 /* BasicPlaybackObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicPlaybackObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFrameworksBuildPhase section */
-		6EDD9CD2211AE9D7003427D6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				24BE481D47A34E7C2DF51E49 /* BitmovinPlayer in Frameworks */,
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3797CA6E305863CF00A839A9 /* Exceptions for "BasicPlaybackObjectiveC" folder in "BasicPlaybackObjectiveC" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			target = 3797CA56305863CE00A839A9 /* BasicPlaybackObjectiveC */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3797CA59305863CE00A839A9 /* BasicPlaybackObjectiveC */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3797CA6E305863CF00A839A9 /* Exceptions for "BasicPlaybackObjectiveC" folder in "BasicPlaybackObjectiveC" target */,
+			);
+			path = BasicPlaybackObjectiveC;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3797CA54305863CE00A839A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				3797CA8B3058642A00A839A9 /* BitmovinPlayer in Frameworks */,
+			);
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6EDD9CCC211AE9D7003427D6 = {
+		3797CA4E305863CE00A839A9 = {
 			isa = PBXGroup;
 			children = (
-				6EDD9CD7211AE9D7003427D6 /* BasicPlaybackObjectiveC */,
-				6EDD9CD6211AE9D7003427D6 /* Products */,
+				3797CA59305863CE00A839A9 /* BasicPlaybackObjectiveC */,
+				3797CA58305863CE00A839A9 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		6EDD9CD6211AE9D7003427D6 /* Products */ = {
+		3797CA58305863CE00A839A9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6EDD9CD5211AE9D7003427D6 /* BasicPlaybackObjectiveC.app */,
+				3797CA57305863CE00A839A9 /* BasicPlaybackObjectiveC.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		6EDD9CD7211AE9D7003427D6 /* BasicPlaybackObjectiveC */ = {
-			isa = PBXGroup;
-			children = (
-				6EDD9CD8211AE9D7003427D6 /* AppDelegate.h */,
-				6EDD9CD9211AE9D7003427D6 /* AppDelegate.m */,
-				6EDD9CDB211AE9D7003427D6 /* ViewController.h */,
-				6EDD9CDC211AE9D7003427D6 /* ViewController.m */,
-				6EDD9CDE211AE9D7003427D6 /* Main.storyboard */,
-				6EDD9CE1211AE9D9003427D6 /* Assets.xcassets */,
-				6EDD9CE3211AE9D9003427D6 /* LaunchScreen.storyboard */,
-				6EDD9CE6211AE9D9003427D6 /* Info.plist */,
-				6EDD9CE7211AE9D9003427D6 /* main.m */,
-			);
-			path = BasicPlaybackObjectiveC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6EDD9CD4211AE9D7003427D6 /* BasicPlaybackObjectiveC */ = {
+		3797CA56305863CE00A839A9 /* BasicPlaybackObjectiveC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6EDD9CEB211AE9D9003427D6 /* Build configuration list for PBXNativeTarget "BasicPlaybackObjectiveC" */;
+			buildConfigurationList = 3797CA6F305863CF00A839A9 /* Build configuration list for PBXNativeTarget "BasicPlaybackObjectiveC" */;
 			buildPhases = (
-				6EDD9CD1211AE9D7003427D6 /* Sources */,
-				6EDD9CD2211AE9D7003427D6 /* Frameworks */,
-				6EDD9CD3211AE9D7003427D6 /* Resources */,
+				3797CA53305863CE00A839A9 /* Sources */,
+				3797CA54305863CE00A839A9 /* Frameworks */,
+				3797CA55305863CE00A839A9 /* Resources */,
 			);
 			buildRules = (
 			);
-			dependencies = (
+			fileSystemSynchronizedGroups = (
+				3797CA59305863CE00A839A9 /* BasicPlaybackObjectiveC */,
 			);
 			name = BasicPlaybackObjectiveC;
 			packageProductDependencies = (
-				6B9021FFAB70C950135A47EE /* BitmovinPlayer */,
+				3797CA8A3058642A00A839A9 /* BitmovinPlayer */,
 			);
 			productName = BasicPlaybackObjectiveC;
-			productReference = 6EDD9CD5211AE9D7003427D6 /* BasicPlaybackObjectiveC.app */;
+			productReference = 3797CA57305863CE00A839A9 /* BasicPlaybackObjectiveC.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6EDD9CCD211AE9D7003427D6 /* Project object */ = {
+		3797CA4F305863CE00A839A9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1420;
-				ORGANIZATIONNAME = Bitmovin;
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 2700;
 				TargetAttributes = {
-					6EDD9CD4211AE9D7003427D6 = {
-						CreatedOnToolsVersion = 9.4.1;
+					3797CA56305863CE00A839A9 = {
+						CreatedOnToolsVersion = 27.0;
 					};
 				};
 			};
-			buildConfigurationList = 6EDD9CD0211AE9D7003427D6 /* Build configuration list for PBXProject "BasicPlaybackObjectiveC" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = 3797CA52305863CE00A839A9 /* Build configuration list for PBXProject "BasicPlaybackObjectiveC" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 6EDD9CCC211AE9D7003427D6;
+			mainGroup = 3797CA4E305863CE00A839A9;
+			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				6FA1878C85DE5C66670B0F3C /* XCRemoteSwiftPackageReference "player-ios" */,
+				3797CA893058642A00A839A9 /* XCRemoteSwiftPackageReference "player-ios" */,
 			);
-			productRefGroup = 6EDD9CD6211AE9D7003427D6 /* Products */;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3797CA58305863CE00A839A9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6EDD9CD4211AE9D7003427D6 /* BasicPlaybackObjectiveC */,
+				3797CA56305863CE00A839A9 /* BasicPlaybackObjectiveC */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6EDD9CD3211AE9D7003427D6 /* Resources */ = {
+		3797CA55305863CE00A839A9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
-				6EDD9CE5211AE9D9003427D6 /* LaunchScreen.storyboard in Resources */,
-				6EDD9CE2211AE9D9003427D6 /* Assets.xcassets in Resources */,
-				6EDD9CE0211AE9D7003427D6 /* Main.storyboard in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6EDD9CD1211AE9D7003427D6 /* Sources */ = {
+		3797CA53305863CE00A839A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
-				6EDD9CDD211AE9D7003427D6 /* ViewController.m in Sources */,
-				6EDD9CE8211AE9D9003427D6 /* main.m in Sources */,
-				6EDD9CDA211AE9D7003427D6 /* AppDelegate.m in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		6EDD9CDE211AE9D7003427D6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6EDD9CDF211AE9D7003427D6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		6EDD9CE3211AE9D9003427D6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6EDD9CE4211AE9D9003427D6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		6EDD9CE9211AE9D9003427D6 /* Debug */ = {
+		3797CA70305863CF00A839A9 /* Debug configuration for PBXNativeTarget "BasicPlaybackObjectiveC" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BasicPlaybackObjectiveC/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitmovin.BasicPlaybackObjectiveC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3797CA71305863CF00A839A9 /* Release configuration for PBXNativeTarget "BasicPlaybackObjectiveC" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BasicPlaybackObjectiveC/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitmovin.BasicPlaybackObjectiveC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3797CA72305863CF00A839A9 /* Debug configuration for PBXProject "BasicPlaybackObjectiveC" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -210,12 +227,13 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -229,21 +247,23 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		6EDD9CEA211AE9D9003427D6 /* Release */ = {
+		3797CA73305863CF00A839A9 /* Release configuration for PBXProject "BasicPlaybackObjectiveC" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -269,12 +289,13 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -282,88 +303,55 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		6EDD9CEC211AE9D9003427D6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = BasicPlaybackObjectiveC/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.playback.basic-$(DEVELOPMENT_TEAM)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		6EDD9CED211AE9D9003427D6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = BasicPlaybackObjectiveC/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.playback.basic-$(DEVELOPMENT_TEAM)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6EDD9CD0211AE9D7003427D6 /* Build configuration list for PBXProject "BasicPlaybackObjectiveC" */ = {
+		3797CA52305863CE00A839A9 /* Build configuration list for PBXProject "BasicPlaybackObjectiveC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6EDD9CE9211AE9D9003427D6 /* Debug */,
-				6EDD9CEA211AE9D9003427D6 /* Release */,
+				3797CA72305863CF00A839A9 /* Debug configuration for PBXProject "BasicPlaybackObjectiveC" */,
+				3797CA73305863CF00A839A9 /* Release configuration for PBXProject "BasicPlaybackObjectiveC" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6EDD9CEB211AE9D9003427D6 /* Build configuration list for PBXNativeTarget "BasicPlaybackObjectiveC" */ = {
+		3797CA6F305863CF00A839A9 /* Build configuration list for PBXNativeTarget "BasicPlaybackObjectiveC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6EDD9CEC211AE9D9003427D6 /* Debug */,
-				6EDD9CED211AE9D9003427D6 /* Release */,
+				3797CA70305863CF00A839A9 /* Debug configuration for PBXNativeTarget "BasicPlaybackObjectiveC" */,
+				3797CA71305863CF00A839A9 /* Release configuration for PBXNativeTarget "BasicPlaybackObjectiveC" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		6FA1878C85DE5C66670B0F3C /* XCRemoteSwiftPackageReference "player-ios" */ = {
+		3797CA893058642A00A839A9 /* XCRemoteSwiftPackageReference "player-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/bitmovin/player-ios.git";
+			repositoryURL = "https://github.com/bitmovin/player-ios";
 			requirement = {
 				kind = exactVersion;
-				version = 3.123.0;
+				version = 3.124.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6B9021FFAB70C950135A47EE /* BitmovinPlayer */ = {
+		3797CA8A3058642A00A839A9 /* BitmovinPlayer */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6FA1878C85DE5C66670B0F3C /* XCRemoteSwiftPackageReference "player-ios" */;
+			package = 3797CA893058642A00A839A9 /* XCRemoteSwiftPackageReference "player-ios" */;
 			productName = BitmovinPlayer;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 6EDD9CCD211AE9D7003427D6 /* Project object */;
+	rootObject = 3797CA4F305863CE00A839A9 /* Project object */;
+	validationLevel = 1;
 }

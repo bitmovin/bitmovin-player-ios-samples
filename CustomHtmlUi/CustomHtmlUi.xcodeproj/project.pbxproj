@@ -3,34 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		375AB3B822CA37B200045AB5 /* bitmovinplayer-ui.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 375AB3B722CA37B200045AB5 /* bitmovinplayer-ui.min.js */; };
-		375AB3BA22CA37B800045AB5 /* bitmovinplayer-ui.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 375AB3B922CA37B800045AB5 /* bitmovinplayer-ui.min.css */; };
 		4529DD04E8DA7807FA2244DB /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 14EB35BF987C55BE4A4C47D1 /* BitmovinPlayer */; };
-		AC094AE41F3CD83D00EF6F94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC094AE31F3CD83D00EF6F94 /* AppDelegate.swift */; };
-		AC094AE61F3CD83D00EF6F94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC094AE51F3CD83D00EF6F94 /* ViewController.swift */; };
-		AC094AE91F3CD83D00EF6F94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC094AE71F3CD83D00EF6F94 /* Main.storyboard */; };
-		AC094AEC1F3CD83D00EF6F94 /* CustomHtmlUi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC094AEA1F3CD83D00EF6F94 /* CustomHtmlUi.xcdatamodeld */; };
-		AC094AEE1F3CD83D00EF6F94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC094AED1F3CD83D00EF6F94 /* Assets.xcassets */; };
-		AC094AF11F3CD83D00EF6F94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC094AEF1F3CD83D00EF6F94 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		375AB3B422CA375800045AB5 /* customclosebutton.ts */ = {isa = PBXFileReference; lastKnownFileType = text; path = customclosebutton.ts; sourceTree = "<group>"; };
-		375AB3B722CA37B200045AB5 /* bitmovinplayer-ui.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "bitmovinplayer-ui.min.js"; sourceTree = "<group>"; };
-		375AB3B922CA37B800045AB5 /* bitmovinplayer-ui.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "bitmovinplayer-ui.min.css"; sourceTree = "<group>"; };
 		AC094AE01F3CD83D00EF6F94 /* CustomHtmlUi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomHtmlUi.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC094AE31F3CD83D00EF6F94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC094AE51F3CD83D00EF6F94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AC094AE81F3CD83D00EF6F94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AC094AEB1F3CD83D00EF6F94 /* CustomHtmlUi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CustomHtmlUi.xcdatamodel; sourceTree = "<group>"; };
-		AC094AED1F3CD83D00EF6F94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AC094AF01F3CD83D00EF6F94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AC094AF21F3CD83D00EF6F94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3797C940305859C700A839A9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = AC094ADF1F3CD83D00EF6F94 /* CustomHtmlUi */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3797C935305859C600A839A9 /* CustomHtmlUi */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (3797C940305859C700A839A9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = CustomHtmlUi; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AC094ADD1F3CD83D00EF6F94 /* Frameworks */ = {
@@ -44,21 +40,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		375AB3B322CA30BC00045AB5 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				375AB3B722CA37B200045AB5 /* bitmovinplayer-ui.min.js */,
-				375AB3B922CA37B800045AB5 /* bitmovinplayer-ui.min.css */,
-				375AB3B422CA375800045AB5 /* customclosebutton.ts */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		AC094AD71F3CD83D00EF6F94 = {
 			isa = PBXGroup;
 			children = (
-				375AB3B322CA30BC00045AB5 /* Supporting Files */,
-				AC094AE21F3CD83D00EF6F94 /* CustomHtmlUi */,
+				3797C935305859C600A839A9 /* CustomHtmlUi */,
 				AC094AE11F3CD83D00EF6F94 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,20 +54,6 @@
 				AC094AE01F3CD83D00EF6F94 /* CustomHtmlUi.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		AC094AE21F3CD83D00EF6F94 /* CustomHtmlUi */ = {
-			isa = PBXGroup;
-			children = (
-				AC094AE31F3CD83D00EF6F94 /* AppDelegate.swift */,
-				AC094AE51F3CD83D00EF6F94 /* ViewController.swift */,
-				AC094AE71F3CD83D00EF6F94 /* Main.storyboard */,
-				AC094AED1F3CD83D00EF6F94 /* Assets.xcassets */,
-				AC094AEF1F3CD83D00EF6F94 /* LaunchScreen.storyboard */,
-				AC094AF21F3CD83D00EF6F94 /* Info.plist */,
-				AC094AEA1F3CD83D00EF6F94 /* CustomHtmlUi.xcdatamodeld */,
-			);
-			path = CustomHtmlUi;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +70,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3797C935305859C600A839A9 /* CustomHtmlUi */,
 			);
 			name = CustomHtmlUi;
 			packageProductDependencies = (
@@ -153,11 +127,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC094AF11F3CD83D00EF6F94 /* LaunchScreen.storyboard in Resources */,
-				375AB3BA22CA37B800045AB5 /* bitmovinplayer-ui.min.css in Resources */,
-				375AB3B822CA37B200045AB5 /* bitmovinplayer-ui.min.js in Resources */,
-				AC094AEE1F3CD83D00EF6F94 /* Assets.xcassets in Resources */,
-				AC094AE91F3CD83D00EF6F94 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,32 +137,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC094AEC1F3CD83D00EF6F94 /* CustomHtmlUi.xcdatamodeld in Sources */,
-				AC094AE61F3CD83D00EF6F94 /* ViewController.swift in Sources */,
-				AC094AE41F3CD83D00EF6F94 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		AC094AE71F3CD83D00EF6F94 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC094AE81F3CD83D00EF6F94 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AC094AEF1F3CD83D00EF6F94 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC094AF01F3CD83D00EF6F94 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AC094AF31F3CD83D00EF6F94 /* Debug */ = {
@@ -306,7 +253,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -319,7 +267,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CustomHtmlUi/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.custom.ui.html-$(DEVELOPMENT_TEAM)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -331,7 +282,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CustomHtmlUi/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.custom.ui.html-$(DEVELOPMENT_TEAM)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -366,7 +320,7 @@
 			repositoryURL = "https://github.com/bitmovin/player-ios.git";
 			requirement = {
 				kind = exactVersion;
-				version = 3.123.0;
+				version = 3.124.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -378,19 +332,6 @@
 			productName = BitmovinPlayer;
 		};
 /* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		AC094AEA1F3CD83D00EF6F94 /* CustomHtmlUi.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				AC094AEB1F3CD83D00EF6F94 /* CustomHtmlUi.xcdatamodel */,
-			);
-			currentVersion = AC094AEB1F3CD83D00EF6F94 /* CustomHtmlUi.xcdatamodel */;
-			path = CustomHtmlUi.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = AC094AD81F3CD83D00EF6F94 /* Project object */;
 }

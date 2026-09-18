@@ -3,29 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A88F29A527A8265A0053EF8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88F29A427A8265A0053EF8D /* AppDelegate.swift */; };
-		A88F29A727A8265A0053EF8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88F29A627A8265A0053EF8D /* ViewController.swift */; };
-		A88F29AA27A8265A0053EF8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A88F29A827A8265A0053EF8D /* Main.storyboard */; };
-		A88F29AC27A8265C0053EF8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A88F29AB27A8265C0053EF8D /* Assets.xcassets */; };
-		A88F29AF27A8265C0053EF8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A88F29AD27A8265C0053EF8D /* LaunchScreen.storyboard */; };
-		A88F29F527A8371A0053EF8D /* ContentProposalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88F29F427A8371A0053EF8D /* ContentProposalViewController.swift */; };
 		DB2B4A4931827F62C086310C /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 32EAC76F92A66995BBA2F8D1 /* BitmovinPlayer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A88F29A127A8265A0053EF8D /* NextUpTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextUpTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A88F29A427A8265A0053EF8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A88F29A627A8265A0053EF8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A88F29A927A8265A0053EF8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A88F29AB27A8265C0053EF8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A88F29AE27A8265C0053EF8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A88F29F327A82A690053EF8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		A88F29F427A8371A0053EF8D /* ContentProposalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentProposalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3797C980305859DB00A839A9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A88F29A027A8265A0053EF8D /* NextUpTV */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3797C977305859DB00A839A9 /* NextUpTV */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (3797C980305859DB00A839A9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = NextUpTV; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A88F299E27A8265A0053EF8D /* Frameworks */ = {
@@ -42,7 +43,7 @@
 		A88F299827A8265A0053EF8D = {
 			isa = PBXGroup;
 			children = (
-				A88F29A327A8265A0053EF8D /* NextUpTV */,
+				3797C977305859DB00A839A9 /* NextUpTV */,
 				A88F29A227A8265A0053EF8D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,20 +54,6 @@
 				A88F29A127A8265A0053EF8D /* NextUpTV.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		A88F29A327A8265A0053EF8D /* NextUpTV */ = {
-			isa = PBXGroup;
-			children = (
-				A88F29F327A82A690053EF8D /* Info.plist */,
-				A88F29A427A8265A0053EF8D /* AppDelegate.swift */,
-				A88F29A627A8265A0053EF8D /* ViewController.swift */,
-				A88F29F427A8371A0053EF8D /* ContentProposalViewController.swift */,
-				A88F29A827A8265A0053EF8D /* Main.storyboard */,
-				A88F29AB27A8265C0053EF8D /* Assets.xcassets */,
-				A88F29AD27A8265C0053EF8D /* LaunchScreen.storyboard */,
-			);
-			path = NextUpTV;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +70,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3797C977305859DB00A839A9 /* NextUpTV */,
 			);
 			name = NextUpTV;
 			packageProductDependencies = (
@@ -133,9 +123,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A88F29AF27A8265C0053EF8D /* LaunchScreen.storyboard in Resources */,
-				A88F29AC27A8265C0053EF8D /* Assets.xcassets in Resources */,
-				A88F29AA27A8265A0053EF8D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,32 +133,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A88F29A727A8265A0053EF8D /* ViewController.swift in Sources */,
-				A88F29F527A8371A0053EF8D /* ContentProposalViewController.swift in Sources */,
-				A88F29A527A8265A0053EF8D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		A88F29A827A8265A0053EF8D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A88F29A927A8265A0053EF8D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A88F29AD27A8265C0053EF8D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A88F29AE27A8265C0053EF8D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A88F29B027A8265C0053EF8D /* Debug */ = {
@@ -304,6 +269,7 @@
 				INFOPLIST_FILE = NextUpTV/Info.plist;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arm64;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -329,6 +295,7 @@
 				INFOPLIST_FILE = NextUpTV/Info.plist;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arm64;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -371,7 +338,7 @@
 			repositoryURL = "https://github.com/bitmovin/player-ios.git";
 			requirement = {
 				kind = exactVersion;
-				version = 3.123.0;
+				version = 3.124.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

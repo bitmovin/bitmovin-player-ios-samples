@@ -3,24 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		09919D349F034AF9ED2800A3 /* GoogleInteractiveMediaAds in Frameworks */ = {isa = PBXBuildFile; productRef = B7D09564BA7FCA8E35A5B2D0 /* GoogleInteractiveMediaAds */; };
 		88537C829B7A1F089B25ED9B /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = EBC436F2472E8B9E3208DF65 /* BitmovinPlayer */; };
-		AC6F030D1F7E6D38004B1816 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6F030C1F7E6D38004B1816 /* Assets.xcassets */; };
-		D6FEF8992A4C6D3C002E8AB7 /* ImaAdvertisingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FEF8972A4C6D3B002E8AB7 /* ImaAdvertisingApp.swift */; };
-		D6FEF89A2A4C6D3C002E8AB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FEF8982A4C6D3B002E8AB7 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC6F02FF1F7E6D38004B1816 /* ImaAdvertising.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImaAdvertising.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC6F030C1F7E6D38004B1816 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AC6F03111F7E6D38004B1816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6FEF8972A4C6D3B002E8AB7 /* ImaAdvertisingApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImaAdvertisingApp.swift; sourceTree = "<group>"; };
-		D6FEF8982A4C6D3B002E8AB7 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3797C96C305859D700A839A9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = AC6F02FE1F7E6D38004B1816 /* ImaAdvertising */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3797C966305859D600A839A9 /* ImaAdvertising */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (3797C96C305859D700A839A9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = ImaAdvertising; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AC6F02FC1F7E6D38004B1816 /* Frameworks */ = {
@@ -38,7 +45,7 @@
 		AC6F02F61F7E6D38004B1816 = {
 			isa = PBXGroup;
 			children = (
-				AC6F03011F7E6D38004B1816 /* ImaAdvertising */,
+				3797C966305859D600A839A9 /* ImaAdvertising */,
 				AC6F03001F7E6D38004B1816 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,17 +56,6 @@
 				AC6F02FF1F7E6D38004B1816 /* ImaAdvertising.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		AC6F03011F7E6D38004B1816 /* ImaAdvertising */ = {
-			isa = PBXGroup;
-			children = (
-				D6FEF8972A4C6D3B002E8AB7 /* ImaAdvertisingApp.swift */,
-				D6FEF8982A4C6D3B002E8AB7 /* ContentView.swift */,
-				AC6F030C1F7E6D38004B1816 /* Assets.xcassets */,
-				AC6F03111F7E6D38004B1816 /* Info.plist */,
-			);
-			path = ImaAdvertising;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -76,6 +72,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3797C966305859D600A839A9 /* ImaAdvertising */,
 			);
 			name = ImaAdvertising;
 			packageProductDependencies = (
@@ -130,7 +129,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC6F030D1F7E6D38004B1816 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +139,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6FEF89A2A4C6D3C002E8AB7 /* ContentView.swift in Sources */,
-				D6FEF8992A4C6D3C002E8AB7 /* ImaAdvertisingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +254,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -271,7 +268,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ImaAdvertising/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.ads.ima-$(DEVELOPMENT_TEAM)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -285,7 +285,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ImaAdvertising/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bitmovin.player.samples.ads.ima-$(DEVELOPMENT_TEAM)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -329,7 +332,7 @@
 			repositoryURL = "https://github.com/bitmovin/player-ios.git";
 			requirement = {
 				kind = exactVersion;
-				version = 3.123.0;
+				version = 3.124.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

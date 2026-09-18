@@ -3,40 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC2DC01C28F6A3B7009D7A8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2DC01B28F6A3B7009D7A8D /* AppDelegate.swift */; };
-		AC2DC02328F6A3B7009D7A8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC2DC02128F6A3B7009D7A8D /* Main.storyboard */; };
-		AC2DC02528F6A3B9009D7A8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC2DC02428F6A3B9009D7A8D /* Assets.xcassets */; };
-		AC2DC02828F6A3B9009D7A8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC2DC02628F6A3B9009D7A8D /* LaunchScreen.storyboard */; };
-		AC2DC03228F6C6E6009D7A8D /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2DC03128F6C6E6009D7A8D /* ItemCell.swift */; };
-		AC2DC03528F7EAEA009D7A8D /* AssetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2DC03428F7EAEA009D7A8D /* AssetsTableViewController.swift */; };
-		AC2DC03828F7EC9B009D7A8D /* AssetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2DC03728F7EC9B009D7A8D /* AssetsViewModel.swift */; };
-		AC2DC03A28F7EF4A009D7A8D /* PlaybackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2DC03928F7EF4A009D7A8D /* PlaybackViewController.swift */; };
-		AC327FD628F824840015B274 /* CoordinationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC327FD528F824840015B274 /* CoordinationManager.swift */; };
-		AC327FD928F824D20015B274 /* MediaWatchingActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC327FD828F824D20015B274 /* MediaWatchingActivity.swift */; };
-		AC327FDB28F83BAD0015B274 /* PlaybackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC327FDA28F83BAD0015B274 /* PlaybackViewModel.swift */; };
 		E85B168AEC30CB0614ED237E /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 5DD37C9091BC34ADED257BA0 /* BitmovinPlayer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC2DC01828F6A3B7009D7A8D /* SharePlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharePlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC2DC01B28F6A3B7009D7A8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC2DC02228F6A3B7009D7A8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AC2DC02428F6A3B9009D7A8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AC2DC02728F6A3B9009D7A8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AC2DC02928F6A3B9009D7A8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC2DC02F28F6C46D009D7A8D /* SharePlay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SharePlay.entitlements; sourceTree = "<group>"; };
-		AC2DC03128F6C6E6009D7A8D /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
-		AC2DC03428F7EAEA009D7A8D /* AssetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsTableViewController.swift; sourceTree = "<group>"; };
-		AC2DC03728F7EC9B009D7A8D /* AssetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsViewModel.swift; sourceTree = "<group>"; };
-		AC2DC03928F7EF4A009D7A8D /* PlaybackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackViewController.swift; sourceTree = "<group>"; };
-		AC327FD528F824840015B274 /* CoordinationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinationManager.swift; sourceTree = "<group>"; };
-		AC327FD828F824D20015B274 /* MediaWatchingActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaWatchingActivity.swift; sourceTree = "<group>"; };
-		AC327FDA28F83BAD0015B274 /* PlaybackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3797C9AD305859E100A839A9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = AC2DC01728F6A3B7009D7A8D /* SharePlay */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3797C99F305859E000A839A9 /* SharePlay */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (3797C9AD305859E100A839A9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = SharePlay; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AC2DC01528F6A3B7009D7A8D /* Frameworks */ = {
@@ -53,7 +43,7 @@
 		AC2DC00F28F6A3B7009D7A8D = {
 			isa = PBXGroup;
 			children = (
-				AC2DC01A28F6A3B7009D7A8D /* SharePlay */,
+				3797C99F305859E000A839A9 /* SharePlay */,
 				AC2DC01928F6A3B7009D7A8D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,58 +54,6 @@
 				AC2DC01828F6A3B7009D7A8D /* SharePlay.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		AC2DC01A28F6A3B7009D7A8D /* SharePlay */ = {
-			isa = PBXGroup;
-			children = (
-				AC327FD728F824A20015B274 /* SharePlay */,
-				AC2DC03628F7EC78009D7A8D /* Models */,
-				AC2DC03328F7EADC009D7A8D /* Controllers */,
-				AC2DC03028F6C6CF009D7A8D /* Views */,
-				AC2DC02F28F6C46D009D7A8D /* SharePlay.entitlements */,
-				AC2DC01B28F6A3B7009D7A8D /* AppDelegate.swift */,
-				AC2DC02128F6A3B7009D7A8D /* Main.storyboard */,
-				AC2DC02428F6A3B9009D7A8D /* Assets.xcassets */,
-				AC2DC02628F6A3B9009D7A8D /* LaunchScreen.storyboard */,
-				AC2DC02928F6A3B9009D7A8D /* Info.plist */,
-			);
-			path = SharePlay;
-			sourceTree = "<group>";
-		};
-		AC2DC03028F6C6CF009D7A8D /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				AC2DC03128F6C6E6009D7A8D /* ItemCell.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		AC2DC03328F7EADC009D7A8D /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				AC2DC03428F7EAEA009D7A8D /* AssetsTableViewController.swift */,
-				AC2DC03928F7EF4A009D7A8D /* PlaybackViewController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		AC2DC03628F7EC78009D7A8D /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				AC2DC03728F7EC9B009D7A8D /* AssetsViewModel.swift */,
-				AC327FDA28F83BAD0015B274 /* PlaybackViewModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		AC327FD728F824A20015B274 /* SharePlay */ = {
-			isa = PBXGroup;
-			children = (
-				AC327FD528F824840015B274 /* CoordinationManager.swift */,
-				AC327FD828F824D20015B274 /* MediaWatchingActivity.swift */,
-			);
-			path = SharePlay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +70,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3797C99F305859E000A839A9 /* SharePlay */,
 			);
 			name = SharePlay;
 			packageProductDependencies = (
@@ -182,9 +123,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC2DC02828F6A3B9009D7A8D /* LaunchScreen.storyboard in Resources */,
-				AC2DC02528F6A3B9009D7A8D /* Assets.xcassets in Resources */,
-				AC2DC02328F6A3B7009D7A8D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,37 +133,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC2DC01C28F6A3B7009D7A8D /* AppDelegate.swift in Sources */,
-				AC327FD928F824D20015B274 /* MediaWatchingActivity.swift in Sources */,
-				AC2DC03528F7EAEA009D7A8D /* AssetsTableViewController.swift in Sources */,
-				AC2DC03A28F7EF4A009D7A8D /* PlaybackViewController.swift in Sources */,
-				AC2DC03828F7EC9B009D7A8D /* AssetsViewModel.swift in Sources */,
-				AC327FDB28F83BAD0015B274 /* PlaybackViewModel.swift in Sources */,
-				AC327FD628F824840015B274 /* CoordinationManager.swift in Sources */,
-				AC2DC03228F6C6E6009D7A8D /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		AC2DC02128F6A3B7009D7A8D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC2DC02228F6A3B7009D7A8D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AC2DC02628F6A3B9009D7A8D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC2DC02728F6A3B9009D7A8D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AC2DC02A28F6A3B9009D7A8D /* Debug */ = {
@@ -429,7 +340,7 @@
 			repositoryURL = "https://github.com/bitmovin/player-ios.git";
 			requirement = {
 				kind = exactVersion;
-				version = 3.123.0;
+				version = 3.124.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

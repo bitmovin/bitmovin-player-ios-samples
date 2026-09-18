@@ -38,8 +38,8 @@ final class ViewController: UIViewController {
         /**
          * Go to https://github.com/bitmovin/bitmovin-player-ui to get started with creating a custom player UI.
          */
-        guard let cssURL = Bundle.main.url(forResource: "bitmovinplayer-ui", withExtension: "min.css"),
-              let jsURL = Bundle.main.url(forResource: "bitmovinplayer-ui", withExtension: "min.js") else {
+        guard let cssURL = Bundle.main.url(forResource: "bitmovinplayer-ui", withExtension: "css"),
+              let jsURL = Bundle.main.url(forResource: "bitmovinplayer-ui", withExtension: "js") else {
             print("Please specify the needed resources marked with TODO in ViewController.swift file.")
             return
         }

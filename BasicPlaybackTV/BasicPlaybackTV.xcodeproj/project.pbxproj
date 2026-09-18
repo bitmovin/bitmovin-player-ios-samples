@@ -3,25 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		37250B412FADD265000FEFD4 /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 37250B402FADD265000FEFD4 /* BitmovinPlayer */; };
-		AC3C1C6E1F978B300096D607 /* BasicPlaybackTV.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC3C1C6C1F978B300096D607 /* BasicPlaybackTV.xcdatamodeld */; };
-		AC3C1C731F978B300096D607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3C1C721F978B300096D607 /* Assets.xcassets */; };
-		D6DE5AEE2A4B06C00096EB57 /* BasicPlaybackTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DE5AEC2A4B06C00096EB57 /* BasicPlaybackTVApp.swift */; };
-		D6DE5AEF2A4B06C00096EB57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DE5AED2A4B06C00096EB57 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC3C1C651F978B300096D607 /* BasicPlaybackTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicPlaybackTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC3C1C6D1F978B300096D607 /* BasicPlaybackTV.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BasicPlaybackTV.xcdatamodel; sourceTree = "<group>"; };
-		AC3C1C721F978B300096D607 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AC3C1C741F978B300096D607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6DE5AEC2A4B06C00096EB57 /* BasicPlaybackTVApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicPlaybackTVApp.swift; sourceTree = "<group>"; };
-		D6DE5AED2A4B06C00096EB57 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3797C8DF305859B300A839A9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = AC3C1C641F978B300096D607 /* BasicPlaybackTV */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3797C8D8305859B200A839A9 /* BasicPlaybackTV */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (3797C8DF305859B300A839A9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = BasicPlaybackTV; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AC3C1C621F978B300096D607 /* Frameworks */ = {
@@ -38,7 +43,7 @@
 		AC3C1C5C1F978B300096D607 = {
 			isa = PBXGroup;
 			children = (
-				AC3C1C671F978B300096D607 /* BasicPlaybackTV */,
+				3797C8D8305859B200A839A9 /* BasicPlaybackTV */,
 				AC3C1C661F978B300096D607 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,18 +54,6 @@
 				AC3C1C651F978B300096D607 /* BasicPlaybackTV.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		AC3C1C671F978B300096D607 /* BasicPlaybackTV */ = {
-			isa = PBXGroup;
-			children = (
-				D6DE5AEC2A4B06C00096EB57 /* BasicPlaybackTVApp.swift */,
-				D6DE5AED2A4B06C00096EB57 /* ContentView.swift */,
-				AC3C1C721F978B300096D607 /* Assets.xcassets */,
-				AC3C1C741F978B300096D607 /* Info.plist */,
-				AC3C1C6C1F978B300096D607 /* BasicPlaybackTV.xcdatamodeld */,
-			);
-			path = BasicPlaybackTV;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +70,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3797C8D8305859B200A839A9 /* BasicPlaybackTV */,
 			);
 			name = BasicPlaybackTV;
 			productName = BasicPlaybackTV;
@@ -126,7 +122,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC3C1C731F978B300096D607 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,9 +132,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC3C1C6E1F978B300096D607 /* BasicPlaybackTV.xcdatamodeld in Sources */,
-				D6DE5AEF2A4B06C00096EB57 /* ContentView.swift in Sources */,
-				D6DE5AEE2A4B06C00096EB57 /* BasicPlaybackTVApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,7 +317,7 @@
 			repositoryURL = "https://github.com/bitmovin/player-ios";
 			requirement = {
 				kind = exactVersion;
-				version = 3.123.0;
+				version = 3.124.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -337,19 +329,6 @@
 			productName = BitmovinPlayer;
 		};
 /* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		AC3C1C6C1F978B300096D607 /* BasicPlaybackTV.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				AC3C1C6D1F978B300096D607 /* BasicPlaybackTV.xcdatamodel */,
-			);
-			currentVersion = AC3C1C6D1F978B300096D607 /* BasicPlaybackTV.xcdatamodel */;
-			path = BasicPlaybackTV.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = AC3C1C5D1F978B300096D607 /* Project object */;
 }

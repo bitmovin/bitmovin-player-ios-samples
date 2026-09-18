@@ -3,14 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		37250B442FADD3AD000FEFD4 /* BitmovinPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 37250B432FADD3AD000FEFD4 /* BitmovinPlayer */; };
-		AC5046AC1EC4B9A400F18C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5046AB1EC4B9A400F18C0F /* Assets.xcassets */; };
-		D67D6FC12A49C5F20033AA00 /* BasicPlaybackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67D6FC02A49C5F20033AA00 /* BasicPlaybackApp.swift */; };
-		D67D6FC32A49C62D0033AA00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67D6FC22A49C62D0033AA00 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,11 +25,21 @@
 
 /* Begin PBXFileReference section */
 		AC5046A11EC4B9A400F18C0F /* BasicPlayback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicPlayback.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC5046AB1EC4B9A400F18C0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AC5046B01EC4B9A400F18C0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D67D6FC02A49C5F20033AA00 /* BasicPlaybackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicPlaybackApp.swift; sourceTree = "<group>"; };
-		D67D6FC22A49C62D0033AA00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3797CA0830585B2E00A839A9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = AC5046A01EC4B9A400F18C0F /* BasicPlayback */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3797CA0330585B2D00A839A9 /* BasicPlayback */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (3797CA0830585B2E00A839A9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = BasicPlayback; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AC50469E1EC4B9A400F18C0F /* Frameworks */ = {
@@ -49,7 +56,7 @@
 		AC5046981EC4B9A400F18C0F = {
 			isa = PBXGroup;
 			children = (
-				AC5046A31EC4B9A400F18C0F /* BasicPlayback */,
+				3797CA0330585B2D00A839A9 /* BasicPlayback */,
 				AC5046A21EC4B9A400F18C0F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,17 +67,6 @@
 				AC5046A11EC4B9A400F18C0F /* BasicPlayback.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		AC5046A31EC4B9A400F18C0F /* BasicPlayback */ = {
-			isa = PBXGroup;
-			children = (
-				AC5046AB1EC4B9A400F18C0F /* Assets.xcassets */,
-				AC5046B01EC4B9A400F18C0F /* Info.plist */,
-				D67D6FC02A49C5F20033AA00 /* BasicPlaybackApp.swift */,
-				D67D6FC22A49C62D0033AA00 /* ContentView.swift */,
-			);
-			path = BasicPlayback;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -88,6 +84,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3797CA0330585B2D00A839A9 /* BasicPlayback */,
 			);
 			name = BasicPlayback;
 			productName = BasicPlayback;
@@ -139,7 +138,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC5046AC1EC4B9A400F18C0F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,8 +148,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D67D6FC32A49C62D0033AA00 /* ContentView.swift in Sources */,
-				D67D6FC12A49C5F20033AA00 /* BasicPlaybackApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +341,7 @@
 			repositoryURL = "https://github.com/bitmovin/player-ios";
 			requirement = {
 				kind = exactVersion;
-				version = 3.123.0;
+				version = 3.124.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
