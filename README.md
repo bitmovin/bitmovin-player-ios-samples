@@ -58,6 +58,7 @@ This repository contains sample apps which are using the Bitmovin Player iOS SDK
 +   **ImaAdvertising:** Shows how to set up and configure the Bitmovin Player for playback of IMA ads.
 +   **BitmovinAdvertising:** Shows how to set up and configure the Bitmovin Player for playback of BAM ads.
 +   **HlsInterstitials:** Shows how to set up and configure the Bitmovin Player for playback of HLS Interstitial ads.
++   **PauseAds:** Shows how to set up and configure the Bitmovin Player to show pause ads using BAM. Pause ads are experimental: their Swift APIs require `@_spi(ExperimentalApi) import BitmovinPlayerCore` and may change in future releases.
 
 ### UI
 +   **CustomHtmlUi:** Shows how to set up and configure the Bitmovin Player to use a custom HTML UI. Besides, this sample includes how to communicate between the javascript UI and the native code.
@@ -131,6 +132,7 @@ Make sure to replace `$(DEVELOPMENT_TEAM)` with your Apple development team's ID
     com.bitmovin.player.samples.ads.basic-$(DEVELOPMENT_TEAM)
     com.bitmovin.player.samples.ads.bitmovin-$(DEVELOPMENT_TEAM)
     com.bitmovin.player.samples.ads.interstitial-$(DEVELOPMENT_TEAM)
+    com.bitmovin.player.samples.ads.pause-$(DEVELOPMENT_TEAM)
 
     # UI:
     com.bitmovin.player.samples.avplayerviewcontroller-$(DEVELOPMENT_TEAM)
@@ -168,12 +170,12 @@ To add the SDK as a dependency to your project, you have two options: Using Swif
 #### Using Swift Package Manager
 1. In Xcode, select **File > Add Package Dependencies**.
 2. Enter `https://github.com/bitmovin/player-ios.git` as the package URL.
-3. Select version `3.126.0` and add the `BitmovinPlayer` product to your target.
+3. Select version `3.127.0` and add the `BitmovinPlayer` product to your target.
 
 See the sample Xcode projects in this repository for complete examples.
 
 #### Adding the SDK Directly
-When using Xcode, go to the `General` page or your app target and add the SDK bundle (`BitmovinPlayer.xcframework`) under `Linked Frameworks and Libraries`. The latest SDK for iOS and tvOS can be downloaded [here](https://cdn.bitmovin.com/player/ios_tvos/3.126.0/BitmovinPlayer.zip).
+When using Xcode, go to the `General` page or your app target and add the SDK bundle (`BitmovinPlayer.xcframework`) under `Linked Frameworks and Libraries`. The latest SDK for iOS and tvOS can be downloaded [here](https://cdn.bitmovin.com/player/ios_tvos/3.127.0/BitmovinPlayer.zip).
 
 #### Prepare your Bitmovin Player license
 
